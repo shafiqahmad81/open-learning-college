@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Open Learning College Frontend</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/globals.css">
+</head>
+<body>
+    <!-- BANNER SECTION START -->
+    <section
+        class="bg-[#243C45] bg-no-repeat bg-cover bg-top-center bg-[url('./assets/images/common-banner/common-banner-bg.png')] py-10 md:py-[72px]">
+        <div class="container text-center">
+            <h2 class="text-2xl md:text-[40px] font-bold font-arial text-white mb-5"><span class="text-[#008080]">Privacy Policy</span> & GDPR
+            </h2>
+            <p class="text-sm md:text-base text-white font-arial md:max-w-[56%] mx-auto"><strong>Open Learning College</strong> prioritises the privacy and security of user data, adhering to stringent privacy policies to ensure confidentiality and trust in our online learning environment.</p>
+        </div>
+    </section>
+    <!-- BANNER SECTION END -->
+
+    <!-- BREADCRUMB SECTION START -->
+    <section class="pt-5">
+        <div class="container">
+            <div class="p-2.5">
+                <ul class="flex flex-wrap items-center justify-center sm:justify-start pb-5 gap-2 border-b border-dotted border-[#008080] mb-3">
+                    <li><a href="#"
+                            class="text-base font-arial font-bold text-[#117d5d] transition-all hover:text-[#3BB366]">Home</a>
+                    </li>
+                    <li><span><svg xmlns="http://www.w3.org/2000/svg" width="6" height="12" viewBox="0 0 6 12"
+                                fill="none">
+                                <g id="Arrow - Down 2">
+                                    <path id="Arrow - Down 2_2"
+                                        d="M0.163933 11.1728C-0.0347736 10.978 -0.0528379 10.6732 0.10974 10.4584L0.163933 10.3968L4.64894 6.00016L0.163932 1.60351C-0.0347741 1.40872 -0.0528383 1.10388 0.10974 0.88908L0.163932 0.827539C0.362639 0.63274 0.673582 0.615031 0.892695 0.774413L0.95547 0.827539L5.83607 5.61218C6.03477 5.80698 6.05284 6.1118 5.89026 6.32661L5.83607 6.38815L0.95547 11.1728C0.736893 11.3871 0.38251 11.3871 0.163933 11.1728Z"
+                                        fill="#7C8A8F"></path>
+                                </g>
+                            </svg></span></li>
+                    <li><a href="#"
+                            class="text-base font-arial font-bold text-[#117d5d] transition-all hover:text-[#3BB366]">Support
+                            Centre</a></li>
+                    <li><span><svg xmlns="http://www.w3.org/2000/svg" width="6" height="12" viewBox="0 0 6 12"
+                                fill="none">
+                                <g id="Arrow - Down 2">
+                                    <path id="Arrow - Down 2_2"
+                                        d="M0.163933 11.1728C-0.0347736 10.978 -0.0528379 10.6732 0.10974 10.4584L0.163933 10.3968L4.64894 6.00016L0.163932 1.60351C-0.0347741 1.40872 -0.0528383 1.10388 0.10974 0.88908L0.163932 0.827539C0.362639 0.63274 0.673582 0.615031 0.892695 0.774413L0.95547 0.827539L5.83607 5.61218C6.03477 5.80698 6.05284 6.1118 5.89026 6.32661L5.83607 6.38815L0.95547 11.1728C0.736893 11.3871 0.38251 11.3871 0.163933 11.1728Z"
+                                        fill="#7C8A8F"></path>
+                                </g>
+                            </svg></span></li>
+                    <li><a href="#" class="text-[#008080] text-base font-arial">Privacy Policy</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- BREADCRUMB SECTION END -->
+
+    <section class="bg-[#F7FBFB] py-5">
+        <div class="container">
+            <div class="flex flex-col md:flex-row">
+                <div class="w-full md:max-w-[40%] lg:max-w-[30%] space-y-5 lg:px-5">
+                    <div class="border-b border-dotted border-[#008080] pb-8">
+                        <div class="w-full max-w-[300px] mx-auto">
+                            <img src="./assets/images/logo/open-learning-logo.png" alt="logo">
+                        </div>
+                    </div>
+                    <div class="group w-full h-[280px]">
+                        <div class="flex flex-col items-center justify-center w-full h-full bg-[#1abc9c] p-[35px]
+                                    transition-transform duration-700 group-hover:rotate-x-[180deg] backface-hidden">
+                            <div class="border-3 border-white rounded-full p-[26px] mb-5">
+                                <img src="./assets/images/how-it-works/text-message.svg" alt="message">
+                            </div>
+                            <h3 class="text-lg sm:text-[21px] font-roboto font-semibold text-white">
+                                Visit our Support Centre
+                            </h3>
+                        </div>
+                        <div
+                            class="flex flex-col items-center justify-center w-full h-full bg-[#4054b2] p-[35px] space-y-5
+                                    -mt-[280px] transition-transform duration-700 rotate-x-[-180deg] group-hover:rotate-x-0 backface-hidden">
+                            <h3 class="text-lg sm:text-[21px] font-roboto font-semibold text-white">
+                                Student Support Centre
+                            </h3>
+                            <p class="text-sm font-normal font-roboto text-white text-center">
+                                All the information and help you will need.
+                            </p>
+                            <a href="#"
+                                class="text-[15px] text-white text-center transition-all border-2 border-white rounded-[3px] font-roboto font-medium px-6 py-3">
+                                Click Here
+                            </a>
+                        </div>
+                    </div>
+                    <div class="text-base md:text-[19px] font-roboto font-bold md:leading-7 border-t border-dotted border-[#008080] pt-4">
+                        <h3 class="text-[#008080]">ICO Registration No:</h3>
+                        <h3 class="text-[#7A7A7A]">C1345299</h3>
+                    </div>
+                    <div class="border-t border-dotted border-[#008080] pt-5">
+                        <p class="text-[13px] font-roboto font-bold leading-6 text-[#008080] mb-5">Our Student Advisors
+                            are keen to
+                            help you, call us now on <a href="tel:0844 357 7777">0844 357 7777</a>. Alternatively, fill out the form below and we’ll get
+                            back to you.</p>
+                        <span class="text-base leading-6 font-roboto text-[#008080] mb-[5px] block">Contact Us</span>
+                        <form action="#" class="space-y-[5px] mb-5">
+                            <div>
+                                <input id="text" name="text" type="text" placeholder="Name*" required
+                                    class="border border-[#CAE6E6] w-full bg-white shadow-[inset_0_0_0_1px_rgba(0,0,0,0.1)] px-[15px] min-h-[33px] md:h-[50px] text-[13px] leading-7 text-[#008080] font-roboto placeholder:text-[#008080] placeholder:opacity-50 focus:outline-none">
+                            </div>
+                            <div>
+                                <input id="telephone" name="telephone" type="tel" placeholder="Telephone Number*"
+                                    required
+                                    class="border border-[#CAE6E6] w-full bg-white shadow-[inset_0_0_0_1px_rgba(0,0,0,0.1)] px-[15px] min-h-[33px] md:h-[50px] text-[13px] leading-7 text-[#008080] font-roboto placeholder:text-[#008080] placeholder:opacity-50 focus:outline-none">
+                            </div>
+                            <div>
+                                <input id="email" name="email" type="email" placeholder="email*" required
+                                    class="border border-[#CAE6E6] w-full bg-white shadow-[inset_0_0_0_1px_rgba(0,0,0,0.1)] px-[15px] min-h-[33px] md:h-[50px] text-[13px] leading-7 text-[#008080] font-roboto placeholder:text-[#008080] placeholder:opacity-50 focus:outline-none">
+                            </div>
+                            <div class="min-h-10 md:h-[75px]">
+                                <textarea name="text-area" id="text-area" placeholder="message"
+                                    class="border border-[#CAE6E6] w-full bg-white h-full shadow-[inset_0_0_0_1px_rgba(0,0,0,0.1)] px-[15px] text-[13px] leading-7 text-[#008080] font-roboto placeholder:text-[#008080] placeholder:opacity-50 focus:outline-none"></textarea>
+                            </div>
+                            <div class="flex gap-2">
+                                <div class="relative inline-block w-full max-w-1/2">
+                                    <input type="date" id="myDateAll"
+                                        class="datepicker appearance-none border border-[#CAE6E6] w-full bg-white shadow-[inset_0_0_0_1px_rgba(0,0,0,0.1)] px-3 py-1 min-h-[33px] md:h-10 text-[13px] leading-7 text-[#008080] font-roboto placeholder:text-[#008080] placeholder:opacity-50 focus:outline-none">
+                                    <span
+                                        class="absolute right-2.5 top-[45%] -translate-y-1/2 w-3 h-3 bg-[url('./assets/images/how-it-works/calendar.png')] bg-no-repeat bg-center bg-contain z-[999] cursor-pointer"
+                                        onclick="document.getElementById('myDateAll').showPicker()"></span>
+                                </div>
+                                <div class="relative inline-block w-full max-w-1/2">
+                                    <input type="time" id="myTime"
+                                        class="timepicker appearance-none border border-[#CAE6E6] w-full bg-white shadow-[inset_0_0_0_1px_rgba(0,0,0,0.1)] px-3 py-1 min-h-[33px] md:h-10 text-[13px] leading-7 text-[#008080] font-roboto placeholder:text-[#008080] placeholder:opacity-50 focus:outline-none"
+                                        placeholder="Select Time">
+
+                                    <span
+                                        class="absolute right-2.5 top-[45%] -translate-y-1/2 w-3 h-3 bg-[url('./assets/images/how-it-works/clock.png')] bg-no-repeat bg-center bg-contain z-[999] cursor-pointer"
+                                        onclick="document.getElementById('myTime').showPicker()"></span>
+                                </div>
+                            </div>
+                            <div>
+                                <button
+                                    class="bg-[#008080] border border-[#008080] text-white px-5 py-2.5 text-[13px] leading-[1] w-full cursor-pointer rounded-xs transition-all hover:bg-white hover:text-[#008080] cursor-pointer font-medium"
+                                    type="submit">Submit</button>
+                            </div>
+                        </form>
+                        <p class="text-[11px] font-roboto font-bold leading-4 text-[#008080]">By completing this form
+                            you are expressing an interest in Open Learning College. We will send you information about
+                            our courses and any special offers we think will be useful to you. You will be able to
+                            unsubscribe at anytime. See our <a href="privacy-policy.html" class="underline">Privacy Policy</a>.</p>
+                    </div>
+                    <div class="border-t border-dotted border-[#008080] pt-8 sticky top-0">
+                        <h3 class="text-xl md:text-2xl font-semibold font-roboto md:leading-6 text-[#008080] mb-5">Quick
+                            Links</h3>
+                        <ul>
+                            <li class=" mt-2 pb-2 first:mt-0">
+                                <a href="#general"
+                                    class="text-base text-[#117d5d] font-arial font-normal transition-all hover:font-bold">01. General</a>
+                            </li>
+                            <li class=" mt-2 pb-2 first:mt-0">
+                                <a href="#what-GDPR"
+                                    class="text-base text-[#117d5d] font-arial font-normal transition-all hover:font-bold">02. What is GDPR?</a>
+                            </li>
+                            <li class=" mt-2 pb-2 first:mt-0">
+                                <a href="#enrolments"
+                                    class="text-base text-[#117d5d] font-arial font-normal transition-all hover:font-bold">03. Enrolments</a>
+                            </li>
+                            <li class=" mt-2 pb-2 first:mt-0">
+                                <a href="#parents-carers-guardians"
+                                    class="text-base text-[#117d5d] font-arial font-normal transition-all hover:font-bold">04. Parents, carers and guardians</a>
+                            </li>
+                            <li class=" mt-2 pb-2 first:mt-0">
+                                <a href="#your-data-rights"
+                                    class="text-base text-[#117d5d] font-arial font-normal transition-all hover:font-bold">05. Your Data Rights</a>
+                            </li>
+                            <li class=" mt-2 pb-2 first:mt-0">
+                                <a href="#sharing-data-with-partners"
+                                    class="text-base text-[#117d5d] font-arial font-normal transition-all hover:font-bold">06. Sharing Data with partners and agencies</a>
+                            </li>
+                            <li class=" mt-2 pb-2 first:mt-0">
+                                <a href="#websites-cookies"
+                                    class="text-base text-[#117d5d] font-arial font-normal transition-all hover:font-bold">07. Websites and Cookies</a>
+                            </li>
+                            <li class=" mt-2 pb-2 first:mt-0">
+                                <a href="#data-protection-officer"
+                                    class="text-base text-[#117d5d] font-arial font-normal transition-all hover:font-bold">08. Data Protection Officer</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="w-full md:max-w-[60%] lg:max-w-[70%] md:ml-[30px] mt-5 md:mt-0">
+                    <h2 class="text-2xl md:text-[28px] font-bold font-arial text-[#243C45] md:mb-5 text-center sm:text-start">General <span
+                            class="text-[#008080]">Privacy</span></h2>
+                    <div class="font-arial text-[#008080] divide-y divide-[#7C8A8F]">
+                        <div id="general" class="py-4 lg:py-5 text-[#008080] text-base leading-6 font-normal">
+                            <h2 class="text-xl font-arial font-bold mb-4 text-center sm:text-start">01. General</h2>
+                            <p class="text-base leading-6 mb-4">All staff and students who work with personal data are responsible for complying with GDPR. The College will provide support and guidance but you do have a personal responsibility to comply.</p>
+                            <p class="text-base leading-6 mb-4">From time to time you will be asked to tell us personal information about yourself (e.g. name and email address etc) in order to become a student or a client, to use College systems and services and so on. At the point of collecting the information we aim to clearly explain what it is going to be used for and who we may share it with. Unless required or permitted by law, we will always ask you before we use it for any other reason. We would only use it for marketing with your prior consent.</p>
+                            <p class="text-base leading-6 mb-4">Any sensitive personal information will never be supplied to anyone outside the College without first obtaining your consent, unless required or permitted by law. We comply with the Data Protection Act 1998 and the General Data Protection Regulation (GDPR), including removing your personal information from our systems when it is no longer required and ensuring that all personal information supplied is held securely.</p>
+                            <p class="text-base leading-6 mb-4">Whenever you provide such personal information, we will treat that information in accordance with this statement, current legislation. We also aim to meet current best practice.</p>
+                            <p class="text-base leading-6 mb-4">Individuals whose personal information the College holds have certain rights under the law. More information can be found on the Information Commissioners website <a href="#"><strong>https://ico.org.uk/</strong></a></p>
+                        </div>
+
+                        <div id="what-GDPR" class="font-arial pb-5">
+                            <h2 class=" text-xl font-arial font-bold text-[#008080] mb-5 pt-5 text-center sm:text-start">02. What is GDPR?</h2>
+                            <p class="text-base leading-6 mb-4">The General Data Protection Regulation (GDPR) and the UK Data Protection Act 2018 are legislation which replaced the 1998 Data Protection Act and EU GDPR following the UK leaving the EEA. All organisations, <strong>including the College</strong>, have to become compliant with it and by association our staff / students must adhere to them as part of their ongoing activities within the College.</p>
+                            <p class="text-base leading-6 mb-4">The Data Protection Act 2018 came into force and replaced the Data Protection Act 1998 on 23 May 2018. For most organisations, the GDPR is the law to turn to first. However, the Data Protection Act 2018 supplies a lot of the detail about how privacy law will apply to the UK specifically and particular sectors / types of activity.</p>
+                            <p class="text-base leading-6 mb-4">GDPR only relates to the processing of personal data and has been put into place with the aims of:</p>
+                            <ul class="list-disc ml-2">
+                                <li>Unifying data privacy laws with the EU following the UK leaving the EEA</li>
+                                <li>Formalising principles of data collection and retention</li>
+                                <li>Improving the protection of citizens and their data, with new considerations given to technological advances made since the 1998 Data Protection Act came into place</li>
+                            </ul>
+                        </div>
+                        <div id="enrolments" class="font-arial border-b border-black pb-5">
+                            <h2 class=" text-xl font-arial font-bold text-[#008080] mb-5 pt-5 text-center sm:text-start">03. Enrolments</h2>
+                            <p class="text-base leading-6 mb-4">This section explains how the College uses the personal information that you give us during the enquiry, application and enrolment process.</p>
+                            <h3 class="text-base sm:text-xl font-arial font-bold text-[#008080]">How the College uses your information</h3>
+                            <p class="text-base leading-6 mb-4">The information will be used for purposes relating to education, training, employment, general advice services, well-being and research. The College may share non-sensitive personal information about you with other organisations, for example the Local Authority (see below), for these purposes. We do not share your information for purposes that are incompatible, such as product marketing without your consent.</p>
+                            <p class="text-base leading-6 mb-4">Sensitive personal information you provide (eg. disability or ethnicity) may be used by the College for the purposes of equality of opportunity, support for your studies and to minimise risk. It may also be used anonymously for statistical purposes. The College will ask your permission before sharing sensitive information with other organisations, unless the sharing is permitted by law and necessary.</p>
+                            <h3 class="text-base sm:text-xl font-arial font-bold text-[#008080]">The legal basis for collecting the information</h3>
+                            <p class="text-base leading-6 mb-4">Most of the information on the form is collected because it is necessary for your enrolment as a student, to manage your progress on your course or is required by law. You must provide it in order to enrol at the College.</p>
+                            
+                        </div>
+                        <div id="parents-carers-guardians" class="font-arial">
+                            <h2 class=" text-xl font-arial font-bold text-[#008080] mb-5 pt-5 text-center sm:text-start">04. Parents, carers and guardians</h2>
+                            <p class="text-base leading-6 mb-4">Under <strong>GDPR</strong> (General Data Protection Regulation), young people aged 16 and over can decide for themselves and give consent for the processing of their personal information.</p>
+                            <p class="text-base leading-6 mb-4">Parental consent is not required. There may be exceptions in regards of students with severe learning difficulties, school link students and those who are otherwise unable to decide for themselves.</p>
+                            <p class="text-base leading-6 mb-4">The College has found that it is very beneficial to the young person’s progress as a student if the College is able to engage with the parents (or guardian/carer). Therefore it is very important that we have the parents’ details recorded on our systems.</p>
+                            <p class="text-base leading-6 mb-4">When a student is in Further Education, parents/carers/guardians (or any other third party) are not automatically entitled to the student’s information. We can only release information about our students if we have their consent for this recorded on the College system. Students are asked for their consent for sharing information with parents/others on the enrolment form or when enrolling face-to-face. Students can also inform the College later on of who the College may discuss with about their College matters. Students may withdraw their consent the same way which they gave it.</p>
+                            <p class="text-base leading-6 mb-4">In general, we can only share information if we have the person’s consent, or there is a particular piece of legislation or agreement allowing us to share it without consent.</p>
+                        </div>
+                        <div id="your-data-rights" class="font-arial">
+                            <h2 class=" text-xl font-arial font-bold text-[#008080] mb-5 pt-5 text-center sm:text-start">05. Your Data Rights</h2>
+                            <p class="text-base leading-6 mb-4 font-bold">You have 9 rights in relation to the data we hold.</p>
+                            <p class="text-base leading-6 font-bold">These are:</p>
+                            <ul class="list-disc ml-2 mb-5">
+                                <li>The right to see any data we keep on record</li>
+                                <li>The right to request changes where errors exist</li>
+                                <li>The right to request that something is removed from the records/data</li>
+                                <li>The right to request that information is not used in any way other than originally intended</li>
+                                <li>The right to have your data used by somebody else (transferred)</li>
+                                <li>The right to object to data being used for marketing or other commercial purposes</li>
+                                <li>The right for your data to be used for your education only</li>
+                                <li>The right to complain about how the data has been gathered and used by the college</li>
+                                <li>The right to compensation if damages have occurred as a result of our data handling.</li>
+                            </ul>
+                        </div>
+                        <div id="sharing-data-with-partners" class="font-arial">
+                            <h2 class=" text-xl font-arial font-bold text-[#008080] mb-5 pt-5 text-center sm:text-start">06. Sharing Data with partners and agencies</h2>
+                            <p class="text-base leading-6 mb-4">The Open Learning College does not store your data outside the European Economic Area.</p>
+                            <p class="text-base leading-6 mb-4">We will always to endeavour to tell you what we are doing with your data.  However, on occasion and unplanned we may be required to pass on data to other people / agencies. </p>
+                            <p class="text-base leading-6 font-bold">The circumstances in which we would likely do so, would include:</p>
+                            <ul class="list-disc ml-2 mb-5">
+                                <li>At the request of a court of law</li>
+                                <li>Where we believe your child is at risk of harm</li>
+                                <li>We are legally required to do so</li>
+                                <li>At the request of police services in relation to a crime</li>
+                            </ul>
+                            <p class="text-base leading-6 pb-5">We will always try to notify you when we have passed on data to somebody else.  However, it is likely that on occasion time-scales may limit our ability to do this.</p>
+                        </div>
+                        <div id="websites-cookies" class="font-arial">
+                            <h2 class=" text-xl font-arial font-bold text-[#008080] mb-5 pt-5 text-center sm:text-start">07. Websites and Cookies</h2>
+                            <p class="text-base leading-6 mb-4 font-bold">This section applies to anyone accessing College websites.</p>
+                            <p class="text-base leading-6 mb-4">A cookie is a small file, typically of letters and numbers, downloaded on to your device (e.g. your PC) when you access the College website. Cookies allow the website to recognise your device and so distinguish between the different users that access the site.</p>
+                            
+                            <p class="text-base leading-6 mb-4">Session cookies will remember your selections as you browse the site. These cookies are for the browsing session and not stored long term. No personal information is collected by these cookies.</p>
+                            <p class="text-base leading-6 mb-4">Google Analytics cookies help us to make the website better for you by providing us with user statistics, for example: which pages are the most visited; how a user navigates the site. No personal information is collected by these cookies.</p>
+                            <p class="text-base leading-6 mb-4">To find out more about cookies and what cookies might be stored on your device, visit <a href="mailto:www.aboutcookies.org">www.aboutcookies.org</a> or <a href="mailto:www.allaboutcookies.org">www.allaboutcookies.org</a></p>
+                            <p class="text-base leading-6 mb-4">During the course of your study you may be asked to use third party websites or services or access linked content (eg. Youtube) which may collect personal data about you. That site’s own privacy notice will explain to you how they use your data.</p>
+                        </div>
+                        <div id="data-protection-officer" class="font-arial border-b border-[#7C8A8F] pb-5">
+                            <h2 class=" text-xl font-arial font-bold text-[#008080] mb-5 pt-5 text-center sm:text-start">08. Data Protection Officer</h2>
+                            <p class="text-base leading-6 mb-4 font-bold">If you have any questions about Data Protection at the College, please contact:</p>
+                            <p class="text-base leading-6 mb-4 font-bold"><a href="#">Data Protection Officer – click to email.</a></p>
+                            
+                            <p class="text-base leading-6 font-bold"><strong>Data Protection</strong></p>
+                            <p class="text-base leading-6 font-bold"><strong>Open Learning College</strong></p>
+                            <p class="text-base leading-6 font-bold"><strong>London Campus</strong></p>
+                            <p class="text-base leading-6 font-bold"><strong>124 City Road</strong></p>
+                            <p class="text-base leading-6 font-bold"><strong>London</strong></p>
+                            <p class="text-base leading-6 font-bold mb-5"><strong>EC1V 2NX</strong></p>
+                            <p class="text-base leading-6">If you have a data protection concern that cannot or have not been resolved by the College, you have the right to raise it with the Information Commissioner’s Office.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FIND YOUR COURSE SECTION START -->
+    <section>
+        <a class="flex flex-col flex-wrap gap-y-[15px] justify-center items-center text-center w-full text-white bg-[#60048A] py-[30px] lg:py-[50px] px-[30px] lg:px-[50px]"
+            href="#">
+            <h2 class="text-2xl lg:text-[35px] font-bold font-roboto">Over 1000 Industry Recognised Accredited Courses
+            </h2>
+            <p class="text-sm lg:text-base font-normal font-roboto">We work with the most well-known and respected
+                awarding bodies.</p>
+            <p
+                class="mt-[5px] border-2 border-white rounded py-3 px-8 text-sm font-medium font-roboto hover:text-[#004D3D] hover:bg-white transition-all duration-500">
+                Find your Course</p>
+        </a>
+    </section>
+    <!-- FIND YOUR COURSE SECTION END -->
+</body>
+</html>

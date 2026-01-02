@@ -1,0 +1,1775 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Open Learning College Frontend</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/globals.css">
+</head>
+
+<body>
+    <!-- BANNER SECTION START -->
+    <section class="py-[60px] md:py-[120px]">
+        <div class="container">
+            <div class="flex flex-col flex-wrap justify-center items-center md:max-w-1/2 mx-auto text-center w-full">
+                <p class="text-sm md:text-base font-normal font-roboto text-[#7C8A8F]">Embark on a transformative learning journey by joining our vibrant community of learners. Explore a wide range of courses and discover</p>
+            </div>
+        </div>
+    </section>
+    <!-- BANNER SECTION END -->
+
+    <!-- COURSE FINDER SECTION START -->
+    <section class="bg-[#F7FBFB] py-5">
+        <div class="container">
+            <ul class="flex flex-wrap items-center gap-2 mb-3">
+                <li>
+                    <a href="#"
+                        class="text-base font-arial font-bold text-[#117d5d] transition-all hover:text-[#3BB366]">Home</a>
+                </li>
+                <li>
+                    <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="6" height="12" viewBox="0 0 6 12"
+                            fill="none">
+                            <g id="Arrow - Down 2">
+                                <path id="Arrow - Down 2_2"
+                                    d="M0.163933 11.1728C-0.0347736 10.978 -0.0528379 10.6732 0.10974 10.4584L0.163933 10.3968L4.64894 6.00016L0.163932 1.60351C-0.0347741 1.40872 -0.0528383 1.10388 0.10974 0.88908L0.163932 0.827539C0.362639 0.63274 0.673582 0.615031 0.892695 0.774413L0.95547 0.827539L5.83607 5.61218C6.03477 5.80698 6.05284 6.1118 5.89026 6.32661L5.83607 6.38815L0.95547 11.1728C0.736893 11.3871 0.38251 11.3871 0.163933 11.1728Z"
+                                    fill="#7C8A8F"></path>
+                            </g>
+                        </svg>
+                    </span>
+                </li>
+                <li><a href="#"
+                        class="text-base font-arial font-bold text-[#117d5d] transition-all hover:text-[#3BB366]">Advance
+                        Course Finder</a></li>
+                <li>
+                    <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="6" height="12" viewBox="0 0 6 12"
+                            fill="none">
+                            <g id="Arrow - Down 2">
+                                <path id="Arrow - Down 2_2"
+                                    d="M0.163933 11.1728C-0.0347736 10.978 -0.0528379 10.6732 0.10974 10.4584L0.163933 10.3968L4.64894 6.00016L0.163932 1.60351C-0.0347741 1.40872 -0.0528383 1.10388 0.10974 0.88908L0.163932 0.827539C0.362639 0.63274 0.673582 0.615031 0.892695 0.774413L0.95547 0.827539L5.83607 5.61218C6.03477 5.80698 6.05284 6.1118 5.89026 6.32661L5.83607 6.38815L0.95547 11.1728C0.736893 11.3871 0.38251 11.3871 0.163933 11.1728Z"
+                                    fill="#7C8A8F"></path>
+                            </g>
+                        </svg>
+                    </span>
+                </li>
+            </ul>
+            <div class="flex flex-col lg:flex-row">
+                <div class="w-full lg:max-w-[25%] space-y-5">
+                    <aside id="sidebar-menu" class="mt-5 bg-white shadow-[0px_6px_34px_rgba(215,216,222,0.41)] p-[30px] rounded-sm text-[#008080]">
+                        <form action="#" class="relative">
+                            <button type="submit" class="absolute left-2 top-1/2 -translate-y-1/2 cursor-pointer">
+                                <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" viewBox="0 0 6.35 6.35"
+                                    style="enable-background:new 0 0 512 512" xml:space="preserve" class="w-5 h-6">
+                                    <g>
+                                        <path
+                                            d="M2.894.511a2.384 2.384 0 0 0-2.38 2.38 2.386 2.386 0 0 0 2.38 2.384c.56 0 1.076-.197 1.484-.523l.991.991a.265.265 0 0 0 .375-.374l-.991-.992a2.37 2.37 0 0 0 .523-1.485C5.276 1.58 4.206.51 2.894.51zm0 .53c1.026 0 1.852.825 1.852 1.85S3.92 4.746 2.894 4.746s-1.851-.827-1.851-1.853.825-1.852 1.851-1.852z"
+                                            paint-order="stroke fill markers" fill="#757c8e" opacity="1"
+                                            data-original="#000000" class=""></path>
+                                    </g>
+                                </svg>
+                            </button>
+                            <input id="search" name="search" type="search" placeholder="Search"
+                                class="text-base text-[#008080] pl-10 py-2 pr-4 font-normal leading-[1.4] border border-[#e6e3f1] w-full focus:outline-none rounded-sm placeholder:text-[#757c8e] font-arial">
+                        </form>
+                        <div class="pt-7">
+                            <h4 class="text-xl pb-4 mb-4 border-b-2 border-[#e6e3f1] font-bold">Faculty</h4>
+                            <ul id="faculty" class="space-y-2">
+                                <li>
+                                    <label class="flex gap-2 cursor-pointer select-none">
+                                        <input type="checkbox" class="peer sr-only" />
+                                        <span
+                                            class="relative w-3.5 h-3.5 border-2 border-[#e6e3f1] bg-white transition-all duration-300 ease-in-out peer-checked:bg-[#243c45] peer-checked:border-[#243c45] after:content-[''] after:absolute after:top-0 after:left-1 after:w-1 after:h-2 after:border-white after:border-r-2 after:border-b-2 after:rotate-45 after:opacity-0 after:scale-0 after:transition-all after:duration-300 peer-checked:after:opacity-100 peer-checked:after:scale-100 mt-1.5">
+                                        </span>
+                                        <span class="text-[15px] leading-6 text-[#008080] flex-1">
+                                            Acting & Dance
+                                        </span>
+                                        <span class="bg-[#F6F6F6] py-1 px-2 text-xs rounded-md h-fit mt-1">0</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="flex gap-2 cursor-pointer select-none">
+                                        <input type="checkbox" class="peer sr-only" />
+                                        <span
+                                            class="relative w-3.5 h-3.5 border-2 border-[#e6e3f1] bg-white transition-all duration-300 ease-in-out peer-checked:bg-[#243c45] peer-checked:border-[#243c45] after:content-[''] after:absolute after:top-0 after:left-1 after:w-1 after:h-2 after:border-white after:border-r-2 after:border-b-2 after:rotate-45 after:opacity-0 after:scale-0 after:transition-all after:duration-300 peer-checked:after:opacity-100 peer-checked:after:scale-100 mt-1.5">
+                                        </span>
+                                        <span class="text-[15px] leading-6 text-[#008080] flex-1">
+                                            Animal & Pet Care
+                                        </span>
+                                        <span class="bg-[#F6F6F6] py-1 px-2 text-xs rounded-md h-fit mt-1">11</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="flex gap-2 cursor-pointer select-none">
+                                        <input type="checkbox" class="peer sr-only" />
+                                        <span
+                                            class="relative w-3.5 h-3.5 border-2 border-[#e6e3f1] bg-white transition-all duration-300 ease-in-out peer-checked:bg-[#243c45] peer-checked:border-[#243c45] after:content-[''] after:absolute after:top-0 after:left-1 after:w-1 after:h-2 after:border-white after:border-r-2 after:border-b-2 after:rotate-45 after:opacity-0 after:scale-0 after:transition-all after:duration-300 peer-checked:after:opacity-100 peer-checked:after:scale-100 mt-1.5">
+                                        </span>
+                                        <span class="text-[15px] leading-6 text-[#008080] flex-1">
+                                            Beauty & Fashion
+                                        </span>
+                                        <span class="bg-[#F6F6F6] py-1 px-2 text-xs rounded-md h-fit mt-1">1</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="flex gap-2 cursor-pointer select-none">
+                                        <input type="checkbox" class="peer sr-only" />
+                                        <span
+                                            class="relative w-3.5 h-3.5 border-2 border-[#e6e3f1] bg-white transition-all duration-300 ease-in-out peer-checked:bg-[#243c45] peer-checked:border-[#243c45] after:content-[''] after:absolute after:top-0 after:left-1 after:w-1 after:h-2 after:border-white after:border-r-2 after:border-b-2 after:rotate-45 after:opacity-0 after:scale-0 after:transition-all after:duration-300 peer-checked:after:opacity-100 peer-checked:after:scale-100 mt-1.5">
+                                        </span>
+                                        <span class="text-[15px] leading-6 text-[#008080] flex-1">
+                                            Business, Management & Law
+                                        </span>
+                                        <span class="bg-[#F6F6F6] py-1 px-2 text-xs rounded-md h-fit mt-1">49</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="flex gap-2 cursor-pointer select-none">
+                                        <input type="checkbox" class="peer sr-only" />
+                                        <span
+                                            class="relative w-3.5 h-3.5 border-2 border-[#e6e3f1] bg-white transition-all duration-300 ease-in-out peer-checked:bg-[#243c45] peer-checked:border-[#243c45] after:content-[''] after:absolute after:top-0 after:left-1 after:w-1 after:h-2 after:border-white after:border-r-2 after:border-b-2 after:rotate-45 after:opacity-0 after:scale-0 after:transition-all after:duration-300 peer-checked:after:opacity-100 peer-checked:after:scale-100 mt-1.5">
+                                        </span>
+                                        <span class="text-[15px] leading-6 text-[#008080] flex-1">
+                                            Construction & Trade Skills
+                                        </span>
+                                        <span class="bg-[#F6F6F6] py-1 px-2 text-xs rounded-md h-fit mt-1">2</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="flex gap-2 cursor-pointer select-none">
+                                        <input type="checkbox" class="peer sr-only" />
+                                        <span
+                                            class="relative w-3.5 h-3.5 border-2 border-[#e6e3f1] bg-white transition-all duration-300 ease-in-out peer-checked:bg-[#243c45] peer-checked:border-[#243c45] after:content-[''] after:absolute after:top-0 after:left-1 after:w-1 after:h-2 after:border-white after:border-r-2 after:border-b-2 after:rotate-45 after:opacity-0 after:scale-0 after:transition-all after:duration-300 peer-checked:after:opacity-100 peer-checked:after:scale-100 mt-1.5">
+                                        </span>
+                                        <span class="text-[15px] leading-6 text-[#008080] flex-1">
+                                            Creative Arts & Media
+                                        </span>
+                                        <span class="bg-[#F6F6F6] py-1 px-2 text-xs rounded-md h-fit mt-1">5</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="flex gap-2 cursor-pointer select-none">
+                                        <input type="checkbox" class="peer sr-only" />
+                                        <span
+                                            class="relative w-3.5 h-3.5 border-2 border-[#e6e3f1] bg-white transition-all duration-300 ease-in-out peer-checked:bg-[#243c45] peer-checked:border-[#243c45] after:content-[''] after:absolute after:top-0 after:left-1 after:w-1 after:h-2 after:border-white after:border-r-2 after:border-b-2 after:rotate-45 after:opacity-0 after:scale-0 after:transition-all after:duration-300 peer-checked:after:opacity-100 peer-checked:after:scale-100 mt-1.5">
+                                        </span>
+                                        <span class="text-[15px] leading-6 text-[#008080] flex-1">
+                                            Culinary Arts
+                                        </span>
+                                        <span class="bg-[#F6F6F6] py-1 px-2 text-xs rounded-md h-fit mt-1">0</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="flex gap-2 cursor-pointer select-none">
+                                        <input type="checkbox" class="peer sr-only" />
+                                        <span
+                                            class="relative w-3.5 h-3.5 border-2 border-[#e6e3f1] bg-white transition-all duration-300 ease-in-out peer-checked:bg-[#243c45] peer-checked:border-[#243c45] after:content-[''] after:absolute after:top-0 after:left-1 after:w-1 after:h-2 after:border-white after:border-r-2 after:border-b-2 after:rotate-45 after:opacity-0 after:scale-0 after:transition-all after:duration-300 peer-checked:after:opacity-100 peer-checked:after:scale-100 mt-1.5">
+                                        </span>
+                                        <span class="text-[15px] leading-6 text-[#008080] flex-1">
+                                            Data Department
+                                        </span>
+                                        <span class="bg-[#F6F6F6] py-1 px-2 text-xs rounded-md h-fit mt-1">0</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="flex gap-2 cursor-pointer select-none">
+                                        <input type="checkbox" class="peer sr-only" />
+                                        <span
+                                            class="relative w-3.5 h-3.5 border-2 border-[#e6e3f1] bg-white transition-all duration-300 ease-in-out peer-checked:bg-[#243c45] peer-checked:border-[#243c45] after:content-[''] after:absolute after:top-0 after:left-1 after:w-1 after:h-2 after:border-white after:border-r-2 after:border-b-2 after:rotate-45 after:opacity-0 after:scale-0 after:transition-all after:duration-300 peer-checked:after:opacity-100 peer-checked:after:scale-100 mt-1.5">
+                                        </span>
+                                        <span class="text-[15px] leading-6 text-[#008080] flex-1">
+                                            Data Department
+                                        </span>
+                                        <span class="bg-[#F6F6F6] py-1 px-2 text-xs rounded-md h-fit mt-1">0</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="flex gap-2 cursor-pointer select-none">
+                                        <input type="checkbox" class="peer sr-only" />
+                                        <span
+                                            class="relative w-3.5 h-3.5 border-2 border-[#e6e3f1] bg-white transition-all duration-300 ease-in-out peer-checked:bg-[#243c45] peer-checked:border-[#243c45] after:content-[''] after:absolute after:top-0 after:left-1 after:w-1 after:h-2 after:border-white after:border-r-2 after:border-b-2 after:rotate-45 after:opacity-0 after:scale-0 after:transition-all after:duration-300 peer-checked:after:opacity-100 peer-checked:after:scale-100 mt-1.5">
+                                        </span>
+                                        <span class="text-[15px] leading-6 text-[#008080] flex-1">
+                                            Data Department
+                                        </span>
+                                        <span class="bg-[#F6F6F6] py-1 px-2 text-xs rounded-md h-fit mt-1">0</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="flex gap-2 cursor-pointer select-none">
+                                        <input type="checkbox" class="peer sr-only" />
+                                        <span
+                                            class="relative w-3.5 h-3.5 border-2 border-[#e6e3f1] bg-white transition-all duration-300 ease-in-out peer-checked:bg-[#243c45] peer-checked:border-[#243c45] after:content-[''] after:absolute after:top-0 after:left-1 after:w-1 after:h-2 after:border-white after:border-r-2 after:border-b-2 after:rotate-45 after:opacity-0 after:scale-0 after:transition-all after:duration-300 peer-checked:after:opacity-100 peer-checked:after:scale-100 mt-1.5">
+                                        </span>
+                                        <span class="text-[15px] leading-6 text-[#008080] flex-1">
+                                            Data Department
+                                        </span>
+                                        <span class="bg-[#F6F6F6] py-1 px-2 text-xs rounded-md h-fit mt-1">0</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="flex gap-2 cursor-pointer select-none">
+                                        <input type="checkbox" class="peer sr-only" />
+                                        <span
+                                            class="relative w-3.5 h-3.5 border-2 border-[#e6e3f1] bg-white transition-all duration-300 ease-in-out peer-checked:bg-[#243c45] peer-checked:border-[#243c45] after:content-[''] after:absolute after:top-0 after:left-1 after:w-1 after:h-2 after:border-white after:border-r-2 after:border-b-2 after:rotate-45 after:opacity-0 after:scale-0 after:transition-all after:duration-300 peer-checked:after:opacity-100 peer-checked:after:scale-100 mt-1.5">
+                                        </span>
+                                        <span class="text-[15px] leading-6 text-[#008080] flex-1">
+                                            Data Department
+                                        </span>
+                                        <span class="bg-[#F6F6F6] py-1 px-2 text-xs rounded-md h-fit mt-1">0</span>
+                                    </label>
+                                </li>
+                            </ul>
+                            <button id="show-more"
+                                class="w-full flex items-center justify-between cursor-pointer py-2 mt-4">
+                                <span class="text-sm text-[#243c45] font-bold">Show More</span>
+                                <span><svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" viewBox="0 0 24 24"
+                                        style="enable-background:new 0 0 512 512" xml:space="preserve" class="w-5 h-5">
+                                        <g>
+                                            <path
+                                                d="M12 16a1 1 0 0 1-.71-.29l-6-6a1 1 0 0 1 1.42-1.42l5.29 5.3 5.29-5.29a1 1 0 0 1 1.41 1.41l-6 6a1 1 0 0 1-.7.29z"
+                                                data-name="16" fill="#000000" opacity="1" data-original="#000000"
+                                                class=""></path>
+                                        </g>
+                                    </svg></span>
+                            </button>
+                            <button id="show-less"
+                                class="w-full flex items-center justify-between cursor-pointer py-2 mt-4 hidden">
+                                <span class="text-sm text-[#243c45] font-bold">Show Less</span>
+                                <span><svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" viewBox="0 0 24 24"
+                                        style="enable-background:new 0 0 512 512" xml:space="preserve"
+                                        class="w-5 h-5 rotate-180">
+                                        <g>
+                                            <path
+                                                d="M12 16a1 1 0 0 1-.71-.29l-6-6a1 1 0 0 1 1.42-1.42l5.29 5.3 5.29-5.29a1 1 0 0 1 1.41 1.41l-6 6a1 1 0 0 1-.7.29z"
+                                                data-name="16" fill="#000000" opacity="1" data-original="#000000"
+                                                class=""></path>
+                                        </g>
+                                    </svg></span>
+                            </button>
+                        </div>
+                        <div class="pt-7">
+                            <h4 class="text-xl pb-4 mb-4 border-b-2 border-[#e6e3f1] font-bold">Departments</h4>
+                            <ul id="departments" class="space-y-2">
+                                <li>
+                                    <label class="flex gap-2 cursor-pointer select-none">
+                                        <input type="checkbox" class="peer sr-only" />
+                                        <span
+                                            class="relative w-3.5 h-3.5 border-2 border-[#e6e3f1] bg-white transition-all duration-300 ease-in-out peer-checked:bg-[#243c45] peer-checked:border-[#243c45] after:content-[''] after:absolute after:top-0 after:left-1 after:w-1 after:h-2 after:border-white after:border-r-2 after:border-b-2 after:rotate-45 after:opacity-0 after:scale-0 after:transition-all after:duration-300 peer-checked:after:opacity-100 peer-checked:after:scale-100 mt-1.5">
+                                        </span>
+                                        <span class="text-[15px] leading-6 text-[#008080] flex-1">
+                                            Veterinary Science Department
+                                        </span>
+                                        <span class="bg-[#F6F6F6] py-1 px-2 text-xs rounded-md h-fit mt-1">1</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="flex gap-2 cursor-pointer select-none">
+                                        <input type="checkbox" class="peer sr-only" />
+                                        <span
+                                            class="relative w-3.5 h-3.5 border-2 border-[#e6e3f1] bg-white transition-all duration-300 ease-in-out peer-checked:bg-[#243c45] peer-checked:border-[#243c45] after:content-[''] after:absolute after:top-0 after:left-1 after:w-1 after:h-2 after:border-white after:border-r-2 after:border-b-2 after:rotate-45 after:opacity-0 after:scale-0 after:transition-all after:duration-300 peer-checked:after:opacity-100 peer-checked:after:scale-100 mt-1.5">
+                                        </span>
+                                        <span class="text-[15px] leading-6 text-[#008080] flex-1">
+                                            Animal Behaviours & Welfare Department
+                                        </span>
+                                        <span class="bg-[#F6F6F6] py-1 px-2 text-xs rounded-md h-fit mt-1">5</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="flex gap-2 cursor-pointer select-none">
+                                        <input type="checkbox" class="peer sr-only" />
+                                        <span
+                                            class="relative w-3.5 h-3.5 border-2 border-[#e6e3f1] bg-white transition-all duration-300 ease-in-out peer-checked:bg-[#243c45] peer-checked:border-[#243c45] after:content-[''] after:absolute after:top-0 after:left-1 after:w-1 after:h-2 after:border-white after:border-r-2 after:border-b-2 after:rotate-45 after:opacity-0 after:scale-0 after:transition-all after:duration-300 peer-checked:after:opacity-100 peer-checked:after:scale-100 mt-1.5">
+                                        </span>
+                                        <span class="text-[15px] leading-6 text-[#008080] flex-1">
+                                            Animal Nutrition & Health Department
+                                        </span>
+                                        <span class="bg-[#F6F6F6] py-1 px-2 text-xs rounded-md h-fit mt-1">4</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="flex gap-2 cursor-pointer select-none">
+                                        <input type="checkbox" class="peer sr-only" />
+                                        <span
+                                            class="relative w-3.5 h-3.5 border-2 border-[#e6e3f1] bg-white transition-all duration-300 ease-in-out peer-checked:bg-[#243c45] peer-checked:border-[#243c45] after:content-[''] after:absolute after:top-0 after:left-1 after:w-1 after:h-2 after:border-white after:border-r-2 after:border-b-2 after:rotate-45 after:opacity-0 after:scale-0 after:transition-all after:duration-300 peer-checked:after:opacity-100 peer-checked:after:scale-100 mt-1.5">
+                                        </span>
+                                        <span class="text-[15px] leading-6 text-[#008080] flex-1">
+                                            Pet Grooming & Styling Department
+                                        </span>
+                                        <span class="bg-[#F6F6F6] py-1 px-2 text-xs rounded-md h-fit mt-1">1</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="flex gap-2 cursor-pointer select-none">
+                                        <input type="checkbox" class="peer sr-only" />
+                                        <span
+                                            class="relative w-3.5 h-3.5 border-2 border-[#e6e3f1] bg-white transition-all duration-300 ease-in-out peer-checked:bg-[#243c45] peer-checked:border-[#243c45] after:content-[''] after:absolute after:top-0 after:left-1 after:w-1 after:h-2 after:border-white after:border-r-2 after:border-b-2 after:rotate-45 after:opacity-0 after:scale-0 after:transition-all after:duration-300 peer-checked:after:opacity-100 peer-checked:after:scale-100 mt-1.5">
+                                        </span>
+                                        <span class="text-[15px] leading-6 text-[#008080] flex-1">
+                                            Canine Training & Behaviour Department
+                                        </span>
+                                        <span class="bg-[#F6F6F6] py-1 px-2 text-xs rounded-md h-fit mt-1">5</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="flex gap-2 cursor-pointer select-none">
+                                        <input type="checkbox" class="peer sr-only" />
+                                        <span
+                                            class="relative w-3.5 h-3.5 border-2 border-[#e6e3f1] bg-white transition-all duration-300 ease-in-out peer-checked:bg-[#243c45] peer-checked:border-[#243c45] after:content-[''] after:absolute after:top-0 after:left-1 after:w-1 after:h-2 after:border-white after:border-r-2 after:border-b-2 after:rotate-45 after:opacity-0 after:scale-0 after:transition-all after:duration-300 peer-checked:after:opacity-100 peer-checked:after:scale-100 mt-1.5">
+                                        </span>
+                                        <span class="text-[15px] leading-6 text-[#008080] flex-1">
+                                            Equine Studies Department
+                                        </span>
+                                        <span class="bg-[#F6F6F6] py-1 px-2 text-xs rounded-md h-fit mt-1">2</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="flex gap-2 cursor-pointer select-none">
+                                        <input type="checkbox" class="peer sr-only" />
+                                        <span
+                                            class="relative w-3.5 h-3.5 border-2 border-[#e6e3f1] bg-white transition-all duration-300 ease-in-out peer-checked:bg-[#243c45] peer-checked:border-[#243c45] after:content-[''] after:absolute after:top-0 after:left-1 after:w-1 after:h-2 after:border-white after:border-r-2 after:border-b-2 after:rotate-45 after:opacity-0 after:scale-0 after:transition-all after:duration-300 peer-checked:after:opacity-100 peer-checked:after:scale-100 mt-1.5">
+                                        </span>
+                                        <span class="text-[15px] leading-6 text-[#008080] flex-1">
+                                            Wildlife Conservation Department
+                                        </span>
+                                        <span class="bg-[#F6F6F6] py-1 px-2 text-xs rounded-md h-fit mt-1">5</span>
+                                    </label>
+                                </li>
+                            </ul>
+                            <button id="department-show-more"
+                                class="w-full flex items-center justify-between cursor-pointer py-2 mt-4">
+                                <span class="text-sm text-[#243c45] font-bold">Show More</span>
+                                <span><svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" viewBox="0 0 24 24"
+                                        style="enable-background:new 0 0 512 512" xml:space="preserve" class="w-5 h-5">
+                                        <g>
+                                            <path
+                                                d="M12 16a1 1 0 0 1-.71-.29l-6-6a1 1 0 0 1 1.42-1.42l5.29 5.3 5.29-5.29a1 1 0 0 1 1.41 1.41l-6 6a1 1 0 0 1-.7.29z"
+                                                data-name="16" fill="#000000" opacity="1" data-original="#000000"
+                                                class=""></path>
+                                        </g>
+                                    </svg></span>
+                            </button>
+                            <button id="department-show-less"
+                                class="w-full flex items-center justify-between cursor-pointer py-2 mt-4 hidden">
+                                <span class="text-sm text-[#243c45] font-bold">Show Less</span>
+                                <span><svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" viewBox="0 0 24 24"
+                                        style="enable-background:new 0 0 512 512" xml:space="preserve"
+                                        class="w-5 h-5 rotate-180">
+                                        <g>
+                                            <path
+                                                d="M12 16a1 1 0 0 1-.71-.29l-6-6a1 1 0 0 1 1.42-1.42l5.29 5.3 5.29-5.29a1 1 0 0 1 1.41 1.41l-6 6a1 1 0 0 1-.7.29z"
+                                                data-name="16" fill="#000000" opacity="1" data-original="#000000"
+                                                class=""></path>
+                                        </g>
+                                    </svg></span>
+                            </button>
+                        </div>
+                        <div class="pt-7">
+                            <h4 class="text-xl pb-4 mb-4 border-b-2 border-[#e6e3f1] font-bold">Course Type</h4>
+                            <ul class="space-y-2">
+                                <li>
+                                    <label class="flex gap-2 cursor-pointer select-none">
+                                        <input type="checkbox" class="peer sr-only" />
+                                        <span
+                                            class="relative w-3.5 h-3.5 border-2 border-[#e6e3f1] bg-white transition-all duration-300 ease-in-out peer-checked:bg-[#243c45] peer-checked:border-[#243c45] after:content-[''] after:absolute after:top-0 after:left-1 after:w-1 after:h-2 after:border-white after:border-r-2 after:border-b-2 after:rotate-45 after:opacity-0 after:scale-0 after:transition-all after:duration-300 peer-checked:after:opacity-100 peer-checked:after:scale-100 mt-1.5">
+                                        </span>
+                                        <span class="text-[15px] leading-6 text-[#008080] flex-1">
+                                            Featured
+                                        </span>
+                                        <span class="bg-[#F6F6F6] py-1 px-2 text-xs rounded-md h-fit mt-1">83</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="flex gap-2 cursor-pointer select-none">
+                                        <input type="checkbox" class="peer sr-only" />
+                                        <span
+                                            class="relative w-3.5 h-3.5 border-2 border-[#e6e3f1] bg-white transition-all duration-300 ease-in-out peer-checked:bg-[#243c45] peer-checked:border-[#243c45] after:content-[''] after:absolute after:top-0 after:left-1 after:w-1 after:h-2 after:border-white after:border-r-2 after:border-b-2 after:rotate-45 after:opacity-0 after:scale-0 after:transition-all after:duration-300 peer-checked:after:opacity-100 peer-checked:after:scale-100 mt-1.5">
+                                        </span>
+                                        <span class="text-[15px] leading-6 text-[#008080] flex-1">
+                                            Popular
+                                        </span>
+                                        <span class="bg-[#F6F6F6] py-1 px-2 text-xs rounded-md h-fit mt-1">8</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="flex gap-2 cursor-pointer select-none">
+                                        <input type="checkbox" class="peer sr-only" />
+                                        <span
+                                            class="relative w-3.5 h-3.5 border-2 border-[#e6e3f1] bg-white transition-all duration-300 ease-in-out peer-checked:bg-[#243c45] peer-checked:border-[#243c45] after:content-[''] after:absolute after:top-0 after:left-1 after:w-1 after:h-2 after:border-white after:border-r-2 after:border-b-2 after:rotate-45 after:opacity-0 after:scale-0 after:transition-all after:duration-300 peer-checked:after:opacity-100 peer-checked:after:scale-100 mt-1.5">
+                                        </span>
+                                        <span class="text-[15px] leading-6 text-[#008080] flex-1">
+                                            Trending
+                                        </span>
+                                        <span class="bg-[#F6F6F6] py-1 px-2 text-xs rounded-md h-fit mt-1">4</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="flex gap-2 cursor-pointer select-none">
+                                        <input type="checkbox" class="peer sr-only" />
+                                        <span
+                                            class="relative w-3.5 h-3.5 border-2 border-[#e6e3f1] bg-white transition-all duration-300 ease-in-out peer-checked:bg-[#243c45] peer-checked:border-[#243c45] after:content-[''] after:absolute after:top-0 after:left-1 after:w-1 after:h-2 after:border-white after:border-r-2 after:border-b-2 after:rotate-45 after:opacity-0 after:scale-0 after:transition-all after:duration-300 peer-checked:after:opacity-100 peer-checked:after:scale-100 mt-1.5">
+                                        </span>
+                                        <span class="text-[15px] leading-6 text-[#008080] flex-1">
+                                            Latest
+                                        </span>
+                                        <span class="bg-[#F6F6F6] py-1 px-2 text-xs rounded-md h-fit mt-1">10</span>
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="pt-7">
+                            <h4 class="text-xl pb-4 mb-4 border-b-2 border-[#e6e3f1] font-bold">Ratings</h4>
+                            <ul class="space-y-2">
+                                <li>
+                                    <label class="flex items-center gap-2 cursor-pointer select-none">
+                                        <input type="checkbox" class="peer sr-only" />
+                                        <span
+                                            class="relative w-3.5 h-3.5 border-2 border-[#e6e3f1] bg-white transition-all duration-300 ease-in-out peer-checked:bg-[#243c45] peer-checked:border-[#243c45] after:content-[''] after:absolute after:top-0 after:left-1 after:w-1 after:h-2 after:border-white after:border-r-2 after:border-b-2 after:rotate-45 after:opacity-0 after:scale-0 after:transition-all after:duration-300 peer-checked:after:opacity-100 peer-checked:after:scale-100">
+                                        </span>
+                                        <span class="text-[15px] text-[#008080] flex-1">
+                                            <span class="flex gap-0.5">
+                                                <i class="fas fa-star text-[#FF9747]"></i>
+                                                <i class="fas fa-star text-[#FF9747]"></i>
+                                                <i class="fas fa-star text-[#FF9747]"></i>
+                                                <i class="fas fa-star text-[#FF9747]"></i>
+                                                <i class="fas fa-star text-[#FF9747]"></i>
+                                            </span>
+                                        </span>
+                                        <span class="bg-[#F6F6F6] py-1 px-2 text-xs rounded-md h-fit">149</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="flex items-center gap-2 cursor-pointer select-none">
+                                        <input type="checkbox" class="peer sr-only" />
+                                        <span
+                                            class="relative w-3.5 h-3.5 border-2 border-[#e6e3f1] bg-white transition-all duration-300 ease-in-out peer-checked:bg-[#243c45] peer-checked:border-[#243c45] after:content-[''] after:absolute after:top-0 after:left-1 after:w-1 after:h-2 after:border-white after:border-r-2 after:border-b-2 after:rotate-45 after:opacity-0 after:scale-0 after:transition-all after:duration-300 peer-checked:after:opacity-100 peer-checked:after:scale-100">
+                                        </span>
+                                        <span class="text-[15px] flex-1">
+                                            <span class="flex gap-0.5">
+                                                <i class="fas fa-star text-[#FF9747]"></i>
+                                                <i class="fas fa-star text-[#FF9747]"></i>
+                                                <i class="fas fa-star text-[#FF9747]"></i>
+                                                <i class="fas fa-star text-[#FF9747]"></i>
+                                                <i class="far fa-star text-[#6b7385]"></i>
+                                            </span>
+                                        </span>
+                                        <span
+                                            class="bg-[#F6F6F6] py-1 px-2 text-xs rounded-md h-fit mt-1 text-[#008080]">149</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="flex items-center gap-2 cursor-pointer select-none">
+                                        <input type="checkbox" class="peer sr-only" />
+                                        <span
+                                            class="relative w-3.5 h-3.5 border-2 border-[#e6e3f1] bg-white transition-all duration-300 ease-in-out peer-checked:bg-[#243c45] peer-checked:border-[#243c45] after:content-[''] after:absolute after:top-0 after:left-1 after:w-1 after:h-2 after:border-white after:border-r-2 after:border-b-2 after:rotate-45 after:opacity-0 after:scale-0 after:transition-all after:duration-300 peer-checked:after:opacity-100 peer-checked:after:scale-100">
+                                        </span>
+                                        <span class="text-[15px] flex-1">
+                                            <span class="flex gap-0.5">
+                                                <i class="fas fa-star text-[#FF9747]"></i>
+                                                <i class="fas fa-star text-[#FF9747]"></i>
+                                                <i class="fas fa-star text-[#FF9747]"></i>
+                                                <i class="far fa-star text-[#6b7385]"></i>
+                                                <i class="far fa-star text-[#6b7385]"></i>
+                                            </span>
+                                        </span>
+                                        <span
+                                            class="bg-[#F6F6F6] py-1 px-2 text-xs rounded-md h-fit mt-1 text-[#008080]">149</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="flex items-center gap-2 cursor-pointer select-none">
+                                        <input type="checkbox" class="peer sr-only" />
+                                        <span
+                                            class="relative w-3.5 h-3.5 border-2 border-[#e6e3f1] bg-white transition-all duration-300 ease-in-out peer-checked:bg-[#243c45] peer-checked:border-[#243c45] after:content-[''] after:absolute after:top-0 after:left-1 after:w-1 after:h-2 after:border-white after:border-r-2 after:border-b-2 after:rotate-45 after:opacity-0 after:scale-0 after:transition-all after:duration-300 peer-checked:after:opacity-100 peer-checked:after:scale-100">
+                                        </span>
+                                        <span class="text-[15px] flex-1">
+                                            <span class="flex gap-0.5">
+                                                <i class="fas fa-star text-[#FF9747]"></i>
+                                                <i class="fas fa-star text-[#FF9747]"></i>
+                                                <i class="far fa-star text-[#6b7385]"></i>
+                                                <i class="far fa-star text-[#6b7385]"></i>
+                                                <i class="far fa-star text-[#6b7385]"></i>
+                                            </span>
+                                        </span>
+                                        <span
+                                            class="bg-[#F6F6F6] py-1 px-2 text-xs rounded-md h-fit mt-1 text-[#008080]">149</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="flex items-center gap-2 cursor-pointer select-none">
+                                        <input type="checkbox" class="peer sr-only" />
+                                        <span
+                                            class="relative w-3.5 h-3.5 border-2 border-[#e6e3f1] bg-white transition-all duration-300 ease-in-out peer-checked:bg-[#243c45] peer-checked:border-[#243c45] after:content-[''] after:absolute after:top-0 after:left-1 after:w-1 after:h-2 after:border-white after:border-r-2 after:border-b-2 after:rotate-45 after:opacity-0 after:scale-0 after:transition-all after:duration-300 peer-checked:after:opacity-100 peer-checked:after:scale-100">
+                                        </span>
+                                        <span class="text-[15px] flex-1">
+                                            <span class="flex gap-0.5">
+                                                <i class="fas fa-star text-[#FF9747]"></i>
+                                                <i class="far fa-star text-[#6b7385]"></i>
+                                                <i class="far fa-star text-[#6b7385]"></i>
+                                                <i class="far fa-star text-[#6b7385]"></i>
+                                                <i class="far fa-star text-[#6b7385]"></i>
+                                            </span>
+                                        </span>
+                                        <span
+                                            class="bg-[#F6F6F6] py-1 px-2 text-xs rounded-md h-fit mt-1 text-[#008080]">149</span>
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="pt-7">
+                            <h4 class="text-xl pb-4 mb-4 border-b-2 border-[#e6e3f1] font-bold">Prices</h4>
+                            <ul class="space-y-2">
+                                <li>
+                                    <label class="flex gap-2 cursor-pointer select-none">
+                                        <input type="checkbox" class="peer sr-only" />
+                                        <span
+                                            class="relative w-3.5 h-3.5 border-2 border-[#e6e3f1] bg-white transition-all duration-300 ease-in-out peer-checked:bg-[#243c45] peer-checked:border-[#243c45] after:content-[''] after:absolute after:top-0 after:left-1 after:w-1 after:h-2 after:border-white after:border-r-2 after:border-b-2 after:rotate-45 after:opacity-0 after:scale-0 after:transition-all after:duration-300 peer-checked:after:opacity-100 peer-checked:after:scale-100 mt-1.5">
+                                        </span>
+                                        <span class="text-[15px] leading-6 text-[#008080] flex-1">
+                                            Free
+                                        </span>
+                                        <span class="bg-[#F6F6F6] py-1 px-2 text-xs rounded-md h-fit mt-1">8</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="flex gap-2 cursor-pointer select-none">
+                                        <input type="checkbox" class="peer sr-only" />
+                                        <span
+                                            class="relative w-3.5 h-3.5 border-2 border-[#e6e3f1] bg-white transition-all duration-300 ease-in-out peer-checked:bg-[#243c45] peer-checked:border-[#243c45] after:content-[''] after:absolute after:top-0 after:left-1 after:w-1 after:h-2 after:border-white after:border-r-2 after:border-b-2 after:rotate-45 after:opacity-0 after:scale-0 after:transition-all after:duration-300 peer-checked:after:opacity-100 peer-checked:after:scale-100 mt-1.5">
+                                        </span>
+                                        <span class="text-[15px] leading-6 text-[#008080] flex-1">
+                                            Paid
+                                        </span>
+                                        <span class="bg-[#F6F6F6] py-1 px-2 text-xs rounded-md h-fit mt-1">147</span>
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="pt-7">
+                            <h4 class="text-xl pb-4 mb-4 border-b-2 border-[#e6e3f1] font-bold">Levels</h4>
+                            <ul class="space-y-2">
+                                <li>
+                                    <label class="flex gap-2 cursor-pointer select-none">
+                                        <input type="checkbox" class="peer sr-only" />
+                                        <span
+                                            class="relative w-3.5 h-3.5 border-2 border-[#e6e3f1] bg-white transition-all duration-300 ease-in-out peer-checked:bg-[#243c45] peer-checked:border-[#243c45] after:content-[''] after:absolute after:top-0 after:left-1 after:w-1 after:h-2 after:border-white after:border-r-2 after:border-b-2 after:rotate-45 after:opacity-0 after:scale-0 after:transition-all after:duration-300 peer-checked:after:opacity-100 peer-checked:after:scale-100 mt-1.5">
+                                        </span>
+                                        <span class="text-[15px] leading-6 text-[#008080] flex-1">
+                                            All Levels
+                                        </span>
+                                        <span class="bg-[#F6F6F6] py-1 px-2 text-xs rounded-md h-fit mt-1">147</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="flex gap-2 cursor-pointer select-none">
+                                        <input type="checkbox" class="peer sr-only" />
+                                        <span
+                                            class="relative w-3.5 h-3.5 border-2 border-[#e6e3f1] bg-white transition-all duration-300 ease-in-out peer-checked:bg-[#243c45] peer-checked:border-[#243c45] after:content-[''] after:absolute after:top-0 after:left-1 after:w-1 after:h-2 after:border-white after:border-r-2 after:border-b-2 after:rotate-45 after:opacity-0 after:scale-0 after:transition-all after:duration-300 peer-checked:after:opacity-100 peer-checked:after:scale-100 mt-1.5">
+                                        </span>
+                                        <span class="text-[15px] leading-6 text-[#008080] flex-1">
+                                            Beginner
+                                        </span>
+                                        <span class="bg-[#F6F6F6] py-1 px-2 text-xs rounded-md h-fit mt-1">2</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="flex gap-2 cursor-pointer select-none">
+                                        <input type="checkbox" class="peer sr-only" />
+                                        <span
+                                            class="relative w-3.5 h-3.5 border-2 border-[#e6e3f1] bg-white transition-all duration-300 ease-in-out peer-checked:bg-[#243c45] peer-checked:border-[#243c45] after:content-[''] after:absolute after:top-0 after:left-1 after:w-1 after:h-2 after:border-white after:border-r-2 after:border-b-2 after:rotate-45 after:opacity-0 after:scale-0 after:transition-all after:duration-300 peer-checked:after:opacity-100 peer-checked:after:scale-100 mt-1.5">
+                                        </span>
+                                        <span class="text-[15px] leading-6 text-[#008080] flex-1">
+                                            Intermediate
+                                        </span>
+                                        <span class="bg-[#F6F6F6] py-1 px-2 text-xs rounded-md h-fit mt-1">0</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="flex gap-2 cursor-pointer select-none">
+                                        <input type="checkbox" class="peer sr-only" />
+                                        <span
+                                            class="relative w-3.5 h-3.5 border-2 border-[#e6e3f1] bg-white transition-all duration-300 ease-in-out peer-checked:bg-[#243c45] peer-checked:border-[#243c45] after:content-[''] after:absolute after:top-0 after:left-1 after:w-1 after:h-2 after:border-white after:border-r-2 after:border-b-2 after:rotate-45 after:opacity-0 after:scale-0 after:transition-all after:duration-300 peer-checked:after:opacity-100 peer-checked:after:scale-100 mt-1.5">
+                                        </span>
+                                        <span class="text-[15px] leading-6 text-[#008080] flex-1">
+                                            Expert
+                                        </span>
+                                        <span class="bg-[#F6F6F6] py-1 px-2 text-xs rounded-md h-fit mt-1">0</span>
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="pt-7">
+                            <h4 class="text-xl pb-4 mb-4 border-b-2 border-[#e6e3f1] font-bold">Duration</h4>
+                            <ul class="space-y-2">
+                                <li>
+                                    <label class="flex gap-2 cursor-pointer select-none">
+                                        <input type="checkbox" class="peer sr-only" />
+                                        <span
+                                            class="relative w-3.5 h-3.5 border-2 border-[#e6e3f1] bg-white transition-all duration-300 ease-in-out peer-checked:bg-[#243c45] peer-checked:border-[#243c45] after:content-[''] after:absolute after:top-0 after:left-1 after:w-1 after:h-2 after:border-white after:border-r-2 after:border-b-2 after:rotate-45 after:opacity-0 after:scale-0 after:transition-all after:duration-300 peer-checked:after:opacity-100 peer-checked:after:scale-100 mt-1.5">
+                                        </span>
+                                        <span class="text-[15px] leading-6 text-[#008080] flex-1">
+                                            Less Than 30 Hours
+                                        </span>
+                                        <span class="bg-[#F6F6F6] py-1 px-2 text-xs rounded-md h-fit mt-1">50</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="flex gap-2 cursor-pointer select-none">
+                                        <input type="checkbox" class="peer sr-only" />
+                                        <span
+                                            class="relative w-3.5 h-3.5 border-2 border-[#e6e3f1] bg-white transition-all duration-300 ease-in-out peer-checked:bg-[#243c45] peer-checked:border-[#243c45] after:content-[''] after:absolute after:top-0 after:left-1 after:w-1 after:h-2 after:border-white after:border-r-2 after:border-b-2 after:rotate-45 after:opacity-0 after:scale-0 after:transition-all after:duration-300 peer-checked:after:opacity-100 peer-checked:after:scale-100 mt-1.5">
+                                        </span>
+                                        <span class="text-[15px] leading-6 text-[#008080] flex-1">
+                                            31-60 Hours
+                                        </span>
+                                        <span class="bg-[#F6F6F6] py-1 px-2 text-xs rounded-md h-fit mt-1">9</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="flex gap-2 cursor-pointer select-none">
+                                        <input type="checkbox" class="peer sr-only" />
+                                        <span
+                                            class="relative w-3.5 h-3.5 border-2 border-[#e6e3f1] bg-white transition-all duration-300 ease-in-out peer-checked:bg-[#243c45] peer-checked:border-[#243c45] after:content-[''] after:absolute after:top-0 after:left-1 after:w-1 after:h-2 after:border-white after:border-r-2 after:border-b-2 after:rotate-45 after:opacity-0 after:scale-0 after:transition-all after:duration-300 peer-checked:after:opacity-100 peer-checked:after:scale-100 mt-1.5">
+                                        </span>
+                                        <span class="text-[15px] leading-6 text-[#008080] flex-1">
+                                            61-100 Hours
+                                        </span>
+                                        <span class="bg-[#F6F6F6] py-1 px-2 text-xs rounded-md h-fit mt-1">0</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="flex gap-2 cursor-pointer select-none">
+                                        <input type="checkbox" class="peer sr-only" />
+                                        <span
+                                            class="relative w-3.5 h-3.5 border-2 border-[#e6e3f1] bg-white transition-all duration-300 ease-in-out peer-checked:bg-[#243c45] peer-checked:border-[#243c45] after:content-[''] after:absolute after:top-0 after:left-1 after:w-1 after:h-2 after:border-white after:border-r-2 after:border-b-2 after:rotate-45 after:opacity-0 after:scale-0 after:transition-all after:duration-300 peer-checked:after:opacity-100 peer-checked:after:scale-100 mt-1.5">
+                                        </span>
+                                        <span class="text-[15px] leading-6 text-[#008080] flex-1">
+                                            101-150 Hours
+                                        </span>
+                                        <span class="bg-[#F6F6F6] py-1 px-2 text-xs rounded-md h-fit mt-1">9</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="flex gap-2 cursor-pointer select-none">
+                                        <input type="checkbox" class="peer sr-only" />
+                                        <span
+                                            class="relative w-3.5 h-3.5 border-2 border-[#e6e3f1] bg-white transition-all duration-300 ease-in-out peer-checked:bg-[#243c45] peer-checked:border-[#243c45] after:content-[''] after:absolute after:top-0 after:left-1 after:w-1 after:h-2 after:border-white after:border-r-2 after:border-b-2 after:rotate-45 after:opacity-0 after:scale-0 after:transition-all after:duration-300 peer-checked:after:opacity-100 peer-checked:after:scale-100 mt-1.5">
+                                        </span>
+                                        <span class="text-[15px] leading-6 text-[#008080] flex-1">
+                                            151-200 Hours
+                                        </span>
+                                        <span class="bg-[#F6F6F6] py-1 px-2 text-xs rounded-md h-fit mt-1">30</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="flex gap-2 cursor-pointer select-none">
+                                        <input type="checkbox" class="peer sr-only" />
+                                        <span
+                                            class="relative w-3.5 h-3.5 border-2 border-[#e6e3f1] bg-white transition-all duration-300 ease-in-out peer-checked:bg-[#243c45] peer-checked:border-[#243c45] after:content-[''] after:absolute after:top-0 after:left-1 after:w-1 after:h-2 after:border-white after:border-r-2 after:border-b-2 after:rotate-45 after:opacity-0 after:scale-0 after:transition-all after:duration-300 peer-checked:after:opacity-100 peer-checked:after:scale-100 mt-1.5">
+                                        </span>
+                                        <span class="text-[15px] leading-6 text-[#008080] flex-1">
+                                            200+ Hours
+                                        </span>
+                                        <span class="bg-[#F6F6F6] py-1 px-2 text-xs rounded-md h-fit mt-1">25</span>
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="pt-7">
+                            <h4 class="text-xl pb-4 mb-4 border-b-2 border-[#e6e3f1] font-bold">Language</h4>
+                            <ul class="space-y-2">
+                                <li>
+                                    <label class="flex gap-2 cursor-pointer select-none">
+                                        <input type="checkbox" class="peer sr-only" />
+                                        <span
+                                            class="relative w-3.5 h-3.5 border-2 border-[#e6e3f1] bg-white transition-all duration-300 ease-in-out peer-checked:bg-[#243c45] peer-checked:border-[#243c45] after:content-[''] after:absolute after:top-0 after:left-1 after:w-1 after:h-2 after:border-white after:border-r-2 after:border-b-2 after:rotate-45 after:opacity-0 after:scale-0 after:transition-all after:duration-300 peer-checked:after:opacity-100 peer-checked:after:scale-100 mt-1.5">
+                                        </span>
+                                        <span class="text-[15px] leading-6 text-[#008080] flex-1">
+                                            English
+                                        </span>
+                                        <span class="bg-[#F6F6F6] py-1 px-2 text-xs rounded-md h-fit mt-1">118</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="flex gap-2 cursor-pointer select-none">
+                                        <input type="checkbox" class="peer sr-only" />
+                                        <span
+                                            class="relative w-3.5 h-3.5 border-2 border-[#e6e3f1] bg-white transition-all duration-300 ease-in-out peer-checked:bg-[#243c45] peer-checked:border-[#243c45] after:content-[''] after:absolute after:top-0 after:left-1 after:w-1 after:h-2 after:border-white after:border-r-2 after:border-b-2 after:rotate-45 after:opacity-0 after:scale-0 after:transition-all after:duration-300 peer-checked:after:opacity-100 peer-checked:after:scale-100 mt-1.5">
+                                        </span>
+                                        <span class="text-[15px] leading-6 text-[#008080] flex-1">
+                                            Spanish
+                                        </span>
+                                        <span class="bg-[#F6F6F6] py-1 px-2 text-xs rounded-md h-fit mt-1">0</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="flex gap-2 cursor-pointer select-none">
+                                        <input type="checkbox" class="peer sr-only" />
+                                        <span
+                                            class="relative w-3.5 h-3.5 border-2 border-[#e6e3f1] bg-white transition-all duration-300 ease-in-out peer-checked:bg-[#243c45] peer-checked:border-[#243c45] after:content-[''] after:absolute after:top-0 after:left-1 after:w-1 after:h-2 after:border-white after:border-r-2 after:border-b-2 after:rotate-45 after:opacity-0 after:scale-0 after:transition-all after:duration-300 peer-checked:after:opacity-100 peer-checked:after:scale-100 mt-1.5">
+                                        </span>
+                                        <span class="text-[15px] leading-6 text-[#008080] flex-1">
+                                            French
+                                        </span>
+                                        <span class="bg-[#F6F6F6] py-1 px-2 text-xs rounded-md h-fit mt-1">0</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="flex gap-2 cursor-pointer select-none">
+                                        <input type="checkbox" class="peer sr-only" />
+                                        <span
+                                            class="relative w-3.5 h-3.5 border-2 border-[#e6e3f1] bg-white transition-all duration-300 ease-in-out peer-checked:bg-[#243c45] peer-checked:border-[#243c45] after:content-[''] after:absolute after:top-0 after:left-1 after:w-1 after:h-2 after:border-white after:border-r-2 after:border-b-2 after:rotate-45 after:opacity-0 after:scale-0 after:transition-all after:duration-300 peer-checked:after:opacity-100 peer-checked:after:scale-100 mt-1.5">
+                                        </span>
+                                        <span class="text-[15px] leading-6 text-[#008080] flex-1">
+                                            German
+                                        </span>
+                                        <span class="bg-[#F6F6F6] py-1 px-2 text-xs rounded-md h-fit mt-1">0</span>
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="flex items-center justify-center mt-8">
+                            <a href="#"
+                                class="flex items-center gap-2 bg-[#008080] text-sm text-white px-2.5 leading-10 border-2 border-[#e6e3f1] hover:border-[#008080] rounded-full font-bold font-arial transition-all duration-500 hover:bg-transparent hover:text-[#008080]"><span><svg
+                                        xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" viewBox="0 0 24 24"
+                                        style="enable-background:new 0 0 512 512" xml:space="preserve" class="w-4 h-4">
+                                        <g>
+                                            <path fill="currentcolor" fill-rule="evenodd"
+                                                d="M5 17.586a1 1 0 1 0 1.415 1.415L12 13.414 17.586 19A1 1 0 0 0 19 17.586L13.414 12 19 6.414A1 1 0 0 0 17.585 5L12 10.586 6.414 5A1 1 0 0 0 5 6.414L10.586 12z"
+                                                clip-rule="evenodd" opacity="1" data-original="#000000"></path>
+                                        </g>
+                                    </svg></span> Clear All Filters</a>
+                        </div>
+                    </aside>
+                </div>
+                <div class="flex lg:hidden items-center justify-between py-4">
+                    <span class="text-3xl font-open text-[#1a1b1e] leading-11 font-medium">Courses</span>
+                    <span id="sidebar-btn" class="flex items-center justify-center p-2 bg-[#3e64de1a] rounded-full text-[#3e64de]">
+                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" viewBox="0 0 32 32" style="enable-background:new 0 0 512 512" xml:space="preserve" class="w-6 "><g><path d="M11 21.184V3a1 1 0 1 0-2 0v18.184c-1.161.414-2 1.514-2 2.816s.839 2.402 2 2.816V29a1 1 0 1 0 2 0v-2.184c1.161-.414 2-1.514 2-2.816s-.839-2.402-2-2.816zM10 25a1 1 0 1 1 0-2 1 1 0 0 1 0 2zM19 8a2.996 2.996 0 0 0-2-2.816V3a1 1 0 1 0-2 0v2.184c-1.161.414-2 1.514-2 2.816s.839 2.402 2 2.816V29a1 1 0 1 0 2 0V10.816A2.996 2.996 0 0 0 19 8zm-3 1a1 1 0 1 1 0-2 1 1 0 0 1 0 2zM25 24a2.996 2.996 0 0 0-2-2.816V3a1 1 0 1 0-2 0v18.184c-1.161.414-2 1.514-2 2.816s.839 2.402 2 2.816V29a1 1 0 1 0 2 0v-2.184A2.996 2.996 0 0 0 25 24zm-3 1a1 1 0 1 1 0-2 1 1 0 0 1 0 2z" fill="currentColor" opacity="1" data-original="currentColor"></path></g></svg>
+                    </span>
+                </div>
+                <div class="w-full lg:max-w-[75%] lg:ml-[30px] pb-10 ">
+                    <!-- CARD ITEMS START -->
+                     <span class="mb-5 inline-block text-base text-[#008080] font-arial font-bold">20 courses found</span>
+                    <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-5">
+                        <div class="bg-white rounded-2xl border border-[#E6F3F3] transition-all hover:shadow-[12px_12px_48px_0px_rgba(36,60,69,0.12)] hover:scale-102 transition-transform duration-300 flex flex-col overflow-hidden">
+                                <div>
+                                    <img src="./assets/images/latest-course/health-wellness.jpg" alt="health">
+                                </div>
+                                <div class="p-4">
+                                    <h3 class="mb-[5px]"><a href="#" class="text-lg font-arial font-bold">Health And
+                                            Wellness Coaching Course</a></h3>
+                                    <p class="text-[#212529] text-[15px] leading-5 pb-2.5">Elevate your understanding of
+                                        holistic well-being with our "Health and Wellness Coaching Course."…</p>
+                                    <div class="flex items-center justify-between">
+                                        <div class="flex items-center py-[18px]">
+                                            <span class="mr-1.5">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    viewBox="0 0 16 16" fill="none">
+                                                    <path
+                                                        d="M14.1392 6.11669L10.172 5.54013L8.3986 1.94482C8.35016 1.84638 8.27048 1.76669 8.17204 1.71826C7.92516 1.59638 7.62516 1.69794 7.50173 1.94482L5.72829 5.54013L1.7611 6.11669C1.65173 6.13232 1.55173 6.18388 1.47516 6.262C1.3826 6.35714 1.3316 6.48513 1.33336 6.61785C1.33511 6.75057 1.38949 6.87717 1.48454 6.96982L4.35485 9.76825L3.67673 13.7198C3.66082 13.8117 3.671 13.9063 3.70609 13.9927C3.74118 14.0791 3.79979 14.154 3.87527 14.2088C3.95075 14.2637 4.04008 14.2962 4.13313 14.3029C4.22618 14.3095 4.31923 14.2899 4.40173 14.2464L7.95016 12.3808L11.4986 14.2464C11.5955 14.2979 11.708 14.3151 11.8158 14.2964C12.0877 14.2495 12.2705 13.9917 12.2236 13.7198L11.5455 9.76825L14.4158 6.96982C14.4939 6.89325 14.5455 6.79325 14.5611 6.68388C14.6033 6.41044 14.4127 6.15732 14.1392 6.11669Z"
+                                                        fill="#FFDC5D"></path>
+                                                </svg>
+                                            </span>
+                                            <span class="text-xs font-arial text-[#7C8A8F] mt-[3px]"> 0 (0 Reviews)</span>
+                                        </div>
+                                        <div class="flex items-center">
+                                            <span class="mr-2">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    viewBox="0 0 16 16" fill="none">
+                                                    <path
+                                                        d="M3.33331 5.50309C4.17716 5.63378 5.1185 5.85105 5.99998 6.19192M3.33331 8.16976C3.75964 8.23578 4.21085 8.32391 4.66665 8.4389M7.99998 4.03558V13.535M2.66287 2.00751C4.14178 2.17463 6.12873 2.62421 7.54453 3.6163C7.81663 3.80697 8.18333 3.80697 8.45543 3.6163C9.87123 2.62421 11.8582 2.17463 13.3371 2.00751C14.069 1.92481 14.6666 2.53602 14.6666 3.29012V10.8C14.6666 11.5541 14.069 12.1655 13.3371 12.2482C11.8582 12.4153 9.87123 12.8649 8.45543 13.857C8.18333 14.0477 7.81663 14.0477 7.54453 13.857C6.12873 12.8649 4.14178 12.4153 2.66287 12.2482C1.93093 12.1655 1.33331 11.5541 1.33331 10.8V3.29012C1.33331 2.53602 1.93093 1.92481 2.66287 2.00751Z"
+                                                        stroke="#7C8A8F" stroke-linecap="round"></path>
+                                                </svg>
+                                            </span>
+                                            <span class="text-xs font-arial text-[#7C8A8F] mt-[3px]"> 24 Lessons</span>
+                                        </div>
+                                    </div>
+                                    <div class="flex gap-2">
+                                        <span class="text-[15px] text-[#757c8e] leading-6">
+                                            <del>
+                                                <span>
+                                                    <span>£</span>100.00
+                                                </span>
+                                            </del>
+                                        </span>
+                                        <span class="text-base text-[#1a1b1e] font-bold">
+                                            <span>£</span>49.00
+                                        </span>
+                                    </div>
+                                </div>
+                        </div>
+                        <div
+                            class="bg-white rounded-2xl border border-[#E6F3F3] transition-all hover:shadow-[12px_12px_48px_0px_rgba(36,60,69,0.12)] hover:scale-102 transition-transform duration-300 flex flex-col overflow-hidden">
+                            <div class="relative">
+                                <img src="./assets/images/latest-course/dental-practice.jpg" alt="dental">
+                                <div class="absolute left-0 right-0 bottom-0 p-[15px] w-full">
+                                    <a href="#"
+                                        class="text-xs leading-4 font-arial py-1 px-3 border border-white text-white rounded-[32px] bg-[rgba(0,0,0,0.5)] tracking-[0.15px]">Health
+                                        & Social Care</a>
+                                </div>
+                            </div>
+                            <div class="p-4">
+                                <h3 class="mb-[5px]"><a href="#" class="text-lg font-arial font-bold">Dental Practice
+                                        Administration…</a></h3>
+                                <p class="text-[#212529] text-[15px] leading-5 pb-2.5">Dental Practice Administration
+                                    focuses on developing the essential skills and knowledge required to…</p>
+                                <div class="flex items-center justify-between">
+                                    <div class="flex items-center py-[18px]">
+                                        <span class="mr-1.5">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                viewBox="0 0 16 16" fill="none">
+                                                <path
+                                                    d="M14.1392 6.11669L10.172 5.54013L8.3986 1.94482C8.35016 1.84638 8.27048 1.76669 8.17204 1.71826C7.92516 1.59638 7.62516 1.69794 7.50173 1.94482L5.72829 5.54013L1.7611 6.11669C1.65173 6.13232 1.55173 6.18388 1.47516 6.262C1.3826 6.35714 1.3316 6.48513 1.33336 6.61785C1.33511 6.75057 1.38949 6.87717 1.48454 6.96982L4.35485 9.76825L3.67673 13.7198C3.66082 13.8117 3.671 13.9063 3.70609 13.9927C3.74118 14.0791 3.79979 14.154 3.87527 14.2088C3.95075 14.2637 4.04008 14.2962 4.13313 14.3029C4.22618 14.3095 4.31923 14.2899 4.40173 14.2464L7.95016 12.3808L11.4986 14.2464C11.5955 14.2979 11.708 14.3151 11.8158 14.2964C12.0877 14.2495 12.2705 13.9917 12.2236 13.7198L11.5455 9.76825L14.4158 6.96982C14.4939 6.89325 14.5455 6.79325 14.5611 6.68388C14.6033 6.41044 14.4127 6.15732 14.1392 6.11669Z"
+                                                    fill="#FFDC5D"></path>
+                                            </svg>
+                                        </span>
+                                        <span class="text-xs font-arial text-[#7C8A8F] mt-[3px]"> 5.00 (1
+                                            Reviews)</span>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <span class="mr-2">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                viewBox="0 0 16 16" fill="none">
+                                                <path
+                                                    d="M3.33331 5.50309C4.17716 5.63378 5.1185 5.85105 5.99998 6.19192M3.33331 8.16976C3.75964 8.23578 4.21085 8.32391 4.66665 8.4389M7.99998 4.03558V13.535M2.66287 2.00751C4.14178 2.17463 6.12873 2.62421 7.54453 3.6163C7.81663 3.80697 8.18333 3.80697 8.45543 3.6163C9.87123 2.62421 11.8582 2.17463 13.3371 2.00751C14.069 1.92481 14.6666 2.53602 14.6666 3.29012V10.8C14.6666 11.5541 14.069 12.1655 13.3371 12.2482C11.8582 12.4153 9.87123 12.8649 8.45543 13.857C8.18333 14.0477 7.81663 14.0477 7.54453 13.857C6.12873 12.8649 4.14178 12.4153 2.66287 12.2482C1.93093 12.1655 1.33331 11.5541 1.33331 10.8V3.29012C1.33331 2.53602 1.93093 1.92481 2.66287 2.00751Z"
+                                                    stroke="#7C8A8F" stroke-linecap="round"></path>
+                                            </svg>
+                                        </span>
+                                        <span class="text-xs font-arial text-[#7C8A8F] mt-[3px]">9 Lessons</span>
+                                    </div>
+                                </div>
+                                <div class="flex gap-2">
+                                    <span class="text-[15px] text-[#757c8e] leading-6">
+                                        <del>
+                                            <span>
+                                                <span>£</span>350.00
+                                            </span>
+                                        </del>
+                                    </span>
+                                    <span class="text-base text-[#1a1b1e] font-bold">
+                                        <span>£</span>280.00
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="bg-white rounded-2xl border border-[#E6F3F3] transition-all hover:shadow-[12px_12px_48px_0px_rgba(36,60,69,0.12)] hover:scale-102 transition-transform duration-300 flex flex-col overflow-hidden">
+                            <div class="relative">
+                                <img src="./assets/images/latest-course/additional-support.jpg" alt="support">
+                                <div class="absolute left-0 right-0 bottom-0 p-[15px] w-full">
+                                    <a href="#"
+                                        class="text-xs leading-4 font-arial py-1 px-3 border border-white text-white rounded-[32px] bg-[rgba(0,0,0,0.5)] tracking-[0.15px]">Sophies
+                                        Autism School</a>
+                                </div>
+                            </div>
+                            <div class="p-4">
+                                <h3 class="mb-[5px]"><a href="#" class="text-lg font-arial font-bold">Additional Support
+                                        SEN Level 3…</a></h3>
+                                <p class="text-[#212529] text-[15px] leading-5 pb-2.5">The Additional Support SEN
+                                    (Special Education Needs) course is designed to provide comprehensive insights…</p>
+                                <div class="flex items-center justify-between">
+                                    <div class="flex items-center py-[18px]">
+                                        <span class="mr-1.5">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                viewBox="0 0 16 16" fill="none">
+                                                <path
+                                                    d="M14.1392 6.11669L10.172 5.54013L8.3986 1.94482C8.35016 1.84638 8.27048 1.76669 8.17204 1.71826C7.92516 1.59638 7.62516 1.69794 7.50173 1.94482L5.72829 5.54013L1.7611 6.11669C1.65173 6.13232 1.55173 6.18388 1.47516 6.262C1.3826 6.35714 1.3316 6.48513 1.33336 6.61785C1.33511 6.75057 1.38949 6.87717 1.48454 6.96982L4.35485 9.76825L3.67673 13.7198C3.66082 13.8117 3.671 13.9063 3.70609 13.9927C3.74118 14.0791 3.79979 14.154 3.87527 14.2088C3.95075 14.2637 4.04008 14.2962 4.13313 14.3029C4.22618 14.3095 4.31923 14.2899 4.40173 14.2464L7.95016 12.3808L11.4986 14.2464C11.5955 14.2979 11.708 14.3151 11.8158 14.2964C12.0877 14.2495 12.2705 13.9917 12.2236 13.7198L11.5455 9.76825L14.4158 6.96982C14.4939 6.89325 14.5455 6.79325 14.5611 6.68388C14.6033 6.41044 14.4127 6.15732 14.1392 6.11669Z"
+                                                    fill="#FFDC5D"></path>
+                                            </svg>
+                                        </span>
+                                        <span class="text-xs font-arial text-[#7C8A8F] mt-[3px]">0 (0 Reviews)</span>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <span class="mr-2">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                viewBox="0 0 16 16" fill="none">
+                                                <path
+                                                    d="M3.33331 5.50309C4.17716 5.63378 5.1185 5.85105 5.99998 6.19192M3.33331 8.16976C3.75964 8.23578 4.21085 8.32391 4.66665 8.4389M7.99998 4.03558V13.535M2.66287 2.00751C4.14178 2.17463 6.12873 2.62421 7.54453 3.6163C7.81663 3.80697 8.18333 3.80697 8.45543 3.6163C9.87123 2.62421 11.8582 2.17463 13.3371 2.00751C14.069 1.92481 14.6666 2.53602 14.6666 3.29012V10.8C14.6666 11.5541 14.069 12.1655 13.3371 12.2482C11.8582 12.4153 9.87123 12.8649 8.45543 13.857C8.18333 14.0477 7.81663 14.0477 7.54453 13.857C6.12873 12.8649 4.14178 12.4153 2.66287 12.2482C1.93093 12.1655 1.33331 11.5541 1.33331 10.8V3.29012C1.33331 2.53602 1.93093 1.92481 2.66287 2.00751Z"
+                                                    stroke="#7C8A8F" stroke-linecap="round"></path>
+                                            </svg>
+                                        </span>
+                                        <span class="text-xs font-arial text-[#7C8A8F] mt-[3px]">9 Lessons</span>
+                                    </div>
+                                </div>
+                                <div class="flex gap-2">
+                                    <span class="text-[15px] text-[#757c8e] leading-6">
+                                        <del>
+                                            <span>
+                                                <span>£</span>368.75
+                                            </span>
+                                        </del>
+                                    </span>
+                                    <span class="text-base text-[#1a1b1e] font-bold">
+                                        <span>£</span>295.00
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="bg-white rounded-2xl border border-[#E6F3F3] transition-all hover:shadow-[12px_12px_48px_0px_rgba(36,60,69,0.12)] hover:scale-102 transition-transform duration-300 flex flex-col overflow-hidden">
+                            <div class="relative">
+                                <img src="./assets/images/latest-course/event-edding.jpg" alt="event">
+                                <div class="absolute left-0 right-0 bottom-0 p-[15px] w-full">
+                                    <a href="#"
+                                        class="text-xs leading-4 font-arial py-1 px-3 border border-white text-white rounded-[32px] bg-[rgba(0,0,0,0.5)] tracking-[0.15px]">Business,
+                                        Management & Law</a>
+                                </div>
+                            </div>
+                            <div class="p-4">
+                                <h3 class="mb-[5px]"><a href="#" class="text-lg font-arial font-bold">Event, Wedding
+                                        Planning and…</a></h3>
+                                <p class="text-[#212529] text-[15px] leading-5 pb-2.5">In the Event, Wedding Planning,
+                                    and Coordination course, students will delve into the dynamic and…</p>
+                                <div class="flex items-center justify-between">
+                                    <div class="flex items-center py-[18px]">
+                                        <span class="mr-1.5">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                viewBox="0 0 16 16" fill="none">
+                                                <path
+                                                    d="M14.1392 6.11669L10.172 5.54013L8.3986 1.94482C8.35016 1.84638 8.27048 1.76669 8.17204 1.71826C7.92516 1.59638 7.62516 1.69794 7.50173 1.94482L5.72829 5.54013L1.7611 6.11669C1.65173 6.13232 1.55173 6.18388 1.47516 6.262C1.3826 6.35714 1.3316 6.48513 1.33336 6.61785C1.33511 6.75057 1.38949 6.87717 1.48454 6.96982L4.35485 9.76825L3.67673 13.7198C3.66082 13.8117 3.671 13.9063 3.70609 13.9927C3.74118 14.0791 3.79979 14.154 3.87527 14.2088C3.95075 14.2637 4.04008 14.2962 4.13313 14.3029C4.22618 14.3095 4.31923 14.2899 4.40173 14.2464L7.95016 12.3808L11.4986 14.2464C11.5955 14.2979 11.708 14.3151 11.8158 14.2964C12.0877 14.2495 12.2705 13.9917 12.2236 13.7198L11.5455 9.76825L14.4158 6.96982C14.4939 6.89325 14.5455 6.79325 14.5611 6.68388C14.6033 6.41044 14.4127 6.15732 14.1392 6.11669Z"
+                                                    fill="#FFDC5D"></path>
+                                            </svg>
+                                        </span>
+                                        <span class="text-xs font-arial text-[#7C8A8F] mt-[3px]">5.00 (1 Reviews)</span>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <span class="mr-2">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                viewBox="0 0 16 16" fill="none">
+                                                <path
+                                                    d="M3.33331 5.50309C4.17716 5.63378 5.1185 5.85105 5.99998 6.19192M3.33331 8.16976C3.75964 8.23578 4.21085 8.32391 4.66665 8.4389M7.99998 4.03558V13.535M2.66287 2.00751C4.14178 2.17463 6.12873 2.62421 7.54453 3.6163C7.81663 3.80697 8.18333 3.80697 8.45543 3.6163C9.87123 2.62421 11.8582 2.17463 13.3371 2.00751C14.069 1.92481 14.6666 2.53602 14.6666 3.29012V10.8C14.6666 11.5541 14.069 12.1655 13.3371 12.2482C11.8582 12.4153 9.87123 12.8649 8.45543 13.857C8.18333 14.0477 7.81663 14.0477 7.54453 13.857C6.12873 12.8649 4.14178 12.4153 2.66287 12.2482C1.93093 12.1655 1.33331 11.5541 1.33331 10.8V3.29012C1.33331 2.53602 1.93093 1.92481 2.66287 2.00751Z"
+                                                    stroke="#7C8A8F" stroke-linecap="round"></path>
+                                            </svg>
+                                        </span>
+                                        <span class="text-xs font-arial text-[#7C8A8F] mt-[3px]">9 Lessons</span>
+                                    </div>
+                                </div>
+                                <div class="flex gap-2">
+                                    <span class="text-[15px] text-[#757c8e] leading-6">
+                                        <del>
+                                            <span>
+                                                <span>£</span>568.75
+                                            </span>
+                                        </del>
+                                    </span>
+                                    <span class="text-base text-[#1a1b1e] font-bold">
+                                        <span>£</span>455.00
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="bg-white rounded-2xl border border-[#E6F3F3] transition-all hover:shadow-[12px_12px_48px_0px_rgba(36,60,69,0.12)] hover:scale-102 transition-transform duration-300 flex flex-col overflow-hidden">
+                            <div class="relative">
+                                <img src="./assets/images/latest-course/criminal-psychology.jpg" alt="criminal">
+                                <div class="absolute left-0 right-0 bottom-0 p-[15px] w-full">
+                                    <a href="#"
+                                        class="text-xs leading-4 font-arial py-1 px-3 border border-white text-white rounded-[32px] bg-[rgba(0,0,0,0.5)] tracking-[0.15px]">Business,
+                                        Management & Law</a>
+                                </div>
+                            </div>
+                            <div class="p-4">
+                                <h3 class="mb-[5px]"><a href="#" class="text-lg font-arial font-bold">Criminal
+                                        Psychology Level 4 (NCFE)…</a></h3>
+                                <p class="text-[#212529] text-[15px] leading-5 pb-2.5">Criminal Psychology delves into
+                                    the fascinating realm where human behavior and criminality intersect.…</p>
+                                <div class="flex items-center justify-between">
+                                    <div class="flex items-center py-[18px]">
+                                        <span class="mr-1.5">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                viewBox="0 0 16 16" fill="none">
+                                                <path
+                                                    d="M14.1392 6.11669L10.172 5.54013L8.3986 1.94482C8.35016 1.84638 8.27048 1.76669 8.17204 1.71826C7.92516 1.59638 7.62516 1.69794 7.50173 1.94482L5.72829 5.54013L1.7611 6.11669C1.65173 6.13232 1.55173 6.18388 1.47516 6.262C1.3826 6.35714 1.3316 6.48513 1.33336 6.61785C1.33511 6.75057 1.38949 6.87717 1.48454 6.96982L4.35485 9.76825L3.67673 13.7198C3.66082 13.8117 3.671 13.9063 3.70609 13.9927C3.74118 14.0791 3.79979 14.154 3.87527 14.2088C3.95075 14.2637 4.04008 14.2962 4.13313 14.3029C4.22618 14.3095 4.31923 14.2899 4.40173 14.2464L7.95016 12.3808L11.4986 14.2464C11.5955 14.2979 11.708 14.3151 11.8158 14.2964C12.0877 14.2495 12.2705 13.9917 12.2236 13.7198L11.5455 9.76825L14.4158 6.96982C14.4939 6.89325 14.5455 6.79325 14.5611 6.68388C14.6033 6.41044 14.4127 6.15732 14.1392 6.11669Z"
+                                                    fill="#FFDC5D"></path>
+                                            </svg>
+                                        </span>
+                                        <span class="text-xs font-arial text-[#7C8A8F] mt-[3px]">5.00 (1 Reviews)</span>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <span class="mr-2">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                viewBox="0 0 16 16" fill="none">
+                                                <path
+                                                    d="M3.33331 5.50309C4.17716 5.63378 5.1185 5.85105 5.99998 6.19192M3.33331 8.16976C3.75964 8.23578 4.21085 8.32391 4.66665 8.4389M7.99998 4.03558V13.535M2.66287 2.00751C4.14178 2.17463 6.12873 2.62421 7.54453 3.6163C7.81663 3.80697 8.18333 3.80697 8.45543 3.6163C9.87123 2.62421 11.8582 2.17463 13.3371 2.00751C14.069 1.92481 14.6666 2.53602 14.6666 3.29012V10.8C14.6666 11.5541 14.069 12.1655 13.3371 12.2482C11.8582 12.4153 9.87123 12.8649 8.45543 13.857C8.18333 14.0477 7.81663 14.0477 7.54453 13.857C6.12873 12.8649 4.14178 12.4153 2.66287 12.2482C1.93093 12.1655 1.33331 11.5541 1.33331 10.8V3.29012C1.33331 2.53602 1.93093 1.92481 2.66287 2.00751Z"
+                                                    stroke="#7C8A8F" stroke-linecap="round"></path>
+                                            </svg>
+                                        </span>
+                                        <span class="text-xs font-arial text-[#7C8A8F] mt-[3px]">9 Lessons</span>
+                                    </div>
+                                </div>
+                                <div class="flex gap-2">
+                                    <span class="text-[15px] text-[#757c8e] leading-6">
+                                        <del>
+                                            <span>
+                                                <span>£</span>606.25
+                                            </span>
+                                        </del>
+                                    </span>
+                                    <span class="text-base text-[#1a1b1e] font-bold">
+                                        <span>£</span>485.00
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-white rounded-2xl border border-[#E6F3F3] transition-all hover:shadow-[12px_12px_48px_0px_rgba(36,60,69,0.12)] hover:scale-102 transition-transform duration-300 flex flex-col overflow-hidden ">
+                            <div class="relative">
+                                <img src="./assets/images/latest-course/woman-with-nutritional.jpg" alt="nutritional">
+                                <div class="absolute left-0 right-0 bottom-0 p-[15px] w-full">
+                                    <a href="#"
+                                        class="text-xs leading-4 font-arial py-1 px-3 border border-white text-white rounded-[32px] bg-[rgba(0,0,0,0.5)] tracking-[0.15px]">Diet & Nutrition Department</a>
+                                </div>
+                            </div>
+                            
+                            <div class="p-4">
+                                <h3 class="mb-[5px]"><a href="#" class="text-lg font-arial font-bold">Nutritional Therapy Level 3 (QLS)…</a></h3>
+                                <p class="text-[#212529] text-[15px] leading-5 pb-2.5">Nutritional Therapy is a comprehensive discipline focused on the relationship between food, nutrients,…</p>
+                                <div class="flex items-center justify-between">
+                                    <div class="flex items-center py-[18px]">
+                                        <span class="mr-1.5">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                viewBox="0 0 16 16" fill="none">
+                                                <path
+                                                    d="M14.1392 6.11669L10.172 5.54013L8.3986 1.94482C8.35016 1.84638 8.27048 1.76669 8.17204 1.71826C7.92516 1.59638 7.62516 1.69794 7.50173 1.94482L5.72829 5.54013L1.7611 6.11669C1.65173 6.13232 1.55173 6.18388 1.47516 6.262C1.3826 6.35714 1.3316 6.48513 1.33336 6.61785C1.33511 6.75057 1.38949 6.87717 1.48454 6.96982L4.35485 9.76825L3.67673 13.7198C3.66082 13.8117 3.671 13.9063 3.70609 13.9927C3.74118 14.0791 3.79979 14.154 3.87527 14.2088C3.95075 14.2637 4.04008 14.2962 4.13313 14.3029C4.22618 14.3095 4.31923 14.2899 4.40173 14.2464L7.95016 12.3808L11.4986 14.2464C11.5955 14.2979 11.708 14.3151 11.8158 14.2964C12.0877 14.2495 12.2705 13.9917 12.2236 13.7198L11.5455 9.76825L14.4158 6.96982C14.4939 6.89325 14.5455 6.79325 14.5611 6.68388C14.6033 6.41044 14.4127 6.15732 14.1392 6.11669Z"
+                                                    fill="#FFDC5D"></path>
+                                            </svg>
+                                        </span>
+                                        <span class="text-xs font-arial text-[#7C8A8F] mt-[3px]"> 0 (0 Reviews)</span>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <span class="mr-2">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                viewBox="0 0 16 16" fill="none">
+                                                <path
+                                                    d="M3.33331 5.50309C4.17716 5.63378 5.1185 5.85105 5.99998 6.19192M3.33331 8.16976C3.75964 8.23578 4.21085 8.32391 4.66665 8.4389M7.99998 4.03558V13.535M2.66287 2.00751C4.14178 2.17463 6.12873 2.62421 7.54453 3.6163C7.81663 3.80697 8.18333 3.80697 8.45543 3.6163C9.87123 2.62421 11.8582 2.17463 13.3371 2.00751C14.069 1.92481 14.6666 2.53602 14.6666 3.29012V10.8C14.6666 11.5541 14.069 12.1655 13.3371 12.2482C11.8582 12.4153 9.87123 12.8649 8.45543 13.857C8.18333 14.0477 7.81663 14.0477 7.54453 13.857C6.12873 12.8649 4.14178 12.4153 2.66287 12.2482C1.93093 12.1655 1.33331 11.5541 1.33331 10.8V3.29012C1.33331 2.53602 1.93093 1.92481 2.66287 2.00751Z"
+                                                    stroke="#7C8A8F" stroke-linecap="round"></path>
+                                            </svg>
+                                        </span>
+                                        <span class="text-xs font-arial text-[#7C8A8F] mt-[3px]"> 5 Lessons</span>
+                                    </div>
+                                </div>
+                                <div class="flex gap-2">
+                                    <span class="text-[15px] text-[#757c8e] leading-6">
+                                        <del>
+                                            <span>
+                                                <span>£</span>100.00
+                                            </span>
+                                        </del>
+                                    </span>
+                                    <span class="text-base text-[#1a1b1e] font-bold">
+                                        <span>£</span>49.00
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="bg-white rounded-2xl border border-[#E6F3F3] transition-all hover:shadow-[12px_12px_48px_0px_rgba(36,60,69,0.12)] hover:scale-102 transition-transform duration-300 flex flex-col overflow-hidden">
+                            <div class="relative">
+                                <img src="./assets/images/latest-course/fun-friends-travel.jpg" alt="travel">
+                                <div class="absolute left-0 right-0 bottom-0 p-[15px] w-full">
+                                    <a href="#"
+                                        class="text-xs leading-4 font-arial py-1 px-3 border border-white text-white rounded-[32px] bg-[rgba(0,0,0,0.5)] tracking-[0.15px]">Tourism Department</a>
+                                </div>
+                            </div>
+                            <div class="p-4">
+                                <h3 class="mb-[5px]"><a href="#" class="text-lg font-arial font-bold">Travel and Tourism Level 3 (QLS)…</a></h3>
+                                <p class="text-[#212529] text-[15px] leading-5 pb-2.5">Travel and Tourism offers an immersive exploration into the multifaceted world of global travel. This…</p>
+                                <div class="flex items-center justify-between">
+                                    <div class="flex items-center py-[18px]">
+                                        <span class="mr-1.5">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                viewBox="0 0 16 16" fill="none">
+                                                <path
+                                                    d="M14.1392 6.11669L10.172 5.54013L8.3986 1.94482C8.35016 1.84638 8.27048 1.76669 8.17204 1.71826C7.92516 1.59638 7.62516 1.69794 7.50173 1.94482L5.72829 5.54013L1.7611 6.11669C1.65173 6.13232 1.55173 6.18388 1.47516 6.262C1.3826 6.35714 1.3316 6.48513 1.33336 6.61785C1.33511 6.75057 1.38949 6.87717 1.48454 6.96982L4.35485 9.76825L3.67673 13.7198C3.66082 13.8117 3.671 13.9063 3.70609 13.9927C3.74118 14.0791 3.79979 14.154 3.87527 14.2088C3.95075 14.2637 4.04008 14.2962 4.13313 14.3029C4.22618 14.3095 4.31923 14.2899 4.40173 14.2464L7.95016 12.3808L11.4986 14.2464C11.5955 14.2979 11.708 14.3151 11.8158 14.2964C12.0877 14.2495 12.2705 13.9917 12.2236 13.7198L11.5455 9.76825L14.4158 6.96982C14.4939 6.89325 14.5455 6.79325 14.5611 6.68388C14.6033 6.41044 14.4127 6.15732 14.1392 6.11669Z"
+                                                    fill="#FFDC5D"></path>
+                                            </svg>
+                                        </span>
+                                        <span class="text-xs font-arial text-[#7C8A8F] mt-[3px]"> 5.00 (1
+                                            Reviews)</span>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <span class="mr-2">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                viewBox="0 0 16 16" fill="none">
+                                                <path
+                                                    d="M3.33331 5.50309C4.17716 5.63378 5.1185 5.85105 5.99998 6.19192M3.33331 8.16976C3.75964 8.23578 4.21085 8.32391 4.66665 8.4389M7.99998 4.03558V13.535M2.66287 2.00751C4.14178 2.17463 6.12873 2.62421 7.54453 3.6163C7.81663 3.80697 8.18333 3.80697 8.45543 3.6163C9.87123 2.62421 11.8582 2.17463 13.3371 2.00751C14.069 1.92481 14.6666 2.53602 14.6666 3.29012V10.8C14.6666 11.5541 14.069 12.1655 13.3371 12.2482C11.8582 12.4153 9.87123 12.8649 8.45543 13.857C8.18333 14.0477 7.81663 14.0477 7.54453 13.857C6.12873 12.8649 4.14178 12.4153 2.66287 12.2482C1.93093 12.1655 1.33331 11.5541 1.33331 10.8V3.29012C1.33331 2.53602 1.93093 1.92481 2.66287 2.00751Z"
+                                                    stroke="#7C8A8F" stroke-linecap="round"></path>
+                                            </svg>
+                                        </span>
+                                        <span class="text-xs font-arial text-[#7C8A8F] mt-[3px]">9 Lessons</span>
+                                    </div>
+                                </div>
+                                <div class="flex gap-2">
+                                    <span class="text-[15px] text-[#757c8e] leading-6">
+                                        <del>
+                                            <span>
+                                                <span>£</span>456.25
+                                            </span>
+                                        </del>
+                                    </span>
+                                    <span class="text-base text-[#1a1b1e] font-bold">
+                                        <span>£</span>365.00
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="bg-white rounded-2xl border border-[#E6F3F3] transition-all hover:shadow-[12px_12px_48px_0px_rgba(36,60,69,0.12)] hover:scale-102 transition-transform duration-300 flex flex-col overflow-hidden">
+                            <div class="relative">
+                                <img src="./assets/images/latest-course/pharmacology.jpg" alt="pharmacology">
+                                <div class="absolute left-0 right-0 bottom-0 p-[15px] w-full">
+                                    <a href="#"
+                                        class="text-xs leading-4 font-arial py-1 px-3 border border-white text-white rounded-[32px] bg-[rgba(0,0,0,0.5)] tracking-[0.15px]">Health & Social Care</a>
+                                </div>
+                            </div>
+                            <div class="p-4">
+                                <h3 class="mb-[5px]"><a href="#" class="text-lg font-arial font-bold">Pharmacology Level 3 (QLS) Course</a></h3>Pharmacology delves into the fascinating realm of drugs, exploring their effects on the body and…</p>
+                                <div class="flex items-center justify-between">
+                                    <div class="flex items-center py-[18px]">
+                                        <span class="mr-1.5">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                viewBox="0 0 16 16" fill="none">
+                                                <path
+                                                    d="M14.1392 6.11669L10.172 5.54013L8.3986 1.94482C8.35016 1.84638 8.27048 1.76669 8.17204 1.71826C7.92516 1.59638 7.62516 1.69794 7.50173 1.94482L5.72829 5.54013L1.7611 6.11669C1.65173 6.13232 1.55173 6.18388 1.47516 6.262C1.3826 6.35714 1.3316 6.48513 1.33336 6.61785C1.33511 6.75057 1.38949 6.87717 1.48454 6.96982L4.35485 9.76825L3.67673 13.7198C3.66082 13.8117 3.671 13.9063 3.70609 13.9927C3.74118 14.0791 3.79979 14.154 3.87527 14.2088C3.95075 14.2637 4.04008 14.2962 4.13313 14.3029C4.22618 14.3095 4.31923 14.2899 4.40173 14.2464L7.95016 12.3808L11.4986 14.2464C11.5955 14.2979 11.708 14.3151 11.8158 14.2964C12.0877 14.2495 12.2705 13.9917 12.2236 13.7198L11.5455 9.76825L14.4158 6.96982C14.4939 6.89325 14.5455 6.79325 14.5611 6.68388C14.6033 6.41044 14.4127 6.15732 14.1392 6.11669Z"
+                                                    fill="#FFDC5D"></path>
+                                            </svg>
+                                        </span>
+                                        <span class="text-xs font-arial text-[#7C8A8F] mt-[3px]">5.00 (1 Reviews)</span>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <span class="mr-2">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                viewBox="0 0 16 16" fill="none">
+                                                <path
+                                                    d="M3.33331 5.50309C4.17716 5.63378 5.1185 5.85105 5.99998 6.19192M3.33331 8.16976C3.75964 8.23578 4.21085 8.32391 4.66665 8.4389M7.99998 4.03558V13.535M2.66287 2.00751C4.14178 2.17463 6.12873 2.62421 7.54453 3.6163C7.81663 3.80697 8.18333 3.80697 8.45543 3.6163C9.87123 2.62421 11.8582 2.17463 13.3371 2.00751C14.069 1.92481 14.6666 2.53602 14.6666 3.29012V10.8C14.6666 11.5541 14.069 12.1655 13.3371 12.2482C11.8582 12.4153 9.87123 12.8649 8.45543 13.857C8.18333 14.0477 7.81663 14.0477 7.54453 13.857C6.12873 12.8649 4.14178 12.4153 2.66287 12.2482C1.93093 12.1655 1.33331 11.5541 1.33331 10.8V3.29012C1.33331 2.53602 1.93093 1.92481 2.66287 2.00751Z"
+                                                    stroke="#7C8A8F" stroke-linecap="round"></path>
+                                            </svg>
+                                        </span>
+                                        <span class="text-xs font-arial text-[#7C8A8F] mt-[3px]">9 Lessons</span>
+                                    </div>
+                                </div>
+                                <div class="flex gap-2">
+                                    <span class="text-[15px] text-[#757c8e] leading-6">
+                                        <del>
+                                            <span>
+                                                <span>£</span>456.25
+                                            </span>
+                                        </del>
+                                    </span>
+                                    <span class="text-base text-[#1a1b1e] font-bold">
+                                        <span>£</span>295.00
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="bg-white rounded-2xl border border-[#E6F3F3] transition-all hover:shadow-[12px_12px_48px_0px_rgba(36,60,69,0.12)] hover:scale-102 transition-transform duration-300 flex flex-col overflow-hidden">
+                            <div class="relative">
+                                <img src="./assets/images/latest-course/marketing-strategy.jpg" alt="marketing">
+                                <div class="absolute left-0 right-0 bottom-0 p-[15px] w-full">
+                                    <a href="#"
+                                        class="text-xs leading-4 font-arial py-1 px-3 border border-white text-white rounded-[32px] bg-[rgba(0,0,0,0.5)] tracking-[0.15px]">Business, Management & Law</a>
+                                </div>
+                            </div>
+                            <div class="p-4">
+                                <h3 class="mb-[5px]"><a href="#" class="text-lg font-arial font-bold">Marketing Level 3 (QLS) Course</a></h3>
+                                <p class="text-[#212529] text-[15px] leading-5 pb-2.5">In Marketing , discover the intricacies of consumer behavior, strategic planning, and market trends. Gain…</p>
+                                <div class="flex items-center justify-between">
+                                    <div class="flex items-center py-[18px]">
+                                        <span class="mr-1.5">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                viewBox="0 0 16 16" fill="none">
+                                                <path
+                                                    d="M14.1392 6.11669L10.172 5.54013L8.3986 1.94482C8.35016 1.84638 8.27048 1.76669 8.17204 1.71826C7.92516 1.59638 7.62516 1.69794 7.50173 1.94482L5.72829 5.54013L1.7611 6.11669C1.65173 6.13232 1.55173 6.18388 1.47516 6.262C1.3826 6.35714 1.3316 6.48513 1.33336 6.61785C1.33511 6.75057 1.38949 6.87717 1.48454 6.96982L4.35485 9.76825L3.67673 13.7198C3.66082 13.8117 3.671 13.9063 3.70609 13.9927C3.74118 14.0791 3.79979 14.154 3.87527 14.2088C3.95075 14.2637 4.04008 14.2962 4.13313 14.3029C4.22618 14.3095 4.31923 14.2899 4.40173 14.2464L7.95016 12.3808L11.4986 14.2464C11.5955 14.2979 11.708 14.3151 11.8158 14.2964C12.0877 14.2495 12.2705 13.9917 12.2236 13.7198L11.5455 9.76825L14.4158 6.96982C14.4939 6.89325 14.5455 6.79325 14.5611 6.68388C14.6033 6.41044 14.4127 6.15732 14.1392 6.11669Z"
+                                                    fill="#FFDC5D"></path>
+                                            </svg>
+                                        </span>
+                                        <span class="text-xs font-arial text-[#7C8A8F] mt-[3px]">0 (0 Reviews)</span>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <span class="mr-2">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                viewBox="0 0 16 16" fill="none">
+                                                <path
+                                                    d="M3.33331 5.50309C4.17716 5.63378 5.1185 5.85105 5.99998 6.19192M3.33331 8.16976C3.75964 8.23578 4.21085 8.32391 4.66665 8.4389M7.99998 4.03558V13.535M2.66287 2.00751C4.14178 2.17463 6.12873 2.62421 7.54453 3.6163C7.81663 3.80697 8.18333 3.80697 8.45543 3.6163C9.87123 2.62421 11.8582 2.17463 13.3371 2.00751C14.069 1.92481 14.6666 2.53602 14.6666 3.29012V10.8C14.6666 11.5541 14.069 12.1655 13.3371 12.2482C11.8582 12.4153 9.87123 12.8649 8.45543 13.857C8.18333 14.0477 7.81663 14.0477 7.54453 13.857C6.12873 12.8649 4.14178 12.4153 2.66287 12.2482C1.93093 12.1655 1.33331 11.5541 1.33331 10.8V3.29012C1.33331 2.53602 1.93093 1.92481 2.66287 2.00751Z"
+                                                    stroke="#7C8A8F" stroke-linecap="round"></path>
+                                            </svg>
+                                        </span>
+                                        <span class="text-xs font-arial text-[#7C8A8F] mt-[3px]">9 Lessons</span>
+                                    </div>
+                                </div>
+                                <div class="flex gap-2">
+                                    <span class="text-[15px] text-[#757c8e] leading-6">
+                                        <del>
+                                            <span>
+                                                <span>£</span>581.25
+                                            </span>
+                                        </del>
+                                    </span>
+                                    <span class="text-base text-[#1a1b1e] font-bold">
+                                        <span>£</span>465.00
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="bg-white rounded-2xl border border-[#E6F3F3] transition-all hover:shadow-[12px_12px_48px_0px_rgba(36,60,69,0.12)] hover:scale-102 transition-transform duration-300 flex flex-col overflow-hidden">
+                            <div class="relative">
+                                <img src="./assets/images/latest-course/diverse-multi.jpg" alt="diverse">
+                                <div class="absolute left-0 right-0 bottom-0 p-[15px] w-full">
+                                    <a href="#"
+                                        class="text-xs leading-4 font-arial py-1 px-3 border border-white text-white rounded-[32px] bg-[rgba(0,0,0,0.5)] tracking-[0.15px] block">Business Management Department</a>
+                                </div>
+                            </div>
+                            <div class="p-4">
+                                <h3 class="mb-[5px]"><a href="#" class="text-lg font-arial font-bold">Management Level 3 (QLS) Course</a></h3>
+                                <p class="text-[#212529] text-[15px] leading-5 pb-2.5">The Management course offers a comprehensive exploration of effective leadership strategies,…</p>
+                                <div class="flex items-center justify-between">
+                                    <div class="flex items-center py-[18px]">
+                                        <span class="mr-1.5">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                viewBox="0 0 16 16" fill="none">
+                                                <path
+                                                    d="M14.1392 6.11669L10.172 5.54013L8.3986 1.94482C8.35016 1.84638 8.27048 1.76669 8.17204 1.71826C7.92516 1.59638 7.62516 1.69794 7.50173 1.94482L5.72829 5.54013L1.7611 6.11669C1.65173 6.13232 1.55173 6.18388 1.47516 6.262C1.3826 6.35714 1.3316 6.48513 1.33336 6.61785C1.33511 6.75057 1.38949 6.87717 1.48454 6.96982L4.35485 9.76825L3.67673 13.7198C3.66082 13.8117 3.671 13.9063 3.70609 13.9927C3.74118 14.0791 3.79979 14.154 3.87527 14.2088C3.95075 14.2637 4.04008 14.2962 4.13313 14.3029C4.22618 14.3095 4.31923 14.2899 4.40173 14.2464L7.95016 12.3808L11.4986 14.2464C11.5955 14.2979 11.708 14.3151 11.8158 14.2964C12.0877 14.2495 12.2705 13.9917 12.2236 13.7198L11.5455 9.76825L14.4158 6.96982C14.4939 6.89325 14.5455 6.79325 14.5611 6.68388C14.6033 6.41044 14.4127 6.15732 14.1392 6.11669Z"
+                                                    fill="#FFDC5D"></path>
+                                            </svg>
+                                        </span>
+                                        <span class="text-xs font-arial text-[#7C8A8F] mt-[3px]">0 (0 Reviews)</span>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <span class="mr-2">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                viewBox="0 0 16 16" fill="none">
+                                                <path
+                                                    d="M3.33331 5.50309C4.17716 5.63378 5.1185 5.85105 5.99998 6.19192M3.33331 8.16976C3.75964 8.23578 4.21085 8.32391 4.66665 8.4389M7.99998 4.03558V13.535M2.66287 2.00751C4.14178 2.17463 6.12873 2.62421 7.54453 3.6163C7.81663 3.80697 8.18333 3.80697 8.45543 3.6163C9.87123 2.62421 11.8582 2.17463 13.3371 2.00751C14.069 1.92481 14.6666 2.53602 14.6666 3.29012V10.8C14.6666 11.5541 14.069 12.1655 13.3371 12.2482C11.8582 12.4153 9.87123 12.8649 8.45543 13.857C8.18333 14.0477 7.81663 14.0477 7.54453 13.857C6.12873 12.8649 4.14178 12.4153 2.66287 12.2482C1.93093 12.1655 1.33331 11.5541 1.33331 10.8V3.29012C1.33331 2.53602 1.93093 1.92481 2.66287 2.00751Z"
+                                                    stroke="#7C8A8F" stroke-linecap="round"></path>
+                                            </svg>
+                                        </span>
+                                        <span class="text-xs font-arial text-[#7C8A8F] mt-[3px]">5 Lessons</span>
+                                    </div>
+                                </div>
+                                <div class="flex gap-2">
+                                    <span class="text-[15px] text-[#757c8e] leading-6">
+                                        <del>
+                                            <span>
+                                                <span>£</span>581.25
+                                            </span>
+                                        </del>
+                                    </span>
+                                    <span class="text-base text-[#1a1b1e] font-bold">
+                                        <span>£</span>465.00
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-white rounded-2xl border border-[#E6F3F3] transition-all hover:shadow-[12px_12px_48px_0px_rgba(36,60,69,0.12)] hover:scale-102 transition-transform duration-300 flex flex-col overflow-hidden">
+                            <div class="relative">
+                                <img src="./assets/images/latest-course/legal.jpg" alt="legal">
+                                <div class="absolute left-0 right-0 bottom-0 p-[15px] w-full">
+                                    <a href="#"
+                                        class="text-xs leading-4 font-arial py-1 px-3 border border-white text-white rounded-[32px] bg-[rgba(0,0,0,0.5)] tracking-[0.15px] block">Business, Management & Law</a>
+                                </div>
+                            </div>
+                            <div class="p-4">
+                                <h3 class="mb-[5px]"><a href="#" class="text-lg font-arial font-bold">Legal Administration Level 3 (QLS)…</a></h3>
+                                <p class="text-[#212529] text-[15px] leading-5 pb-2.5">Legal Administration is a comprehensive course designed to equip individuals with the knowledge and…</p>
+                                <div class="flex items-center justify-between">
+                                    <div class="flex items-center py-[18px]">
+                                        <span class="mr-1.5">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                viewBox="0 0 16 16" fill="none">
+                                                <path
+                                                    d="M14.1392 6.11669L10.172 5.54013L8.3986 1.94482C8.35016 1.84638 8.27048 1.76669 8.17204 1.71826C7.92516 1.59638 7.62516 1.69794 7.50173 1.94482L5.72829 5.54013L1.7611 6.11669C1.65173 6.13232 1.55173 6.18388 1.47516 6.262C1.3826 6.35714 1.3316 6.48513 1.33336 6.61785C1.33511 6.75057 1.38949 6.87717 1.48454 6.96982L4.35485 9.76825L3.67673 13.7198C3.66082 13.8117 3.671 13.9063 3.70609 13.9927C3.74118 14.0791 3.79979 14.154 3.87527 14.2088C3.95075 14.2637 4.04008 14.2962 4.13313 14.3029C4.22618 14.3095 4.31923 14.2899 4.40173 14.2464L7.95016 12.3808L11.4986 14.2464C11.5955 14.2979 11.708 14.3151 11.8158 14.2964C12.0877 14.2495 12.2705 13.9917 12.2236 13.7198L11.5455 9.76825L14.4158 6.96982C14.4939 6.89325 14.5455 6.79325 14.5611 6.68388C14.6033 6.41044 14.4127 6.15732 14.1392 6.11669Z"
+                                                    fill="#FFDC5D"></path>
+                                            </svg>
+                                        </span>
+                                        <span class="text-xs font-arial text-[#7C8A8F] mt-[3px]"> 5.00 (1 Reviews)</span>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <span class="mr-2">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                viewBox="0 0 16 16" fill="none">
+                                                <path
+                                                    d="M3.33331 5.50309C4.17716 5.63378 5.1185 5.85105 5.99998 6.19192M3.33331 8.16976C3.75964 8.23578 4.21085 8.32391 4.66665 8.4389M7.99998 4.03558V13.535M2.66287 2.00751C4.14178 2.17463 6.12873 2.62421 7.54453 3.6163C7.81663 3.80697 8.18333 3.80697 8.45543 3.6163C9.87123 2.62421 11.8582 2.17463 13.3371 2.00751C14.069 1.92481 14.6666 2.53602 14.6666 3.29012V10.8C14.6666 11.5541 14.069 12.1655 13.3371 12.2482C11.8582 12.4153 9.87123 12.8649 8.45543 13.857C8.18333 14.0477 7.81663 14.0477 7.54453 13.857C6.12873 12.8649 4.14178 12.4153 2.66287 12.2482C1.93093 12.1655 1.33331 11.5541 1.33331 10.8V3.29012C1.33331 2.53602 1.93093 1.92481 2.66287 2.00751Z"
+                                                    stroke="#7C8A8F" stroke-linecap="round"></path>
+                                            </svg>
+                                        </span>
+                                        <span class="text-xs font-arial text-[#7C8A8F] mt-[3px]"> 9 Lessons</span>
+                                    </div>
+                                </div>
+                                <div class="flex gap-2">
+                                    <span class="text-[15px] text-[#757c8e] leading-6">
+                                        <del>
+                                            <span>
+                                                <span>£</span>456.00
+                                            </span>
+                                        </del>
+                                    </span>
+                                    <span class="text-base text-[#1a1b1e] font-bold">
+                                        <span>£</span>365.00
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="bg-white rounded-2xl border border-[#E6F3F3] transition-all hover:shadow-[12px_12px_48px_0px_rgba(36,60,69,0.12)] hover:scale-102 transition-transform duration-300 flex flex-col overflow-hidden">
+                            <div class="relative">
+                                <img src="./assets/images/latest-course/human-resources.jpg" alt="human">
+                                <div class="absolute left-0 right-0 bottom-0 p-[15px] w-full">
+                                    <a href="#"
+                                        class="text-xs leading-4 font-arial py-1 px-3 border border-white text-white rounded-[32px] bg-[rgba(0,0,0,0.5)] tracking-[0.15px]">Business, Management & Law</a>
+                                </div>
+                            </div>
+                            <div class="p-4">
+                                <h3 class="mb-[5px]"><a href="#" class="text-lg font-arial font-bold">Human Resources Level 3 (CPD)…</a></h3>
+                                <p class="text-[#212529] text-[15px] leading-5 pb-2.5">The Human Resources course equips learners with comprehensive knowledge and practical skills vital for…</p>
+                                <div class="flex items-center justify-between">
+                                    <div class="flex items-center py-[18px]">
+                                        <span class="mr-1.5">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                viewBox="0 0 16 16" fill="none">
+                                                <path
+                                                    d="M14.1392 6.11669L10.172 5.54013L8.3986 1.94482C8.35016 1.84638 8.27048 1.76669 8.17204 1.71826C7.92516 1.59638 7.62516 1.69794 7.50173 1.94482L5.72829 5.54013L1.7611 6.11669C1.65173 6.13232 1.55173 6.18388 1.47516 6.262C1.3826 6.35714 1.3316 6.48513 1.33336 6.61785C1.33511 6.75057 1.38949 6.87717 1.48454 6.96982L4.35485 9.76825L3.67673 13.7198C3.66082 13.8117 3.671 13.9063 3.70609 13.9927C3.74118 14.0791 3.79979 14.154 3.87527 14.2088C3.95075 14.2637 4.04008 14.2962 4.13313 14.3029C4.22618 14.3095 4.31923 14.2899 4.40173 14.2464L7.95016 12.3808L11.4986 14.2464C11.5955 14.2979 11.708 14.3151 11.8158 14.2964C12.0877 14.2495 12.2705 13.9917 12.2236 13.7198L11.5455 9.76825L14.4158 6.96982C14.4939 6.89325 14.5455 6.79325 14.5611 6.68388C14.6033 6.41044 14.4127 6.15732 14.1392 6.11669Z"
+                                                    fill="#FFDC5D"></path>
+                                            </svg>
+                                        </span>
+                                        <span class="text-xs font-arial text-[#7C8A8F] mt-[3px]"> 5.00 (1
+                                            Reviews)</span>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <span class="mr-2">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                viewBox="0 0 16 16" fill="none">
+                                                <path
+                                                    d="M3.33331 5.50309C4.17716 5.63378 5.1185 5.85105 5.99998 6.19192M3.33331 8.16976C3.75964 8.23578 4.21085 8.32391 4.66665 8.4389M7.99998 4.03558V13.535M2.66287 2.00751C4.14178 2.17463 6.12873 2.62421 7.54453 3.6163C7.81663 3.80697 8.18333 3.80697 8.45543 3.6163C9.87123 2.62421 11.8582 2.17463 13.3371 2.00751C14.069 1.92481 14.6666 2.53602 14.6666 3.29012V10.8C14.6666 11.5541 14.069 12.1655 13.3371 12.2482C11.8582 12.4153 9.87123 12.8649 8.45543 13.857C8.18333 14.0477 7.81663 14.0477 7.54453 13.857C6.12873 12.8649 4.14178 12.4153 2.66287 12.2482C1.93093 12.1655 1.33331 11.5541 1.33331 10.8V3.29012C1.33331 2.53602 1.93093 1.92481 2.66287 2.00751Z"
+                                                    stroke="#7C8A8F" stroke-linecap="round"></path>
+                                            </svg>
+                                        </span>
+                                        <span class="text-xs font-arial text-[#7C8A8F] mt-[3px]">9 Lessons</span>
+                                    </div>
+                                </div>
+                                <div class="flex gap-2">
+                                    <span class="text-[15px] text-[#757c8e] leading-6">
+                                        <del>
+                                            <span>
+                                                <span>£</span>468.75
+                                            </span>
+                                        </del>
+                                    </span>
+                                    <span class="text-base text-[#1a1b1e] font-bold">
+                                        <span>£</span>389.00
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="bg-white rounded-2xl border border-[#E6F3F3] transition-all hover:shadow-[12px_12px_48px_0px_rgba(36,60,69,0.12)] hover:scale-102 transition-transform duration-300 flex flex-col overflow-hidden">
+                            <div class="relative">
+                                <img src="./assets/images/latest-course/business-people.jpg" alt="business">
+                                <div class="absolute left-0 right-0 bottom-0 p-[15px] w-full">
+                                    <a href="#"
+                                        class="text-xs leading-4 font-arial py-1 px-3 border border-white text-white rounded-[32px] bg-[rgba(0,0,0,0.5)] tracking-[0.15px]">Business Administration Department</a>
+                                </div>
+                            </div>
+                            <div class="p-4">
+                                <h3 class="mb-[5px]"><a href="#" class="text-lg font-arial font-bold">Business Administration Level 3…</a></h3>
+                                <p class="text-[#212529] text-[15px] leading-5 pb-2.5">The Business Administration (Level 3) course offers a comprehensive exploration of essential skills and…</p>
+                                <div class="flex items-center justify-between">
+                                    <div class="flex items-center py-[18px]">
+                                        <span class="mr-1.5">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                viewBox="0 0 16 16" fill="none">
+                                                <path
+                                                    d="M14.1392 6.11669L10.172 5.54013L8.3986 1.94482C8.35016 1.84638 8.27048 1.76669 8.17204 1.71826C7.92516 1.59638 7.62516 1.69794 7.50173 1.94482L5.72829 5.54013L1.7611 6.11669C1.65173 6.13232 1.55173 6.18388 1.47516 6.262C1.3826 6.35714 1.3316 6.48513 1.33336 6.61785C1.33511 6.75057 1.38949 6.87717 1.48454 6.96982L4.35485 9.76825L3.67673 13.7198C3.66082 13.8117 3.671 13.9063 3.70609 13.9927C3.74118 14.0791 3.79979 14.154 3.87527 14.2088C3.95075 14.2637 4.04008 14.2962 4.13313 14.3029C4.22618 14.3095 4.31923 14.2899 4.40173 14.2464L7.95016 12.3808L11.4986 14.2464C11.5955 14.2979 11.708 14.3151 11.8158 14.2964C12.0877 14.2495 12.2705 13.9917 12.2236 13.7198L11.5455 9.76825L14.4158 6.96982C14.4939 6.89325 14.5455 6.79325 14.5611 6.68388C14.6033 6.41044 14.4127 6.15732 14.1392 6.11669Z"
+                                                    fill="#FFDC5D"></path>
+                                            </svg>
+                                        </span>
+                                        <span class="text-xs font-arial text-[#7C8A8F] mt-[3px]">5.00 (1 Reviews)</span>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <span class="mr-2">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                viewBox="0 0 16 16" fill="none">
+                                                <path
+                                                    d="M3.33331 5.50309C4.17716 5.63378 5.1185 5.85105 5.99998 6.19192M3.33331 8.16976C3.75964 8.23578 4.21085 8.32391 4.66665 8.4389M7.99998 4.03558V13.535M2.66287 2.00751C4.14178 2.17463 6.12873 2.62421 7.54453 3.6163C7.81663 3.80697 8.18333 3.80697 8.45543 3.6163C9.87123 2.62421 11.8582 2.17463 13.3371 2.00751C14.069 1.92481 14.6666 2.53602 14.6666 3.29012V10.8C14.6666 11.5541 14.069 12.1655 13.3371 12.2482C11.8582 12.4153 9.87123 12.8649 8.45543 13.857C8.18333 14.0477 7.81663 14.0477 7.54453 13.857C6.12873 12.8649 4.14178 12.4153 2.66287 12.2482C1.93093 12.1655 1.33331 11.5541 1.33331 10.8V3.29012C1.33331 2.53602 1.93093 1.92481 2.66287 2.00751Z"
+                                                    stroke="#7C8A8F" stroke-linecap="round"></path>
+                                            </svg>
+                                        </span>
+                                        <span class="text-xs font-arial text-[#7C8A8F] mt-[3px]">9 Lessons</span>
+                                    </div>
+                                </div>
+                                <div class="flex gap-2">
+                                    <span class="text-[15px] text-[#757c8e] leading-6">
+                                        <del>
+                                            <span>
+                                                <span>£</span>467.50
+                                            </span>
+                                        </del>
+                                    </span>
+                                    <span class="text-base text-[#1a1b1e] font-bold">
+                                        <span>£</span>374.00
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="bg-white rounded-2xl border border-[#E6F3F3] transition-all hover:shadow-[12px_12px_48px_0px_rgba(36,60,69,0.12)] hover:scale-102 transition-transform duration-300 flex flex-col overflow-hidden">
+                            <div class="relative">
+                                <img src="./assets/images/latest-course/schoolgirl.jpg" alt="schoolgirl">
+                                <div class="absolute left-0 right-0 bottom-0 p-[15px] w-full">
+                                    <a href="#"
+                                        class="text-xs leading-4 font-arial py-1 px-3 border border-white text-white rounded-[32px] bg-[rgba(0,0,0,0.5)] tracking-[0.15px]">Childcare Department</a>
+                                </div>
+                            </div>
+                            <div class="p-4">
+                                <h3 class="mb-[5px]"><a href="#" class="text-lg font-arial font-bold">Higher Level Teaching Assistants…</a></h3>
+                                <p class="text-[#212529] text-[15px] leading-5 pb-2.5">Our Higher Level Teaching Assistants (Level 4) Certificate program is tailored to individuals aspiring to…</p>
+                                <div class="flex items-center justify-between">
+                                    <div class="flex items-center py-[18px]">
+                                        <span class="mr-1.5">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                viewBox="0 0 16 16" fill="none">
+                                                <path
+                                                    d="M14.1392 6.11669L10.172 5.54013L8.3986 1.94482C8.35016 1.84638 8.27048 1.76669 8.17204 1.71826C7.92516 1.59638 7.62516 1.69794 7.50173 1.94482L5.72829 5.54013L1.7611 6.11669C1.65173 6.13232 1.55173 6.18388 1.47516 6.262C1.3826 6.35714 1.3316 6.48513 1.33336 6.61785C1.33511 6.75057 1.38949 6.87717 1.48454 6.96982L4.35485 9.76825L3.67673 13.7198C3.66082 13.8117 3.671 13.9063 3.70609 13.9927C3.74118 14.0791 3.79979 14.154 3.87527 14.2088C3.95075 14.2637 4.04008 14.2962 4.13313 14.3029C4.22618 14.3095 4.31923 14.2899 4.40173 14.2464L7.95016 12.3808L11.4986 14.2464C11.5955 14.2979 11.708 14.3151 11.8158 14.2964C12.0877 14.2495 12.2705 13.9917 12.2236 13.7198L11.5455 9.76825L14.4158 6.96982C14.4939 6.89325 14.5455 6.79325 14.5611 6.68388C14.6033 6.41044 14.4127 6.15732 14.1392 6.11669Z"
+                                                    fill="#FFDC5D"></path>
+                                            </svg>
+                                        </span>
+                                        <span class="text-xs font-arial text-[#7C8A8F] mt-[3px]">5.00 (2 Reviews)</span>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <span class="mr-2">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                viewBox="0 0 16 16" fill="none">
+                                                <path
+                                                    d="M3.33331 5.50309C4.17716 5.63378 5.1185 5.85105 5.99998 6.19192M3.33331 8.16976C3.75964 8.23578 4.21085 8.32391 4.66665 8.4389M7.99998 4.03558V13.535M2.66287 2.00751C4.14178 2.17463 6.12873 2.62421 7.54453 3.6163C7.81663 3.80697 8.18333 3.80697 8.45543 3.6163C9.87123 2.62421 11.8582 2.17463 13.3371 2.00751C14.069 1.92481 14.6666 2.53602 14.6666 3.29012V10.8C14.6666 11.5541 14.069 12.1655 13.3371 12.2482C11.8582 12.4153 9.87123 12.8649 8.45543 13.857C8.18333 14.0477 7.81663 14.0477 7.54453 13.857C6.12873 12.8649 4.14178 12.4153 2.66287 12.2482C1.93093 12.1655 1.33331 11.5541 1.33331 10.8V3.29012C1.33331 2.53602 1.93093 1.92481 2.66287 2.00751Z"
+                                                    stroke="#7C8A8F" stroke-linecap="round"></path>
+                                            </svg>
+                                        </span>
+                                        <span class="text-xs font-arial text-[#7C8A8F] mt-[3px]">9 Lessons</span>
+                                    </div>
+                                </div>
+                                <div class="flex gap-2">
+                                    <span class="text-[15px] text-[#757c8e] leading-6">
+                                        <del>
+                                            <span>
+                                                <span>£</span>736.25
+                                            </span>
+                                        </del>
+                                    </span>
+                                    <span class="text-base text-[#1a1b1e] font-bold">
+                                        <span>£</span>589.00
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-white rounded-2xl border border-[#E6F3F3] transition-all hover:shadow-[12px_12px_48px_0px_rgba(36,60,69,0.12)] hover:scale-102 transition-transform duration-300 flex flex-col overflow-hidden">
+                            <div class="relative">
+                                <img src="./assets/images/latest-course/herbal-pills.jpg" alt="herbal-pills">
+                                <div class="absolute left-0 right-0 bottom-0 p-[15px] w-full">
+                                    <a href="#"
+                                        class="text-xs leading-4 font-arial py-1 px-3 border border-white text-white rounded-[32px] bg-[rgba(0,0,0,0.5)] tracking-[0.15px] block">Alternative Therapies Department</a>
+                                </div>
+                            </div>
+                            <div class="p-4">
+                                <h3 class="mb-[5px]"><a href="#" class="text-lg font-arial font-bold">Herbal Medicine Level 3 (QLS)…</a></h3>
+                                <p class="text-[#212529] text-[15px] leading-5 pb-2.5">In the Herbal Medicine course, students delve into the rich world of botanical healing, exploring the…</p>
+                                <div class="flex items-center justify-between">
+                                    <div class="flex items-center py-[18px]">
+                                        <span class="mr-1.5">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                viewBox="0 0 16 16" fill="none">
+                                                <path
+                                                    d="M14.1392 6.11669L10.172 5.54013L8.3986 1.94482C8.35016 1.84638 8.27048 1.76669 8.17204 1.71826C7.92516 1.59638 7.62516 1.69794 7.50173 1.94482L5.72829 5.54013L1.7611 6.11669C1.65173 6.13232 1.55173 6.18388 1.47516 6.262C1.3826 6.35714 1.3316 6.48513 1.33336 6.61785C1.33511 6.75057 1.38949 6.87717 1.48454 6.96982L4.35485 9.76825L3.67673 13.7198C3.66082 13.8117 3.671 13.9063 3.70609 13.9927C3.74118 14.0791 3.79979 14.154 3.87527 14.2088C3.95075 14.2637 4.04008 14.2962 4.13313 14.3029C4.22618 14.3095 4.31923 14.2899 4.40173 14.2464L7.95016 12.3808L11.4986 14.2464C11.5955 14.2979 11.708 14.3151 11.8158 14.2964C12.0877 14.2495 12.2705 13.9917 12.2236 13.7198L11.5455 9.76825L14.4158 6.96982C14.4939 6.89325 14.5455 6.79325 14.5611 6.68388C14.6033 6.41044 14.4127 6.15732 14.1392 6.11669Z"
+                                                    fill="#FFDC5D"></path>
+                                            </svg>
+                                        </span>
+                                        <span class="text-xs font-arial text-[#7C8A8F] mt-[3px]"> 5.00 (1 Reviews)</span>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <span class="mr-2">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                viewBox="0 0 16 16" fill="none">
+                                                <path
+                                                    d="M3.33331 5.50309C4.17716 5.63378 5.1185 5.85105 5.99998 6.19192M3.33331 8.16976C3.75964 8.23578 4.21085 8.32391 4.66665 8.4389M7.99998 4.03558V13.535M2.66287 2.00751C4.14178 2.17463 6.12873 2.62421 7.54453 3.6163C7.81663 3.80697 8.18333 3.80697 8.45543 3.6163C9.87123 2.62421 11.8582 2.17463 13.3371 2.00751C14.069 1.92481 14.6666 2.53602 14.6666 3.29012V10.8C14.6666 11.5541 14.069 12.1655 13.3371 12.2482C11.8582 12.4153 9.87123 12.8649 8.45543 13.857C8.18333 14.0477 7.81663 14.0477 7.54453 13.857C6.12873 12.8649 4.14178 12.4153 2.66287 12.2482C1.93093 12.1655 1.33331 11.5541 1.33331 10.8V3.29012C1.33331 2.53602 1.93093 1.92481 2.66287 2.00751Z"
+                                                    stroke="#7C8A8F" stroke-linecap="round"></path>
+                                            </svg>
+                                        </span>
+                                        <span class="text-xs font-arial text-[#7C8A8F] mt-[3px]"> 9 Lessons</span>
+                                    </div>
+                                </div>
+                                <div class="flex gap-2">
+                                    <span class="text-[15px] text-[#757c8e] leading-6">
+                                        <del>
+                                            <span>
+                                                <span>£</span>456.25
+                                            </span>
+                                        </del>
+                                    </span>
+                                    <span class="text-base text-[#1a1b1e] font-bold">
+                                        <span>£</span>365.00
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="bg-white rounded-2xl border border-[#E6F3F3] transition-all hover:shadow-[12px_12px_48px_0px_rgba(36,60,69,0.12)] hover:scale-102 transition-transform duration-300 flex flex-col overflow-hidden">
+                            <div class="relative">
+                                <img src="./assets/images/latest-course/OLC-Logo.png" alt="logo">
+                            </div>
+                            <div class="p-4">
+                                <h3 class="mb-[5px]"><a href="#" class="text-lg font-arial font-bold">Protected: Open Learning College…</a></h3>
+                                <p class="text-[#212529] text-[15px] leading-5 pb-2.5">There is no excerpt because this is a protected post.</p>
+                                <div class="flex items-center justify-between">
+                                    <div class="flex items-center py-[18px]">
+                                        <span class="mr-1.5">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                viewBox="0 0 16 16" fill="none">
+                                                <path
+                                                    d="M14.1392 6.11669L10.172 5.54013L8.3986 1.94482C8.35016 1.84638 8.27048 1.76669 8.17204 1.71826C7.92516 1.59638 7.62516 1.69794 7.50173 1.94482L5.72829 5.54013L1.7611 6.11669C1.65173 6.13232 1.55173 6.18388 1.47516 6.262C1.3826 6.35714 1.3316 6.48513 1.33336 6.61785C1.33511 6.75057 1.38949 6.87717 1.48454 6.96982L4.35485 9.76825L3.67673 13.7198C3.66082 13.8117 3.671 13.9063 3.70609 13.9927C3.74118 14.0791 3.79979 14.154 3.87527 14.2088C3.95075 14.2637 4.04008 14.2962 4.13313 14.3029C4.22618 14.3095 4.31923 14.2899 4.40173 14.2464L7.95016 12.3808L11.4986 14.2464C11.5955 14.2979 11.708 14.3151 11.8158 14.2964C12.0877 14.2495 12.2705 13.9917 12.2236 13.7198L11.5455 9.76825L14.4158 6.96982C14.4939 6.89325 14.5455 6.79325 14.5611 6.68388C14.6033 6.41044 14.4127 6.15732 14.1392 6.11669Z"
+                                                    fill="#FFDC5D"></path>
+                                            </svg>
+                                        </span>
+                                        <span class="text-xs font-arial text-[#7C8A8F] mt-[3px]"> 0 (0 Reviews)</span>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <span class="mr-2">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                viewBox="0 0 16 16" fill="none">
+                                                <path
+                                                    d="M3.33331 5.50309C4.17716 5.63378 5.1185 5.85105 5.99998 6.19192M3.33331 8.16976C3.75964 8.23578 4.21085 8.32391 4.66665 8.4389M7.99998 4.03558V13.535M2.66287 2.00751C4.14178 2.17463 6.12873 2.62421 7.54453 3.6163C7.81663 3.80697 8.18333 3.80697 8.45543 3.6163C9.87123 2.62421 11.8582 2.17463 13.3371 2.00751C14.069 1.92481 14.6666 2.53602 14.6666 3.29012V10.8C14.6666 11.5541 14.069 12.1655 13.3371 12.2482C11.8582 12.4153 9.87123 12.8649 8.45543 13.857C8.18333 14.0477 7.81663 14.0477 7.54453 13.857C6.12873 12.8649 4.14178 12.4153 2.66287 12.2482C1.93093 12.1655 1.33331 11.5541 1.33331 10.8V3.29012C1.33331 2.53602 1.93093 1.92481 2.66287 2.00751Z"
+                                                    stroke="#7C8A8F" stroke-linecap="round"></path>
+                                            </svg>
+                                        </span>
+                                        <span class="text-xs font-arial text-[#7C8A8F] mt-[3px]">4 Lessons</span>
+                                    </div>
+                                </div>
+                                <div class="flex gap-2">
+                                    <a href="#" class="text-xs font-bold font-arial text-[#008080] border border-[#008080] rounded-full px-4 py-2 transition-all bg-[#008080] text-white hover:bg-white hover:text-[#008080]">Enroll Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="bg-white rounded-2xl border border-[#E6F3F3] transition-all hover:shadow-[12px_12px_48px_0px_rgba(36,60,69,0.12)] hover:scale-102 transition-transform duration-300 flex flex-col overflow-hidden">
+                            <div class="relative">
+                                <img src="./assets/images/latest-course/health-care-researchers-working.jpg" alt="health-care-researchers-working">
+                                <div class="absolute left-0 right-0 bottom-0 p-[15px] w-full">
+                                    <a href="#"
+                                        class="text-xs leading-4 font-arial py-1 px-3 border border-white text-white rounded-[32px] bg-[rgba(0,0,0,0.5)] tracking-[0.15px]">Health & Social Care</a>
+                                </div>
+                            </div>
+                            <div class="p-4">
+                                <h3 class="mb-[5px]"><a href="#" class="text-lg font-arial font-bold">Working in the Health Sector Level…</a></h3>
+                                <p class="text-[#212529] text-[15px] leading-5 pb-2.5">Embark on a fulfilling journey with our "Working in the Health Sector" course, designed to equip you with…</p>
+                                <div class="flex items-center justify-between">
+                                    <div class="flex items-center py-[18px]">
+                                        <span class="mr-1.5">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                viewBox="0 0 16 16" fill="none">
+                                                <path
+                                                    d="M14.1392 6.11669L10.172 5.54013L8.3986 1.94482C8.35016 1.84638 8.27048 1.76669 8.17204 1.71826C7.92516 1.59638 7.62516 1.69794 7.50173 1.94482L5.72829 5.54013L1.7611 6.11669C1.65173 6.13232 1.55173 6.18388 1.47516 6.262C1.3826 6.35714 1.3316 6.48513 1.33336 6.61785C1.33511 6.75057 1.38949 6.87717 1.48454 6.96982L4.35485 9.76825L3.67673 13.7198C3.66082 13.8117 3.671 13.9063 3.70609 13.9927C3.74118 14.0791 3.79979 14.154 3.87527 14.2088C3.95075 14.2637 4.04008 14.2962 4.13313 14.3029C4.22618 14.3095 4.31923 14.2899 4.40173 14.2464L7.95016 12.3808L11.4986 14.2464C11.5955 14.2979 11.708 14.3151 11.8158 14.2964C12.0877 14.2495 12.2705 13.9917 12.2236 13.7198L11.5455 9.76825L14.4158 6.96982C14.4939 6.89325 14.5455 6.79325 14.5611 6.68388C14.6033 6.41044 14.4127 6.15732 14.1392 6.11669Z"
+                                                    fill="#FFDC5D"></path>
+                                            </svg>
+                                        </span>
+                                        <span class="text-xs font-arial text-[#7C8A8F] mt-[3px]">0 (0 Reviews)</span>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <span class="mr-2">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                viewBox="0 0 16 16" fill="none">
+                                                <path
+                                                    d="M3.33331 5.50309C4.17716 5.63378 5.1185 5.85105 5.99998 6.19192M3.33331 8.16976C3.75964 8.23578 4.21085 8.32391 4.66665 8.4389M7.99998 4.03558V13.535M2.66287 2.00751C4.14178 2.17463 6.12873 2.62421 7.54453 3.6163C7.81663 3.80697 8.18333 3.80697 8.45543 3.6163C9.87123 2.62421 11.8582 2.17463 13.3371 2.00751C14.069 1.92481 14.6666 2.53602 14.6666 3.29012V10.8C14.6666 11.5541 14.069 12.1655 13.3371 12.2482C11.8582 12.4153 9.87123 12.8649 8.45543 13.857C8.18333 14.0477 7.81663 14.0477 7.54453 13.857C6.12873 12.8649 4.14178 12.4153 2.66287 12.2482C1.93093 12.1655 1.33331 11.5541 1.33331 10.8V3.29012C1.33331 2.53602 1.93093 1.92481 2.66287 2.00751Z"
+                                                    stroke="#7C8A8F" stroke-linecap="round"></path>
+                                            </svg>
+                                        </span>
+                                        <span class="text-xs font-arial text-[#7C8A8F] mt-[3px]">9 Lessons</span>
+                                    </div>
+                                </div>
+                                <div class="flex gap-2">
+                                    <span class="text-[15px] text-[#757c8e] leading-6">
+                                        <del>
+                                            <span>
+                                                <span>£</span>350.00
+                                            </span>
+                                        </del>
+                                    </span>
+                                    <span class="text-base text-[#1a1b1e] font-bold">
+                                        <span>£</span>280.00
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="bg-white rounded-2xl border border-[#E6F3F3] transition-all hover:shadow-[12px_12px_48px_0px_rgba(36,60,69,0.12)] hover:scale-102 transition-transform duration-300 flex flex-col overflow-hidden">
+                            <div class="relative">
+                                <img src="./assets/images/latest-course/female-doctor-writes.jpg" alt="doctor">
+                                <div class="absolute left-0 right-0 bottom-0 p-[15px] w-full">
+                                    <a href="#"
+                                        class="text-xs leading-4 font-arial py-1 px-3 border border-white text-white rounded-[32px] bg-[rgba(0,0,0,0.5)] tracking-[0.15px]">Health & Social Care</a>
+                                </div>
+                            </div>
+                            <div class="p-4">
+                                <h3 class="mb-[5px]"><a href="#" class="text-lg font-arial font-bold">Working in Healthcare Level 3 (QLS)…</a></h3>
+                                <p class="text-[#212529] text-[15px] leading-5 pb-2.5">Working in Healthcare is a dynamic and comprehensive course designed for individuals aspiring to build a…</p>
+                                <div class="flex items-center justify-between">
+                                    <div class="flex items-center py-[18px]">
+                                        <span class="mr-1.5">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                viewBox="0 0 16 16" fill="none">
+                                                <path
+                                                    d="M14.1392 6.11669L10.172 5.54013L8.3986 1.94482C8.35016 1.84638 8.27048 1.76669 8.17204 1.71826C7.92516 1.59638 7.62516 1.69794 7.50173 1.94482L5.72829 5.54013L1.7611 6.11669C1.65173 6.13232 1.55173 6.18388 1.47516 6.262C1.3826 6.35714 1.3316 6.48513 1.33336 6.61785C1.33511 6.75057 1.38949 6.87717 1.48454 6.96982L4.35485 9.76825L3.67673 13.7198C3.66082 13.8117 3.671 13.9063 3.70609 13.9927C3.74118 14.0791 3.79979 14.154 3.87527 14.2088C3.95075 14.2637 4.04008 14.2962 4.13313 14.3029C4.22618 14.3095 4.31923 14.2899 4.40173 14.2464L7.95016 12.3808L11.4986 14.2464C11.5955 14.2979 11.708 14.3151 11.8158 14.2964C12.0877 14.2495 12.2705 13.9917 12.2236 13.7198L11.5455 9.76825L14.4158 6.96982C14.4939 6.89325 14.5455 6.79325 14.5611 6.68388C14.6033 6.41044 14.4127 6.15732 14.1392 6.11669Z"
+                                                    fill="#FFDC5D"></path>
+                                            </svg>
+                                        </span>
+                                        <span class="text-xs font-arial text-[#7C8A8F] mt-[3px]">0 (0 Reviews)</span>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <span class="mr-2">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                viewBox="0 0 16 16" fill="none">
+                                                <path
+                                                    d="M3.33331 5.50309C4.17716 5.63378 5.1185 5.85105 5.99998 6.19192M3.33331 8.16976C3.75964 8.23578 4.21085 8.32391 4.66665 8.4389M7.99998 4.03558V13.535M2.66287 2.00751C4.14178 2.17463 6.12873 2.62421 7.54453 3.6163C7.81663 3.80697 8.18333 3.80697 8.45543 3.6163C9.87123 2.62421 11.8582 2.17463 13.3371 2.00751C14.069 1.92481 14.6666 2.53602 14.6666 3.29012V10.8C14.6666 11.5541 14.069 12.1655 13.3371 12.2482C11.8582 12.4153 9.87123 12.8649 8.45543 13.857C8.18333 14.0477 7.81663 14.0477 7.54453 13.857C6.12873 12.8649 4.14178 12.4153 2.66287 12.2482C1.93093 12.1655 1.33331 11.5541 1.33331 10.8V3.29012C1.33331 2.53602 1.93093 1.92481 2.66287 2.00751Z"
+                                                    stroke="#7C8A8F" stroke-linecap="round"></path>
+                                            </svg>
+                                        </span>
+                                        <span class="text-xs font-arial text-[#7C8A8F] mt-[3px]">9 Lessons</span>
+                                    </div>
+                                </div>
+                                <div class="flex gap-2">
+                                    <span class="text-[15px] text-[#757c8e] leading-6">
+                                        <del>
+                                            <span>
+                                                <span>£</span>350.00
+                                            </span>
+                                        </del>
+                                    </span>
+                                    <span class="text-base text-[#1a1b1e] font-bold">
+                                        <span>£</span>280.00
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="bg-white rounded-2xl border border-[#E6F3F3] transition-all hover:shadow-[12px_12px_48px_0px_rgba(36,60,69,0.12)] hover:scale-102 transition-transform duration-300 flex flex-col overflow-hidden">
+                            <div class="relative">
+                                <img src="./assets/images/latest-course/teachers-who-love-teaching.jpg" alt="teachers">
+                                <div class="absolute left-0 right-0 bottom-0 p-[15px] w-full">
+                                    <a href="#"
+                                        class="text-xs leading-4 font-arial py-1 px-3 border border-white text-white rounded-[32px] bg-[rgba(0,0,0,0.5)] tracking-[0.15px]">Teaching & Childcare</a>
+                                </div>
+                            </div>
+                            <div class="p-4">
+                                <h3 class="mb-[5px]"><a href="#" class="text-lg font-arial font-bold">Supporting Teaching & Learning…</a></h3>
+                                <p class="text-[#212529] text-[15px] leading-5 pb-2.5">The Supporting Teaching & Learning course offers a comprehensive exploration of the essential skills and…</p>
+                                <div class="flex items-center justify-between">
+                                    <div class="flex items-center py-[18px]">
+                                        <span class="mr-1.5">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                viewBox="0 0 16 16" fill="none">
+                                                <path
+                                                    d="M14.1392 6.11669L10.172 5.54013L8.3986 1.94482C8.35016 1.84638 8.27048 1.76669 8.17204 1.71826C7.92516 1.59638 7.62516 1.69794 7.50173 1.94482L5.72829 5.54013L1.7611 6.11669C1.65173 6.13232 1.55173 6.18388 1.47516 6.262C1.3826 6.35714 1.3316 6.48513 1.33336 6.61785C1.33511 6.75057 1.38949 6.87717 1.48454 6.96982L4.35485 9.76825L3.67673 13.7198C3.66082 13.8117 3.671 13.9063 3.70609 13.9927C3.74118 14.0791 3.79979 14.154 3.87527 14.2088C3.95075 14.2637 4.04008 14.2962 4.13313 14.3029C4.22618 14.3095 4.31923 14.2899 4.40173 14.2464L7.95016 12.3808L11.4986 14.2464C11.5955 14.2979 11.708 14.3151 11.8158 14.2964C12.0877 14.2495 12.2705 13.9917 12.2236 13.7198L11.5455 9.76825L14.4158 6.96982C14.4939 6.89325 14.5455 6.79325 14.5611 6.68388C14.6033 6.41044 14.4127 6.15732 14.1392 6.11669Z"
+                                                    fill="#FFDC5D"></path>
+                                            </svg>
+                                        </span>
+                                        <span class="text-xs font-arial text-[#7C8A8F] mt-[3px]">5.00 (1 Reviews)</span>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <span class="mr-2">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                viewBox="0 0 16 16" fill="none">
+                                                <path
+                                                    d="M3.33331 5.50309C4.17716 5.63378 5.1185 5.85105 5.99998 6.19192M3.33331 8.16976C3.75964 8.23578 4.21085 8.32391 4.66665 8.4389M7.99998 4.03558V13.535M2.66287 2.00751C4.14178 2.17463 6.12873 2.62421 7.54453 3.6163C7.81663 3.80697 8.18333 3.80697 8.45543 3.6163C9.87123 2.62421 11.8582 2.17463 13.3371 2.00751C14.069 1.92481 14.6666 2.53602 14.6666 3.29012V10.8C14.6666 11.5541 14.069 12.1655 13.3371 12.2482C11.8582 12.4153 9.87123 12.8649 8.45543 13.857C8.18333 14.0477 7.81663 14.0477 7.54453 13.857C6.12873 12.8649 4.14178 12.4153 2.66287 12.2482C1.93093 12.1655 1.33331 11.5541 1.33331 10.8V3.29012C1.33331 2.53602 1.93093 1.92481 2.66287 2.00751Z"
+                                                    stroke="#7C8A8F" stroke-linecap="round"></path>
+                                            </svg>
+                                        </span>
+                                        <span class="text-xs font-arial text-[#7C8A8F] mt-[3px]">21 Lessons</span>
+                                    </div>
+                                </div>
+                                <div class="flex gap-2">
+                                    <span class="text-[15px] text-[#757c8e] leading-6">
+                                        <del>
+                                            <span>
+                                                <span>£</span>556.25
+                                            </span>
+                                        </del>
+                                    </span>
+                                    <span class="text-base text-[#1a1b1e] font-bold">
+                                        <span>£</span>445.00
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- CARD ITEMS END -->
+
+                    <!-- PAGINATION START -->
+                    <div class="flex flex-row flex-wrap justify-center items-center gap-5 mt-[50px] md:mt-[120px]">
+                        <button class="bg-[#243c45] text-white rounded shadow-sm py-2 px-4 cursor-pointer text-base font-medium font-roboto hover:bg-[#243C45] hover:text-white transition-all duration-500" type="button">1</button>
+                        <button class="bg-white text-[#6b7385] shadow-sm rounded py-2 px-4 cursor-pointer text-base font-medium font-roboto hover:bg-[#243C45] hover:text-white transition-all duration-500" type="button">2</button>
+                        <button class="bg-white text-[#6b7385] shadow-sm rounded py-2 px-4 cursor-pointer text-base font-medium font-roboto hover:bg-[#243C45] hover:text-white transition-all duration-500" type="button">3</button>
+                        <button class="bg-white text-[#6b7385] shadow-sm rounded py-2 px-4 cursor-pointer text-base font-medium font-roboto hover:bg-[#243C45] hover:text-white transition-all duration-500" type="button">4</button>
+
+                        <button class="bg-transparent text-[#6b7385] shadow-sm rounded py-2 px-4 cursor-pointer text-base font-medium font-roboto hover:bg-[#243C45] hover:text-white transition-all duration-500" type="button">...</button>
+
+                        <button class="bg-white text-[#6b7385] shadow-sm rounded py-2 px-4 cursor-pointer text-base font-medium font-roboto hover:bg-[#243C45] hover:text-white transition-all duration-500" type="button">5</button>
+                        <button class="bg-white text-[#6b7385] shadow-sm rounded py-2 px-2.5 cursor-pointer text-base font-medium font-roboto hover:bg-[#243C45] hover:text-white transition-all duration-500" type="button">
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </button>
+                    </div>
+                    <!-- PAGINATION END -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- COURSE FINDER SECTION END -->
+
+    <!-- FIND YOUR COURSE SECTION START -->
+    <section>
+        <a class="flex flex-col flex-wrap gap-y-[15px] justify-center items-center text-center w-full text-white bg-[#60048A] py-[30px] lg:py-[50px] px-[30px] lg:px-[50px]"
+            href="#">
+            <h2 class="text-2xl lg:text-[35px] font-bold font-roboto">Over 1000 Industry Recognised Accredited Courses
+            </h2>
+            <p class="text-sm lg:text-base font-normal font-roboto">We work with the most well-known and respected
+                awarding bodies.</p>
+            <p
+                class="mt-[5px] border-2 border-white rounded py-3 px-8 text-sm font-medium font-roboto hover:text-[#004D3D] hover:bg-white transition-all duration-500">
+                Find your Course</p>
+        </a>
+    </section>
+    <!-- FIND YOUR COURSE SECTION END -->
+     <script src="./assets/min.js"></script>
+     <script>
+        document.addEventListener("DOMContentLoaded", () => {
+        const sidebarBtn = document.getElementById("sidebar-btn");
+        const sidebarMenu = document.getElementById("sidebar-menu");
+
+        if (!sidebarBtn || !sidebarMenu) {
+            console.log("sidebar elements not found");
+            return;
+        }
+
+        sidebarBtn.addEventListener("click", () => {
+            sidebarMenu.classList.toggle("active");
+        });
+    });
+     </script>
+</body>
+
+</html>

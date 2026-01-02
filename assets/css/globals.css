@@ -1,0 +1,212 @@
+/* ROOT VARIABLES */
+:root {
+    --color-primary: #243C45;
+    --color-secondary: #212529;
+    --color-green-dark: #004D4D;
+    --color-green: #008080;
+    --color-silver: #7C8A8F;
+    --color-gary-light: #F7FBFB;
+    --font-primary: 'Arial', sans-serif;
+    --font-secondary: 'Open Sans', sans-serif;
+    --font-lato: 'Lato', sans-serif;
+    --font-archivo: 'Archivo', sans-serif;
+    --font-roboto: 'Roboto', sans-serif;
+    --font-secondary: 'Open Sans', sans-serif;
+    --font-lato: 'Lato', sans-serif;
+    --font-archivo: 'Archivo', sans-serif;
+    --font-roboto: 'Roboto', sans-serif;
+    --font-redhat: 'Red Hat Display', sans-serif;
+    --font-tahoma: 'Tahoma', sans-serif;
+    --font-heebo: 'Heebo', sans-serif;
+    --font-dm: 'DM Sans', sans-serif;
+    --breakpoint-1xl: 84.5rem;
+}
+@font-face {
+    font-family: 'Tahoma';
+    src: url('../font/Tahoma.eot');
+    src: url('../font/Tahoma.eot?#iefix') format('embedded-opentype'),
+        url('../font/Tahoma.woff') format('woff'),
+        url('../font/Tahoma.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+.font-tahoma{
+    font-family: var(--font-tahoma);
+}
+.font-arial {
+    font-family: var(--font-primary);
+}
+
+.font-open {
+    font-family: var(--font-secondary);
+}
+
+.font-lato {
+    font-family: var(--font-lato);
+}
+
+.font-archivo {
+    font-family: var(--font-archivo);
+}
+
+.font-roboto {
+    font-family: var(--font-roboto);
+}
+
+.font-redhat {
+    font-family: var(--font-redhat);
+}
+.font-heebo{
+    font-family: var(--font-heebo);
+}
+.font-dm{
+    font-family: var(--font-dm);
+}
+
+.font-awesome {
+    font-family: "Font Awesome 5 Free";
+}
+
+.color-green {
+    color: var(--color-green);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--font-primary);
+}
+
+body,
+main,
+section,
+header,
+footer {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+}
+
+.timepicker::-webkit-calendar-picker-indicator,
+.datepicker::-webkit-calendar-picker-indicator {
+    opacity: 0;
+    display: none;
+    appearance: none;
+}
+
+.timepicker::-webkit-inner-spin-button,
+.timepicker::-webkit-clear-button,
+.datepicker::-webkit-inner-spin-button,
+.datepicker::-webkit-clear-button {
+    display: none;
+}
+
+.container {
+    margin: 0 auto;
+    padding-inline: 16px;
+
+    @media (width >=84.5rem) {
+        max-width: var(--breakpoint-1xl);
+    }
+}
+
+@keyframes pulse-grow {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.05);
+    }
+}
+@keyframes ripple {
+
+
+    0% {
+        transform: scale(1);
+        opacity: 0.6;
+    }
+    70% {
+        transform: scale(1.6);
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.hover\:animate-pulse-grow:hover {
+    animation: pulse-grow .3s linear infinite alternate;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    object-fit: contain;
+}
+
+.author-card.swiper-slide-active .author-img{
+    border: 4px solid #008080;
+}
+
+.author-card {
+    transition: all 0.3s ease;
+    transform: scale(0.9);
+}
+
+.swiper-slide-active .author-card {
+    transform: scale(1.1);
+}
+
+.author-card.swiper-slide-active .author-info {
+    display: flex !important;
+}
+
+
+.review.swiper {
+    width: 100%;
+    height: auto !important;
+}
+
+@media (max-width:1024px){
+    #sidebar-menu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 250px;
+        height: 100vh; 
+        padding: 10px;
+
+        overflow-y: auto; 
+        overflow-x: hidden;
+
+        transform: translateX(-100%);
+        transition: transform 0.4s ease;
+        background: #fff;
+        z-index: 1000;
+    }
+
+    #sidebar-menu.active {
+        transform: translateX(0);
+    }
+}
+
+
+

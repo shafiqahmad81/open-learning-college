@@ -1,0 +1,153 @@
+================ COLOR CODE START ================
+white=#ffffff
+================ COLOR CODE END ================
+
+================ FONT SIZE START ================
+h1 = 
+h2 = 
+h3 =
+h4 =
+h5 =
+h6 = 
+p = 
+span = 
+bold = 
+strong = 
+italic = 
+etc
+================ FONT SIZE END ================
+
+================ FONT LINE HEIGHT ================
+h1 = 
+h2 = 
+h3 =
+h4 =
+h5 =
+h6 = 
+p = 
+span = 
+bold = 
+strong = 
+italic = 
+etc
+================ FONT LINE END ================
+
+================ LETTER SPACING START ================
+h1 = 
+h2 = 
+h3 =
+h4 =
+h5 =
+h6 = 
+p = 
+span = 
+bold = 
+strong = 
+italic = 
+etc
+================ LETTER SPACING END ================
+
+================ FONT WEIGHT START ======================
+h1 = 
+h2 = 
+h3 =
+h4 =
+h5 =
+h6 = 
+p = 
+span = 
+bold = 
+strong = 
+italic = 
+etc
+================ FONT WEIGHT END ======================
+
+================ FONT FAMILY START ======================
+h1 = 
+h2 = 
+h3 =
+h4 =
+h5 =
+h6 = 
+p = 
+span = 
+bold = 
+strong = 
+italic = 
+etc
+================ FONT FAMILY START ======================
+
+https://site.digitalwindit.com/ -------->>>>>> DONE
+
+http://site.digitalwindit.com/about-us/ ------>>>> DONE
+
+https://site.digitalwindit.com/contact-us/ ------>>>> DONE
+
+https://site.digitalwindit.com/how-it-works/ ------>>>> DONE
+
+https://site.digitalwindit.com/course-finder/ ------>>>> DONE
+
+https://site.digitalwindit.com/newsletter/ ------>>>> DONE
+
+https://site.digitalwindit.com/payment-delivery/ ------>>>> DONE
+
+https://site.digitalwindit.com/accessibility-policy/ ------>>>> DONE
+
+https://site.digitalwindit.com/price-match-guarantee/ ------>>>> DONE
+
+https://site.digitalwindit.com/modern-slavery-policy/ ------>>>> DONE
+
+https://site.digitalwindit.com/privacy-policy/ ------>>>> DONE
+
+https://site.digitalwindit.com/t-cs/ ------>>>> DONE
+
+
+https://site.digitalwindit.com/academic-partnership/ ------>>>> DONE
+
+https://site.digitalwindit.com/start-your-own-business/ ------>>>> DONE
+
+https://site.digitalwindit.com/educators-authors/ ------>>>> DONE
+
+https://site.digitalwindit.com/career-hub/ ------>>>> DONE
+
+https://site.digitalwindit.com/faqs/ ------>>>> DONE
+
+https://site.digitalwindit.com/easy-payments-funding/ ------>>>> DONE
+
+
+
+https://site.digitalwindit.com/international-students/ ------>>>> PENDING
+
+https://site.digitalwindit.com/faculties/ ------>>>> DONE
+
+
+
+https://site.digitalwindit.com/voice/ ------>>>> DONE
+
+https://site.digitalwindit.com/course-providers/ ------>>>> DONE
+
+https://site.digitalwindit.com/educators/ ------>>>> DONE
+
+https://site.digitalwindit.com/xperience/ ------>>>> DONE
+
+https://site.digitalwindit.com/hardware/ ------>>>> DONE
+
+https://site.digitalwindit.com/opa/ ------>>>> DONE
+
+https://site.digitalwindit.com/metaverse/ ------>>>> DONE
+
+https://site.digitalwindit.com/zoom/ ------>>>> DONE
+
+https://site.digitalwindit.com/course-builder/ ------>>>> DONE
+
+https://site.digitalwindit.com/students/ ------>>>> DONE
+
+https://site.digitalwindit.com/solutions/ ------>>>> DONE
+
+https://site.digitalwindit.com/packages/ ------>>>> DONE
+
+https://site.digitalwindit.com/academic-partnerships/ -------->>>>>> DONE
+
+https://site.digitalwindit.com/certificates/ -------->>>>>> DONE
+
+https://site.digitalwindit.com/course-category/health-social-care-faculty/?tutor-course-filter-category=1127 ------>>>> DONE

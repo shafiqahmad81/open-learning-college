@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Open Learning College Frontend</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/globals.css">
+</head>
+
+<body>
+    <!-- BANNER SECTION START -->
+    <section class="bg-no-repeat bg-right lg:bg-top-left bg-cover lg:pt-[110px] pb-8 lg:pb-[60px]"
+        style="background-image: url(./assets/images/banner/bg-image.png);">
+        <div class="lg:hidden">
+            <img src="./assets/images/banner/img-1.png" alt="image">
+        </div>
+        <div class="container">
+            <div class="flex flex-col lg:flex-row flex-wrap justify-end">
+                <div class="w-full lg:w-1/2 mt-3 lg:mt-0">
+                    <div class="border border-[#00808047] py-1.5 pr-4 pl-3 w-fit mb-[15px] rounded-full">
+                        <ul>
+                            <li class="font-arial text-sm sm:text-base text-white font-bold">engaging minds, creating
+                                futures</li>
+                        </ul>
+                    </div>
+                    <div class="lg:ml-[5px] xl:mr-[60px] border-l-4 px-4 py-4 space-y-2 border-[#008080]">
+                        <h2 class="text-3xl sm:text-4xl md:text-[46px] text-white font-arial font-black md:leading-16">
+                            Shaping Futures <span class="text-[#008080]">through Education</span></h2>
+                        <p class="text-[#BBBFC0] font-arial text-base">Open Learning College, a pioneering institution
+                            in
+                            education, is committed to revolutionising learning by making it accessible and eliminating
+                            barriers. Our
+                            journey is marked by innovation and personalised education, rooted in the belief in every
+                            learner's
+                            limitless potential. Explore our courses and join us in this transformative journey.
+                            Register for Free or
+                            explore our courses today.</p>
+                    </div>
+                    <div class="w-full space-y-5 mt-5">
+                        <form action="#" class="max-w-[447px]">
+                            <div class="w-full flex relative border border-[#ABABAB] rounded-full">
+                                <input type="text" class="w-full text-white focus:outline-0 py-1 px-[15px]">
+                                <button type="submit"
+                                    class="w-full flex items-center justify-center max-w-[60px] rounded-r-3xl border-t-2 border-r-2 border-b-2 border-[#243c45] cursor-pointer bg-[#008080]">
+                                    <img class="w-full max-w-6" src="./assets/svg/search.svg" alt="search">
+                                </button>
+                            </div>
+                        </form>
+                        <div class="flex gap-5 items-center flex-wrap">
+                            <a href="#"
+                                class="text-base sm:text-lg font-bold text-white border border-[#ABABAB] rounded-full px-7 py-2 transition-all bg-transparent hover:bg-[#008080]">Register
+                                Now for FREE</a>
+                            <a href="#"
+                                class="text-base sm:text-lg font-bold text-white border border-[#ABABAB] rounded-full px-7 py-2 transition-all bg-transparent hover:bg-[#008080]">View
+                                Courses</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- BANNER SECTION END -->
+
+    <!-- EXPLORE LEARN & SUCCEED START  -->
+    <section class="bg-[#F7FBFB] bg-repeat py-8"
+        style="background-image: url(./assets/images/explore-learn-succeed/explore-learn-succeed-bg.png);">
+        <div class="container">
+            <div class="flex flex-col flex-wrap space-y-4 max-w-[1120px] mx-auto w-full">
+                <div class="flex flex-col flex-wrap justify-center items-center">
+                    <span class="uppercase pb-3 text-sm font-lato font-bold tracking-[7px] text-[#008080]">learn
+                        more</span>
+                    <h2 class="capitalize text-[45px] leading-[60px] font-bold font-archivo">explore, <span
+                            class="text-[#008080]">learn & succeed</span></h2>
+                    <p class="text-base font-bold font-arial text-[#008080]">watch our introduction videos</p>
+                </div>
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-[30px] w-full">
+                    <div class="flex flex-col flex-wrap w-full bg-center bg-cover bg-no-repeat text-white relative group"
+                        style="background-image: url(./assets/images/explore-learn-succeed/academic-director-olc.png);">
+                        <div class="px-[30px] py-10 w-full h-full bg-[linear-gradient(0deg,#000C21_0%,#FF010100_100%)]">
+                            <a href="#"
+                                class="relative mx-auto flex items-center justify-center w-[60px] h-[60px] rounded-full border border-[#008080] bg-transparent overflow-visible">
+                                <span
+                                    class="absolute inline-flex w-full h-full rounded-full border border-[#008080] opacity-0 group-hover:opacity-100 group-hover:animate-ping transition duration-1000">
+                                </span>
+                                <span
+                                    class="relative inline-flex items-center justify-center w-full h-full rounded-full bg-transparent hover:bg-[#008080] text-[#008080] hover:text-white transition duration-300">
+                                    <svg class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M8 5v14l11-7z" />
+                                    </svg>
+                                </span>
+                            </a>
+                            <h4 class="mt-2 text-base font-roboto">A message for all</h4>
+                            <h3 class="font-black text-xl font-roboto">Academic Director</h3>
+                        </div>
+                    </div>
+                    <div class="flex flex-col flex-wrap w-full bg-center bg-cover bg-no-repeat text-white relative group"
+                        style="background-image: url(./assets/images/explore-learn-succeed/education-in-the-metaverse.png);">
+                        <div class="px-[30px] py-10 w-full h-full bg-[linear-gradient(0deg,#000C21_0%,#FF010100_100%)]">
+                            <a href="#"
+                                class="relative mx-auto flex items-center justify-center w-[60px] h-[60px] rounded-full border border-[#008080] bg-transparent overflow-visible">
+                                <span
+                                    class="absolute inline-flex w-full h-full rounded-full border border-[#008080] opacity-0 group-hover:opacity-100 group-hover:animate-ping transition duration-1000">
+                                </span>
+                                <span
+                                    class="relative inline-flex items-center justify-center w-full h-full rounded-full bg-transparent hover:bg-[#008080] text-[#008080] hover:text-white transition duration-300">
+                                    <svg class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M8 5v14l11-7z" />
+                                    </svg>
+                                </span>
+                            </a>
+                            <h4 class="mt-2 text-base font-roboto">Students & Educators</h4>
+                            <h3 class="font-black text-xl font-roboto">Education in the Metaverse</h3>
+                        </div>
+                    </div>
+                    <div class="flex flex-col flex-wrap w-full bg-center bg-cover bg-no-repeat text-white relative group"
+                        style="background-image: url(./assets/images/explore-learn-succeed/course-creators-providers.jpg);">
+                        <div class="px-[30px] py-10 w-full h-full bg-[linear-gradient(0deg,#000C21_0%,#FF010100_100%)]">
+                            <a href="#"
+                                class="relative mx-auto flex items-center justify-center w-[60px] h-[60px] rounded-full border border-[#008080] bg-transparent overflow-visible">
+                                <span
+                                    class="absolute inline-flex w-full h-full rounded-full border border-[#008080] opacity-0 group-hover:opacity-100 group-hover:animate-ping transition duration-1000">
+                                </span>
+                                <span
+                                    class="relative inline-flex items-center justify-center w-full h-full rounded-full bg-transparent hover:bg-[#008080] text-[#008080] hover:text-white transition duration-300">
+                                    <svg class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M8 5v14l11-7z" />
+                                    </svg>
+                                </span>
+                            </a>
+                            <h4 class="mt-2 text-base font-roboto">Educators & Organisations</h4>
+                            <h3 class="font-black text-xl font-roboto">Course Creators & Providers</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- EXPLORE LEARN & SUCCEED END  -->
+
+    <!-- STUDY GOALS SECTION START -->
+    <section class="py-8">
+        <div class="container">
+            <div class="flex flex-col flex-wrap w-full">
+                <div class="flex flex-col flex-wrap justify-center items-center">
+                    <span class="uppercase pb-3 text-sm font-lato font-bold tracking-[7px] text-[#008080]">your
+                        goals</span>
+                    <h2 class="capitalize text-[45px] leading-[60px] font-bold font-archivo">
+                        What Are Your <span class="text-[#008080]">Study Goals?</span></h2>
+                    <p class="text-base font-bold font-arial text-[#008080]">Click on an option to start course
+                        navigator</p>
+                </div>
+                <div class="grid grid-cols-4 gap-16 w-full mt-[35px]">
+                    <div class="w-full h-full relative overflow-hidden group bg-center bg-no-repeat bg-contain"
+                        style="background-image: url(./assets/images/study-goals/goals-item-bg.png);">
+                        <div
+                            class="absolute inset-0 z-0 flex items-center justify-center pointer-events-none w-full h-full">
+                            <div class="bg-center bg-no-repeat bg-contain w-0 h-0 group-hover:w-full group-hover:h-full transition-all duration-500 ease-out"
+                                style="background-image: url(./assets/images/study-goals/goals-item-bg-small.png);">
+                            </div>
+                        </div>
+                        <div class="flex flex-col flex-wrap justify-between items-center p-[30px]">
+                            <div
+                                class="flex flex-col flex-wrap items-center justify-center text-center px-2.5 relative z-10">
+                                <img class="max-w-[60px] max-h-[60px]"
+                                    src="./assets/images/study-goals/career-change.png" alt="Career Change">
+                                <h3 class="text-base sm:text-lg text-black font-bold font-arial">Career Change</h3>
+                                <p class="text-xs font-arial text-[#7C8A8F]">
+                                    embrace a fresh direction in your professional journey: Career Change.
+                                    Discover new opportunities, pursue your passions, and redefine your future path.
+                                </p>
+                            </div>
+                            <button type="button"
+                                class="text-sm text-[#008080] uppercase font-bold font-arial cursor-pointer relative z-10 mt-5">
+                                learn more
+                            </button>
+                        </div>
+                    </div>
+                    <div class="w-full h-full relative overflow-hidden group bg-center bg-no-repeat bg-contain"
+                        style="background-image: url(./assets/images/study-goals/goals-item-bg.png);">
+                        <div
+                            class="absolute inset-0 z-0 flex items-center justify-center pointer-events-none w-full h-full">
+                            <div class="bg-center bg-no-repeat bg-contain w-0 h-0 group-hover:w-full group-hover:h-full transition-all duration-500 ease-out"
+                                style="background-image: url(./assets/images/study-goals/goals-item-bg.png);">
+                            </div>
+                        </div>
+                        <div class="flex flex-col flex-wrap justify-between items-center p-[30px]">
+                            <div
+                                class="flex flex-col flex-wrap items-center justify-center text-center px-2.5 relative z-10">
+                                <img class="max-w-[60px] max-h-[60px]"
+                                    src="./assets/images/study-goals/career-change.png" alt="Career Change">
+                                <h3 class="text-base sm:text-lg text-black font-bold font-arial">Upskilling</h3>
+                                <p class="text-xs font-arial text-[#7C8A8F]">Level up your skills and advance your
+                                    career with Up-skilling. Enhance qualifications, seize new opportunities, and
+                                    achieve professional growth through targeted learning.</p>
+                            </div>
+                            <button type="button"
+                                class="text-sm text-[#008080] uppercase font-bold font-arial cursor-pointer relative z-10 mt-5">
+                                learn more
+                            </button>
+                        </div>
+                    </div>
+                    <div class="w-full h-full relative overflow-hidden group bg-center bg-no-repeat bg-contain"
+                        style="background-image: url(./assets/images/study-goals/goals-item-bg.png);">
+                        <div
+                            class="absolute inset-0 z-0 flex items-center justify-center pointer-events-none w-full h-full">
+                            <div class="bg-center bg-no-repeat bg-contain w-0 h-0 group-hover:w-full group-hover:h-full transition-all duration-500 ease-out"
+                                style="background-image: url(./assets/images/study-goals/goals-item-bg.png);">
+                            </div>
+                        </div>
+                        <div class="flex flex-col flex-wrap justify-between items-center p-[30px]">
+                            <div
+                                class="flex flex-col flex-wrap items-center justify-center text-center px-2.5 relative z-10">
+                                <img class="max-w-[60px] max-h-[60px]"
+                                    src="./assets/images/study-goals/career-change.png" alt="Career Change">
+                                <h3 class="text-base sm:text-lg text-black font-bold font-arial">Returning To Work</h3>
+                                <p class="text-xs font-arial text-[#7C8A8F]">Reignite your career. Refresh and up skill
+                                    your qualifications to confidently return to the workplace after an absence. Take
+                                    the next step towards new opportunities and...</p>
+                            </div>
+                            <button type="button"
+                                class="text-sm text-[#008080] uppercase font-bold font-arial cursor-pointer relative z-10 mt-5">
+                                learn more
+                            </button>
+                        </div>
+                    </div>
+                    <div class="w-full h-full relative overflow-hidden group bg-center bg-no-repeat bg-contain"
+                        style="background-image: url(./assets/images/study-goals/goals-item-bg.png);">
+                        <div
+                            class="absolute inset-0 z-0 flex items-center justify-center pointer-events-none w-full h-full">
+                            <div class="bg-center bg-no-repeat bg-contain w-0 h-0 group-hover:w-full group-hover:h-full transition-all duration-500 ease-out"
+                                style="background-image: url(./assets/images/study-goals/goals-item-bg.png);">
+                            </div>
+                        </div>
+                        <div class="flex flex-col flex-wrap justify-between items-center p-[30px]">
+                            <div
+                                class="flex flex-col flex-wrap items-center justify-center text-center px-2.5 relative z-10">
+                                <img class="max-w-[60px] max-h-[60px]"
+                                    src="./assets/images/study-goals/career-change.png" alt="Career Change">
+                                <h3 class="text-base sm:text-lg text-black font-bold font-arial">Hobbies</h3>
+                                <p class="text-xs font-arial text-[#7C8A8F]">Discover the joy of learning with Hobbies.
+                                    Expand your skills and explore new interests for leisure and personal growth. Dive
+                                    into exciting hobbles and unlock your...</p>
+                            </div>
+                            <button type="button"
+                                class="text-sm text-[#008080] uppercase font-bold font-arial cursor-pointer relative z-10 mt-5">
+                                learn more
+                            </button>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- STUDY GOALS SECTION END -->
+
+    <!-- OUR SOLUTIONS SECTION START -->
+    <section class="pb-8 text-white">
+        <div class="container">
+            <div class="grid grid-cols-[20%_60%_20%] w-full pt-[50px] border-t border-black">
+
+                <div class="flex flex-col flex-wrap w-full gap-y-5">
+
+                    <a class="flex flex-col flex-wrap justify-end w-full bg-center bg-cover bg-no-repeat rounded-[40px] p-5 min-h-[360px] border-4 border-[#ffffff] transition-all duration-300 hover:border-4 border-[#008080]"
+                        href="#" style="background-image: url(./assets//images//our-solutions/students.png);">
+                        <h3 class="text-base font-bold font-archivo mb-[15px]">Students</h3>
+                        <p class="text-xs font-normal font-arial mb-[12px]">Free for students to register and start
+                            using our platform...</p>
+                        <a class="text-xs font-bold font-arial uppercase transition-all duration-500 hover:text-[#008080]"
+                            href="#">learn more</a>
+                    </a>
+
+                    <a class="flex flex-col flex-wrap justify-end w-full bg-center bg-cover bg-no-repeat rounded-[40px] p-5 min-h-[190px]"
+                        href="#" style="background-image: url(./assets/images/our-solutions/educators.png);">
+                        <h3 class="text-base font-bold font-archivo mb-[15px]">Educators</h3>
+                        <p class="text-xs font-normal font-arial mb-[12px]">From a school teacher, tutor, fitness
+                            instructor or a dating doctor...</p>
+                        <a class="text-xs font-bold font-arial uppercase transition-all duration-500 hover:text-[#008080]"
+                            href="#">learn more</a>
+                    </a>
+
+                </div>
+
+                <div class="flex flex-col flex-wrap w-full justify-between px-5">
+                    <div class="flex flex-col flex-wrap justify-center items-center">
+                        <span class="text-[#008080] text-sm font-bold font-lato leading-[7px] uppercase pb-[12px]">Our
+                            Solutions</span>
+                        <h2 class="text-[#0C1734] text-[45px] font-bold font-archivo">Sign up to <span
+                                class="text-[#008080]">Open Learning College</span></h2>
+                        <p class="text-base text-[#008080]">Learn more about the solution that best fits your needs.
+                        </p>
+                    </div>
+                    <div class="grid grid-cols-3 gap-5 w-full">
+                        <div class="flex flex-col flex-wrap justify-end w-full bg-cover bg-center bg-no-repeat p-5 rounded-[40px] min-h-[350px]"
+                            style="background-image: url(./assets/images/our-solutions/business-sme.png);">
+                            <h3 class="text-base font-bold font-archivo mb-[15px]">Business SME</h3>
+                            <p class="text-xs font-normal font-arial mb-[12px]">Whether you're a start up or an
+                                established local or family...</p>
+                            <a class="text-xs font-bold font-arial uppercase transition-all duration-500 hover:text-[#008080]"
+                                href="#">learn more</a>
+                        </div>
+                        <div class="flex flex-col flex-wrap justify-end w-full bg-cover bg-center bg-no-repeat p-5 rounded-[40px] min-h-[350px]"
+                            style="background-image: url(./assets/images/our-solutions/business-pro.jpg);">
+                            <h3 class="text-base font-bold font-archivo mb-[15px]">Business PRO</h3>
+                            <p class="text-xs font-normal font-arial mb-[12px]">For larger organisations with more than
+                                25 employees...</p>
+                            <a class="text-xs font-bold font-arial uppercase transition-all duration-500 hover:text-[#008080]"
+                                href="#">learn more</a>
+                        </div>
+                        <div class="flex flex-col flex-wrap justify-end w-full bg-cover bg-center bg-no-repeat p-5 rounded-[40px] min-h-[350px]"
+                            style="background-image: url(./assets/images/our-solutions/course-providers.png);">
+                            <h3 class="text-base font-bold font-archivo mb-[15px]">Course Providers</h3>
+                            <p class="text-xs font-normal font-arial mb-[12px]">Small or large course providers can
+                                upload their courses...</p>
+                            <a class="text-xs font-bold font-arial uppercase transition-all duration-500 hover:text-[#008080]"
+                                href="#">learn more</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex flex-col flex-wrap w-full gap-y-5">
+                    <div class="flex flex-col flex-wrap justify-end bg-cover bg-center bg-no-repeat w-full rounded-[40px] p-5 min-h-[360px]"
+                        style="background-image: url(./assets/images/our-solutions/educational-institute.png);">
+                        <h3 class="text-base font-bold font-archivo mb-[15px]">Students</h3>
+                        <p class="text-xs font-normal font-arial mb-[12px]">Free for students to register and start
+                            using our platform...</p>
+                        <a class="text-xs font-bold font-arial uppercase transition-all duration-500 hover:text-[#008080]"
+                            href="#">learn more</a>
+                    </div>
+                    <div class="flex flex-col flex-wrap justify-end bg-cover bg-center bg-no-repeat rounded-[40px] p-5 min-h-[190px]"
+                        style="background-image: url(./assets/images/our-solutions/educational-institute.png);">
+                        <h3 class="text-base font-bold font-archivo mb-[15px]">Educators</h3>
+                        <p class="text-xs font-normal font-arial mb-[12px]">From a school teacher, tutor, fitness
+                            instructor or a dating doctor...</p>
+                        <a class="text-xs font-bold font-arial uppercase transition-all duration-500 hover:text-[#008080]"
+                            href="#">learn more</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- OUR SOLUTIONS SECTION END -->
+
+    <!-- OUR COMMUNITY SECTION START -->
+    <section class="border-t border-gray-300 py-5">
+        <div class="container">
+            <div class="flex flex-col flex-wrap w-full">
+                <div class="flex flex-col flex-wrap justify-center items-center text-center gap-y-5">
+                    <div>
+                        <h4 class="text-[#008080] text-base font-lato font-bold tracking-[7px] uppercase">Community
+                            Events</h4>
+                        <h2 class="text-[#0C1734] text-[45px] font-archivo font-bold">Connect With Our Community</h2>
+                        <p class="text-[#008080] text-base font-bold">Register for the Latest Events, Workshops &
+                            Masterclasses</p>
+                    </div>
+                    <div>
+                        <h3 class="text-[#000566] text-[30px] font-arial font-semibold">Coming February 2024</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- OUR COMMUNITY SECTION END -->
+
+    <!-- GET SOCIAL SECTION START -->
+    <section class="py-10">
+        <div class="container">
+            <div class="flex flex-col flex-wrap justify-center items-center text-center">
+                <div>
+                    <span class="text-[#008080] font-lato font-bold tracking-[7px] uppercase">Get Social</span>
+                    <h2 class="text-[#0C1734] text-[45px] font-bold font-archivo">TikTok, Facebook, X, Instagram &
+                        Linkedin</h2>
+                    <p class="text-[#008080] text-base font-bold">Join our socials for daily inspiration, discounts,
+                        insightful content, and a community of like-minded learners.</p>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-[40%_60%] gap-5 w-full mt-10">
+
+                    <div class="flex flex-col flex-wrap w-full rounded border border-[#e6e3f1] bg-[#f7fbfb] py-[18px]">
+
+                        <span>
+                            <svg width="48px" height="42px" viewBox="0 0 48 42" version="1.1"
+                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <title>AD7770C7-7ABB-4265-95B8-547509FE9A27</title>
+                                <desc>Created with sketchtool.</desc>
+                                <g id="Inner-Page" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"
+                                    opacity="0.200000003">
+                                    <g id="Testimonial" transform="translate(-857.000000, -803.000000)" fill="#000"
+                                        fill-rule="nonzero">
+                                        <g transform="translate(295.000000, 536.000000)" id="testimonial-copy">
+                                            <g transform="translate(0.000000, 206.000000)">
+                                                <g id="testimonial-content" transform="translate(0.000000, 0.525170)">
+                                                    <g id="Content" transform="translate(55.000000, 60.474830)">
+                                                        <path
+                                                            d="M552.972973,0 L552.972973,6 C551.081072,7.02703216 549.662167,8.878365 548.716216,11.5540541 C547.770266,14.2297431 547.297297,17.7567349 547.297297,22.1351351 L547.297297,24 L555,24 L555,42 L537,42 L537,28.5405405 C537,20.3783376 538.324311,13.9189427 540.972973,9.16216216 C543.621635,4.40538162 547.621595,1.35135811 552.972973,0 Z M522.972973,0 L522.972973,6 C521.081072,7.02703216 519.662167,8.878365 518.716216,11.5540541 C517.770266,14.2297431 517.297297,17.7567349 517.297297,22.1351351 L517.297297,24 L525,24 L525,42 L507,42 L507,28.5405405 C507,20.3783376 508.324311,13.9189427 510.972973,9.16216216 C513.621635,4.40538162 517.621595,1.35135811 522.972973,0 Z"
+                                                            id="“"
+                                                            transform="translate(531.000000, 21.000000) rotate(-180.000000) translate(-531.000000, -21.000000) ">
+                                                        </path>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </g>
+                            </svg>
+                        </span>
+
+                        <div class="px-[40px] py-[100px]">
+                            <div class="flex flex-col flex-wrap w-full rounded border border-[#e6e3f1] bg-white">
+
+                                <div class="flex flex-row flex-wrap items-center w-full">
+                                    <div>
+                                        <img src="./assets/images/logo/logo.jpeg" alt="logo">
+                                    </div>
+
+                                    <div>
+                                        <h4>open.learning.college</h4>
+
+                                        <div class="flex flex-row flex-wrap items-center justify-between">
+                                            <div>
+                                                <a href="#">11</a>
+                                                <h4>Following</h4>
+                                            </div>
+                                            <div>
+                                                <a href="">175</a>
+                                                <h4>Followers</h4>
+                                            </div>
+                                            <div>
+                                                <a href="#">10.2k</a>
+                                                <h4>Likes</h4>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <a href="#">Open Learning College: Shaping Futures through Education</a>
+                                </div>
+
+                                <div class="w-full overflow-x-auto pb-3">
+                                    <table class="border-collapse w-max max-w-none">
+                                        <tbody>
+                                            <tr class="whitespace-nowrap">
+
+                                                <td class="pr-2.5 align-top">
+                                                    <div class="w-[172px] h-[228px] bg-white rounded shadow">
+                                                        <video class="w-full h-full object-cover rounded" muted loop
+                                                            autoplay
+                                                            src="https://v9.tiktokcdn.com/991d6928ad7fc4278212630acfe6c18e/69443b85/video/tos/useast2a/tos-useast2a-ve-0068-euttp/o8YcgoWf8geDYecNGAMARspRrBLgfENEEvQ08q/?mime_type=video_mp4">
+                                                        </video>
+                                                    </div>
+                                                </td>
+
+                                                <!-- repeat td -->
+                                                 <td class="pr-2.5 align-top">
+                                                    <div class="w-[172px] h-[228px] bg-white rounded shadow">
+                                                        <video class="w-full h-full object-cover rounded" muted loop
+                                                            autoplay
+                                                            src="https://v9.tiktokcdn.com/991d6928ad7fc4278212630acfe6c18e/69443b85/video/tos/useast2a/tos-useast2a-ve-0068-euttp/o8YcgoWf8geDYecNGAMARspRrBLgfENEEvQ08q/?mime_type=video_mp4">
+                                                        </video>
+                                                    </div>
+                                                </td>
+
+                                                <td class="pr-2.5 align-top">
+                                                    <div class="w-[172px] h-[228px] bg-white rounded shadow">
+                                                        <video class="w-full h-full object-cover rounded" muted loop
+                                                            autoplay
+                                                            src="https://v9.tiktokcdn.com/991d6928ad7fc4278212630acfe6c18e/69443b85/video/tos/useast2a/tos-useast2a-ve-0068-euttp/o8YcgoWf8geDYecNGAMARspRrBLgfENEEvQ08q/?mime_type=video_mp4">
+                                                        </video>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+
+
+
+
+                                <div class="flex flex-row flex-wrap items-center justify-between w-full">
+                                    <div>
+                                        <svg width="61" height="14" viewBox="0 0 61 14" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            data-e2e="assets-tiktok_logo_no_motif-svg">
+                                            <path
+                                                d="M0 0.0302734H8.89722L8.08174 2.57888H5.77377V11.9995H2.8965V2.57888L0.00384685 2.58273L0 0.0302734Z"
+                                                fill="black" data-e2e="assets-tiktok_logo_no_motif-path"></path>
+                                            <path
+                                                d="M23.4766 0.0307617H32.5815L31.766 2.57937H29.2542V12H26.3731V2.57937L23.4804 2.58322L23.4766 0.0307617Z"
+                                                fill="black" data-e2e="assets-tiktok_logo_no_motif-path-2"></path>
+                                            <path d="M9.44336 3.83838H12.2937V12.0001H9.45874L9.44336 3.83838Z"
+                                                fill="black" data-e2e="assets-tiktok_logo_no_motif-path-3"></path>
+                                            <path
+                                                d="M13.4277 0H16.278V5.57459L19.1014 2.79885H22.5018L18.9283 6.26757L22.9288 12H19.79L17.1204 8.02695L16.2742 8.84697V12H13.4238V0H13.4277Z"
+                                                fill="black" data-e2e="assets-tiktok_logo_no_motif-path-4"></path>
+                                            <path
+                                                d="M43.623 0H46.4734V5.57459L49.2968 2.79885H52.6972L49.1237 6.26757L53.1242 12H49.9892L47.3196 8.02695L46.4734 8.84697V12H43.623V0Z"
+                                                fill="black" data-e2e="assets-tiktok_logo_no_motif-path-5"></path>
+                                            <path
+                                                d="M10.8664 2.90666C11.6588 2.90666 12.3012 2.26374 12.3012 1.47066C12.3012 0.677585 11.6588 0.034668 10.8664 0.034668C10.074 0.034668 9.43164 0.677585 9.43164 1.47066C9.43164 2.26374 10.074 2.90666 10.8664 2.90666Z"
+                                                fill="black" data-e2e="assets-tiktok_logo_no_motif-path-6"></path>
+                                            <path
+                                                d="M32.216 7.11447C32.216 4.54662 34.197 2.44075 36.7165 2.2444C36.5896 2.23285 36.4165 2.229 36.2896 2.229C33.5931 2.229 31.4082 4.41572 31.4082 7.11447C31.4082 9.81322 33.5931 11.9999 36.2896 11.9999C36.4165 11.9999 36.5896 11.9922 36.7165 11.9845C34.2008 11.7882 32.216 9.68232 32.216 7.11447Z"
+                                                fill="#25F4EE" data-e2e="assets-tiktok_logo_no_motif-path-7"></path>
+                                            <path
+                                                d="M37.8234 2.229C37.6926 2.229 37.5195 2.2367 37.3926 2.2444C39.9083 2.44075 41.8893 4.54662 41.8893 7.11447C41.8893 9.68232 39.9083 11.7882 37.3926 11.9845C37.5195 11.9961 37.6926 11.9999 37.8234 11.9999C40.5199 11.9999 42.7048 9.81322 42.7048 7.11447C42.7048 4.41572 40.5199 2.229 37.8234 2.229Z"
+                                                fill="#FE2C55" data-e2e="assets-tiktok_logo_no_motif-path-8"></path>
+                                            <path
+                                                d="M37.0552 9.48983C35.7435 9.48983 34.6818 8.42727 34.6818 7.11447C34.6818 5.80167 35.7435 4.73911 37.0552 4.73911C38.3669 4.73911 39.4285 5.80167 39.4285 7.11447C39.4285 8.42727 38.363 9.48983 37.0552 9.48983ZM37.0552 2.229C34.3587 2.229 32.1738 4.41572 32.1738 7.11447C32.1738 9.81322 34.3587 11.9999 37.0552 11.9999C39.7517 11.9999 41.9365 9.81322 41.9365 7.11447C41.9365 4.41572 39.7517 2.229 37.0552 2.229Z"
+                                                fill="black" data-e2e="assets-tiktok_logo_no_motif-path-9"></path>
+                                        </svg>
+                                        <span class="text-[#16182380] text-xs font-normal font-roboto">View <a
+                                                class="transition-all duration-500 hover:underline" href="#">Privacy
+                                                Policy</a></span>
+                                    </div>
+                                    <div>
+                                        <button
+                                            class="text-sm font-medium font-roboto bg-[#fe2c55] text-white border border-[#fe2c55] px-[15px] py-1.5 rounded transition-all duration-500 cursor-pointer hover:bg-[#ea284e] hover:border-[#ea284e]"
+                                            type="button">Open TikTok</button>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-3 w-full">
+
+                        <div class="flex flex-col flex-wrap w-full gap-y-[15px] rounded border border-[#e6e3f1] p-2.5">
+                            <div class="flex flex-col flex-wrap w-full">
+                                <img class="w-full h-auto rounded"
+                                    src="./assets/images/get-social/social-media-influencer-1536x1024.jpg"
+                                    alt="Facebook">
+                            </div>
+
+                            <a class="flex justify-center items-center mx-auto w-fit text-center" href="#">
+                                <h4 class="text-[#243C45] text-base font-arial font-bold">Follow us on Facebook</h4>
+                            </a>
+
+                            <a href="#" class="flex flex-col flex-wrap w-full">
+                                <img class="w-full h-auto rounded" src="./assets/images/get-social/qr-facebook.png"
+                                    alt="Facebook">
+                            </a>
+
+                            <p class="text-[#7C8A8F] text-sm font-normal font-arial pb-[30px]">Scan the QR code with
+                                your mobile or click on it, to join us on Facebook. </p>
+
+                        </div>
+
+                        <div class="flex flex-col flex-wrap w-full gap-y-[15px] rounded border border-[#e6e3f1] p-2.5">
+                            <div>
+                                <img class="w-full h-auto rounded"
+                                    src="./assets/images/get-social/young-curvy-woman-takes-a-photo-with-her-best-frie-2023-11-27-04-58-00-utc-1536x1024.jpg"
+                                    alt="Instagram">
+                            </div>
+                            <a class="flex justify-center items-center mx-auto w-fit text-center" href="#">
+                                <h4 class="text-[#243C45] text-base font-arial font-bold">Follow us on Instagram</h4>
+                            </a>
+                            <a class="flex flex-col flex-wrap w-full" href="#">
+                                <img class="w-full h-auto rounded" src="./assets/images/get-social/qr-instagram.png"
+                                    alt="Instagram">
+                            </a>
+                            <p class="text-[#7C8A8F] text-sm font-normal font-arial pb-[30px]">Scan the QR code with
+                                your mobile or click on it, to join us on Instagram.</p>
+                        </div>
+
+                        <div class="flex flex-col flex-wrap w-full gap-y-[15px] rounded border border-[#e6e3f1] p-2.5">
+                            <div>
+                                <img class="w-full h-auto rounded"
+                                    src="./assets/images/get-social/worker-putting-sticky-notes-on-monitor-doing-remot-2023-11-27-04-57-11-utc-1536x1024.jpg"
+                                    alt="x">
+                            </div>
+                            <a class="flex justify-center items-center mx-auto w-fit text-center" href="#">
+                                <h4 class="text-[#243C45] text-base font-arial font-bold">Follow us on X</h4>
+                            </a>
+                            <a class="flex flex-col flex-wrap w-full" href="#">
+                                <img class="w-full h-auto rounded" src="./assets/images/get-social/X-QR-Code.png"
+                                    alt="X">
+                            </a>
+                            <p class="text-[#7C8A8F] text-sm font-normal font-arial pb-[30px]">Scan the QR code with
+                                your mobile or click on it, to join us on X.</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- GET SOCIAL SECTION END -->
+
+    <!-- FIND YOUR COURSE SECTION START -->
+    <section>
+        <a class="flex flex-col flex-wrap gap-y-[15px] justify-center items-center text-center w-full text-white bg-[#60048A] py-[30px] lg:py-[50px] px-[30px] lg:px-[50px]"
+            href="#">
+            <h2 class="text-2xl lg:text-[35px] font-bold font-roboto">Over 1000 Industry Recognised Accredited Courses
+            </h2>
+            <p class="text-sm lg:text-base font-normal font-roboto">We work with the most well-known and respected
+                awarding bodies.</p>
+            <p
+                class="mt-[5px] border-2 border-white rounded py-3 px-8 text-sm font-medium font-roboto hover:text-[#004D3D] hover:bg-white transition-all duration-500">
+                Find your Course</p>
+        </a>
+    </section>
+    <!-- FIND YOUR COURSE SECTION END -->
+</body>
+
+</html>

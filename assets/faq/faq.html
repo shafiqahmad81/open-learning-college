@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Open Learning College Frontend Study Goals</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/globals.css">
+</head>
+
+<body>
+    <section
+        class="bg-[#F7FBFB] py-10 md:py-[72px] bg-[url('../faq/icon/faq-bg.png')] bg-no-repeat bg-top-center bg-cover">
+        <div class="container">
+            <div class="flex flex-col lg:flex-row">
+                <div class="w-full lg:max-w-[30%] space-y-5 lg:px-5">
+                    <div class="border-b border-dotted border-[#008080] pb-8">
+                        <div class="w-full max-w-[300px] mx-auto">
+                            <img src="../images/logo/open-learning-logo.png" alt="logo">
+                        </div>
+                    </div>
+                    <div class="group w-full h-[280px]">
+                        <div class="flex flex-col items-center justify-center w-full h-full bg-[#1abc9c] p-[35px]
+                                    transition-transform duration-700 group-hover:rotate-x-[180deg] backface-hidden">
+                            <div class="border-3 border-white rounded-full p-[26px] mb-5">
+                                <img src="../images/how-it-works/text-message.svg" alt="message">
+                            </div>
+                            <h3 class="text-lg sm:text-[21px] font-roboto font-semibold text-white">
+                                Visit our Support Centre
+                            </h3>
+                        </div>
+                        <div
+                            class="flex flex-col items-center justify-center w-full h-full bg-[#4054b2] p-[35px] space-y-5
+                                    -mt-[280px] transition-transform duration-700 rotate-x-[-180deg] group-hover:rotate-x-0 backface-hidden">
+                            <h3 class="text-lg sm:text-[21px] font-roboto font-semibold text-white">
+                                Student Support Centre
+                            </h3>
+                            <p class="text-sm font-normal font-roboto text-white text-center">
+                                All the information and help you will need.
+                            </p>
+                            <a href="#"
+                                class="text-[15px] text-white text-center transition-all border-2 border-white rounded-[3px] font-roboto font-medium px-6 py-3">
+                                Click Here
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="border-t border-dotted border-[#008080] border-b pt-5 pb-5">
+                        <span
+                            class="text-2xl md:text-[29px] md:leading-[29px] font-semibold font-roboto text-[#008080] mb-5 block">Contact
+                            Us</span>
+                        <p class="text-[13px] font-roboto font-bold leading-6 text-[#008080] mb-5">Our Student Advisors
+                            are keen to
+                            help you, call us now on 0844 357 7777. Alternatively, fill out the form below and we’ll get
+                            back to you.</p>
+
+                        <form action="#" class="space-y-[5px] mb-5">
+                            <div>
+                                <input id="text" name="text" type="text" placeholder="Name*" required
+                                    class="border border-[#CAE6E6] w-full bg-white shadow-[inset_0_0_0_1px_rgba(0,0,0,0.1)] px-[15px] min-h-[33px] md:h-[50px] text-[13px] leading-7 text-[#008080] font-roboto placeholder:text-[#008080] placeholder:opacity-50 focus:outline-none">
+                            </div>
+                            <div>
+                                <input id="telephone" name="telephone" type="tel" placeholder="Telephone Number*"
+                                    required
+                                    class="border border-[#CAE6E6] w-full bg-white shadow-[inset_0_0_0_1px_rgba(0,0,0,0.1)] px-[15px] min-h-[33px] md:h-[50px] text-[13px] leading-7 text-[#008080] font-roboto placeholder:text-[#008080] placeholder:opacity-50 focus:outline-none">
+                            </div>
+                            <div>
+                                <input id="email" name="email" type="email" placeholder="email*" required
+                                    class="border border-[#CAE6E6] w-full bg-white shadow-[inset_0_0_0_1px_rgba(0,0,0,0.1)] px-[15px] min-h-[33px] md:h-[50px] text-[13px] leading-7 text-[#008080] font-roboto placeholder:text-[#008080] placeholder:opacity-50 focus:outline-none">
+                            </div>
+                            <div class="min-h-10 md:h-[75px]">
+                                <textarea name="text-area" id="text-area" placeholder="message"
+                                    class="border border-[#CAE6E6] w-full bg-white h-full shadow-[inset_0_0_0_1px_rgba(0,0,0,0.1)] px-[15px] text-[13px] leading-7 text-[#008080] font-roboto placeholder:text-[#008080] placeholder:opacity-50 focus:outline-none"></textarea>
+                            </div>
+                            <div class="flex gap-2">
+                                <div class="relative inline-block w-full max-w-1/2">
+                                    <input type="date" id="myDateAll"
+                                        class="datepicker appearance-none border border-[#CAE6E6] w-full bg-white shadow-[inset_0_0_0_1px_rgba(0,0,0,0.1)] px-3 py-1 min-h-[33px] md:h-10 text-[13px] leading-7 text-[#008080] font-roboto placeholder:text-[#008080] placeholder:opacity-50 focus:outline-none">
+                                    <span
+                                        class="absolute right-2.5 top-[45%] -translate-y-1/2 w-3 h-3 bg-[url('../images/how-it-works/calendar.png')] bg-no-repeat bg-center bg-contain z-[999] cursor-pointer"
+                                        onclick="document.getElementById('myDateAll').showPicker()"></span>
+                                </div>
+                                <div class="relative inline-block w-full max-w-1/2">
+                                    <input type="time" id="myTime"
+                                        class="timepicker appearance-none border border-[#CAE6E6] w-full bg-white shadow-[inset_0_0_0_1px_rgba(0,0,0,0.1)] px-3 py-1 min-h-[33px] md:h-10 text-[13px] leading-7 text-[#008080] font-roboto placeholder:text-[#008080] placeholder:opacity-50 focus:outline-none"
+                                        placeholder="Select Time">
+
+                                    <span
+                                        class="absolute right-2.5 top-[45%] -translate-y-1/2 w-3 h-3 bg-[url('../images/how-it-works/clock.png')] bg-no-repeat bg-center bg-contain z-[999] cursor-pointer"
+                                        onclick="document.getElementById('myTime').showPicker()"></span>
+                                </div>
+                            </div>
+                            <div>
+                                <button
+                                    class="bg-[#008080] border border-[#008080] text-white px-5 py-2.5 text-[13px] leading-[1] w-full cursor-pointer rounded-xs transition-all hover:bg-white hover:text-[#008080] cursor-pointer font-medium"
+                                    type="submit">Submit</button>
+                            </div>
+                        </form>
+                        <p class="text-[11px] font-roboto font-bold leading-4 text-[#008080]">By completing this form
+                            you are expressing an interest in Open Learning College. We will send you information about
+                            our courses and any special offers we think will be useful to you. You will be able to
+                            unsubscribe at anytime. See our <a href="#" class="underline">Privacy Policy</a>.
+                        </p>
+                    </div>
+                </div>
+                <div class="w-full lg:max-w-[70%] lg:ml-[30px] mt-8 lg:mt-0">
+                    <form action="#" class="relative">
+                        <input id="text" name="text" type="text"
+                            class="w-full text-[#008080] text-sm font-arial font-medium border-2 border-[#A9A7A9] rounded-full h-[38px] pl-5 pr-20 focus:outline-none">
+                        <button type="submit"
+                            class="absolute top-0.5 bottom-0.5 right-0.5 bg-[#008080] flex items-center justify-center w-[60px] border-2 border-black rounded-r-full cursor-pointer">
+                            <img class="w-5" src="../faq/icon/search-white.svg" alt="search">
+                        </button>
+                    </form>
+                    <h2 class="text-2xl md:text-[29px] text-[#008080] font-roboto font-semibold mt-5">What is Remote
+                        Learning?</h2>
+                    <div class=" mt-10">
+                        <!-- Tabs -->
+                        <div class="flex flex-col lg:flex-row border-b border-[#008080]" id="tabs">
+                            <div>
+                                <button data-tab="voice"
+                                    class=" px-3 xl:px-6 py-3 text-base font-roboto font-semibold text-[#008080] border lg:border-b-[#F7FBFB] border-[#008080] -mb-px w-full lg:w-auto text-start">
+                                    V.O.I.C.E.
+                                </button>
+                                <div class="mobile-content lg:hidden hidden text-[#008080] border-b border-x border-[#008080] px-3 py-2" data-content="voice">
+                                    <p class="mb-4 font-bold">VIRTUAL | ONLINE | INTERACTIVE | CLASSROOM | EDUCATOR </p>
+                                    <p class="mb-4">
+                                        <strong>Open Learning College’s</strong> approach empowers you to embrace remote
+                                        learning like never before. Through our industry leading, innovative platform
+                                        <strong>V.O.I.C.E</strong> we incorporate the Metaverse, Zoom for Education, and our
+                                        incredible Learner Management System (LMS), you have the tools to create a learning
+                                        experience tailored to your needs. The digital era has redefined education, making
+                                        it more flexible, accessible, and engaging. With us, you can embark on your learning
+                                        journey with the power of technology at your fingertips, whenever and wherever you
+                                        want.
+                                    </p>
+                                </div>
+                            </div>
+                            
+                            <div>
+                                <button data-tab="metaverse"
+                                    class=" px-3 xl:px-6 py-3 text-base font-roboto font-semibold text-[#6EC1E4] w-full border  border-[#008080] lg:border-b-[#F7FBFB] lg:w-auto text-start">
+                                    Metaverse Learning
+                                </button>
+                                <div class="mobile-content lg:hidden hidden text-[#008080] border-b border-x border-[#008080] px-3 py-2" data-content="metaverse">
+                                    <p class="mb-4">
+                                        In this era of technological advancement, the way we learn has also evolved. Open
+                                        Learning College introduces learning in the Metaverse, a concept that brings the
+                                        learning experience right to your digital doorstep. With this innovative approach,
+                                        you can create your avatar and visit your virtual campus and explore your chosen
+                                        course from the comfort of your home, the coffee shop down the street, or even while
+                                        relaxing at the park.
+                                    </p>
+                                    <p>Through cutting-edge platforms like <strong>V.O.I.C.E</strong>, we deliver course
+                                        materials, tutor guidance, and engaging content online. This means you have the
+                                        freedom to choose when and where you learn, all while staying connected with tutors
+                                        and fellow learners.</p>
+                                </div>
+                            </div>
+                            
+                            <div>
+                                <button data-tab="lms"
+                                    class=" px-3 xl:px-6 py-3 text-base font-roboto font-semibold border border-[#008080] lg:border-b-[#F7FBFB] text-[#6EC1E4] w-full lg:w-auto text-start">
+                                    Learner Management System
+                                </button>
+                                <div class="mobile-content lg:hidden hidden text-[#008080] border-b border-x border-[#008080] px-3 py-2" data-content="lms">
+                                    <p class="mb-4">
+                                        Our comprehensive Learner Management System empowers your learning experience.
+                                        Designed for ease and accessibility, the LMS lets you access course materials and
+                                        associated resources. With the LMS, you are in control of how you manage your
+                                        learning journey. You can organise your study plan, access resources, and stay on
+                                        top of your course.
+                                    </p>
+                                    <p>
+                                        The LMS is the key to personalised learning, ensuring that you navigate your
+                                        educational path with confidence and independence.
+                                    </p>
+                                </div>
+
+                            </div>
+                            
+                            <div>
+                                <button data-tab="zoom"
+                                    class=" px-3 xl:px-6 py-3 text-base font-roboto font-semibold border border-[#008080] lg:border-b-[#F7FBFB] text-[#6EC1E4] lg:ml-6 w-full lg:w-auto text-start">
+                                    ZOOM for Education
+                                </button>
+                                <div class="mobile-content lg:hidden hidden text-[#008080] border-x border-[#008080] px-3 py-2" data-content="zoom">
+                                    <p class="mb-4">
+                                        <strong>Open Learning College</strong> offers dynamic learning through Zoom for
+                                        Education.
+                                    </p>
+                                    <p>
+                                        With Zoom, you can join live interactive sessions, virtual classrooms, and connect
+                                        with your instructors. Zoom provides the bridge to real-time discussions, making
+                                        learning engaging and responsive. No need to be physically present; you can actively
+                                        participate from anywhere with an internet connection. Zoom transforms your digital
+                                        device into a window to knowledge, ensuring that learning is an accessible,
+                                        collaborative, and exciting journey.
+                                    </p>
+                                </div>
+                            </div>
+                            
+                        </div>
+
+                        <!-- Tab Contents -->
+                        <div id="desktop-contents"
+                            class="hidden lg:block border-t-0 border border-[#008080] p-5 text-[#008080] text-base font-roboto leading-relaxed">
+                            <div class="tab-content" id="voice">
+                                <p class="mb-4 font-bold">VIRTUAL | ONLINE | INTERACTIVE | CLASSROOM | EDUCATOR </p>
+                                <p class="mb-4">
+                                    <strong>Open Learning College’s</strong> approach empowers you to embrace remote
+                                    learning like never before. Through our industry leading, innovative platform
+                                    <strong>V.O.I.C.E</strong> we incorporate the Metaverse, Zoom for Education, and our
+                                    incredible Learner Management System (LMS), you have the tools to create a learning
+                                    experience tailored to your needs. The digital era has redefined education, making
+                                    it more flexible, accessible, and engaging. With us, you can embark on your learning
+                                    journey with the power of technology at your fingertips, whenever and wherever you
+                                    want.
+                                </p>
+                            </div>
+
+                            <div class="tab-content hidden" id="metaverse">
+                                <p class="mb-4">
+                                    In this era of technological advancement, the way we learn has also evolved. Open
+                                    Learning College introduces learning in the Metaverse, a concept that brings the
+                                    learning experience right to your digital doorstep. With this innovative approach,
+                                    you can create your avatar and visit your virtual campus and explore your chosen
+                                    course from the comfort of your home, the coffee shop down the street, or even while
+                                    relaxing at the park.
+                                </p>
+                                <p>Through cutting-edge platforms like <strong>V.O.I.C.E</strong>, we deliver course
+                                    materials, tutor guidance, and engaging content online. This means you have the
+                                    freedom to choose when and where you learn, all while staying connected with tutors
+                                    and fellow learners.</p>
+                            </div>
+
+                            <div class="tab-content hidden" id="lms">
+                                <p class="mb-4">
+                                    Our comprehensive Learner Management System empowers your learning experience.
+                                    Designed for ease and accessibility, the LMS lets you access course materials and
+                                    associated resources. With the LMS, you are in control of how you manage your
+                                    learning journey. You can organise your study plan, access resources, and stay on
+                                    top of your course.
+                                </p>
+                                <p>
+                                    The LMS is the key to personalised learning, ensuring that you navigate your
+                                    educational path with confidence and independence.
+                                </p>
+                            </div>
+
+                            <div class="tab-content hidden" id="zoom">
+                                <p class="mb-4">
+                                    <strong>Open Learning College</strong> offers dynamic learning through Zoom for
+                                    Education.
+                                </p>
+                                <p>
+                                    With Zoom, you can join live interactive sessions, virtual classrooms, and connect
+                                    with your instructors. Zoom provides the bridge to real-time discussions, making
+                                    learning engaging and responsive. No need to be physically present; you can actively
+                                    participate from anywhere with an internet connection. Zoom transforms your digital
+                                    device into a window to knowledge, ensuring that learning is an accessible,
+                                    collaborative, and exciting journey.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <h2 class="text-2xl md:text-[29px] text-[#008080] font-roboto font-semibold mt-10 ">Frequently Asked
+                        Questions</h2>
+                    <p class="text-base text-[#008080] font-roboto mt-5">Explore the power of our AI Chat Bot, Carly!
+                        Crafted with cutting-edge artificial intelligence, Carly is designed to respond seamlessly to
+                        your queries, offering a human-like interaction. Proficient across diverse courses, careers, and
+                        educational domains, Carly converses fluently in a range of languages, including English,
+                        Arabic, Italian, German, Hindi, Welsh, Swedish, Polish, Czech, Spanish, Maltese, and French.
+                        Enjoy the convenience of a 24/7 accessible resource — click on the chat icon at the bottom right
+                        of the page, ask her anything, try it out now and supercharge your learning experience!</p>
+
+                    <div class="border border-[#d5d8dc] mt-10 mb-5">
+                        <!-- Item -->
+                        <div class="faq-item border-b border-[#d5d8dc] last:border-b-0">
+                            <button
+                                class="faq-btn w-full flex items-center gap-3 px-6 py-4 text-base font-roboto font-semibold text-left text-[#008080] font-medium">
+                                <span class="icon text-2xl font-bold">−</span>
+                                How does distance learning work?
+                            </button>
+
+                            <div class="faq-content px-6 overflow-hidden transition-all duration-500 ease-in-out"
+                                style="max-height: 500px;">
+                                <p class="pb-4 text-[#008080] text-base font-roboto leading-6 leading-relaxed">
+                                    To ensure studying is flexible and convenient, most of our courses are divided into
+                                    modules. You work through each module at your own pace and time. Once completed,
+                                    submit the test, quiz, or assignment for marking. The support period is dependent on
+                                    the type of course you choose; our minimum support period is one year.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Item -->
+                        <div class="faq-item border-b border-[#d5d8dc] last:border-b-0">
+                            <button
+                                class="faq-btn w-full flex items-center gap-3 px-6 py-4 text-base font-roboto font-semibold text-left text-[#008080] font-medium">
+                                <span class="icon text-2xl font-bold">+</span>
+                                What payment options do you offer?
+                            </button>
+
+                            <div class="faq-content px-6 overflow-hidden transition-all duration-500 ease-in-out"
+                                style="max-height: 0;">
+                                <p class="pb-4 text-[#008080] text-base font-roboto leading-6 leading-relaxed">
+                                    Paying in full is the easiest and most straightforward way to pay for your course.
+                                </p>
+                                <p class="pb-4 text-[#008080] text-base font-roboto leading-6 leading-relaxed">
+                                    However we realise that sometimes you may need a little help, which is why at
+                                    <strong>Open Learning College</strong> we partner with Klarna to offer our students
+                                    the option of spreading the cost of their studies interest free over 3 months.
+                                </p>
+                                <p class="pb-4 text-[#008080] text-base font-roboto leading-6 leading-relaxed">
+                                    If you don’t feel that either of these options are suitable, please don’t worry, we
+                                    have other options available and our Student Advisers will work with you to find the
+                                    best plan.
+                                </p>
+                                <p class="pb-4 text-[#008080] text-base font-roboto leading-6 leading-relaxed">
+                                    Check out our <strong>Easy Payments & Funding</strong> page for more help.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- Item -->
+                        <div class="faq-item border-b border-[#d5d8dc] last:border-b-0">
+                            <button
+                                class="faq-btn w-full flex items-center gap-3 px-6 py-4 text-base font-roboto font-semibold text-left text-[#008080] font-medium">
+                                <span class="icon text-2xl font-bold">+</span>
+                                What is the difference between studying online and a study pack?
+                            </button>
+
+                            <div class="faq-content px-6 overflow-hidden transition-all duration-500 ease-in-out"
+                                style="max-height: 0;">
+                                <p class="pb-4 text-[#008080] text-base font-roboto leading-6 leading-relaxed">
+                                    If you choose to purchase a study pack you will receive all of your study materials
+                                    in printed format, along with a study guide, and <strong>Open Learning
+                                        College</strong> branded promotional item.
+                                </p>
+                                <p class="pb-4 text-[#008080] text-base font-roboto leading-6 leading-relaxed">
+                                    If you choose to study online, you’ll receive access to <strong>V.O.I.C.E.</strong>
+                                    our proprietary e-learning portal within 24 hours of your order being processed,
+                                    which will house all of your study materials in electronic format.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- Item -->
+                        <div class="faq-item border-b border-[#d5d8dc] last:border-b-0">
+                            <button
+                                class="faq-btn w-full flex items-center gap-3 px-6 py-4 text-base font-roboto font-semibold text-left text-[#008080] font-medium">
+                                <span class="icon text-2xl font-bold">+</span>
+                                Do I have to be based in the UK to enrol with Open Learning College?
+                            </button>
+
+                            <div class="faq-content px-6 overflow-hidden transition-all duration-500 ease-in-out"
+                                style="max-height: 0;">
+                                <p class="pb-4 text-[#008080] text-base font-roboto leading-6 leading-relaxed">
+                                    One of the best things about distance learning is the convenience and flexibility to
+                                    study from anywhere. We have students all over the world. <strong>Contact
+                                        us</strong> to find out more and one of our Student Advisors can provide more
+                                    information via telephone, chat or email.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- Item -->
+                        <div class="faq-item border-b border-[#d5d8dc] last:border-b-0">
+                            <button
+                                class="faq-btn w-full flex items-center gap-3 px-6 py-4 text-base font-roboto font-semibold text-left text-[#008080] font-medium">
+                                <span class="icon text-2xl font-bold">+</span>
+                                What if I change my mind, what is the College's refund policy?
+                            </button>
+
+                            <div class="faq-content px-6 overflow-hidden transition-all duration-500 ease-in-out"
+                                style="max-height: 0;">
+                                <p class="pb-4 text-[#008080] text-base font-roboto leading-6 leading-relaxed">
+                                    If you change your mind, we can offer you the opportunity to transfer to another
+                                    course, fees may apply depending on how far into your course you are.
+                                </p>
+                                <p class="pb-4 text-[#008080] text-base font-roboto leading-6 leading-relaxed">
+                                    If you’d like to cancel completely, we offer a refund on all study pack courses and
+                                    course materials provided they are returned to us within the cooling off period,
+                                    which is 14 days from purchase.
+                                </p>
+                                <p class="pb-4 text-[#008080] text-base font-roboto leading-6 leading-relaxed">
+                                    Read our full <strong><a href="#">terms and conditions</a></strong> here.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- Item -->
+                        <div class="faq-item border-b border-[#d5d8dc] last:border-b-0">
+                            <button
+                                class="faq-btn w-full flex items-center gap-3 px-6 py-4 text-base font-roboto font-semibold text-left text-[#008080] font-medium">
+                                <span class="icon text-2xl font-bold">+</span>
+                                When can I start the course?
+                            </button>
+
+                            <div class="faq-content px-6 overflow-hidden transition-all duration-500 ease-in-out"
+                                style="max-height: 0;">
+                                <p class="pb-4 text-[#008080] text-base font-roboto leading-6 leading-relaxed">
+                                    The answer is simple, when <strong>YOU</strong> want; you can start the course at
+                                    any time we do not have any set enrolment dates. Most of our courses don’t
+                                    requireany previous experience or qualifications. All you need is a desire and
+                                    motivation to succeed. You can even start right now – call and speak to one of our
+                                    Course Advisors.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- Item -->
+                        <div class="faq-item border-b border-[#d5d8dc] last:border-b-0">
+                            <button
+                                class="faq-btn w-full flex items-center gap-3 px-6 py-4 text-base font-roboto font-semibold text-left text-[#008080] font-medium">
+                                <span class="icon text-2xl font-bold">+</span>
+                                How long does a course take to complete?
+                            </button>
+
+                            <div class="faq-content px-6 overflow-hidden transition-all duration-500 ease-in-out"
+                                style="max-height: 0;">
+                                <p class="pb-4 text-[#008080] text-base font-roboto leading-6 leading-relaxed">
+                                    This is dependent upon your choice of course and how fast you want to learn. A full
+                                    breakdown of the course is available in the course brochure or online. We do provide
+                                    estimated number of study hours; the majority of our courses take less than one year
+                                    to complete, ask our course advisors for details.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- Item -->
+                        <div class="faq-item border-b border-[#d5d8dc] last:border-b-0">
+                            <button
+                                class="faq-btn w-full flex items-center gap-3 px-6 py-4 text-base font-roboto font-semibold text-left text-[#008080] font-medium">
+                                <span class="icon text-2xl font-bold">+</span>
+                                Do the courses have tutorial support?
+                            </button>
+
+                            <div class="faq-content px-6 overflow-hidden transition-all duration-500 ease-in-out"
+                                style="max-height: 0;">
+                                <p class="pb-4 text-[#008080] text-base font-roboto leading-6 leading-relaxed">
+                                    Yes, you will be allocated a tutor who specialises in your chosen subject and will
+                                    guide you through the course, mark your assignments and generally help you with any
+                                    problems you may have.
+                                </p>
+                                <p class="pb-4 text-[#008080] text-base font-roboto leading-6 leading-relaxed">
+                                    Any queries and questions will be responded to within 48 hours (within working
+                                    hours). However, marking work and giving feedback can take up to ten days.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- Item -->
+                        <div class="faq-item border-b border-[#d5d8dc] last:border-b-0">
+                            <button
+                                class="faq-btn w-full flex items-center gap-3 px-6 py-4 text-base font-roboto font-semibold text-left text-[#008080] font-medium">
+                                <span class="icon text-2xl font-bold">+</span>
+                                If I fail an assignment can I retake it?
+                            </button>
+
+                            <div class="faq-content px-6 overflow-hidden transition-all duration-500 ease-in-out"
+                                style="max-height: 0;">
+                                <p class="pb-4 text-[#008080] text-base font-roboto leading-6 leading-relaxed">
+                                    Yes, your tutor will ask you to resubmit your assignment and give you support as to
+                                    where you could improve.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- Item -->
+                        <div class="faq-item border-b border-[#d5d8dc] last:border-b-0">
+                            <button
+                                class="faq-btn w-full flex items-center gap-3 px-6 py-4 text-base font-roboto font-semibold text-left text-[#008080] font-medium">
+                                <span class="icon text-2xl font-bold">+</span>
+                                How do I get help with my coursework?
+                            </button>
+
+                            <div class="faq-content px-6 overflow-hidden transition-all duration-500 ease-in-out"
+                                style="max-height: 0;">
+                                <p class="pb-4 text-[#008080] text-base font-roboto leading-6 leading-relaxed">
+                                    You can get help by submitting a question to your tutor via the online portal and by
+                                    submitting your assignments for marking. You must send your assignments one at a
+                                    time so the tutor can mark one and give you feedback.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- Item -->
+                        <div class="faq-item border-b border-[#d5d8dc] last:border-b-0">
+                            <button
+                                class="faq-btn w-full flex items-center gap-3 px-6 py-4 text-base font-roboto font-semibold text-left text-[#008080] font-medium">
+                                <span class="icon text-2xl font-bold">+</span>
+                                Will I get a qualification at the end?
+                            </button>
+
+                            <div class="faq-content px-6 overflow-hidden transition-all duration-500 ease-in-out"
+                                style="max-height: 0;">
+                                <p class="pb-4 text-[#008080] text-base font-roboto leading-6 leading-relaxed">
+                                    Our courses provide you with a dual certification upon successful completion of the
+                                    course.
+                                </p>
+                                <p class="pb-4 text-[#008080] text-base font-roboto leading-6 leading-relaxed">
+                                    You will receive an Open Pathway Accreditation (OPA.dip) from our college. The
+                                    second qualification will be awarded by the Ofqual awarding body for the course.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- Item -->
+                        <div class="faq-item border-b border-[#d5d8dc] last:border-b-0">
+                            <button
+                                class="faq-btn w-full flex items-center gap-3 px-6 py-4 text-base font-roboto font-semibold text-left text-[#008080] font-medium">
+                                <span class="icon text-2xl font-bold">+</span>
+                                How long does it take to receive the qualification certification?
+                            </button>
+
+                            <div class="faq-content px-6 overflow-hidden transition-all duration-500 ease-in-out"
+                                style="max-height: 0;">
+                                <p class="pb-4 text-[#008080] text-base font-roboto leading-6 leading-relaxed">
+                                    It depends on which course you complete. After completing most courses, your
+                                    qualification certificate will take between four to six weeks to arrive.
+                                </p>
+                                <p class="pb-4 text-[#008080] text-base font-roboto leading-6 leading-relaxed">
+                                    However, some awarding bodies certificates take a little bit longer, taking between
+                                    ten to 12 weeks to arrive due to outside moderation.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- Item -->
+                        <div class="faq-item border-b border-[#d5d8dc] last:border-b-0">
+                            <button
+                                class="faq-btn w-full flex items-center gap-3 px-6 py-4 text-base font-roboto font-semibold text-left text-[#008080] font-medium">
+                                <span class="icon text-2xl font-bold">+</span>
+                                Will I have to sit an examination?
+                            </button>
+
+                            <div class="faq-content px-6 overflow-hidden transition-all duration-500 ease-in-out"
+                                style="max-height: 0;">
+                                <p class="pb-4 text-[#008080] text-base font-roboto leading-6 leading-relaxed">
+                                    Most of our courses do not require you to sit examinations, only continual
+                                    assessments. Where there are examinations required, you will receive all the
+                                    information you need to make your own exam arrangements. Please note exam fees are
+                                    not included in your course fee, unless otherwise stated.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- Item -->
+                        <div class="faq-item border-b border-[#d5d8dc] last:border-b-0">
+                            <button
+                                class="faq-btn w-full flex items-center gap-3 px-6 py-4 text-base font-roboto font-semibold text-left text-[#008080] font-medium">
+                                <span class="icon text-2xl font-bold">+</span>
+                                Do I have to buy any materials?
+                            </button>
+
+                            <div class="faq-content px-6 overflow-hidden transition-all duration-500 ease-in-out"
+                                style="max-height: 0;">
+                                <p class="pb-4 text-[#008080] text-base font-roboto leading-6 leading-relaxed">
+                                    Our comprehensive course materials are designed to be self-contained with all the
+                                    relevant information you require to complete the course and gain the relevant
+                                    certification. However, some of our students undertake additional reading via
+                                    relevant textbooks/study guides and/or the Internet to add value to their studies.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- Item -->
+                        <div class="faq-item border-b border-[#d5d8dc] last:border-b-0">
+                            <button
+                                class="faq-btn w-full flex items-center gap-3 px-6 py-4 text-base font-roboto font-semibold text-left text-[#008080] font-medium">
+                                <span class="icon text-2xl font-bold">+</span>
+                                I’m not sure of what course I should take, Can you help?
+                            </button>
+
+                            <div class="faq-content px-6 overflow-hidden transition-all duration-500 ease-in-out"
+                                style="max-height: 0;">
+                                <p class="pb-4 text-[#008080] text-base font-roboto leading-6 leading-relaxed">
+                                    Yes we can, it is important that you pursue a course which you will enjoy. Although
+                                    we cannot make this decision for you, we employ a team of dedicated Professional
+                                    Course Advisors, who will guide you towards making the right choice. Whether you
+                                    want specific information, or just a chat about what’s available, contact us now.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- Item -->
+                        <div class="faq-item border-b border-[#d5d8dc] last:border-b-0">
+                            <button
+                                class="faq-btn w-full flex items-center gap-3 px-6 py-4 text-base font-roboto font-semibold text-left text-[#008080] font-medium">
+                                <span class="icon text-2xl font-bold">+</span>
+                                Why choose Open Learning College?
+                            </button>
+
+                            <div class="faq-content px-6 overflow-hidden transition-all duration-500 ease-in-out"
+                                style="max-height: 0;">
+                                <p class="pb-4 text-[#008080] text-base font-roboto leading-6 leading-relaxed">
+                                    Why choose Open Learning College? The breadth and depth of our portfolio of courses
+                                    means that we will have a course to interest you. We are committed to your success
+                                    and offer advice and support through every step of the process. We have a dedicated
+                                    team of Professional Course Advisors that can give you access to career and study
+                                    advice,whilst offering you excellent value and quality courses.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <p
+                        class="text-base text-[#008080] font-roboto leading-6 font-bold mb-5 pt-5 border-t border-dotted border-[#008080]">
+                        Please <a href="#" class="underline">contact us</a> if you have not found the answer you are
+                        looking for.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="../min.js"></script>
+</body>
+
+</html>

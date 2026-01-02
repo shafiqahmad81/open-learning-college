@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Open Learning College Frontend Study Goals</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/globals.css">
+</head>
+
+<body>
+    <section class="bg-[#F7FBFB] py-5">
+        <div class="container">
+            <div class="flex flex-col md:flex-row">
+                <div class="w-full md:max-w-[40%] lg:max-w-[30%] space-y-5 lg:px-5">
+                    <div class="border-b border-dotted border-[#008080] pb-8">
+                        <div class="w-full max-w-[300px] mx-auto">
+                            <img src="../images/logo/open-learning-logo.png" alt="logo">
+                        </div>
+                    </div>
+                    <div class="group w-full h-[280px]">
+                        <div class="flex flex-col items-center justify-center w-full h-full bg-[#1abc9c] p-[35px]
+                                    transition-transform duration-700 group-hover:rotate-x-[180deg] backface-hidden">
+                            <div class="border-3 border-white rounded-full p-[26px] mb-5">
+                                <img src="../images/how-it-works/text-message.svg" alt="message">
+                            </div>
+                            <h3 class="text-lg sm:text-[21px] font-roboto font-semibold text-white">
+                                Visit our Support Centre
+                            </h3>
+                        </div>
+                        <div
+                            class="flex flex-col items-center justify-center w-full h-full bg-[#4054b2] p-[35px] space-y-5
+                                    -mt-[280px] transition-transform duration-700 rotate-x-[-180deg] group-hover:rotate-x-0 backface-hidden">
+                            <h3 class="text-lg sm:text-[21px] font-roboto font-semibold text-white">
+                                Student Support Centre
+                            </h3>
+                            <p class="text-sm font-normal font-roboto text-white text-center">
+                                All the information and help you will need.
+                            </p>
+                            <a href="#"
+                                class="text-[15px] text-white text-center transition-all border-2 border-white rounded-[3px] font-roboto font-medium px-6 py-3">
+                                Click Here
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="border-t border-dotted border-[#008080] pt-5">
+                        <p class="text-[13px] font-roboto font-bold leading-6 text-[#008080] mb-5">Our Student Advisors are keen to
+                            help you, call us now on 0844 357 7777. Alternatively, fill out the form below and we’ll get
+                            back to you.</p>
+                        <span class="text-base leading-6 font-roboto text-[#008080] mb-[5px] block">Contact Us</span>
+                        <form action="#" class="space-y-[5px] mb-5">
+                            <div>
+                                <input id="text" name="text" type="text" placeholder="Name*" required
+                                    class="border border-black w-full bg-white shadow-[inset_0_0_0_1px_rgba(0,0,0,0.1)] px-[15px] min-h-[33px] md:h-[50px] text-[13px] leading-7 text-[#7A7A7A] font-roboto placeholder:text-[#7A7A7A] placeholder:opacity-50 focus:outline-none">
+                            </div>
+                            <div>
+                                <input id="telephone" name="telephone" type="tel" placeholder="Telephone Number"
+                                    required
+                                    class="border border-black w-full bg-white shadow-[inset_0_0_0_1px_rgba(0,0,0,0.1)] px-[15px] min-h-[33px] md:h-[50px] text-[13px] leading-7 text-[#7A7A7A] font-roboto placeholder:text-[#7A7A7A] placeholder:opacity-50 focus:outline-none">
+                            </div>
+                            <div>
+                                <input id="email" name="email" type="email" placeholder="email" required
+                                    class="border border-black w-full bg-white shadow-[inset_0_0_0_1px_rgba(0,0,0,0.1)] px-[15px] min-h-[33px] md:h-[50px] text-[13px] leading-7 text-[#7A7A7A] font-roboto placeholder:text-[#7A7A7A] placeholder:opacity-50 focus:outline-none">
+                            </div>
+                            <div class="min-h-10 md:h-[75px]">
+                                <textarea name="text-area" id="text-area" placeholder="message"
+                                    class="border border-black w-full bg-white h-full shadow-[inset_0_0_0_1px_rgba(0,0,0,0.1)] px-[15px] text-[13px] leading-7 text-[#7A7A7A] font-roboto placeholder:text-[#7A7A7A] placeholder:opacity-50 focus:outline-none"></textarea>
+                            </div>
+                            <div class="flex gap-2">
+                                <div class="relative inline-block w-full max-w-1/2">
+                                    <input type="date" id="myDateAll"
+                                        class="datepicker appearance-none border border-black w-full bg-white shadow-[inset_0_0_0_1px_rgba(0,0,0,0.1)] px-3 py-1 min-h-[33px] md:h-10 text-[13px] leading-7 text-[#7A7A7A] font-roboto placeholder:text-[#7A7A7A] placeholder:opacity-50 focus:outline-none">
+                                    <span
+                                        class="absolute right-2.5 top-[45%] -translate-y-1/2 w-3 h-3 bg-[url('../images/how-it-works/calendar.png')] bg-no-repeat bg-center bg-contain z-[999] cursor-pointer"
+                                        onclick="document.getElementById('myDateAll').showPicker()"></span>
+                                </div>
+                                <div class="relative inline-block w-full max-w-1/2">
+                                    <input type="time" id="myTime"
+                                        class="timepicker appearance-none border border-black w-full bg-white shadow-[inset_0_0_0_1px_rgba(0,0,0,0.1)] px-3 py-1 min-h-[33px] md:h-10 text-[13px] leading-7 text-[#7A7A7A] font-roboto placeholder:text-[#7A7A7A] placeholder:opacity-50 focus:outline-none"
+                                        placeholder="Select Time">
+
+                                    <span
+                                        class="absolute right-2.5 top-[45%] -translate-y-1/2 w-3 h-3 bg-[url('../images/how-it-works/clock.png')] bg-no-repeat bg-center bg-contain z-[999] cursor-pointer"
+                                        onclick="document.getElementById('myTime').showPicker()"></span>
+                                </div>
+                            </div>
+                            <div>
+                                <button
+                                    class="bg-[#008080] border border-[#008080] text-white px-5 py-2.5 text-[13px] leading-[1] w-full cursor-pointer rounded-xs transition-all hover:bg-white hover:text-[#008080] cursor-pointer font-medium"
+                                    type="submit">Submit</button>
+                            </div>
+                        </form>
+                        <p class="text-[11px] font-roboto font-bold leading-4 text-[#008080]">By completing this form
+                            you are expressing an interest in Open Learning College. We will send you information about
+                            our courses and any special offers we think will be useful to you. You will be able to
+                            unsubscribe at anytime. See our Privacy Policy.</p>
+                    </div>
+                    <div class="border-t border-dotted border-[#008080] pt-8 sticky top-0">
+                        <h3 class="text-xl md:text-2xl font-semibold font-roboto md:leading-6 text-[#008080] mb-5">Quick
+                            Links</h3>
+                        <ul>
+                            <li class=" mt-2 pb-2 first:mt-0"><a href="#statement"
+                                    class="text-base text-[#117d5d] font-arial font-normal transition-all hover:font-bold">01. Statement</a></li>
+                            <li class=" mt-2 pb-2 first:mt-0"><a href="#aims"
+                                    class="text-base text-[#117d5d] font-arial font-normal transition-all hover:font-bold">02. Aims</a></li>
+                            <li class=" mt-2 pb-2 first:mt-0"><a href="#relevant-legislation"
+                                    class="text-base text-[#117d5d] font-arial font-normal transition-all hover:font-bold">03. Relevant legislation and guidance</a></li>
+                            <li class=" mt-2 pb-2 first:mt-0"><a href="#improving-access"
+                                    class="text-base text-[#117d5d] font-arial font-normal transition-all hover:font-bold">04. Improving access and provision for SEND students</a></li>
+                            <li class=" mt-2 pb-2 first:mt-0"><a href="#guiding-principles"
+                                    class="text-base text-[#117d5d] font-arial font-normal transition-all hover:font-bold">05. Guiding Principles</a></li>
+                            <li class=" mt-2 pb-2 first:mt-0"><a href="#accessibility-features"
+                                    class="text-base text-[#117d5d] font-arial font-normal transition-all hover:font-bold">06. Accessibility Features</a></li>
+                            <li class=" mt-2 pb-2 first:mt-0"><a href="#feedback-and-contact-information"
+                                    class="text-base text-[#117d5d] font-arial font-normal transition-all hover:font-bold">07. Feedback and Contact Information</a></li>
+                            <li class=" mt-2 pb-2 first:mt-0"><a href="#employee-handbook"
+                                    class="text-base text-[#117d5d] font-arial font-normal transition-all hover:font-bold">08. Employee Handbook</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="w-full md:max-w-[60%] lg:max-w-[70%] md:ml-[30px]">
+                    <h2 class="text-2xl md:text-[28px] font-bold font-arial text-[#243C45] md:mb-5">General <span
+                            class="text-[#008080]">Statement & Aims</span></h2>
+                    <div class="font-arial text-[#008080] divide-y divide-[#7C8A8F]">
+                        <div id="statement" class="py-4 lg:py-5 text-[#008080] text-base leading-6 font-normal">
+                            <h2 class="text-base sm:text-xl font-arial font-bold mb-4">01. Statement</h2>
+                            <p class=" font-bold mb-4">Open Learning College strives to be inclusive and welcoming to each and every student so they are able to participate as fully as possible in the curriculum and College life. The College is also committed to promoting positive attitudes towards disability and accessibility.</p>
+                            
+                        </div>
+
+                        <div id="aims" class="font-arial">
+                            <h2 class="text-base sm:text-xl font-arial font-bold text-[#008080] mb-5 pt-5">02. Aims</h2>
+                            <h3 class="text-lg sm:text-xl sm:leading-7 font-bold font-arial mb-5">This policy sets out measures planned and undertaken by the College to ensure the fair access and treatment for students with SEND.</h3>
+                            <p class="text-base leading-6"><strong>These include:</strong></p>
+                            <ul class="list-disc text-base leading-6 font-normal mb-5 ml-2 md:ml-0">
+                                <li>Improving the physical environment of the College in order to increase the extent to which disabled students are able to take advantage of education and associated services.</li>
+                                <li>Increasing the extent to which students with SEND can participate in the curriculum.</li>
+                                <li>Improving the provision of information for students with SEND.</li>
+                            </ul>
+                        </div>
+                        <div id="relevant-legislation" class="font-arial border-b border-black pb-5">
+                            <h2 class="text-base sm:text-xl font-arial font-bold text-[#008080] mb-5 pt-5">03. Relevant legislation and guidance</h2>
+                            <ul class="list-disc text-base leading-6 font-normal mb-5 ml-2 md:ml-0">
+                                <li>Children and Families Act 2014</li>
+                                <li>Equality Act 2010</li>
+                                <li>Keeping Children Safe in Education</li>
+                                <li>SEND code of practice</li>
+                                <li>Working together to safeguard children</li>
+                            </ul>
+                            <p class="text-base leading-6 mb-5">The <strong>Equality Act 2010</strong> defines disability as: <em>‘A physical or mental impairment which has substantial and long term adverse impact on a person’s ability to carry out normal everyday activities’</em>. This overlaps with the definition of ‘special educational needs’ in the <strong>Children and Families Act 2014</strong>, which includes students with significantly greater difficulty in learning than the majority of children of their age, or a disability which means that a student cannot make full use of the general educational facilities provided for students of their age.</p>
+                            <p class="text-base leading-6">Anti-discrimination considerations relating to students with SENDs are also included in the DfE’s Teachers Standards, outlining the professional expectations for all teachers in the UK.e</p>
+
+                        </div>
+                        <div id="improving-access" class="font-arial border-b border-black pb-5">
+                            <h2 class="text-base sm:text-xl font-arial font-bold text-[#008080] mb-5 pt-5">04. Improving access and provision for SEND students</h2>
+
+                            <p class="text-base leading-6 mb-5"><strong>Open Learning College</strong> monitors the physical environment of its premises to assess what reasonable adjustments can be made to improve access and provision for SEND students so they are able to take full advantage of the College’s educational and associated provision.</p>
+                            <h3 class="text-base leading-6 font-bold">4.1 Open Learning College Accessibility Plan</h3>
+                            <p class="text-base leading-6 mb-5">For some student we understand that cash is the only option for you, in these cases, please call us or email to discuss the best option to send this to us. Cash is only accepted when paying fees in full.</p>
+                            <p class="text-base leading-6 mb-5">We can accept deposits paid in cash into our bank account. Be advised the college will not be held responsible for any cash payments not reaching us.</p>
+                            <h3 class="text-base leading-6 font-bold">4.1.1. Terms of review</h3>
+                            <ul class="list-disc text-base leading-6 font-normal mb-5 ml-2 md:ml-0">
+                                <li>To review the College’s policies, procedures and facilities as they are likely to affect students and prospective students who are disabled.</li>
+                                <li>To make recommendations with a view to improving the accessibility of Open Learning College’s  educational provisions to students or prospective students with disabilities by means of reasonable adjustments and future-planning.</li>
+                                <li>To prepare and adjust as necessary the Accessibility Plan.</li>
+                                <li>To review related plans and policies as necessary, and at least on an annual basis.</li>
+                            </ul>
+                            <h3 class="text-base leading-6 font-bold mb-5">4.1.2 Areas of consideration</h3>
+                            <p class="text-base leading-6 font-bold"><em>Admissions</em></p>
+                            <p class="text-base leading-6 mb-5">Open Learning College’s commitment to removing barriers, wherever possible, to entry to the College for SEND students. Please refer to the Admissions Policy.</p>
+                            <p class="text-base leading-6 font-bold"><em>Attainment</em></p>
+                            <p class="text-base leading-6 mb-5">Open Learning College’s commitment to supporting all students, regardless of any SEND or other personal circumstances, to attain the best outcome for their personal and educational development. Student attainment will be reviewed on an ongoing basis through half-termly mock exams and individual student reviews throughout the academic year.</p>
+                            <p class="text-base leading-6 font-bold"><em>Attendance</em></p>
+                            <p class="text-base leading-6 mb-5">Open Learning College has high attendance expectations of all students, as laid out in the Attendance Policy. The College carefully monitors and supports students with medical and SEND issues with attendance in order to ensure they do not miss out on or are disadvantaged in their learning if they are unable to attend lessons.</p>
+                            <p class="text-base leading-6 font-bold"><em>Behaviour</em></p>
+                            <p class="text-base leading-6 mb-5">The College has a clear code of conduct and works closely with all students to help them maintain good behaviour, as set out in the Student Behaviour and Exclusions Policy. In any situation requiring disciplinary action, including exclusion, any relevant aspects, including SEND, that would affect the behaviour or actions of a student would be taken into careful consideration.</p>
+                            <p class="text-base leading-6 font-bold"><em>Education</em></p>
+                            <p class="text-base leading-6 mb-5">Open Learning College’s staff appraise their own teaching strategies and receive support from the SEND Team to ensure students with SEND are able to learn and participate to their full potential. This may include, for example, offering rest breaks if a student is experiencing anxiety or panic, giving additional time to complete assignments or providing more accessible or focused teaching materials.</p>
+                            <p class="text-base leading-6 mb-5">The College does not tolerate offensive language or discrimination and actively promotes inclusion and collaboration.</p>
+                            <p class="text-base leading-6 font-bold"><em>Extra-curricular activities</em></p>
+                            <p class="text-base leading-6 mb-5">All students are given the opportunity to get fully involved in College life and participate in extra-curricular activities, such as school trips, clubs and events.</p>
+                            <p class="text-base leading-6 font-bold"><em>Physical environment</em></p>
+                            <p class="text-base leading-6 mb-5">The College regularly assesses and monitors the physical environment of its premises to ensure that all students are able to take advantage of everything the College has to offer.</p>
+                            <p class="text-base leading-6 font-bold"><em>Selection and recruitment of staff</em></p>
+                            <p class="text-base leading-6 mb-5">Open Learning College aims to offer equality of opportunity and fair treatment in its recruitment, selection, training, development and promotion of staff at all levels. The Equal Opportunities and Safer Recruitment and Selection of Staff policies set out how the procedures work and are produced in accordance with the Equality Act 2010.</p>
+                            <p class="text-base leading-6 mb-5">Our staff are required to read and adhere to all College policies, which includes recognising the importance of accessibility for all students and respecting the needs and rights of students with SEND.</p>
+                            <p class="text-base leading-6 mb-5">This policy is reviewed annually by the SLT.</p>
+                        </div>
+                        <div id="guiding-principles" class="font-arial border-b border-black pb-5">
+                            <h2 class="text-base sm:text-xl font-arial font-bold text-[#008080] mb-5 pt-5">05. Guiding Principles (Online)</h2>
+                            <ul class="list-decimal text-base leading-6 font-normal ml-2 md:ml-0">
+                                <li><strong>Compliance with Standards:</strong> We adhere to established accessibility standards, including the Web Content Accessibility Guidelines (WCAG) 2.1, to create an accessible online environment.</li>
+                                <li><strong>Continuous Improvement:</strong> Open Learning College is committed to ongoing improvement in accessibility. We regularly review and update our digital content and platforms to ensure compliance with the latest accessibility standards.</li>
+                                <li><strong>Inclusive Design:</strong> Our design and development processes prioritise inclusivity from the outset. We aim to create content that is accessible to users with various disabilities, including visual, auditory, motor, and cognitive impairments.</li>
+                                <li><strong>User Feedback:</strong> We actively seek feedback from users regarding accessibility issues. Feedback from the user community helps us identify and address accessibility concerns promptly.</li>
+                                <li><strong>Training and Awareness:</strong> Our team members are trained on accessibility standards and practices. We promote awareness and understanding of accessibility principles throughout the organisation.</li>
+                            </ul>
+                        </div>
+                        <div id="accessibility-features" class="font-arial border-b border-black pb-5">
+                            <h2 class="text-base sm:text-xl font-arial font-bold text-[#008080] mb-5 pt-5">06. Accessibility Features (Online)</h2>
+                            <ul class="list-decimal text-base leading-6 font-normal ml-2 md:ml-0">
+                                <li><strong>Compliance with Standards:</strong> We adhere to established accessibility standards, including the Web Content Accessibility Guidelines (WCAG) 2.1, to create an accessible online environment.</li>
+                                <li><strong>Continuous Improvement:</strong> Open Learning College is committed to ongoing improvement in accessibility. We regularly review and update our digital content and platforms to ensure compliance with the latest accessibility standards.</li>
+                                <li><strong>Inclusive Design:</strong> Our design and development processes prioritise inclusivity from the outset. We aim to create content that is accessible to users with various disabilities, including visual, auditory, motor, and cognitive impairments.</li>
+                                <li><strong>User Feedback:</strong> We actively seek feedback from users regarding accessibility issues. Feedback from the user community helps us identify and address accessibility concerns promptly.</li>
+                                <li><strong>Training and Awareness:</strong> Our team members are trained on accessibility standards and practices. We promote awareness and understanding of accessibility principles throughout the organisation.</li>
+                            </ul>
+                            
+                        </div>
+                        <div id="feedback-and-contact-information" class="font-arial border-b border-black pb-5">
+                            <h2 class="text-base sm:text-xl font-arial font-bold text-[#008080] mb-5 pt-5">07. Feedback and Contact Information</h2>
+                            <p class="text-base leading-6 mb-5">Users encountering accessibility issues are encouraged to provide feedback to help us improve.</p>
+                            <p class="text-base leading-6 mb-5">For assistance or to report accessibility concerns, please contact our support team at <a href="mailto:support@site.digitalwindit.com" class="font-bold">support@site.digitalwindit.com</a>.</p>
+                        </div>
+                        <div id="employee-handbook" class="font-arial border-b border-black pb-5">
+                            <h2 class="text-base sm:text-xl font-arial font-bold text-[#008080] mb-5 pt-5">08. Employee Handbook</h2>
+                            <div class="flex items-center justify-center">
+                                <a href="#" class="text-base font-medium leading-4 font-roboto bg-[#008080] text-white py-[15px] px-[30px] rounded-lg">College Employee Handbook</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="../min.js"></script>
+</body>
+
+</html>

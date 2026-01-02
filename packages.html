@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Open Learning College Frontend Study Goals</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/globals.css">
+</head>
+<body>
+    <!-- BANNER SECTION START -->
+    <section
+        class="bg-[#243C45] bg-no-repeat bg-cover bg-top-center bg-[url('./assets/images/common-banner/common-banner-bg.png')] py-10 md:py-[72px]">
+        <div class="container text-center">
+            <h2 class="text-2xl md:text-[40px] font-bold font-arial text-white mb-5">
+                Our Packages
+            </h2>
+            <p class="text-sm md:text-base font-arial md:max-w-[50%] mx-auto text-white">Explore our tailor made education packages designed to meet the diverse learning needs and goals of Students, Educators and Organisations.
+
+            </p>
+        </div>
+    </section>
+    <!-- BANNER SECTION END -->
+
+    <section class="bg-[#F7FBFB] pt-10 md:pt-[72px] bg-[url('./assets/zoom/image/zoom-bg.png')] bg-no-repeat bg-center bg-cover">
+        <div class="container">
+            <div class="border-b border-dotted border-[#008080]">
+                <ul class="flex flex-wrap items-center pb-5 gap-2 mb-3">
+                    <li><a href="#" class="text-base font-arial font-bold text-[#117d5d] transition-all hover:text-[#3BB366]">Home</a></li>
+                    <li><span><svg xmlns="http://www.w3.org/2000/svg" width="6" height="12" viewBox="0 0 6 12" fill="none"><g id="Arrow - Down 2"><path id="Arrow - Down 2_2" d="M0.163933 11.1728C-0.0347736 10.978 -0.0528379 10.6732 0.10974 10.4584L0.163933 10.3968L4.64894 6.00016L0.163932 1.60351C-0.0347741 1.40872 -0.0528383 1.10388 0.10974 0.88908L0.163932 0.827539C0.362639 0.63274 0.673582 0.615031 0.892695 0.774413L0.95547 0.827539L5.83607 5.61218C6.03477 5.80698 6.05284 6.1118 5.89026 6.32661L5.83607 6.38815L0.95547 11.1728C0.736893 11.3871 0.38251 11.3871 0.163933 11.1728Z" fill="#7C8A8F"></path></g></svg></span></li>
+                    <li class="text-[#7C8A8F] text-base font-arial">Our Packages</li>
+                </ul>
+            </div>
+            <div class="flex flex-col md:flex-row items-center mt-10 md:mt-[72px] border-b border-dotted border-[#008080]">
+                <div class="w-full md:max-w-[44.319%] flex items-center justify-center rounded-4xl mt-5 md:mt-0 order-2 md:order-1">
+                    <div class="w-full bg-[url('./assets/students/image/student-bg.png')] bg-no-repeat bg-center bg-cover flex items-center justify-center">
+                        <img src="./assets/images/popular-packages/student-package.png" alt="student">
+                    </div>
+                </div>
+                <div class="md:ml-9 w-full md:max-w-[54.166%] order-1 md:order-2">
+                    <h2 class="text-2xl md:text-[28px] font-bold font-arial text-[#243C45] mb-5 text-center md:text-start">Our Best <span class="text-[#008080]">Packages For You </span></h2>
+                    <p class="text-base text-[#7C8A8F] font-arial leading-6 mb-5"><strong class="text-[#008080]">Open Learning College</strong> offers a range of tailored packages to cater to the diverse needs of individuals and organisations alike. With seven packages to choose from, including Students, Educators, Course Providers, SME, Business PRO, Nursery or School, and Charities, each one comes with a unique set of services to help achieve your goals. These services include <strong class="text-[#008080]">V.O.I.C.E.</strong> incorporating, <strong class="text-[#008080]">Course Builder</strong> <span class="text-[#008080]">(LMS)</span>, <strong class="text-[#008080]">ZOOM for Education</strong> & the <strong class="text-[#008080]">Metaverse</strong>, in addition to <strong class="text-[#008080]">Xperience™</strong>, <strong class="text-[#008080]">Open Pathway Accreditation (OPA)</strong>, a comprehensive Resource Library and Career Hub, providing you with everything you need to succeed in your learning and development journey.</p>
+                    <div class="flex flex-col md:flex-row md:items-center justify-between flex-wrap bg-[#008080] p-5 rounded-4xl">
+                        <div class="flex-1 flex gap-2 min-w-[200px]">
+                            <span class="flex items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60" fill="none"><g id="Frame"><g id="Group"><path id="Vector" d="M30 44.0623C27.6741 44.0623 25.7812 45.9551 25.7812 48.281C25.7812 50.607 27.6741 52.4998 30 52.4998C32.3259 52.4998 34.2188 50.607 34.2188 48.281C34.2188 45.9551 32.3259 44.0623 30 44.0623ZM30 50.6248C28.7081 50.6248 27.6562 49.5729 27.6562 48.281C27.6562 46.9891 28.7081 45.9373 30 45.9373C31.2919 45.9373 32.3438 46.9891 32.3438 48.281C32.3438 49.5729 31.2919 50.6248 30 50.6248ZM31.875 20.6248V19.6873C31.875 19.4386 31.9738 19.2002 32.1496 19.0244C32.3254 18.8485 32.5639 18.7498 32.8125 18.7498C33.0611 18.7498 33.2996 18.8485 33.4754 19.0244C33.6512 19.2002 33.75 19.4386 33.75 19.6873V20.6248C33.75 20.8734 33.6512 21.1119 33.4754 21.2877C33.2996 21.4635 33.0611 21.5623 32.8125 21.5623C32.5639 21.5623 32.3254 21.4635 32.1496 21.2877C31.9738 21.1119 31.875 20.8734 31.875 20.6248ZM50.3503 36.837C48.4922 34.9788 44.6747 31.1838 37.245 30.9588L36.5981 29.0173C38.4105 27.6459 39.6632 25.663 40.1231 23.4373H41.25C42.8006 23.4373 44.0625 22.1754 44.0625 20.6248V18.7498C44.0625 17.1991 42.8006 15.9373 41.25 15.9373H40.3125V8.53289L43.125 7.78289V13.1248C43.125 13.3734 43.2238 13.6119 43.3996 13.7877C43.5754 13.9635 43.8139 14.0623 44.0625 14.0623C44.3111 14.0623 44.5496 13.9635 44.7254 13.7877C44.9012 13.6119 45 13.3734 45 13.1248V6.56227C45 6.35578 44.9318 6.15507 44.806 5.99132C44.6802 5.82756 44.5039 5.70991 44.3044 5.65664L30.2419 1.90664C30.0834 1.86445 29.9166 1.86445 29.7581 1.90664L15.6956 5.65664C15.4962 5.71001 15.32 5.8277 15.1943 5.99145C15.0686 6.15519 15.0005 6.35584 15.0005 6.56227C15.0005 6.76869 15.0686 6.96934 15.1943 7.13309C15.32 7.29683 15.4962 7.41452 15.6956 7.46789L19.6875 8.53289V15.9373H18.75C17.1994 15.9373 15.9375 17.1991 15.9375 18.7498V20.6248C15.9375 22.1754 17.1994 23.4373 18.75 23.4373H19.8769C20.3368 25.663 21.5895 27.6459 23.4019 29.0173L22.755 30.9588C15.3253 31.1838 11.5078 34.9788 9.64969 36.837C7.87594 38.6107 3.75 43.5054 3.75 50.6248C3.75 53.727 6.27281 56.2498 9.375 56.2498H15.1725C15.3652 56.7965 15.7224 57.2703 16.1951 57.606C16.6678 57.9417 17.2327 58.1229 17.8125 58.1248H42.1875C42.7673 58.1229 43.3322 57.9417 43.8049 57.606C44.2776 57.2703 44.6348 56.7965 44.8275 56.2498H50.625C53.7272 56.2498 56.25 53.727 56.25 50.6248C56.25 43.5054 52.1241 38.6107 50.3503 36.837ZM19.6875 21.5623H18.75C18.2334 21.5623 17.8125 21.1413 17.8125 20.6248V18.7498C17.8125 18.2332 18.2334 17.8123 18.75 17.8123H19.6875V21.5623ZM41.25 17.8123C41.7666 17.8123 42.1875 18.2332 42.1875 18.7498V20.6248C42.1875 21.1413 41.7666 21.5623 41.25 21.5623H40.3125V17.8123H41.25ZM38.4375 13.8429C37.785 14.2741 34.8412 14.9998 30 14.9998C25.1588 14.9998 22.215 14.2741 21.5625 13.8429V9.03258L29.7581 11.2179C29.9165 11.2607 30.0835 11.2607 30.2419 11.2179L38.4375 9.03258V13.8429ZM19.5759 6.56227L30 3.78258L40.4241 6.56227L30 9.34195L19.5759 6.56227ZM21.5625 21.5623V15.8585C24.0525 16.7773 28.3294 16.8748 30 16.8748C31.6706 16.8748 35.9475 16.7773 38.4375 15.8585V21.5623C38.4375 25.6976 35.0728 29.0623 30.9375 29.0623H29.0625C24.9272 29.0623 21.5625 25.6976 21.5625 21.5623ZM35.43 31.4426L30 34.5448L24.57 31.4416L25.0444 30.0195C26.2982 30.6221 27.6713 30.9357 29.0625 30.9373H30.9375C32.3287 30.9357 33.7018 30.6221 34.9556 30.0195L35.43 31.4426ZM42.1875 56.2498H17.8125C17.2959 56.2498 16.875 55.8288 16.875 55.3123V41.2498C16.875 40.7332 17.2959 40.3123 17.8125 40.3123H42.1875C42.7041 40.3123 43.125 40.7332 43.125 41.2498V55.3123C43.125 55.8288 42.7041 56.2498 42.1875 56.2498ZM50.625 54.3748H45V46.8748H48.75C48.9986 46.8748 49.2371 46.776 49.4129 46.6002C49.5887 46.4244 49.6875 46.1859 49.6875 45.9373C49.6875 45.6886 49.5887 45.4502 49.4129 45.2744C49.2371 45.0985 48.9986 44.9998 48.75 44.9998H45V41.2498C45 39.6991 43.7381 38.4373 42.1875 38.4373H17.8125C16.2619 38.4373 15 39.6991 15 41.2498V44.9998H11.25C11.0014 44.9998 10.7629 45.0985 10.5871 45.2744C10.4113 45.4502 10.3125 45.6886 10.3125 45.9373C10.3125 46.1859 10.4113 46.4244 10.5871 46.6002C10.7629 46.776 11.0014 46.8748 11.25 46.8748H15V54.3748H9.375C7.30687 54.3748 5.625 52.6929 5.625 50.6248C5.625 44.2057 9.36656 39.7713 10.9753 38.1626C12.8241 36.3148 16.245 32.8929 23.1909 32.8132L29.535 36.4385C29.6766 36.5196 29.8369 36.5622 30 36.5622C30.1631 36.5622 30.3234 36.5196 30.465 36.4385L36.8091 32.8132C43.755 32.892 47.1759 36.3138 49.0247 38.1626C50.6334 39.7713 54.375 44.2057 54.375 50.6248C54.375 52.6929 52.6931 54.3748 50.625 54.3748ZM26.25 20.6248V19.6873C26.25 19.4386 26.3488 19.2002 26.5246 19.0244C26.7004 18.8485 26.9389 18.7498 27.1875 18.7498C27.4361 18.7498 27.6746 18.8485 27.8504 19.0244C28.0262 19.2002 28.125 19.4386 28.125 19.6873V20.6248C28.125 20.8734 28.0262 21.1119 27.8504 21.2877C27.6746 21.4635 27.4361 21.5623 27.1875 21.5623C26.9389 21.5623 26.7004 21.4635 26.5246 21.2877C26.3488 21.1119 26.25 20.8734 26.25 20.6248Z" fill="white"></path></g></g></svg>
+                            </span>
+                            <div>
+                               <h3 class="text-xl md:text-2xl text-white font-arial font-bold md:leading-9 ">Student Package</h3> 
+                               <p class="text-2xl md:text-[32px] text-[#FFC000] font-arial font-bold md:leading-12">FREE</p>
+                            </div>
+                        </div>
+                        <div class="flex justify-center md:justify-end mt-5 md:mt-0">
+                            <a href="#" class="bg-white border border-[#007A72] rounded-4xl px-[30px] py-[15px] text-base text-[#008080] font-medium leading-4 font-roboto inline-flex transition-all hover:bg-[#007A72] hover:text-white">Register Now!</a>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-[#F7FBFB]">
+        <div class="container">
+            <div class="pt-5 text-center">
+                <h2 class="text-4xl md:text-[60px] md:leading-[66px] text-[#008080] font-dm font-bold">Compare our Packages</h2>
+                <div class="flex items-center justify-center gap-2 mt-5 pb-5">
+                    <span class="relative text-sm font-dm font-bold leading-3 bg-[#9A9BAB] text-white uppercase rounded-l-md px-5 py-3.5 cursor-pointer after:absolute after:top-1.5 after:w-[30px] after:bg-white after:text-xs after:font-dm after:leading-[30px] after:text-[#0C0D1A] after:content-['or'] after:rounded-full after:-right-4 transition-all hover:bg-[#2A66FE]">Monthly</span>
+                    <span class="text-sm font-dm font-bold leading-3 bg-[#2A66FE] text-white uppercase rounded-r-md px-5 py-3.5 cursor-pointer">Annual (20% Saving)</span>
+                </div>
+            </div>
+            <div class="overflow-x-auto">
+                <div class="border-t border-[#E4E4E4] grid grid-cols-7 min-w-[900px]">
+                <div class="px-2.5 py-5 flex flex-col justify-between">
+                    <a href="#" class="group">
+                       <h3 class="text-base lg:text-lg font-bold font-dm leading-5 mb-5 text-[#008080]">FREE STUDENT REGISTRATION</h3> 
+                       <p class="text-base leading-5 font-dm font-medium text-[#0C0D1A] transition-all group-hover:text-[#008080]">join us in the metaverse </p>
+                    </a>
+                    <div>
+                        <a href="#" class="inline-block bg-[#CE0F58] border border-[#CE0F58] text-white rounded-md px-3 py-2 transition-all hover:bg-transparent hover:text-[#CE0F58] text-[13px] leading-3 font-dm font-medium mt-5">Learn more</a>
+                    </div>
+                </div>
+                <div class="px-2.5 py-5 flex flex-col justify-between">
+                    <a href="#" class="group">
+                       <h3 class="text-base lg:text-lg font-bold font-dm leading-5 mb-5 text-[#008080]">EDUCATORS</h3> 
+                       <p class="text-base leading-5 font-dm font-medium text-[#0C0D1A] transition-all group-hover:text-[#008080]">teachers, trainer & instructors</p>
+                    </a>
+                    <div>
+                        <a href="#" class="inline-block bg-[#CE0F58] border border-[#CE0F58] text-white rounded-md px-3 py-2 transition-all hover:bg-transparent hover:text-[#CE0F58] text-[13px] leading-3 font-dm font-medium mt-5">Learn more</a>
+                    </div>
+                </div>
+                <div class="px-2.5 py-5 flex flex-col justify-between">
+                    <a href="#" class="group">
+                       <h3 class="text-base lg:text-lg font-bold font-dm leading-5 mb-5 text-[#008080]">COURSE PROVIDERS</h3> 
+                       <p class="text-base leading-5 font-dm font-medium text-[#0C0D1A] transition-all group-hover:text-[#008080]">free for course providers</p>
+                    </a>
+                    <div>
+                        <a href="#" class="inline-block bg-[#CE0F58] border border-[#CE0F58] text-white rounded-md px-3 py-2 transition-all hover:bg-transparent hover:text-[#CE0F58] text-[13px] leading-3 font-dm font-medium mt-5">Learn more</a>
+                    </div>
+                </div>
+                <div class="px-2.5 py-5 flex flex-col justify-between">
+                    <a href="#" class="group">
+                       <h3 class="text-base lg:text-lg font-bold font-dm leading-5 mb-5 text-[#008080]">BUSINESS SME</h3> 
+                       <p class="text-base leading-5 font-dm font-medium text-[#0C0D1A] transition-all group-hover:text-[#008080]">for small businesses</p>
+                    </a>
+                    <div>
+                        <a href="#" class="inline-block bg-[#CE0F58] border border-[#CE0F58] text-white rounded-md px-3 py-2 transition-all hover:bg-transparent hover:text-[#CE0F58] text-[13px] leading-3 font-dm font-medium mt-5">Learn more</a>
+                    </div>
+                </div>
+                <div class="px-2.5 py-5 flex flex-col justify-between">
+                    <a href="#" class="group">
+                       <h3 class="text-base lg:text-lg font-bold font-dm leading-5 mb-5 text-[#008080]">BUSINESS PRO</h3> 
+                       <p class="text-base leading-5 font-dm font-medium text-[#0C0D1A] transition-all group-hover:text-[#008080]">for larger organisations</p>
+                    </a>
+                    <div>
+                        <a href="#" class="inline-block bg-[#CE0F58] border border-[#CE0F58] text-white rounded-md px-3 py-2 transition-all hover:bg-transparent hover:text-[#CE0F58] text-[13px] leading-3 font-dm font-medium mt-5">Learn more</a>
+                    </div>
+                </div>
+                <div class="px-2.5 py-5 flex flex-col justify-between">
+                    <a href="#" class="group">
+                       <h3 class="text-base lg:text-lg font-bold font-dm leading-5 mb-5 text-[#008080]">EDUCATIONAL INSTITUTE</h3> 
+                       <p class="text-base leading-5 font-dm font-medium text-[#0C0D1A] transition-all group-hover:text-[#008080]">School, nursery or academy </p>
+                    </a>
+                    <div>
+                        <a href="#" class="inline-block bg-[#CE0F58] border border-[#CE0F58] text-white rounded-md px-3 py-2 transition-all hover:bg-transparent hover:text-[#CE0F58] text-[13px] leading-3 font-dm font-medium mt-5">Learn more</a>
+                    </div>
+                </div>
+                <div class="px-2.5 py-5 flex flex-col justify-between">
+                    <a href="#" class="group">
+                       <h3 class="text-base lg:text-lg font-bold font-dm leading-5 mb-5 text-[#008080]">REGISTERED CHARITY</h3> 
+                       <p class="text-base leading-5 font-dm font-medium text-[#0C0D1A] transition-all group-hover:text-[#008080]">free for SEN organisations </p>
+                    </a>
+                    <div>
+                        <a href="#" class="inline-block bg-[#CE0F58] border border-[#CE0F58] text-white rounded-md px-3 py-2 transition-all hover:bg-transparent hover:text-[#CE0F58] text-[13px] leading-3 font-dm font-medium mt-5">Learn more</a>
+                    </div>
+                </div>
+                </div>
+                <div class="border-t border-[#E4E4E4] grid grid-cols-7 min-w-[900px]">
+                    <div class="px-2.5 py-5 flex flex-col justify-between">
+                        <p class="text-sm text-[#0C0D1A] font-dm font-medium leading-3"><strong>Free Period</strong></p>
+                    </div>
+                    <div class="px-2.5 py-5 flex flex-col justify-between">
+                        <p class="text-sm text-[#0C0D1A] font-dm font-medium leading-3">Forever*</p>
+                    </div>
+                    <div class="px-2.5 py-5 flex flex-col justify-between">
+                        <p class="text-sm text-[#0C0D1A] font-dm font-medium leading-3">Forever*</p>
+                    </div>
+                    <div class="px-2.5 py-5 flex flex-col justify-between">
+                        <p class="text-sm text-[#0C0D1A] font-dm font-medium leading-3">30 Days</p>
+                    </div>
+                    <div class="px-2.5 py-5 flex flex-col justify-between">
+                        <p class="text-sm text-[#0C0D1A] font-dm font-medium leading-3">30 Days</p>
+                    </div>
+                    <div class="px-2.5 py-5 flex flex-col justify-between">
+                        <p class="text-sm text-[#0C0D1A] font-dm font-medium leading-3">30 Days</p>
+                    </div>
+                    <div class="px-2.5 py-5 flex flex-col justify-between">
+                        <p class="text-sm text-[#0C0D1A] font-dm font-medium leading-3">30 Days</p>
+                    </div>
+                </div>
+                <div class="border-t border-[#E4E4E4] grid grid-cols-7 min-w-[900px]">
+                    <div class="px-2.5 py-5 flex flex-col justify-between">
+                        <p class="text-sm text-[#0C0D1A] font-dm font-medium leading-3"><strong>Price Plan</strong></p>
+                    </div>
+                    <div class="px-2.5 py-5 flex flex-col justify-between">
+                        <p class="text-sm text-[#0C0D1A] font-dm font-medium leading-3">FREE**</p>
+                    </div>
+                    <div class="px-2.5 py-5 flex flex-col justify-between">
+                        <p class="text-sm text-[#0C0D1A] font-dm font-medium leading-3">FREE**</p>
+                    </div>
+                    <div class="px-2.5 py-5 flex flex-col justify-between">
+                        <p class="text-sm text-[#0C0D1A] font-dm font-medium leading-3">£95.00 pm</p>
+                    </div>
+                    <div class="px-2.5 py-5 flex flex-col justify-between">
+                        <p class="text-sm text-[#0C0D1A] font-dm font-medium leading-3">Contact Us</p>
+                    </div>
+                    <div class="px-2.5 py-5 flex flex-col justify-between">
+                        <p class="text-sm text-[#0C0D1A] font-dm font-medium leading-3">Contact Us</p>
+                    </div>
+                    <div class="px-2.5 py-5 flex flex-col justify-between">
+                        <p class="text-sm text-[#0C0D1A] font-dm font-medium leading-3">Contact Us</p>
+                    </div>
+                </div>
+                <div class="border-t border-[#E4E4E4] grid grid-cols-7 min-w-[900px]">
+                    <div class="px-2.5 py-5 flex flex-col justify-between">
+                        <p class="text-sm text-[#0C0D1A] font-dm font-medium leading-3"><strong>V.O.I.C.E. <span class="text-[#008080]">+</span> </strong></p>
+                    </div>
+                    <div class="px-2.5 py-5 flex flex-col justify-between">
+                        <p class="text-sm text-[#0C0D1A] font-dm font-medium leading-3">LMS, Metaverse & Zoom </p>
+                    </div>
+                    <div class="px-2.5 py-5 flex flex-col justify-between">
+                        <p class="text-sm text-[#0C0D1A] font-dm font-medium leading-3">LMS</p>
+                    </div>
+                    <div class="px-2.5 py-5 flex flex-col justify-between">
+                        <p class="text-sm text-[#0C0D1A] font-dm font-medium leading-3">LMS</p>
+                    </div>
+                    <div class="px-2.5 py-5 flex flex-col justify-between">
+                        <p class="text-sm text-[#0C0D1A] font-dm font-medium leading-3">LMS, Metaverse & Zoom</p>
+                    </div>
+                    <div class="px-2.5 py-5 flex flex-col justify-between">
+                        <p class="text-sm text-[#0C0D1A] font-dm font-medium leading-3">LMS, Metaverse & Zoom</p>
+                    </div>
+                    <div class="px-2.5 py-5 flex flex-col justify-between">
+                        <p class="text-sm text-[#0C0D1A] font-dm font-medium leading-3">LMS, Metaverse & Zoom</p>
+                    </div>
+                </div>
+                <div class="border-t border-[#E4E4E4] grid grid-cols-7 min-w-[900px]">
+                    <div class="px-2.5 py-5 flex flex-col justify-between">
+                        <p class="text-sm text-[#0C0D1A] font-dm font-medium leading-3"><strong>Events, Workshops & Masterclasses <span class="text-[#008080]">+</span> </strong></p>
+                    </div>
+                    <div class="px-2.5 py-5 flex flex-col justify-between">
+                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" viewBox="0 0 64 64" style="enable-background:new 0 0 512 512" xml:space="preserve" class="w-6 h-6"><g><path d="M32.016 58.003c-9.888.001-19.006-5.665-23.373-14.583-4.419-9.027-3.081-20.285 3.331-28.014C18.379 7.685 28.792 4.316 38.5 6.823a2.002 2.002 0 0 1-1 3.874c-8.212-2.121-17.026.729-22.447 7.264-5.424 6.539-6.556 16.064-2.817 23.702 3.725 7.608 11.942 12.564 20.376 12.334 8.433-.23 16.086-5.359 19.497-13.066a22.13 22.13 0 0 0 1.192-14.432 2.001 2.001 0 0 1 3.874-1 26.155 26.155 0 0 1-1.407 17.051c-4.032 9.11-13.079 15.173-23.046 15.445-.236.005-.472.008-.706.008z" fill="#000000" opacity="1" data-original="#000000" class=""></path><path d="M32 38.24a2 2 0 0 1-1.414-3.414l24-24a2 2 0 1 1 2.828 2.828l-24 24c-.39.39-.902.586-1.414.586z" fill="#000000" opacity="1" data-original="#000000" class=""></path><path d="M32 38.24a1.99 1.99 0 0 1-1.414-.586l-8.485-8.485a2 2 0 1 1 2.828-2.828l8.485 8.485A2 2 0 0 1 32 38.24z" fill="#000000" opacity="1" data-original="#000000" class=""></path></g>
+                        </svg>
+                    </div>
+                    <div class="px-2.5 py-5 flex flex-col justify-between">
+                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512" xml:space="preserve" class="w-6 h-6"><g><path d="M256 25c31.196 0 61.445 6.104 89.908 18.143 27.504 11.633 52.211 28.293 73.434 49.516s37.882 45.929 49.516 73.434C480.896 194.555 487 224.804 487 256s-6.104 61.445-18.143 89.908c-11.633 27.504-28.293 52.211-49.516 73.434s-45.929 37.882-73.434 49.516C317.445 480.896 287.196 487 256 487s-61.445-6.104-89.908-18.143c-27.504-11.633-52.211-28.293-73.434-49.516s-37.882-45.929-49.516-73.434C31.104 317.445 25 287.196 25 256s6.104-61.445 18.143-89.908c11.633-27.504 28.293-52.211 49.516-73.434s45.929-37.882 73.434-49.516C194.555 31.104 224.804 25 256 25m0-25C114.615 0 0 114.615 0 256s114.615 256 256 256 256-114.615 256-256S397.385 0 256 0z" fill="#000000" opacity="1" data-original="#000000"></path><path d="M358.2 370.7a12.465 12.465 0 0 1-8.839-3.661l-204.4-204.4c-4.881-4.881-4.881-12.796 0-17.678 4.882-4.882 12.796-4.882 17.678 0l204.4 204.4c4.882 4.882 4.882 12.796 0 17.678a12.463 12.463 0 0 1-8.839 3.661z" fill="#000000" opacity="1" data-original="#000000"></path><path d="M153.8 370.7a12.465 12.465 0 0 1-8.839-3.661c-4.881-4.882-4.881-12.796 0-17.678l204.4-204.4c4.881-4.882 12.797-4.882 17.678 0 4.882 4.881 4.882 12.796 0 17.678l-204.4 204.4a12.463 12.463 0 0 1-8.839 3.661z" fill="#000000" opacity="1" data-original="#000000"></path></g></svg>
+                    </div>
+                    <div class="px-2.5 py-5 flex flex-col justify-between">
+                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" viewBox="0 0 64 64" style="enable-background:new 0 0 512 512" xml:space="preserve" class="w-6 h-6"><g><path d="M32.016 58.003c-9.888.001-19.006-5.665-23.373-14.583-4.419-9.027-3.081-20.285 3.331-28.014C18.379 7.685 28.792 4.316 38.5 6.823a2.002 2.002 0 0 1-1 3.874c-8.212-2.121-17.026.729-22.447 7.264-5.424 6.539-6.556 16.064-2.817 23.702 3.725 7.608 11.942 12.564 20.376 12.334 8.433-.23 16.086-5.359 19.497-13.066a22.13 22.13 0 0 0 1.192-14.432 2.001 2.001 0 0 1 3.874-1 26.155 26.155 0 0 1-1.407 17.051c-4.032 9.11-13.079 15.173-23.046 15.445-.236.005-.472.008-.706.008z" fill="#000000" opacity="1" data-original="#000000" class=""></path><path d="M32 38.24a2 2 0 0 1-1.414-3.414l24-24a2 2 0 1 1 2.828 2.828l-24 24c-.39.39-.902.586-1.414.586z" fill="#000000" opacity="1" data-original="#000000" class=""></path><path d="M32 38.24a1.99 1.99 0 0 1-1.414-.586l-8.485-8.485a2 2 0 1 1 2.828-2.828l8.485 8.485A2 2 0 0 1 32 38.24z" fill="#000000" opacity="1" data-original="#000000" class=""></path></g>
+                        </svg>
+                    </div>
+                    <div class="px-2.5 py-5 flex flex-col justify-between">
+                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" viewBox="0 0 64 64" style="enable-background:new 0 0 512 512" xml:space="preserve" class="w-6 h-6"><g><path d="M32.016 58.003c-9.888.001-19.006-5.665-23.373-14.583-4.419-9.027-3.081-20.285 3.331-28.014C18.379 7.685 28.792 4.316 38.5 6.823a2.002 2.002 0 0 1-1 3.874c-8.212-2.121-17.026.729-22.447 7.264-5.424 6.539-6.556 16.064-2.817 23.702 3.725 7.608 11.942 12.564 20.376 12.334 8.433-.23 16.086-5.359 19.497-13.066a22.13 22.13 0 0 0 1.192-14.432 2.001 2.001 0 0 1 3.874-1 26.155 26.155 0 0 1-1.407 17.051c-4.032 9.11-13.079 15.173-23.046 15.445-.236.005-.472.008-.706.008z" fill="#000000" opacity="1" data-original="#000000" class=""></path><path d="M32 38.24a2 2 0 0 1-1.414-3.414l24-24a2 2 0 1 1 2.828 2.828l-24 24c-.39.39-.902.586-1.414.586z" fill="#000000" opacity="1" data-original="#000000" class=""></path><path d="M32 38.24a1.99 1.99 0 0 1-1.414-.586l-8.485-8.485a2 2 0 1 1 2.828-2.828l8.485 8.485A2 2 0 0 1 32 38.24z" fill="#000000" opacity="1" data-original="#000000" class=""></path></g>
+                        </svg>
+                    </div>
+                    <div class="px-2.5 py-5 flex flex-col justify-between">
+                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" viewBox="0 0 64 64" style="enable-background:new 0 0 512 512" xml:space="preserve" class="w-6 h-6"><g><path d="M32.016 58.003c-9.888.001-19.006-5.665-23.373-14.583-4.419-9.027-3.081-20.285 3.331-28.014C18.379 7.685 28.792 4.316 38.5 6.823a2.002 2.002 0 0 1-1 3.874c-8.212-2.121-17.026.729-22.447 7.264-5.424 6.539-6.556 16.064-2.817 23.702 3.725 7.608 11.942 12.564 20.376 12.334 8.433-.23 16.086-5.359 19.497-13.066a22.13 22.13 0 0 0 1.192-14.432 2.001 2.001 0 0 1 3.874-1 26.155 26.155 0 0 1-1.407 17.051c-4.032 9.11-13.079 15.173-23.046 15.445-.236.005-.472.008-.706.008z" fill="#000000" opacity="1" data-original="#000000" class=""></path><path d="M32 38.24a2 2 0 0 1-1.414-3.414l24-24a2 2 0 1 1 2.828 2.828l-24 24c-.39.39-.902.586-1.414.586z" fill="#000000" opacity="1" data-original="#000000" class=""></path><path d="M32 38.24a1.99 1.99 0 0 1-1.414-.586l-8.485-8.485a2 2 0 1 1 2.828-2.828l8.485 8.485A2 2 0 0 1 32 38.24z" fill="#000000" opacity="1" data-original="#000000" class=""></path></g>
+                        </svg>
+                    </div>
+                    <div class="px-2.5 py-5 flex flex-col justify-between">
+                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" viewBox="0 0 64 64" style="enable-background:new 0 0 512 512" xml:space="preserve" class="w-6 h-6"><g><path d="M32.016 58.003c-9.888.001-19.006-5.665-23.373-14.583-4.419-9.027-3.081-20.285 3.331-28.014C18.379 7.685 28.792 4.316 38.5 6.823a2.002 2.002 0 0 1-1 3.874c-8.212-2.121-17.026.729-22.447 7.264-5.424 6.539-6.556 16.064-2.817 23.702 3.725 7.608 11.942 12.564 20.376 12.334 8.433-.23 16.086-5.359 19.497-13.066a22.13 22.13 0 0 0 1.192-14.432 2.001 2.001 0 0 1 3.874-1 26.155 26.155 0 0 1-1.407 17.051c-4.032 9.11-13.079 15.173-23.046 15.445-.236.005-.472.008-.706.008z" fill="#000000" opacity="1" data-original="#000000" class=""></path><path d="M32 38.24a2 2 0 0 1-1.414-3.414l24-24a2 2 0 1 1 2.828 2.828l-24 24c-.39.39-.902.586-1.414.586z" fill="#000000" opacity="1" data-original="#000000" class=""></path><path d="M32 38.24a1.99 1.99 0 0 1-1.414-.586l-8.485-8.485a2 2 0 1 1 2.828-2.828l8.485 8.485A2 2 0 0 1 32 38.24z" fill="#000000" opacity="1" data-original="#000000" class=""></path></g>
+                        </svg>
+                    </div>
+
+                </div>
+                <div class="border-t border-[#E4E4E4] grid grid-cols-7 min-w-[900px]">
+                    <div class="px-2.5 py-5 flex flex-col justify-between">
+                        <p class="text-sm text-[#0C0D1A] font-dm font-medium leading-3"><strong>Open Pathway Accreditation <span class="text-[#008080]">+</span> </strong></p>
+                    </div>
+                    <div class="px-2.5 py-5 flex flex-col justify-between">
+                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" viewBox="0 0 64 64" style="enable-background:new 0 0 512 512" xml:space="preserve" class="w-6 h-6"><g><path d="M32.016 58.003c-9.888.001-19.006-5.665-23.373-14.583-4.419-9.027-3.081-20.285 3.331-28.014C18.379 7.685 28.792 4.316 38.5 6.823a2.002 2.002 0 0 1-1 3.874c-8.212-2.121-17.026.729-22.447 7.264-5.424 6.539-6.556 16.064-2.817 23.702 3.725 7.608 11.942 12.564 20.376 12.334 8.433-.23 16.086-5.359 19.497-13.066a22.13 22.13 0 0 0 1.192-14.432 2.001 2.001 0 0 1 3.874-1 26.155 26.155 0 0 1-1.407 17.051c-4.032 9.11-13.079 15.173-23.046 15.445-.236.005-.472.008-.706.008z" fill="#000000" opacity="1" data-original="#000000" class=""></path><path d="M32 38.24a2 2 0 0 1-1.414-3.414l24-24a2 2 0 1 1 2.828 2.828l-24 24c-.39.39-.902.586-1.414.586z" fill="#000000" opacity="1" data-original="#000000" class=""></path><path d="M32 38.24a1.99 1.99 0 0 1-1.414-.586l-8.485-8.485a2 2 0 1 1 2.828-2.828l8.485 8.485A2 2 0 0 1 32 38.24z" fill="#000000" opacity="1" data-original="#000000" class=""></path></g>
+                        </svg>
+                    </div>
+                    <div class="px-2.5 py-5 flex flex-col justify-between">
+                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" viewBox="0 0 64 64" style="enable-background:new 0 0 512 512" xml:space="preserve" class="w-6 h-6"><g><path d="M32.016 58.003c-9.888.001-19.006-5.665-23.373-14.583-4.419-9.027-3.081-20.285 3.331-28.014C18.379 7.685 28.792 4.316 38.5 6.823a2.002 2.002 0 0 1-1 3.874c-8.212-2.121-17.026.729-22.447 7.264-5.424 6.539-6.556 16.064-2.817 23.702 3.725 7.608 11.942 12.564 20.376 12.334 8.433-.23 16.086-5.359 19.497-13.066a22.13 22.13 0 0 0 1.192-14.432 2.001 2.001 0 0 1 3.874-1 26.155 26.155 0 0 1-1.407 17.051c-4.032 9.11-13.079 15.173-23.046 15.445-.236.005-.472.008-.706.008z" fill="#000000" opacity="1" data-original="#000000" class=""></path><path d="M32 38.24a2 2 0 0 1-1.414-3.414l24-24a2 2 0 1 1 2.828 2.828l-24 24c-.39.39-.902.586-1.414.586z" fill="#000000" opacity="1" data-original="#000000" class=""></path><path d="M32 38.24a1.99 1.99 0 0 1-1.414-.586l-8.485-8.485a2 2 0 1 1 2.828-2.828l8.485 8.485A2 2 0 0 1 32 38.24z" fill="#000000" opacity="1" data-original="#000000" class=""></path></g>
+                        </svg>
+                    </div>
+                    <div class="px-2.5 py-5 flex flex-col justify-between">
+                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" viewBox="0 0 64 64" style="enable-background:new 0 0 512 512" xml:space="preserve" class="w-6 h-6"><g><path d="M32.016 58.003c-9.888.001-19.006-5.665-23.373-14.583-4.419-9.027-3.081-20.285 3.331-28.014C18.379 7.685 28.792 4.316 38.5 6.823a2.002 2.002 0 0 1-1 3.874c-8.212-2.121-17.026.729-22.447 7.264-5.424 6.539-6.556 16.064-2.817 23.702 3.725 7.608 11.942 12.564 20.376 12.334 8.433-.23 16.086-5.359 19.497-13.066a22.13 22.13 0 0 0 1.192-14.432 2.001 2.001 0 0 1 3.874-1 26.155 26.155 0 0 1-1.407 17.051c-4.032 9.11-13.079 15.173-23.046 15.445-.236.005-.472.008-.706.008z" fill="#000000" opacity="1" data-original="#000000" class=""></path><path d="M32 38.24a2 2 0 0 1-1.414-3.414l24-24a2 2 0 1 1 2.828 2.828l-24 24c-.39.39-.902.586-1.414.586z" fill="#000000" opacity="1" data-original="#000000" class=""></path><path d="M32 38.24a1.99 1.99 0 0 1-1.414-.586l-8.485-8.485a2 2 0 1 1 2.828-2.828l8.485 8.485A2 2 0 0 1 32 38.24z" fill="#000000" opacity="1" data-original="#000000" class=""></path></g>
+                        </svg>
+                    </div>
+                    <div class="px-2.5 py-5 flex flex-col justify-between">
+                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" viewBox="0 0 64 64" style="enable-background:new 0 0 512 512" xml:space="preserve" class="w-6 h-6"><g><path d="M32.016 58.003c-9.888.001-19.006-5.665-23.373-14.583-4.419-9.027-3.081-20.285 3.331-28.014C18.379 7.685 28.792 4.316 38.5 6.823a2.002 2.002 0 0 1-1 3.874c-8.212-2.121-17.026.729-22.447 7.264-5.424 6.539-6.556 16.064-2.817 23.702 3.725 7.608 11.942 12.564 20.376 12.334 8.433-.23 16.086-5.359 19.497-13.066a22.13 22.13 0 0 0 1.192-14.432 2.001 2.001 0 0 1 3.874-1 26.155 26.155 0 0 1-1.407 17.051c-4.032 9.11-13.079 15.173-23.046 15.445-.236.005-.472.008-.706.008z" fill="#000000" opacity="1" data-original="#000000" class=""></path><path d="M32 38.24a2 2 0 0 1-1.414-3.414l24-24a2 2 0 1 1 2.828 2.828l-24 24c-.39.39-.902.586-1.414.586z" fill="#000000" opacity="1" data-original="#000000" class=""></path><path d="M32 38.24a1.99 1.99 0 0 1-1.414-.586l-8.485-8.485a2 2 0 1 1 2.828-2.828l8.485 8.485A2 2 0 0 1 32 38.24z" fill="#000000" opacity="1" data-original="#000000" class=""></path></g>
+                        </svg>
+                    </div>
+                    <div class="px-2.5 py-5 flex flex-col justify-between">
+                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" viewBox="0 0 64 64" style="enable-background:new 0 0 512 512" xml:space="preserve" class="w-6 h-6"><g><path d="M32.016 58.003c-9.888.001-19.006-5.665-23.373-14.583-4.419-9.027-3.081-20.285 3.331-28.014C18.379 7.685 28.792 4.316 38.5 6.823a2.002 2.002 0 0 1-1 3.874c-8.212-2.121-17.026.729-22.447 7.264-5.424 6.539-6.556 16.064-2.817 23.702 3.725 7.608 11.942 12.564 20.376 12.334 8.433-.23 16.086-5.359 19.497-13.066a22.13 22.13 0 0 0 1.192-14.432 2.001 2.001 0 0 1 3.874-1 26.155 26.155 0 0 1-1.407 17.051c-4.032 9.11-13.079 15.173-23.046 15.445-.236.005-.472.008-.706.008z" fill="#000000" opacity="1" data-original="#000000" class=""></path><path d="M32 38.24a2 2 0 0 1-1.414-3.414l24-24a2 2 0 1 1 2.828 2.828l-24 24c-.39.39-.902.586-1.414.586z" fill="#000000" opacity="1" data-original="#000000" class=""></path><path d="M32 38.24a1.99 1.99 0 0 1-1.414-.586l-8.485-8.485a2 2 0 1 1 2.828-2.828l8.485 8.485A2 2 0 0 1 32 38.24z" fill="#000000" opacity="1" data-original="#000000" class=""></path></g>
+                        </svg>
+                    </div>
+                    <div class="px-2.5 py-5 flex flex-col justify-between">
+                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" viewBox="0 0 64 64" style="enable-background:new 0 0 512 512" xml:space="preserve" class="w-6 h-6"><g><path d="M32.016 58.003c-9.888.001-19.006-5.665-23.373-14.583-4.419-9.027-3.081-20.285 3.331-28.014C18.379 7.685 28.792 4.316 38.5 6.823a2.002 2.002 0 0 1-1 3.874c-8.212-2.121-17.026.729-22.447 7.264-5.424 6.539-6.556 16.064-2.817 23.702 3.725 7.608 11.942 12.564 20.376 12.334 8.433-.23 16.086-5.359 19.497-13.066a22.13 22.13 0 0 0 1.192-14.432 2.001 2.001 0 0 1 3.874-1 26.155 26.155 0 0 1-1.407 17.051c-4.032 9.11-13.079 15.173-23.046 15.445-.236.005-.472.008-.706.008z" fill="#000000" opacity="1" data-original="#000000" class=""></path><path d="M32 38.24a2 2 0 0 1-1.414-3.414l24-24a2 2 0 1 1 2.828 2.828l-24 24c-.39.39-.902.586-1.414.586z" fill="#000000" opacity="1" data-original="#000000" class=""></path><path d="M32 38.24a1.99 1.99 0 0 1-1.414-.586l-8.485-8.485a2 2 0 1 1 2.828-2.828l8.485 8.485A2 2 0 0 1 32 38.24z" fill="#000000" opacity="1" data-original="#000000" class=""></path></g>
+                        </svg>
+                    </div>
+                    
+                </div>
+                <div class="border-t border-[#E4E4E4] grid grid-cols-7 min-w-[900px]">
+                    <div class="px-2.5 py-5 flex flex-col justify-between">
+                        <p class="text-sm text-[#0C0D1A] font-dm font-medium leading-3"><strong>Resource Library <span class="text-[#008080]">+</span> </strong></p>
+                    </div>
+                    <div class="px-2.5 py-5 flex flex-col justify-between">
+                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512" xml:space="preserve" class="w-6 h-6"><g><path d="M256 25c31.196 0 61.445 6.104 89.908 18.143 27.504 11.633 52.211 28.293 73.434 49.516s37.882 45.929 49.516 73.434C480.896 194.555 487 224.804 487 256s-6.104 61.445-18.143 89.908c-11.633 27.504-28.293 52.211-49.516 73.434s-45.929 37.882-73.434 49.516C317.445 480.896 287.196 487 256 487s-61.445-6.104-89.908-18.143c-27.504-11.633-52.211-28.293-73.434-49.516s-37.882-45.929-49.516-73.434C31.104 317.445 25 287.196 25 256s6.104-61.445 18.143-89.908c11.633-27.504 28.293-52.211 49.516-73.434s45.929-37.882 73.434-49.516C194.555 31.104 224.804 25 256 25m0-25C114.615 0 0 114.615 0 256s114.615 256 256 256 256-114.615 256-256S397.385 0 256 0z" fill="#000000" opacity="1" data-original="#000000"></path><path d="M358.2 370.7a12.465 12.465 0 0 1-8.839-3.661l-204.4-204.4c-4.881-4.881-4.881-12.796 0-17.678 4.882-4.882 12.796-4.882 17.678 0l204.4 204.4c4.882 4.882 4.882 12.796 0 17.678a12.463 12.463 0 0 1-8.839 3.661z" fill="#000000" opacity="1" data-original="#000000"></path><path d="M153.8 370.7a12.465 12.465 0 0 1-8.839-3.661c-4.881-4.882-4.881-12.796 0-17.678l204.4-204.4c4.881-4.882 12.797-4.882 17.678 0 4.882 4.881 4.882 12.796 0 17.678l-204.4 204.4a12.463 12.463 0 0 1-8.839 3.661z" fill="#000000" opacity="1" data-original="#000000"></path></g></svg>
+                    </div>
+                    <div class="px-2.5 py-5 flex flex-col justify-between">
+                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512" xml:space="preserve" class="w-6 h-6"><g><path d="M256 25c31.196 0 61.445 6.104 89.908 18.143 27.504 11.633 52.211 28.293 73.434 49.516s37.882 45.929 49.516 73.434C480.896 194.555 487 224.804 487 256s-6.104 61.445-18.143 89.908c-11.633 27.504-28.293 52.211-49.516 73.434s-45.929 37.882-73.434 49.516C317.445 480.896 287.196 487 256 487s-61.445-6.104-89.908-18.143c-27.504-11.633-52.211-28.293-73.434-49.516s-37.882-45.929-49.516-73.434C31.104 317.445 25 287.196 25 256s6.104-61.445 18.143-89.908c11.633-27.504 28.293-52.211 49.516-73.434s45.929-37.882 73.434-49.516C194.555 31.104 224.804 25 256 25m0-25C114.615 0 0 114.615 0 256s114.615 256 256 256 256-114.615 256-256S397.385 0 256 0z" fill="#000000" opacity="1" data-original="#000000"></path><path d="M358.2 370.7a12.465 12.465 0 0 1-8.839-3.661l-204.4-204.4c-4.881-4.881-4.881-12.796 0-17.678 4.882-4.882 12.796-4.882 17.678 0l204.4 204.4c4.882 4.882 4.882 12.796 0 17.678a12.463 12.463 0 0 1-8.839 3.661z" fill="#000000" opacity="1" data-original="#000000"></path><path d="M153.8 370.7a12.465 12.465 0 0 1-8.839-3.661c-4.881-4.882-4.881-12.796 0-17.678l204.4-204.4c4.881-4.882 12.797-4.882 17.678 0 4.882 4.881 4.882 12.796 0 17.678l-204.4 204.4a12.463 12.463 0 0 1-8.839 3.661z" fill="#000000" opacity="1" data-original="#000000"></path></g></svg>
+                    </div>
+                    <div class="px-2.5 py-5 flex flex-col justify-between">
+                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512" xml:space="preserve" class="w-6 h-6"><g><path d="M256 25c31.196 0 61.445 6.104 89.908 18.143 27.504 11.633 52.211 28.293 73.434 49.516s37.882 45.929 49.516 73.434C480.896 194.555 487 224.804 487 256s-6.104 61.445-18.143 89.908c-11.633 27.504-28.293 52.211-49.516 73.434s-45.929 37.882-73.434 49.516C317.445 480.896 287.196 487 256 487s-61.445-6.104-89.908-18.143c-27.504-11.633-52.211-28.293-73.434-49.516s-37.882-45.929-49.516-73.434C31.104 317.445 25 287.196 25 256s6.104-61.445 18.143-89.908c11.633-27.504 28.293-52.211 49.516-73.434s45.929-37.882 73.434-49.516C194.555 31.104 224.804 25 256 25m0-25C114.615 0 0 114.615 0 256s114.615 256 256 256 256-114.615 256-256S397.385 0 256 0z" fill="#000000" opacity="1" data-original="#000000"></path><path d="M358.2 370.7a12.465 12.465 0 0 1-8.839-3.661l-204.4-204.4c-4.881-4.881-4.881-12.796 0-17.678 4.882-4.882 12.796-4.882 17.678 0l204.4 204.4c4.882 4.882 4.882 12.796 0 17.678a12.463 12.463 0 0 1-8.839 3.661z" fill="#000000" opacity="1" data-original="#000000"></path><path d="M153.8 370.7a12.465 12.465 0 0 1-8.839-3.661c-4.881-4.882-4.881-12.796 0-17.678l204.4-204.4c4.881-4.882 12.797-4.882 17.678 0 4.882 4.881 4.882 12.796 0 17.678l-204.4 204.4a12.463 12.463 0 0 1-8.839 3.661z" fill="#000000" opacity="1" data-original="#000000"></path></g></svg>
+                    </div>
+                    <div class="px-2.5 py-5 flex flex-col justify-between">
+                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" viewBox="0 0 64 64" style="enable-background:new 0 0 512 512" xml:space="preserve" class="w-6 h-6"><g><path d="M32.016 58.003c-9.888.001-19.006-5.665-23.373-14.583-4.419-9.027-3.081-20.285 3.331-28.014C18.379 7.685 28.792 4.316 38.5 6.823a2.002 2.002 0 0 1-1 3.874c-8.212-2.121-17.026.729-22.447 7.264-5.424 6.539-6.556 16.064-2.817 23.702 3.725 7.608 11.942 12.564 20.376 12.334 8.433-.23 16.086-5.359 19.497-13.066a22.13 22.13 0 0 0 1.192-14.432 2.001 2.001 0 0 1 3.874-1 26.155 26.155 0 0 1-1.407 17.051c-4.032 9.11-13.079 15.173-23.046 15.445-.236.005-.472.008-.706.008z" fill="#000000" opacity="1" data-original="#000000" class=""></path><path d="M32 38.24a2 2 0 0 1-1.414-3.414l24-24a2 2 0 1 1 2.828 2.828l-24 24c-.39.39-.902.586-1.414.586z" fill="#000000" opacity="1" data-original="#000000" class=""></path><path d="M32 38.24a1.99 1.99 0 0 1-1.414-.586l-8.485-8.485a2 2 0 1 1 2.828-2.828l8.485 8.485A2 2 0 0 1 32 38.24z" fill="#000000" opacity="1" data-original="#000000" class=""></path></g>
+                        </svg>
+                    </div>
+                    <div class="px-2.5 py-5 flex flex-col justify-between">
+                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" viewBox="0 0 64 64" style="enable-background:new 0 0 512 512" xml:space="preserve" class="w-6 h-6"><g><path d="M32.016 58.003c-9.888.001-19.006-5.665-23.373-14.583-4.419-9.027-3.081-20.285 3.331-28.014C18.379 7.685 28.792 4.316 38.5 6.823a2.002 2.002 0 0 1-1 3.874c-8.212-2.121-17.026.729-22.447 7.264-5.424 6.539-6.556 16.064-2.817 23.702 3.725 7.608 11.942 12.564 20.376 12.334 8.433-.23 16.086-5.359 19.497-13.066a22.13 22.13 0 0 0 1.192-14.432 2.001 2.001 0 0 1 3.874-1 26.155 26.155 0 0 1-1.407 17.051c-4.032 9.11-13.079 15.173-23.046 15.445-.236.005-.472.008-.706.008z" fill="#000000" opacity="1" data-original="#000000" class=""></path><path d="M32 38.24a2 2 0 0 1-1.414-3.414l24-24a2 2 0 1 1 2.828 2.828l-24 24c-.39.39-.902.586-1.414.586z" fill="#000000" opacity="1" data-original="#000000" class=""></path><path d="M32 38.24a1.99 1.99 0 0 1-1.414-.586l-8.485-8.485a2 2 0 1 1 2.828-2.828l8.485 8.485A2 2 0 0 1 32 38.24z" fill="#000000" opacity="1" data-original="#000000" class=""></path></g>
+                        </svg>
+                    </div>
+                    <div class="px-2.5 py-5 flex flex-col justify-between">
+                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" viewBox="0 0 64 64" style="enable-background:new 0 0 512 512" xml:space="preserve" class="w-6 h-6"><g><path d="M32.016 58.003c-9.888.001-19.006-5.665-23.373-14.583-4.419-9.027-3.081-20.285 3.331-28.014C18.379 7.685 28.792 4.316 38.5 6.823a2.002 2.002 0 0 1-1 3.874c-8.212-2.121-17.026.729-22.447 7.264-5.424 6.539-6.556 16.064-2.817 23.702 3.725 7.608 11.942 12.564 20.376 12.334 8.433-.23 16.086-5.359 19.497-13.066a22.13 22.13 0 0 0 1.192-14.432 2.001 2.001 0 0 1 3.874-1 26.155 26.155 0 0 1-1.407 17.051c-4.032 9.11-13.079 15.173-23.046 15.445-.236.005-.472.008-.706.008z" fill="#000000" opacity="1" data-original="#000000" class=""></path><path d="M32 38.24a2 2 0 0 1-1.414-3.414l24-24a2 2 0 1 1 2.828 2.828l-24 24c-.39.39-.902.586-1.414.586z" fill="#000000" opacity="1" data-original="#000000" class=""></path><path d="M32 38.24a1.99 1.99 0 0 1-1.414-.586l-8.485-8.485a2 2 0 1 1 2.828-2.828l8.485 8.485A2 2 0 0 1 32 38.24z" fill="#000000" opacity="1" data-original="#000000" class=""></path></g>
+                        </svg>
+                    </div>
+                    
+                </div>
+                <div class="border-t border-[#E4E4E4] grid grid-cols-7 min-w-[900px]">
+                    <div class="px-2.5 py-5 flex flex-col justify-between">
+                        <p class="text-sm text-[#0C0D1A] font-dm font-medium leading-3"><strong>Career Hub | CLAZMA.COM <span class="text-[#008080]">+</span> </strong></p>
+                    </div>
+                    <div class="px-2.5 py-5 flex flex-col justify-between">
+                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512" xml:space="preserve" class="w-6 h-6"><g><path d="M256 25c31.196 0 61.445 6.104 89.908 18.143 27.504 11.633 52.211 28.293 73.434 49.516s37.882 45.929 49.516 73.434C480.896 194.555 487 224.804 487 256s-6.104 61.445-18.143 89.908c-11.633 27.504-28.293 52.211-49.516 73.434s-45.929 37.882-73.434 49.516C317.445 480.896 287.196 487 256 487s-61.445-6.104-89.908-18.143c-27.504-11.633-52.211-28.293-73.434-49.516s-37.882-45.929-49.516-73.434C31.104 317.445 25 287.196 25 256s6.104-61.445 18.143-89.908c11.633-27.504 28.293-52.211 49.516-73.434s45.929-37.882 73.434-49.516C194.555 31.104 224.804 25 256 25m0-25C114.615 0 0 114.615 0 256s114.615 256 256 256 256-114.615 256-256S397.385 0 256 0z" fill="#000000" opacity="1" data-original="#000000"></path><path d="M358.2 370.7a12.465 12.465 0 0 1-8.839-3.661l-204.4-204.4c-4.881-4.881-4.881-12.796 0-17.678 4.882-4.882 12.796-4.882 17.678 0l204.4 204.4c4.882 4.882 4.882 12.796 0 17.678a12.463 12.463 0 0 1-8.839 3.661z" fill="#000000" opacity="1" data-original="#000000"></path><path d="M153.8 370.7a12.465 12.465 0 0 1-8.839-3.661c-4.881-4.882-4.881-12.796 0-17.678l204.4-204.4c4.881-4.882 12.797-4.882 17.678 0 4.882 4.881 4.882 12.796 0 17.678l-204.4 204.4a12.463 12.463 0 0 1-8.839 3.661z" fill="#000000" opacity="1" data-original="#000000"></path></g></svg>
+                    </div>
+                    <div class="px-2.5 py-5 flex flex-col justify-between">
+                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512" xml:space="preserve" class="w-6 h-6"><g><path d="M256 25c31.196 0 61.445 6.104 89.908 18.143 27.504 11.633 52.211 28.293 73.434 49.516s37.882 45.929 49.516 73.434C480.896 194.555 487 224.804 487 256s-6.104 61.445-18.143 89.908c-11.633 27.504-28.293 52.211-49.516 73.434s-45.929 37.882-73.434 49.516C317.445 480.896 287.196 487 256 487s-61.445-6.104-89.908-18.143c-27.504-11.633-52.211-28.293-73.434-49.516s-37.882-45.929-49.516-73.434C31.104 317.445 25 287.196 25 256s6.104-61.445 18.143-89.908c11.633-27.504 28.293-52.211 49.516-73.434s45.929-37.882 73.434-49.516C194.555 31.104 224.804 25 256 25m0-25C114.615 0 0 114.615 0 256s114.615 256 256 256 256-114.615 256-256S397.385 0 256 0z" fill="#000000" opacity="1" data-original="#000000"></path><path d="M358.2 370.7a12.465 12.465 0 0 1-8.839-3.661l-204.4-204.4c-4.881-4.881-4.881-12.796 0-17.678 4.882-4.882 12.796-4.882 17.678 0l204.4 204.4c4.882 4.882 4.882 12.796 0 17.678a12.463 12.463 0 0 1-8.839 3.661z" fill="#000000" opacity="1" data-original="#000000"></path><path d="M153.8 370.7a12.465 12.465 0 0 1-8.839-3.661c-4.881-4.882-4.881-12.796 0-17.678l204.4-204.4c4.881-4.882 12.797-4.882 17.678 0 4.882 4.881 4.882 12.796 0 17.678l-204.4 204.4a12.463 12.463 0 0 1-8.839 3.661z" fill="#000000" opacity="1" data-original="#000000"></path></g></svg>
+                    </div>
+                    <div class="px-2.5 py-5 flex flex-col justify-between">
+                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" viewBox="0 0 64 64" style="enable-background:new 0 0 512 512" xml:space="preserve" class="w-6 h-6"><g><path d="M32.016 58.003c-9.888.001-19.006-5.665-23.373-14.583-4.419-9.027-3.081-20.285 3.331-28.014C18.379 7.685 28.792 4.316 38.5 6.823a2.002 2.002 0 0 1-1 3.874c-8.212-2.121-17.026.729-22.447 7.264-5.424 6.539-6.556 16.064-2.817 23.702 3.725 7.608 11.942 12.564 20.376 12.334 8.433-.23 16.086-5.359 19.497-13.066a22.13 22.13 0 0 0 1.192-14.432 2.001 2.001 0 0 1 3.874-1 26.155 26.155 0 0 1-1.407 17.051c-4.032 9.11-13.079 15.173-23.046 15.445-.236.005-.472.008-.706.008z" fill="#000000" opacity="1" data-original="#000000" class=""></path><path d="M32 38.24a2 2 0 0 1-1.414-3.414l24-24a2 2 0 1 1 2.828 2.828l-24 24c-.39.39-.902.586-1.414.586z" fill="#000000" opacity="1" data-original="#000000" class=""></path><path d="M32 38.24a1.99 1.99 0 0 1-1.414-.586l-8.485-8.485a2 2 0 1 1 2.828-2.828l8.485 8.485A2 2 0 0 1 32 38.24z" fill="#000000" opacity="1" data-original="#000000" class=""></path></g>
+                        </svg>
+                    </div>
+                    <div class="px-2.5 py-5 flex flex-col justify-between">
+                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" viewBox="0 0 64 64" style="enable-background:new 0 0 512 512" xml:space="preserve" class="w-6 h-6"><g><path d="M32.016 58.003c-9.888.001-19.006-5.665-23.373-14.583-4.419-9.027-3.081-20.285 3.331-28.014C18.379 7.685 28.792 4.316 38.5 6.823a2.002 2.002 0 0 1-1 3.874c-8.212-2.121-17.026.729-22.447 7.264-5.424 6.539-6.556 16.064-2.817 23.702 3.725 7.608 11.942 12.564 20.376 12.334 8.433-.23 16.086-5.359 19.497-13.066a22.13 22.13 0 0 0 1.192-14.432 2.001 2.001 0 0 1 3.874-1 26.155 26.155 0 0 1-1.407 17.051c-4.032 9.11-13.079 15.173-23.046 15.445-.236.005-.472.008-.706.008z" fill="#000000" opacity="1" data-original="#000000" class=""></path><path d="M32 38.24a2 2 0 0 1-1.414-3.414l24-24a2 2 0 1 1 2.828 2.828l-24 24c-.39.39-.902.586-1.414.586z" fill="#000000" opacity="1" data-original="#000000" class=""></path><path d="M32 38.24a1.99 1.99 0 0 1-1.414-.586l-8.485-8.485a2 2 0 1 1 2.828-2.828l8.485 8.485A2 2 0 0 1 32 38.24z" fill="#000000" opacity="1" data-original="#000000" class=""></path></g>
+                        </svg>
+                    </div>
+                    <div class="px-2.5 py-5 flex flex-col justify-between">
+                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" viewBox="0 0 64 64" style="enable-background:new 0 0 512 512" xml:space="preserve" class="w-6 h-6"><g><path d="M32.016 58.003c-9.888.001-19.006-5.665-23.373-14.583-4.419-9.027-3.081-20.285 3.331-28.014C18.379 7.685 28.792 4.316 38.5 6.823a2.002 2.002 0 0 1-1 3.874c-8.212-2.121-17.026.729-22.447 7.264-5.424 6.539-6.556 16.064-2.817 23.702 3.725 7.608 11.942 12.564 20.376 12.334 8.433-.23 16.086-5.359 19.497-13.066a22.13 22.13 0 0 0 1.192-14.432 2.001 2.001 0 0 1 3.874-1 26.155 26.155 0 0 1-1.407 17.051c-4.032 9.11-13.079 15.173-23.046 15.445-.236.005-.472.008-.706.008z" fill="#000000" opacity="1" data-original="#000000" class=""></path><path d="M32 38.24a2 2 0 0 1-1.414-3.414l24-24a2 2 0 1 1 2.828 2.828l-24 24c-.39.39-.902.586-1.414.586z" fill="#000000" opacity="1" data-original="#000000" class=""></path><path d="M32 38.24a1.99 1.99 0 0 1-1.414-.586l-8.485-8.485a2 2 0 1 1 2.828-2.828l8.485 8.485A2 2 0 0 1 32 38.24z" fill="#000000" opacity="1" data-original="#000000" class=""></path></g>
+                        </svg>
+                    </div>
+                    <div class="px-2.5 py-5 flex flex-col justify-between">
+                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" viewBox="0 0 64 64" style="enable-background:new 0 0 512 512" xml:space="preserve" class="w-6 h-6"><g><path d="M32.016 58.003c-9.888.001-19.006-5.665-23.373-14.583-4.419-9.027-3.081-20.285 3.331-28.014C18.379 7.685 28.792 4.316 38.5 6.823a2.002 2.002 0 0 1-1 3.874c-8.212-2.121-17.026.729-22.447 7.264-5.424 6.539-6.556 16.064-2.817 23.702 3.725 7.608 11.942 12.564 20.376 12.334 8.433-.23 16.086-5.359 19.497-13.066a22.13 22.13 0 0 0 1.192-14.432 2.001 2.001 0 0 1 3.874-1 26.155 26.155 0 0 1-1.407 17.051c-4.032 9.11-13.079 15.173-23.046 15.445-.236.005-.472.008-.706.008z" fill="#000000" opacity="1" data-original="#000000" class=""></path><path d="M32 38.24a2 2 0 0 1-1.414-3.414l24-24a2 2 0 1 1 2.828 2.828l-24 24c-.39.39-.902.586-1.414.586z" fill="#000000" opacity="1" data-original="#000000" class=""></path><path d="M32 38.24a1.99 1.99 0 0 1-1.414-.586l-8.485-8.485a2 2 0 1 1 2.828-2.828l8.485 8.485A2 2 0 0 1 32 38.24z" fill="#000000" opacity="1" data-original="#000000" class=""></path></g>
+                        </svg>
+                    </div>
+                    
+                </div>
+                <div class="border-t border-[#E4E4E4] grid grid-cols-7 min-w-[900px]">
+                    <div class="px-2.5 pr-3 py-5 flex flex-col justify-between">
+                        <p class="text-sm text-[#0C0D1A] font-dm font-medium leading-3"><strong>Xperience | Student Hub <span class="text-[#008080]">+</span> </strong></p>
+                    </div>
+                    <div class="px-2.5 py-5 flex flex-col justify-between">
+                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512" xml:space="preserve" class="w-6 h-6"><g><path d="M256 25c31.196 0 61.445 6.104 89.908 18.143 27.504 11.633 52.211 28.293 73.434 49.516s37.882 45.929 49.516 73.434C480.896 194.555 487 224.804 487 256s-6.104 61.445-18.143 89.908c-11.633 27.504-28.293 52.211-49.516 73.434s-45.929 37.882-73.434 49.516C317.445 480.896 287.196 487 256 487s-61.445-6.104-89.908-18.143c-27.504-11.633-52.211-28.293-73.434-49.516s-37.882-45.929-49.516-73.434C31.104 317.445 25 287.196 25 256s6.104-61.445 18.143-89.908c11.633-27.504 28.293-52.211 49.516-73.434s45.929-37.882 73.434-49.516C194.555 31.104 224.804 25 256 25m0-25C114.615 0 0 114.615 0 256s114.615 256 256 256 256-114.615 256-256S397.385 0 256 0z" fill="#000000" opacity="1" data-original="#000000"></path><path d="M358.2 370.7a12.465 12.465 0 0 1-8.839-3.661l-204.4-204.4c-4.881-4.881-4.881-12.796 0-17.678 4.882-4.882 12.796-4.882 17.678 0l204.4 204.4c4.882 4.882 4.882 12.796 0 17.678a12.463 12.463 0 0 1-8.839 3.661z" fill="#000000" opacity="1" data-original="#000000"></path><path d="M153.8 370.7a12.465 12.465 0 0 1-8.839-3.661c-4.881-4.882-4.881-12.796 0-17.678l204.4-204.4c4.881-4.882 12.797-4.882 17.678 0 4.882 4.881 4.882 12.796 0 17.678l-204.4 204.4a12.463 12.463 0 0 1-8.839 3.661z" fill="#000000" opacity="1" data-original="#000000"></path></g></svg>
+                    </div>
+                    <div class="px-2.5 py-5 flex flex-col justify-between">
+                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512" xml:space="preserve" class="w-6 h-6"><g><path d="M256 25c31.196 0 61.445 6.104 89.908 18.143 27.504 11.633 52.211 28.293 73.434 49.516s37.882 45.929 49.516 73.434C480.896 194.555 487 224.804 487 256s-6.104 61.445-18.143 89.908c-11.633 27.504-28.293 52.211-49.516 73.434s-45.929 37.882-73.434 49.516C317.445 480.896 287.196 487 256 487s-61.445-6.104-89.908-18.143c-27.504-11.633-52.211-28.293-73.434-49.516s-37.882-45.929-49.516-73.434C31.104 317.445 25 287.196 25 256s6.104-61.445 18.143-89.908c11.633-27.504 28.293-52.211 49.516-73.434s45.929-37.882 73.434-49.516C194.555 31.104 224.804 25 256 25m0-25C114.615 0 0 114.615 0 256s114.615 256 256 256 256-114.615 256-256S397.385 0 256 0z" fill="#000000" opacity="1" data-original="#000000"></path><path d="M358.2 370.7a12.465 12.465 0 0 1-8.839-3.661l-204.4-204.4c-4.881-4.881-4.881-12.796 0-17.678 4.882-4.882 12.796-4.882 17.678 0l204.4 204.4c4.882 4.882 4.882 12.796 0 17.678a12.463 12.463 0 0 1-8.839 3.661z" fill="#000000" opacity="1" data-original="#000000"></path><path d="M153.8 370.7a12.465 12.465 0 0 1-8.839-3.661c-4.881-4.882-4.881-12.796 0-17.678l204.4-204.4c4.881-4.882 12.797-4.882 17.678 0 4.882 4.881 4.882 12.796 0 17.678l-204.4 204.4a12.463 12.463 0 0 1-8.839 3.661z" fill="#000000" opacity="1" data-original="#000000"></path></g></svg>
+                    </div>
+                    <div class="px-2.5 py-5 flex flex-col justify-between">
+                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" viewBox="0 0 64 64" style="enable-background:new 0 0 512 512" xml:space="preserve" class="w-6 h-6"><g><path d="M32.016 58.003c-9.888.001-19.006-5.665-23.373-14.583-4.419-9.027-3.081-20.285 3.331-28.014C18.379 7.685 28.792 4.316 38.5 6.823a2.002 2.002 0 0 1-1 3.874c-8.212-2.121-17.026.729-22.447 7.264-5.424 6.539-6.556 16.064-2.817 23.702 3.725 7.608 11.942 12.564 20.376 12.334 8.433-.23 16.086-5.359 19.497-13.066a22.13 22.13 0 0 0 1.192-14.432 2.001 2.001 0 0 1 3.874-1 26.155 26.155 0 0 1-1.407 17.051c-4.032 9.11-13.079 15.173-23.046 15.445-.236.005-.472.008-.706.008z" fill="#000000" opacity="1" data-original="#000000" class=""></path><path d="M32 38.24a2 2 0 0 1-1.414-3.414l24-24a2 2 0 1 1 2.828 2.828l-24 24c-.39.39-.902.586-1.414.586z" fill="#000000" opacity="1" data-original="#000000" class=""></path><path d="M32 38.24a1.99 1.99 0 0 1-1.414-.586l-8.485-8.485a2 2 0 1 1 2.828-2.828l8.485 8.485A2 2 0 0 1 32 38.24z" fill="#000000" opacity="1" data-original="#000000" class=""></path></g>
+                        </svg>
+                    </div>
+                    <div class="px-2.5 py-5 flex flex-col justify-between">
+                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" viewBox="0 0 64 64" style="enable-background:new 0 0 512 512" xml:space="preserve" class="w-6 h-6"><g><path d="M32.016 58.003c-9.888.001-19.006-5.665-23.373-14.583-4.419-9.027-3.081-20.285 3.331-28.014C18.379 7.685 28.792 4.316 38.5 6.823a2.002 2.002 0 0 1-1 3.874c-8.212-2.121-17.026.729-22.447 7.264-5.424 6.539-6.556 16.064-2.817 23.702 3.725 7.608 11.942 12.564 20.376 12.334 8.433-.23 16.086-5.359 19.497-13.066a22.13 22.13 0 0 0 1.192-14.432 2.001 2.001 0 0 1 3.874-1 26.155 26.155 0 0 1-1.407 17.051c-4.032 9.11-13.079 15.173-23.046 15.445-.236.005-.472.008-.706.008z" fill="#000000" opacity="1" data-original="#000000" class=""></path><path d="M32 38.24a2 2 0 0 1-1.414-3.414l24-24a2 2 0 1 1 2.828 2.828l-24 24c-.39.39-.902.586-1.414.586z" fill="#000000" opacity="1" data-original="#000000" class=""></path><path d="M32 38.24a1.99 1.99 0 0 1-1.414-.586l-8.485-8.485a2 2 0 1 1 2.828-2.828l8.485 8.485A2 2 0 0 1 32 38.24z" fill="#000000" opacity="1" data-original="#000000" class=""></path></g>
+                        </svg>
+                    </div>
+                    <div class="px-2.5 py-5 flex flex-col justify-between">
+                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" viewBox="0 0 64 64" style="enable-background:new 0 0 512 512" xml:space="preserve" class="w-6 h-6"><g><path d="M32.016 58.003c-9.888.001-19.006-5.665-23.373-14.583-4.419-9.027-3.081-20.285 3.331-28.014C18.379 7.685 28.792 4.316 38.5 6.823a2.002 2.002 0 0 1-1 3.874c-8.212-2.121-17.026.729-22.447 7.264-5.424 6.539-6.556 16.064-2.817 23.702 3.725 7.608 11.942 12.564 20.376 12.334 8.433-.23 16.086-5.359 19.497-13.066a22.13 22.13 0 0 0 1.192-14.432 2.001 2.001 0 0 1 3.874-1 26.155 26.155 0 0 1-1.407 17.051c-4.032 9.11-13.079 15.173-23.046 15.445-.236.005-.472.008-.706.008z" fill="#000000" opacity="1" data-original="#000000" class=""></path><path d="M32 38.24a2 2 0 0 1-1.414-3.414l24-24a2 2 0 1 1 2.828 2.828l-24 24c-.39.39-.902.586-1.414.586z" fill="#000000" opacity="1" data-original="#000000" class=""></path><path d="M32 38.24a1.99 1.99 0 0 1-1.414-.586l-8.485-8.485a2 2 0 1 1 2.828-2.828l8.485 8.485A2 2 0 0 1 32 38.24z" fill="#000000" opacity="1" data-original="#000000" class=""></path></g>
+                        </svg>
+                    </div>
+                    <div class="px-2.5 py-5 flex flex-col justify-between">
+                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" viewBox="0 0 64 64" style="enable-background:new 0 0 512 512" xml:space="preserve" class="w-6 h-6"><g><path d="M32.016 58.003c-9.888.001-19.006-5.665-23.373-14.583-4.419-9.027-3.081-20.285 3.331-28.014C18.379 7.685 28.792 4.316 38.5 6.823a2.002 2.002 0 0 1-1 3.874c-8.212-2.121-17.026.729-22.447 7.264-5.424 6.539-6.556 16.064-2.817 23.702 3.725 7.608 11.942 12.564 20.376 12.334 8.433-.23 16.086-5.359 19.497-13.066a22.13 22.13 0 0 0 1.192-14.432 2.001 2.001 0 0 1 3.874-1 26.155 26.155 0 0 1-1.407 17.051c-4.032 9.11-13.079 15.173-23.046 15.445-.236.005-.472.008-.706.008z" fill="#000000" opacity="1" data-original="#000000" class=""></path><path d="M32 38.24a2 2 0 0 1-1.414-3.414l24-24a2 2 0 1 1 2.828 2.828l-24 24c-.39.39-.902.586-1.414.586z" fill="#000000" opacity="1" data-original="#000000" class=""></path><path d="M32 38.24a1.99 1.99 0 0 1-1.414-.586l-8.485-8.485a2 2 0 1 1 2.828-2.828l8.485 8.485A2 2 0 0 1 32 38.24z" fill="#000000" opacity="1" data-original="#000000" class=""></path></g>
+                        </svg>
+                    </div>
+                    
+                </div>
+                <div class="border-t border-[#E4E4E4] min-w-[900px]">
+                    <div class="px-2.5 pr-3 py-5 flex flex-col justify-between">
+                        <p class="text-base text-[#7a7a7a] font-roboto leading-3 mb-3"><strong>*Forever</strong> free to upload courses and use the available services in your package.</p>
+                        <p class="text-base text-[#7a7a7a] font-roboto leading-3"><strong>** FREE</strong> price plan there is no charge to use this service, we only make a charge when a student enrols on your course. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-[#F7FBFB] py-10">
+        <div class="container">
+            <div class="border-t border-b border-dotted border-[#008080] py-5">
+                <h2 class="text-3xl md:text-[45px] text-[#101010] font-archivo font-semibold leading-[49px] text-center">start your <span class="text-[#008080]">educational</span> journey, sign up today!</h2>
+            </div>
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-4">
+                <div class="border border-[#008080] p-[30px] flex flex-col">
+                    <h3 class="text-lg md:text-xl text-[#008080] font-archivo font-bold mb-5">EDUCATORS</h3>
+                    <p class="text-base text-[#008080] font-lato mb-5">Teacher, tutor, instructor, any type <br> of educator.</p>
+                    <div>
+                        <span class="text-[#008080] text-4xl lg:text-[48px] font-bold font-open ">
+                            <span>£</span>
+                            <span>0.00 </span>
+                            <span class="text-sm font-lato font-bold">/ month</span>
+                        </span>
+                    </div>
+                    <ul class="py-5 space-y-3 flex-1">
+                        <li class="text-base text-[#008080] font-lato leading-6 flex items-center gap-1">
+                            <span>V.O.I.C.E.</span>
+                            <span class="w-full max-w-4">
+                                <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2"></path>
+                                </svg>
+                            </span>
+                        </li>
+                        <li class="text-base text-[#008080] font-lato leading-6 flex items-center gap-1">
+                            <span>Zoom for Education </span>
+                            <span class="w-full max-w-4">
+                                <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2"></path>
+                                </svg>
+                            </span>
+                        </li>
+                        <li class="text-base text-[#008080] font-lato leading-6 flex items-center gap-1">
+                            <span>The Metaverse</span>
+                            <span class="w-full max-w-4">
+                                <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2"></path>
+                                </svg>
+                            </span>
+                        </li>
+                        <li class="text-base text-[#008080] font-lato leading-6 flex items-center gap-1">
+                            <span>Course Builder (LMS) </span>
+                            <span class="w-full max-w-4">
+                                <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2"></path>
+                                </svg>
+                            </span>
+                        </li>
+                        <li class="text-base text-[#008080] font-lato leading-6 flex items-center gap-1">
+                            <span>Events, Workshops & Masterclasses</span>
+                            <span class="w-full max-w-4">
+                                <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2"></path>
+                                </svg>
+                            </span>
+                        </li>
+                        <li class="text-base text-[#008080] font-lato leading-6 flex items-center gap-1">
+                            <span>Educator Dashboard </span>
+                            <span class="w-full max-w-4">
+                                <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2"></path>
+                                </svg>
+                            </span>
+                        </li>
+                        <li class="text-base text-[#008080] font-lato leading-6 flex items-center gap-1">
+                            <span>Open Pathway Accreditation </span>
+                            <span class="w-full max-w-4">
+                                <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2"></path>
+                                </svg>
+                            </span>
+                        </li>
+                    </ul>
+                    <div class="flex items-center justify-center mt-5">
+                        <a href="#" class="text-sm leading-[17px] text-[#0C1734] font-lato border-2 border-[#008080] rounded-[22px] text-center w-full xl:w-auto px-5 xl:px-[90px] py-3 bg-transparent transition-all hover:bg-[#008080] hover:text-white hover:shadow-[0px_10px_10px_0px_rgba(3,36,122,0.2)]">Register Now</a>
+                    </div>
+                </div>
+                <div class="border border-[#008080] p-[30px] flex flex-col">
+                    <h3 class="text-lg md:text-xl text-[#008080] font-archivo font-bold mb-5">COURSE PROVIDERS</h3>
+                    <p class="text-base text-[#008080] font-lato mb-5">Own your own course(s) and want to monetise your content.</p>
+                    <div>
+                        <span class="text-[#008080] text-4xl lg:text-[48px] font-bold font-open">
+                            <span>£</span>
+                            <span>0.00 </span>
+                            <span class="text-sm font-lato font-bold">/ month</span>
+                        </span>
+                    </div>
+                    <ul class="py-5 space-y-3 flex-1">
+                        <li class="text-base text-[#008080] font-lato leading-6 flex items-center gap-1">
+                            <span>V.O.I.C.E.</span>
+                            <span class="w-full max-w-4">
+                                <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2"></path>
+                                </svg>
+                            </span>
+                        </li>
+                        <li class="text-base text-[#008080] font-lato leading-6 flex items-center gap-1">
+                            <span>Course Builder (LMS) </span>
+                           <span class="w-full max-w-4">
+                                <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2"></path>
+                                </svg>
+                            </span>
+                        </li>
+                        <li class="text-base text-[#008080] font-lato leading-6 flex items-center gap-1">
+                            <span>Course Provider Dashboard </span>
+                            <span class="w-full max-w-4">
+                                <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2"></path>
+                                </svg>
+                            </span>
+                        </li>
+                        <li class="text-base text-[#008080] font-lato leading-6 flex items-center gap-1">
+                            <span>Open Pathway Accreditation</span>
+                            <span class="w-full max-w-4">
+                                <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2"></path>
+                                </svg>
+                            </span>
+                        </li>
+                        <li class="text-base text-[#008080] font-lato leading-6 flex items-center gap-1">
+                            <span>Digital Marketing Package</span>
+                            <span class="w-full max-w-4">
+                                <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2"></path>
+                                </svg>
+                            </span>
+                        </li>
+                        <li class="text-base text-[#008080] font-lato leading-6 flex items-center gap-1">
+                            <span>SEO Optimisation </span>
+                            <span class="w-full max-w-4">
+                                <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2"></path>
+                                </svg>
+                            </span>
+                        </li>
+                        <li class="text-base text-[#008080] font-lato leading-6 flex items-center gap-1">
+                            <span>Back Office Support</span>
+                            <span class="w-full max-w-4">
+                                <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2"></path>
+                                </svg>
+                            </span>
+                        </li>
+                    </ul>
+                    <div class="flex items-center justify-center mt-5">
+                        <a href="#" class="text-sm leading-[17px] text-[#0C1734] font-lato border-2 border-[#008080] rounded-[22px] text-center w-full xl:w-auto px-5 xl:px-[90px] py-3 bg-transparent transition-all hover:bg-[#008080] hover:text-white hover:shadow-[0px_10px_10px_0px_rgba(3,36,122,0.2)]">Register Now</a>
+                    </div>
+                </div>
+                <div class="border border-[#008080] p-[30px] flex flex-col">
+                    <h3 class="text-lg md:text-xl text-[#008080] font-archivo font-bold mb-5">BUSINESS SME</h3>
+                    <p class="text-base text-[#008080] font-lato mb-5">Our small to medium sized enterprise package .</p>
+                    <div>
+                        <span class="text-[#008080] text-4xl lg:text-[48px] font-bold font-open">
+                            <span>£</span>
+                            <span>95.00 </span>
+                            <span class="text-sm font-lato font-bold">/ month</span>
+                        </span>
+                    </div>
+                    <ul class="py-5 space-y-3 flex-1">
+                        <li class="text-base text-[#008080] font-lato leading-6 flex items-center gap-1">
+                            <span>Everything in the Educator Package</span>
+                        </li>
+                        <li class="text-base text-[#008080] font-lato leading-6 flex items-center gap-1">
+                            <span>Zoom for Education </span>
+                            <span class="w-full max-w-4">
+                                <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2"></path>
+                                </svg>
+                            </span>
+                        </li>
+                        <li class="text-base text-[#008080] font-lato leading-6 flex items-center gap-1">
+                            <span>The Metaverse</span>
+                            <span class="w-full max-w-4">
+                                <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2"></path>
+                                </svg>
+                            </span>
+                        </li>
+                        <li class="text-base text-[#008080] font-lato leading-6 flex items-center gap-1">
+                            <span>Course Builder (LMS) </span>
+                            <span class="w-full max-w-4">
+                                <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2"></path>
+                                </svg>
+                            </span>
+                        </li>
+                        <li class="text-base text-[#008080] font-lato leading-6 flex items-center gap-1">
+                            <span>Business Dashboard</span>
+                            <span class="w-full max-w-4">
+                                <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2"></path>
+                                </svg>
+                            </span>
+                        </li>
+                        <li class="text-base text-[#008080] font-lato leading-6 flex items-center gap-1">
+                            <span>Career Hub | CLAZMA.COM</span>
+                           <span class="w-full max-w-4">
+                                <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2"></path>
+                                </svg>
+                            </span>
+                        </li>
+                        <li class="text-base text-[#008080] font-lato leading-6 flex items-center gap-1">
+                            <span>Student Hub | Xperience™</span>
+                            <span class="w-full max-w-4">
+                                <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2"></path>
+                                </svg>
+                            </span>
+                        </li>
+                    </ul>
+                    <div class="flex items-center justify-center mt-5">
+                        <a href="#" class="text-sm leading-[17px] text-[#0C1734] font-lato border-2 border-[#008080] rounded-[22px] text-center w-full xl:w-auto px-5 xl:px-[90px] py-3 bg-transparent transition-all hover:bg-[#008080] hover:text-white hover:shadow-[0px_10px_10px_0px_rgba(3,36,122,0.2)]">Register Now</a>
+                    </div>
+                </div>
+                <div class="border border-[#008080] p-[30px] flex flex-col">
+                    <h3 class="text-lg md:text-xl text-[#008080] font-archivo font-bold mb-5">BUSINESS PRO</h3>
+                    <p class="text-base text-[#008080] font-lato mb-5">Organisations with more than 25 staff members.</p>
+                    <div>
+                        <span class="text-[#008080] text-4xl lg:text-[48px] font-bold font-open">
+                            <span>£</span>
+                            <span>0.00 </span>
+                            <span class="text-sm font-lato font-bold">/ month</span>
+                        </span>
+                    </div>
+                    <ul class="py-5 space-y-3 flex-1">
+                        <li class="text-base text-[#008080] font-lato leading-6 flex items-center gap-1">
+                            <span>Everything in the Business SME Package</span>
+                        </li>
+                        <li class="text-base text-[#008080] font-lato leading-6 flex items-center gap-1">
+                            <span>V.O.I.C.E. </span>
+                            <span class="w-full max-w-4">
+                                <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2"></path>
+                                </svg>
+                            </span>
+                        </li>
+                        <li class="text-base text-[#008080] font-lato leading-6 flex items-center gap-1">
+                            <span>Business Dashboard </span>
+                            <span class="w-full max-w-4">
+                                <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2"></path>
+                                </svg>
+                            </span>
+                        </li>
+                        <li class="text-base text-[#008080] font-lato leading-6 flex items-center gap-1">
+                            <span>Resource Library</span>
+                            <span class="w-full max-w-4">
+                                <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2"></path>
+                                </svg>
+                            </span>
+                        </li>
+                        <li class="text-base text-[#008080] font-lato leading-6 flex items-center gap-1">
+                            <span>Career Hub | CLAZMA.COM</span>
+                           <span class="w-full max-w-4">
+                                <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2"></path>
+                                </svg>
+                            </span>
+                        </li>
+                        <li class="text-base text-[#008080] font-lato leading-6 flex items-center gap-1">
+                            <span>Student Hub | Xperience™</span>
+                            <span class="w-full max-w-4">
+                                <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2"></path>
+                                </svg>
+                            </span>
+                        </li>
+                        <li class="text-base text-[#008080] font-lato leading-6 flex items-center gap-1">
+                            <span>Events, Workshops & Masterclasses </span>
+                            <span class="w-full max-w-4">
+                                <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2"></path>
+                                </svg>
+                            </span>
+                        </li>
+                    </ul>
+                    <div class="flex items-center justify-center mt-5">
+                        <a href="#" class="text-sm leading-[17px] text-[#0C1734] font-lato border-2 border-[#008080] rounded-[22px] text-center w-full xl:w-auto px-5 xl:px-[90px] py-3 bg-transparent transition-all hover:bg-[#008080] hover:text-white hover:shadow-[0px_10px_10px_0px_rgba(3,36,122,0.2)]">Request-a-demo</a>
+                    </div>
+                </div>
+                <div class="border border-[#008080] p-[30px] flex flex-col">
+                    <h3 class="text-lg md:text-xl text-[#008080] font-archivo font-bold mb-5">EDUCATIONAL INSTITUTE</h3>
+                    <p class="text-base text-[#008080] font-lato mb-5">Nurseries, Schools, Colleges and Academies.</p>
+                    <div>
+                        <span class="text-[#008080] text-4xl lg:text-[48px] font-bold font-open">
+                            <span>£</span>
+                            <span>0.00 </span>
+                            <span class="text-sm font-lato font-bold">/ month</span>
+                        </span>
+                    </div>
+                    <ul class="py-5 space-y-3 flex-1">
+                        <li class="text-base text-[#008080] font-lato leading-6 flex items-center gap-1">
+                            <span>Everything in the Business SME Package</span>
+                        </li>
+                        <li class="text-base text-[#008080] font-lato leading-6 flex items-center gap-1">
+                            <span>V.O.I.C.E. </span>
+                            <span class="w-full max-w-4">
+                                <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2"></path>
+                                </svg>
+                            </span>
+                        </li>
+                        <li class="text-base text-[#008080] font-lato leading-6 flex items-center gap-1">
+                            <span>Educational Institute Dashboard </span>
+                            <span class="w-full max-w-4">
+                                <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2"></path>
+                                </svg>
+                            </span>
+                        </li>
+                        <li class="text-base text-[#008080] font-lato leading-6 flex items-center gap-1">
+                            <span>Resource Library</span>
+                            <span class="w-full max-w-4">
+                                <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2"></path>
+                                </svg>
+                            </span>
+                        </li>
+                        <li class="text-base text-[#008080] font-lato leading-6 flex items-center gap-1">
+                            <span>Career Hub | CLAZMA.COM</span>
+                            <span class="w-full max-w-4">
+                                <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2"></path>
+                                </svg>
+                            </span>
+                        </li>
+                        <li class="text-base text-[#008080] font-lato leading-6 flex items-center gap-1">
+                            <span>Student Hub | Xperience™</span>
+                            <span class="w-full max-w-4">
+                                <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2"></path>
+                                </svg>
+                            </span>
+                        </li>
+                        <li class="text-base text-[#008080] font-lato leading-6 flex items-center gap-1">
+                            <span>Events, Workshops & Masterclasses </span>
+                            <span class="w-full max-w-4">
+                                <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2"></path>
+                                </svg>
+                            </span>
+                        </li>
+                    </ul>
+                    <div class="flex items-center justify-center mt-5">
+                        <a href="#" class="text-sm leading-[17px] text-[#0C1734] font-lato border-2 border-[#008080] rounded-[22px] text-center w-full xl:w-auto px-5 xl:px-[90px] py-3 bg-transparent transition-all hover:bg-[#008080] hover:text-white hover:shadow-[0px_10px_10px_0px_rgba(3,36,122,0.2)]">Request-a-demo</a>
+                    </div>
+                </div>
+                <div class="border border-[#008080] p-[30px] flex flex-col">
+                    <h3 class="text-lg md:text-xl text-[#008080] font-archivo font-bold mb-5">REGISTERED CHARITY</h3>
+                    <p class="text-base text-[#008080] font-lato mb-5">Free to organisations and charities supporting SEN children.</p>
+                    <div>
+                        <span class="text-[#008080] text-4xl lg:text-[48px] font-bold font-open">
+                            <span>£</span>
+                            <span>0.00 </span>
+                            <span class="text-sm font-lato font-bold">/ month</span>
+                        </span>
+                    </div>
+                    <ul class="py-5 space-y-3 flex-1">
+                        <li class="text-base text-[#008080] font-lato leading-6 flex items-center gap-1">
+                            <span>Everything in the Business SME Package</span>
+                        </li>
+                        <li class="text-base text-[#008080] font-lato leading-6 flex items-center gap-1">
+                            <span>V.O.I.C.E. </span>
+                            <span class="w-full max-w-4">
+                                <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2"></path>
+                                </svg>
+                            </span>
+                        </li>
+                        <li class="text-base text-[#008080] font-lato leading-6 flex items-center gap-1">
+                            <span>Educational Institute Dashboard </span>
+                            <span class="w-full max-w-4">
+                                <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2"></path>
+                                </svg>
+                            </span>
+                        </li>
+                        <li class="text-base text-[#008080] font-lato leading-6 flex items-center gap-1">
+                            <span>Resource Library</span>
+                            <span class="w-full max-w-4">
+                                <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2"></path>
+                                </svg>
+                            </span>
+                        </li>
+                        <li class="text-base text-[#008080] font-lato leading-6 flex items-center gap-1">
+                            <span>Career Hub | CLAZMA.COM</span>
+                            <span class="w-full max-w-4">
+                                <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2"></path>
+                                </svg>
+                            </span>
+                        </li>
+                        <li class="text-base text-[#008080] font-lato leading-6 flex items-center gap-1">
+                            <span>Student Hub | Xperience™</span>
+                            <span class="w-full max-w-4">
+                                <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2"></path>
+                                </svg>
+                            </span>
+                        </li>
+                        <li class="text-base text-[#008080] font-lato leading-6 flex items-center gap-1">
+                            <span>Events, Workshops & Masterclasses </span>
+                            <span class="w-full max-w-4">
+                                <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2"></path>
+                                </svg>
+                            </span>
+                        </li>
+                    </ul>
+                    <div class="flex items-center justify-center mt-5">
+                        <a href="#" class="text-sm leading-[17px] text-[#0C1734] font-lato border-2 border-[#008080] rounded-[22px] text-center w-full xl:w-auto px-5 xl:px-[90px] py-3 bg-transparent transition-all hover:bg-[#008080] hover:text-white hover:shadow-[0px_10px_10px_0px_rgba(3,36,122,0.2)]">Request-a-demo</a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-b border-dotted border-[#008080] py-5">
+                <p class="text-base text-[#008080] font-roboto">Looking for a custom configuration? Of course we can help.</p>
+                <p class="text-base text-[#008080] font-roboto"><strong>Please contact us with your specific requirements.</strong></p>
+            </div>
+        </div>
+    </section>
+    <section class="bg-[#F7FBFB]">
+        <div class="container">
+            <div class="text-center">
+                <h3 class="text-[#008080] text-xl md:text-2xl md:leading-9 mb-5 font-open ">Still got a Question?</h3>
+                <p class="text-[#008080] text-base leading-6 font-open mb-5">Please review our FAQ's below, if you still need help, please visit our <a href="#"><strong>Support Centre</strong></a>. </p>
+            </div>
+            <div class="grid md:grid-cols-2 gap-5 pb-5 mb-5 border-b border-dotted border-[#008080]">
+                <div>
+                    <div class="bg-[#023c5b] px-10 py-5">
+                        <h4 class="text-[15px] text-white font-bold font-open leading-5">How can I make payment to subscribe?</h4>
+                    </div>
+                    <div class="border border-[#023c5b] px-10 py-[30px]">
+                        <p class="text-base text-[#023c5b] font-roboto">The easiest way is by credit or debit card, alternatively for organisations we can send you an annual invoice. Monthly subscriptions must be paid by credit or debit card.</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="bg-[#023c5b] px-10 py-5">
+                        <h4 class="text-[15px] text-white font-bold font-open leading-5">Why are certain packages free?</h4>
+                    </div>
+                    <div class="border border-[#023c5b] px-10 py-[30px]">
+                        <p class="text-base text-[#023c5b] font-roboto">Our Student, Educator and Course Provider packages are free as we only make a charge when a student enrols on your course, so you are able to build and load your course for free.</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="bg-[#023c5b] px-10 py-5">
+                        <h4 class="text-[15px] text-white font-bold font-open leading-5">What is the minimum subscription period?</h4>
+                    </div>
+                    <div class="border border-[#023c5b] px-10 py-[30px]">
+                        <p class="text-base text-[#023c5b] font-roboto">There is no minimum period, we offer month to month rolling packages, cancel by giving 30 days notice. For an annual discounted package you will be committed for the full term.</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="bg-[#023c5b] px-10 py-5">
+                        <h4 class="text-[15px] text-white font-bold font-open leading-5">Can I create a customised package?</h4>
+                    </div>
+                    <div class="border border-[#023c5b] px-10 py-[30px]">
+                        <p class="text-base text-[#023c5b] font-roboto">Absolutely! Our team is happy to work with you to create a customised package that aligns with your goals. Contact us for personalised assistance.</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="bg-[#023c5b] px-10 py-5">
+                        <h4 class="text-[15px] text-white font-bold font-open leading-5">Why can I not sign up immediately for certain package?</h4>
+                    </div>
+                    <div class="border border-[#023c5b] px-10 py-[30px]">
+                        <p class="text-base text-[#023c5b] font-roboto">Our Business PRO, Institution & Charity packages will be tailored to your needs, we want to give you the best price and experience and allocate an account manager to support you.</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="bg-[#023c5b] px-10 py-5">
+                        <h4 class="text-[15px] text-white font-bold font-open leading-5">How can I upgrade my current package?</h4>
+                    </div>
+                    <div class="border border-[#023c5b] px-10 py-[30px]">
+                        <p class="text-base text-[#023c5b] font-roboto">Upgrading your package is easy. Simply contact our support team, and they will guide you through the process, ensuring a seamless transition to a more comprehensive package.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FIND YOUR COURSE SECTION START -->
+    <section>
+        <a class="flex flex-col flex-wrap gap-y-[15px] justify-center items-center text-center w-full text-white bg-[#60048A] py-[30px] lg:py-[50px] px-[30px] lg:px-[50px]"
+            href="#">
+            <h2 class="text-2xl lg:text-[35px] font-bold font-roboto">Over 1000 Industry Recognised Accredited Courses
+            </h2>
+            <p class="text-sm lg:text-base font-normal font-roboto">We work with the most well-known and respected
+                awarding bodies.</p>
+            <p
+                class="mt-[5px] border-2 border-white rounded py-3 px-8 text-sm font-medium font-roboto hover:text-[#004D3D] hover:bg-white transition-all duration-500">
+                Find your Course</p>
+        </a>
+    </section>
+    <!-- FIND YOUR COURSE SECTION END -->
+</body>
+</html>

@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Open Learning College Frontend Study Goals</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/globals.css">
+</head>
+
+<body>
+    <section class="bg-[#F7FBFB] py-5">
+        <div class="container">
+            <div class="flex flex-col md:flex-row">
+                <div class="w-full md:max-w-[40%] lg:max-w-[30%] space-y-5 lg:px-5">
+                    <div class="border-b border-dotted border-[#008080] pb-8">
+                        <div class="w-full max-w-[300px] mx-auto">
+                            <img src="../images/logo/open-learning-logo.png" alt="logo">
+                        </div>
+                    </div>
+                    <div class="border-b border-dotted border-[#008080] pb-8">
+                        <div class="w-full max-w-[300px] mx-auto">
+                            <img src="../images/price-match-guarantee/img-pricematchguarantee-transformed.png"
+                                alt="price">
+                        </div>
+                    </div>
+                    <div class="group w-full h-[280px]">
+                        <div class="flex flex-col items-center justify-center w-full h-full bg-[#1abc9c] p-[35px]
+                                    transition-transform duration-700 group-hover:rotate-x-[180deg] backface-hidden">
+                            <div class="border-3 border-white rounded-full p-[26px] mb-5">
+                                <img src="../images/how-it-works/text-message.svg" alt="message">
+                            </div>
+                            <h3 class="text-lg sm:text-[21px] font-roboto font-semibold text-white">
+                                Visit our Support Centre
+                            </h3>
+                        </div>
+                        <div
+                            class="flex flex-col items-center justify-center w-full h-full bg-[#4054b2] p-[35px] space-y-5
+                                    -mt-[280px] transition-transform duration-700 rotate-x-[-180deg] group-hover:rotate-x-0 backface-hidden">
+                            <h3 class="text-lg sm:text-[21px] font-roboto font-semibold text-white">
+                                Student Support Centre
+                            </h3>
+                            <p class="text-sm font-normal font-roboto text-white text-center">
+                                All the information and help you will need.
+                            </p>
+                            <a href="#"
+                                class="text-[15px] text-white text-center transition-all border-2 border-white rounded-[3px] font-roboto font-medium px-6 py-3">
+                                Click Here
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="border-t border-dotted border-[#008080] pt-5">
+                        <p class="text-[13px] font-roboto font-bold leading-6 text-[#008080] mb-5">Our Student Advisors
+                            are keen to
+                            help you, call us now on 0844 357 7777. Alternatively, fill out the form below and we’ll get
+                            back to you.</p>
+                        <span class="text-base leading-6 font-roboto text-[#008080] mb-[5px] block">Contact Us</span>
+                        <form action="#" class="space-y-[5px] mb-5">
+                            <div>
+                                <input id="text" name="text" type="text" placeholder="Name*" required
+                                    class="border border-[#CAE6E6] w-full bg-white shadow-[inset_0_0_0_1px_rgba(0,0,0,0.1)] px-[15px] min-h-[33px] md:h-[50px] text-[13px] leading-7 text-[#008080] font-roboto placeholder:text-[#008080] placeholder:opacity-50 focus:outline-none">
+                            </div>
+                            <div>
+                                <input id="telephone" name="telephone" type="tel" placeholder="Telephone Number*"
+                                    required
+                                    class="border border-[#CAE6E6] w-full bg-white shadow-[inset_0_0_0_1px_rgba(0,0,0,0.1)] px-[15px] min-h-[33px] md:h-[50px] text-[13px] leading-7 text-[#008080] font-roboto placeholder:text-[#008080] placeholder:opacity-50 focus:outline-none">
+                            </div>
+                            <div>
+                                <input id="email" name="email" type="email" placeholder="email*" required
+                                    class="border border-[#CAE6E6] w-full bg-white shadow-[inset_0_0_0_1px_rgba(0,0,0,0.1)] px-[15px] min-h-[33px] md:h-[50px] text-[13px] leading-7 text-[#008080] font-roboto placeholder:text-[#008080] placeholder:opacity-50 focus:outline-none">
+                            </div>
+                            <div class="min-h-10 md:h-[75px]">
+                                <textarea name="text-area" id="text-area" placeholder="message"
+                                    class="border border-[#CAE6E6] w-full bg-white h-full shadow-[inset_0_0_0_1px_rgba(0,0,0,0.1)] px-[15px] text-[13px] leading-7 text-[#008080] font-roboto placeholder:text-[#008080] placeholder:opacity-50 focus:outline-none"></textarea>
+                            </div>
+                            <div class="flex gap-2">
+                                <div class="relative inline-block w-full max-w-1/2">
+                                    <input type="date" id="myDateAll"
+                                        class="datepicker appearance-none border border-[#CAE6E6] w-full bg-white shadow-[inset_0_0_0_1px_rgba(0,0,0,0.1)] px-3 py-1 min-h-[33px] md:h-10 text-[13px] leading-7 text-[#008080] font-roboto placeholder:text-[#008080] placeholder:opacity-50 focus:outline-none">
+                                    <span
+                                        class="absolute right-2.5 top-[45%] -translate-y-1/2 w-3 h-3 bg-[url('../images/how-it-works/calendar.png')] bg-no-repeat bg-center bg-contain z-[999] cursor-pointer"
+                                        onclick="document.getElementById('myDateAll').showPicker()"></span>
+                                </div>
+                                <div class="relative inline-block w-full max-w-1/2">
+                                    <input type="time" id="myTime"
+                                        class="timepicker appearance-none border border-[#CAE6E6] w-full bg-white shadow-[inset_0_0_0_1px_rgba(0,0,0,0.1)] px-3 py-1 min-h-[33px] md:h-10 text-[13px] leading-7 text-[#008080] font-roboto placeholder:text-[#008080] placeholder:opacity-50 focus:outline-none"
+                                        placeholder="Select Time">
+
+                                    <span
+                                        class="absolute right-2.5 top-[45%] -translate-y-1/2 w-3 h-3 bg-[url('../images/how-it-works/clock.png')] bg-no-repeat bg-center bg-contain z-[999] cursor-pointer"
+                                        onclick="document.getElementById('myTime').showPicker()"></span>
+                                </div>
+                            </div>
+                            <div>
+                                <button
+                                    class="bg-[#008080] border border-[#008080] text-white px-5 py-2.5 text-[13px] leading-[1] w-full cursor-pointer rounded-xs transition-all hover:bg-white hover:text-[#008080] cursor-pointer font-medium"
+                                    type="submit">Submit</button>
+                            </div>
+                        </form>
+                        <p class="text-[11px] font-roboto font-bold leading-4 text-[#008080]">By completing this form
+                            you are expressing an interest in Open Learning College. We will send you information about
+                            our courses and any special offers we think will be useful to you. You will be able to
+                            unsubscribe at anytime. See our <a href="#" class="underline">Privacy Policy</a>.</p>
+                    </div>
+                    <div class="border-t border-dotted border-[#008080] pt-8 sticky top-0">
+                        <h3 class="text-xl md:text-2xl font-semibold font-roboto md:leading-6 text-[#008080] mb-5">Quick
+                            Links</h3>
+                        <ul>
+                            <li class=" mt-2 pb-2 first:mt-0">
+                                <a href="#price-match-offer"
+                                    class="text-base text-[#117d5d] font-arial font-normal transition-all hover:font-bold">01.
+                                    Price Match Offer</a>
+                            </li>
+                            <li class=" mt-2 pb-2 first:mt-0">
+                                <a href="#terms-conditions"
+                                    class="text-base text-[#117d5d] font-arial font-normal transition-all hover:font-bold">02.
+                                    Terms & Conditions</a>
+                            </li>
+                            <li class=" mt-2 pb-2 first:mt-0">
+                                <a href="#price-match-refund-request-form"
+                                    class="text-base text-[#117d5d] font-arial font-normal transition-all hover:font-bold">03.
+                                    Price Match Refund Request</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="w-full md:max-w-[60%] lg:max-w-[70%] md:ml-[30px]">
+                    <h2 class="text-2xl md:text-[28px] font-bold font-arial text-[#243C45] md:mb-5">Price Match<span
+                            class="text-[#008080]">Guarantee</span></h2>
+                    <div class="font-arial text-[#008080] divide-y divide-[#7C8A8F]">
+                        <div id="price-match-offer" class="py-4 lg:py-5 text-[#008080] text-base leading-6 font-normal">
+                            <h2 class="text-base sm:text-xl font-arial font-bold pt-5 mb-4">01. Price Match Offer</h2>
+                            <p class="text-base leading-6 mb-4">When you enrol with <strong>Open Learning
+                                    College</strong> we want you to know you’re getting the best course with the most
+                                comprehensive support structure at the best price.</p>
+                            <p class="text-base leading-6 mb-4"><strong>Open Learning College</strong> Price Match
+                                Refund is your guarantee that you’re never paying too much for any of our courses.</p>
+                            <p class="text-base leading-6 mb-4">It’s simple. We’re so confident that we’re offering you
+                                a fantastic deal – we’ll refund twice the difference if you find the exact same course
+                                cheaper on any other UK website within 7 days of your purchase.</p>
+                            <p class="text-base leading-6 mb-4">To request a price match refund, just complete the form
+                                below and submit. You will receive an automated acknowledgment of your request, and we
+                                will review the details and reply to you via email within three business days.</p>
+                            <p class="text-base leading-6 mb-4">Upon our acceptance of your price match request, please
+                                allow 14 days for delivery of your price match refund which will be credited as a second
+                                transaction on your credit or debit card. The time taken for the refund to appear on
+                                your credit or debit card statement varies so the amount may not show on your next
+                                statement.</p>
+                            <p class="text-base leading-6 mb-4"><strong>Please note:</strong> to avoid potential abuse
+                                and to enable us to honour our price-match refund guarantee to genuine customers, the
+                                acceptance of all refund requests is ultimately at the discretion of <strong>Open
+                                    Learning College</strong>, who will at all times act reasonably and in good faith.
+                            </p>
+
+                        </div>
+
+                        <div id="terms-conditions" class="font-arial">
+                            <h2 class="text-base sm:text-xl font-arial font-bold text-[#008080] mb-5 pt-5">02. Terms &
+                                Conditions</h2>
+                            <p class="text-base leading-6 font-bold mb-4">You are eligible for a price-match refund if
+                                your request meets the following terms and conditions:</p>
+                            <ul class="list-disc pb-5 ml-2">
+                                <li>The course material must be identical to the material from Open Learning College and
+                                    must be new (in the same condition). Please note if either material includes any
+                                    additions to the course e.g. a USB Pen Drive or free gifts, these are excluded from
+                                    the Price Match. Courses must be ‘like for like’.</li>
+                                <li>The price used to calculate the matching price is the total cost including VAT taxes
+                                    and shipping.</li>
+                                <li>The Internet retailer offering the lower price must have the product currently in
+                                    stock and available for immediate delivery.</li>
+                                <li>The Internet retailer must be a fully operating business website in the United
+                                    Kingdom as determined by Open Learning College.</li>
+                                <li>Auction sites do not qualify for the price guarantee, nor do classified ads of a
+                                    sole entity selling a single item(s) such as a listing seller on Ebay.</li>
+                                <li>Claims must be received via our submission form below within 7 days from purchase
+                                    date.</li>
+                                <li>Limited to one claim per customer in any 90 day time period.</li>
+                                <li>The pricematch guarantee, unless specified otherwise, cannot be used in conjunction
+                                    with any other promotion.</li>
+                                <li>Limited to one of the same item number per customer, e.g. if a bulk purchase is
+                                    made, only one course will be price matched.</li>
+                                <li>Does not apply to Internet retailers offering special promotions such as free
+                                    giveaways, coupon offers, quantity discounts, special orders and/or membership
+                                    requirements for buyers and/or sellers.</li>
+                                <li>Shipping costs are to be included when comparing the prices.</li>
+                                <li>Our Price Guarantee applies to online orders only. Should an Internet retailer have
+                                    an item at a lower price in a store or in print, they must also have that item
+                                    online in order to qualify.</li>
+                                <li>Open Learning College must be able to confirm the lower price with reasonable
+                                    efforts by its staff.</li>
+                                <li>Open Learning College reserves the final right to best determine eligibility for
+                                    this Price Guarantee.</li>
+                                <li>Sometimes a retailer will advertise a very low price for a product but have only
+                                    limited quantities in stock. If the item is out of stock or the competitor has
+                                    limited quantities of an item at a particular price, it is not eligible for price
+                                    matching.</li>
+                                <li>Price Guarantee is subject to change without prior notice.</li>
+                            </ul>
+                        </div>
+                        <div id="price-match-refund-request-form" class="font-arial border-b border-black pb-5">
+                            <h2 class="text-base sm:text-xl font-arial font-bold text-[#008080] mb-5 pt-5">03. Price
+                                Match Refund Request Form</h2>
+                            <div class="max-w-[475px] p-5 bg-[#008080]">
+                                <form action="#" class="space-y-[5px] ">
+                                    <div>
+                                        <input id="text" name="text" type="text" placeholder="Name" required
+                                            class="border border-[#008080] w-full bg-white shadow-[inset_0_0_0_1px_rgba(0,0,0,0.1)] px-[15px] min-h-[33px] md:h-[50px] text-[13px] leading-7 text-[#008080] font-roboto placeholder:text-[#008080] placeholder:opacity-50 focus:outline-none">
+                                    </div>
+                                    <div>
+                                        <input id="email" name="email" type="email" placeholder="Email" required
+                                            class="border border-[#008080] w-full bg-white shadow-[inset_0_0_0_1px_rgba(0,0,0,0.1)] px-[15px] min-h-[33px] md:h-[50px] text-[13px] leading-7 text-[#008080] font-roboto placeholder:text-[#008080] placeholder:opacity-50 focus:outline-none">
+                                    </div>
+                                    <div>
+                                        <input id="telephone" name="telephone" type="tel" placeholder="Telephone No"
+                                            required
+                                            class="border border-[#008080] w-full bg-white shadow-[inset_0_0_0_1px_rgba(0,0,0,0.1)] px-[15px] min-h-[33px] md:h-[50px] text-[13px] leading-7 text-[#008080] font-roboto placeholder:text-[#008080] placeholder:opacity-50 focus:outline-none">
+                                    </div>
+                                    <div>
+                                        <input id="url" name="url" type="url"
+                                            placeholder="Open Learning College Course URL" required
+                                            class="border border-[#008080] w-full bg-white shadow-[inset_0_0_0_1px_rgba(0,0,0,0.1)] px-[15px] min-h-[33px] md:h-[50px] text-[13px] leading-7 text-[#008080] font-roboto placeholder:text-[#008080] placeholder:opacity-50 focus:outline-none">
+                                    </div>
+                                    <div>
+                                        <input id="text" name="text" type="text" placeholder=" Competitor Company Name"
+                                            required
+                                            class="border border-[#008080] w-full bg-white shadow-[inset_0_0_0_1px_rgba(0,0,0,0.1)] px-[15px] min-h-[33px] md:h-[50px] text-[13px] leading-7 text-[#008080] font-roboto placeholder:text-[#008080] placeholder:opacity-50 focus:outline-none">
+                                    </div>
+                                    <div>
+                                        <input id="Course-url" name="Course-url" type="url"
+                                            placeholder=" Competitor Course URL" required
+                                            class="border border-[#008080] w-full bg-white shadow-[inset_0_0_0_1px_rgba(0,0,0,0.1)] px-[15px] min-h-[33px] md:h-[50px] text-[13px] leading-7 text-[#008080] font-roboto placeholder:text-[#008080] placeholder:opacity-50 focus:outline-none">
+                                    </div>
+                                    <div class="min-h-10 md:h-[75px]">
+                                        <textarea name="text-area" id="text-area" placeholder="message"
+                                            class="border border-[#008080] w-full bg-white h-full shadow-[inset_0_0_0_1px_rgba(0,0,0,0.1)] px-[15px] text-[13px] leading-7 text-[#008080] font-roboto placeholder:text-[#008080] placeholder:opacity-50 focus:outline-none"></textarea>
+                                    </div>
+                                    <div class="inline-block">
+                                        <label for="file" class="flex items-center w-full border border-[#CAE6E6] transition-all hover:border-black bg-white shadow-[inset_0_0_0_1px_rgba(0,0,0,0.1)] px-4 py-1 text-[13px] text-black  cursor-pointer">
+                                            Choose file
+                                        </label>
+
+                                        <input id="file" type="file" class="hidden"
+                                            onchange="this.previousElementSibling.innerText = this.files[0]?.name || 'Choose file'">
+                                    </div>
+                                    <div class="mt-5">
+                                        <button
+                                            class="bg-[#61CE70] border border-[#008080] text-white px-5 py-3 text-[15px] leading-[15px] w-full cursor-pointer rounded-sm font-roboto transition-all hover:bg-white hover:text-[#008080] cursor-pointer font-medium"
+                                            type="submit">Send</button>
+                                    </div>
+                                </form>
+                            </div>
+                            <p class="text-base leading-6 font-bold mb-4 mt-5">Please include the following details in the above form. </p>
+                            <ul class="list-disc ml-2">
+                                <li>Your name and contact details.</li>
+                                <li>URL’s of the item(s) you are comparing and the cost of the cheaper product.</li>
+                                <li>URL of the website page that has the course at a lower price and company name.</li>
+                                <li>A screenshot of the cheaper offer (including the date and time visited).</li>
+                                <li>We will review the details and reply to you via email within three business days.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="../min.js"></script>
+</body>
+
+</html>

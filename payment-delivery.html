@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Open Learning College Frontend</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/globals.css">
+</head>
+
+<body>
+    <!-- BANNER SECTION START -->
+    <section
+        class="bg-[#243C45] bg-no-repeat bg-cover bg-top-center bg-[url('./assets/images/common-banner/common-banner-bg.png')] py-10 md:py-[72px]">
+        <div class="container text-center">
+            <h2 class="text-2xl md:text-[40px] font-bold font-arial text-white mb-5"><span class="text-[#008080]">Payments</span> & Delivery
+            </h2>
+            <p class="text-sm md:text-base text-white font-arial">Effortless Transactions, Swift Delivery: Your Guide to Seamless Payment and Course Material Access</p>
+        </div>
+    </section>
+    <!-- BANNER SECTION END -->
+
+    <!-- BREADCRUMB SECTION START -->
+    <section class="pt-5">
+        <div class="container">
+            <div class="p-2.5">
+                <ul class="flex flex-wrap items-center justify-center sm:justify-start pb-5 gap-2 border-b border-dotted border-[#008080] mb-3">
+                    <li><a href="#"
+                            class="text-base font-arial font-bold text-[#117d5d] transition-all hover:text-[#3BB366]">Home</a>
+                    </li>
+                    <li><span><svg xmlns="http://www.w3.org/2000/svg" width="6" height="12" viewBox="0 0 6 12"
+                                fill="none">
+                                <g id="Arrow - Down 2">
+                                    <path id="Arrow - Down 2_2"
+                                        d="M0.163933 11.1728C-0.0347736 10.978 -0.0528379 10.6732 0.10974 10.4584L0.163933 10.3968L4.64894 6.00016L0.163932 1.60351C-0.0347741 1.40872 -0.0528383 1.10388 0.10974 0.88908L0.163932 0.827539C0.362639 0.63274 0.673582 0.615031 0.892695 0.774413L0.95547 0.827539L5.83607 5.61218C6.03477 5.80698 6.05284 6.1118 5.89026 6.32661L5.83607 6.38815L0.95547 11.1728C0.736893 11.3871 0.38251 11.3871 0.163933 11.1728Z"
+                                        fill="#7C8A8F"></path>
+                                </g>
+                            </svg></span></li>
+                    <li><a href="#"
+                            class="text-base font-arial font-bold text-[#117d5d] transition-all hover:text-[#3BB366]">Support
+                            Centre</a></li>
+                    <li><span><svg xmlns="http://www.w3.org/2000/svg" width="6" height="12" viewBox="0 0 6 12"
+                                fill="none">
+                                <g id="Arrow - Down 2">
+                                    <path id="Arrow - Down 2_2"
+                                        d="M0.163933 11.1728C-0.0347736 10.978 -0.0528379 10.6732 0.10974 10.4584L0.163933 10.3968L4.64894 6.00016L0.163932 1.60351C-0.0347741 1.40872 -0.0528383 1.10388 0.10974 0.88908L0.163932 0.827539C0.362639 0.63274 0.673582 0.615031 0.892695 0.774413L0.95547 0.827539L5.83607 5.61218C6.03477 5.80698 6.05284 6.1118 5.89026 6.32661L5.83607 6.38815L0.95547 11.1728C0.736893 11.3871 0.38251 11.3871 0.163933 11.1728Z"
+                                        fill="#7C8A8F"></path>
+                                </g>
+                            </svg></span></li>
+                    <li><a href="#" class="text-[#008080] text-base font-arial">Payments & Delivery</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- BREADCRUMB SECTION END -->
+    <section class="bg-[#F7FBFB] py-5">
+        <div class="container">
+            <div class="flex flex-col md:flex-row">
+                <div class="w-full md:max-w-[40%] lg:max-w-[30%] space-y-5 lg:px-5">
+                    <div class="border-b border-dotted border-[#008080] pb-8">
+                        <div class="w-full max-w-[300px] mx-auto">
+                            <img src="./assets/images/logo/open-learning-logo.png" alt="logo">
+                        </div>
+                    </div>
+                    <div class="border-b border-dotted border-[#008080] pb-8">
+                        <div class="w-full max-w-[300px] mx-auto">
+                            <img src="./assets/images/payment-delivery/stripe-paypal.png" alt="stripe">
+                        </div>
+                    </div>
+                    <div class="group w-full h-[280px]">
+                        <div class="flex flex-col items-center justify-center w-full h-full bg-[#1abc9c] p-[35px]
+                                    transition-transform duration-700 group-hover:rotate-x-[180deg] backface-hidden">
+                            <div class="border-3 border-white rounded-full p-[26px] mb-5">
+                                <img src="./assets/images/how-it-works/text-message.svg" alt="message">
+                            </div>
+                            <h3 class="text-lg sm:text-[21px] font-roboto font-semibold text-white">
+                                Visit our Support Centre
+                            </h3>
+                        </div>
+                        <div
+                            class="flex flex-col items-center justify-center w-full h-full bg-[#4054b2] p-[35px] space-y-5
+                                    -mt-[280px] transition-transform duration-700 rotate-x-[-180deg] group-hover:rotate-x-0 backface-hidden">
+                            <h3 class="text-lg sm:text-[21px] font-roboto font-semibold text-white">
+                                Student Support Centre
+                            </h3>
+                            <p class="text-sm font-normal font-roboto text-white text-center">
+                                All the information and help you will need.
+                            </p>
+                            <a href="#"
+                                class="text-[15px] text-white text-center transition-all border-2 border-white rounded-[3px] font-roboto font-medium px-6 py-3">
+                                Click Here
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="border-t border-dotted border-[#008080] pt-5">
+                        <p class="text-base font-roboto leading-6 text-[#008080] mb-5">Our Student Advisors are keen to
+                            help you, call us now on <a href="tel:0844 357 7777">0844 357 7777</a>. Alternatively, fill out the form below and we’ll get
+                            back to you.</p>
+                        <span class="text-base leading-6 font-roboto text-[#008080] mb-[5px] block">Contact Us</span>
+                        <form action="#" class="space-y-[5px] mb-5">
+                            <div>
+                                <input id="text" name="text" type="text" placeholder="Name*" required
+                                    class="border border-[#CAE6E6] w-full bg-white shadow-[inset_0_0_0_1px_rgba(0,0,0,0.1)] px-[15px] min-h-[33px] md:h-[50px] text-[13px] leading-7 text-[#008080] font-roboto placeholder:text-[#008080] placeholder:opacity-50 focus:outline-none">
+                            </div>
+                            <div>
+                                <input id="telephone" name="telephone" type="tel" placeholder="Telephone Number"
+                                    required
+                                    class="border border-[#CAE6E6] w-full bg-white shadow-[inset_0_0_0_1px_rgba(0,0,0,0.1)] px-[15px] min-h-[33px] md:h-[50px] text-[13px] leading-7 text-[#008080] font-roboto placeholder:text-[#008080] placeholder:opacity-50 focus:outline-none">
+                            </div>
+                            <div>
+                                <input id="email" name="email" type="email" placeholder="email" required
+                                    class="border border-[#CAE6E6] w-full bg-white shadow-[inset_0_0_0_1px_rgba(0,0,0,0.1)] px-[15px] min-h-[33px] md:h-[50px] text-[13px] leading-7 text-[#008080] font-roboto placeholder:text-[#008080] placeholder:opacity-50 focus:outline-none">
+                            </div>
+                            <div class="min-h-10 md:h-[75px]">
+                                <textarea name="text-area" id="text-area" placeholder="message"
+                                    class="border border-[#CAE6E6] w-full bg-white h-full shadow-[inset_0_0_0_1px_rgba(0,0,0,0.1)] px-[15px] text-[13px] leading-7 text-[#008080] font-roboto placeholder:text-[#008080] placeholder:opacity-50 focus:outline-none"></textarea>
+                            </div>
+                            <div class="flex flex-col sm:flex-row gap-2">
+                                <div class="relative inline-block w-full sm:max-w-1/2">
+                                    <input type="date" id="myDateAll"
+                                        class="datepicker appearance-none border border-[#CAE6E6] w-full bg-white shadow-[inset_0_0_0_1px_rgba(0,0,0,0.1)] px-3 py-1 min-h-[33px] md:h-10 text-[13px] leading-7 text-[#008080] font-roboto placeholder:text-[#008080] placeholder:opacity-50 focus:outline-none">
+                                    <span
+                                        class="absolute right-2.5 top-[45%] -translate-y-1/2 w-3 h-3 bg-[url('./assets/images/how-it-works/calendar.png')] bg-no-repeat bg-center bg-contain z-[999] cursor-pointer"
+                                        onclick="document.getElementById('myDateAll').showPicker()"></span>
+                                </div>
+                                <div class="relative inline-block w-full sm:max-w-1/2">
+                                    <input type="time" id="myTime"
+                                        class="timepicker appearance-none border border-[#CAE6E6] w-full bg-white shadow-[inset_0_0_0_1px_rgba(0,0,0,0.1)] px-3 py-1 min-h-[33px] md:h-10 text-[13px] leading-7 text-[#008080] font-roboto placeholder:text-[#008080] placeholder:opacity-50 focus:outline-none"
+                                        placeholder="Select Time">
+
+                                    <span
+                                        class="absolute right-2.5 top-[45%] -translate-y-1/2 w-3 h-3 bg-[url('./assets/images/how-it-works/clock.png')] bg-no-repeat bg-center bg-contain z-[999] cursor-pointer"
+                                        onclick="document.getElementById('myTime').showPicker()"></span>
+                                </div>
+                            </div>
+                            <div>
+                                <button
+                                    class="bg-[#008080] border border-[#008080] text-white px-5 py-2.5 text-[13px] leading-[1] w-full cursor-pointer rounded-xs transition-all hover:bg-white hover:text-[#008080] cursor-pointer font-medium"
+                                    type="submit">Submit</button>
+                            </div>
+                        </form>
+                        <p class="text-[11px] font-roboto font-bold leading-4 text-[#008080]">By completing this form
+                            you are expressing an interest in Open Learning College. We will send you information about
+                            our courses and any special offers we think will be useful to you. You will be able to
+                            unsubscribe at anytime. See our <a href="privacy-policy.html" class="underline">Privacy Policy</a>.</p>
+                    </div>
+                    <div class="border-t border-dotted border-[#008080] pt-8 sticky top-0">
+                        <h3 class="text-xl md:text-2xl font-semibold font-roboto md:leading-6 text-[#008080] mb-5">Quick
+                            Links</h3>
+                        <ul>
+                            <li class=" mt-2 pb-2 first:mt-0"><a href="#college-payment"
+                                    class="text-base text-[#117d5d] font-arial font-normal transition-all hover:font-bold">01. Accepted Payment Methods</a></li>
+                            <li class=" mt-2 pb-2 first:mt-0"><a href="#klarna"
+                                    class="text-base text-[#117d5d] font-arial font-normal transition-all hover:font-bold">02. Company Invoice</a></li>
+                            <li class=" mt-2 pb-2 first:mt-0"><a href="#amazon-career"
+                                    class="text-base text-[#117d5d] font-arial font-normal transition-all hover:font-bold">03. Bank Transfer</a></li>
+                            <li class=" mt-2 pb-2 first:mt-0"><a href="#employer-funding"
+                                    class="text-base text-[#117d5d] font-arial font-normal transition-all hover:font-bold">04. Western Union or Cash Payments</a></li>
+                            <li class=" mt-2 pb-2 first:mt-0"><a href="#goverment-grants"
+                                    class="text-base text-[#117d5d] font-arial font-normal transition-all hover:font-bold">05. Price Match Guarantee</a></li>
+                            <li class=" mt-2 pb-2 first:mt-0"><a href="#enhanced-learning"
+                                    class="text-base text-[#117d5d] font-arial font-normal transition-all hover:font-bold">06. Easy Payment Plan & Funding</a></li>
+                            <li class=" mt-2 pb-2 first:mt-0"><a href="#advanced-learner"
+                                    class="text-base text-[#117d5d] font-arial font-normal transition-all hover:font-bold">07. UK & International Delivery</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="w-full md:max-w-[60%] lg:max-w-[70%] md:ml-[30px]">
+                    <h2 class="text-2xl md:text-[28px] font-bold font-arial text-[#243C45] md:mb-5">Payments <span
+                            class="text-[#008080]">& Delivery</span></h2>
+                    <div class="font-arial text-[#008080] divide-y divide-[#7C8A8F]">
+                        <div id="college-payment" class="py-4 lg:py-5 text-[#008080] text-base leading-6 font-normal">
+                            <h2 class="text-base sm:text-xl font-arial font-bold pt-5 mb-4">01. Accepted Payment Methods</h2>
+                            <p class=" font-bold mb-4">Please choose any of the following Payment Methods</p>
+                            <ul class="list-disc pl-1.5">
+                                <li>Debit / Credit Card (inc American Express)</li>
+                                <li>Apple Pay</li>
+                                <li>Paypal</li>
+                                <li>Stripe</li>
+                                <li>Klarna</li>
+                                <li>Business Cheques / Bankers Draft</li>
+                                <li>Postal Orders</li>
+                                <li>Company Invoice</li>
+                                <li>Bank Transfer</li>
+                                <li>Cash</li>
+                                <li>International Money Order or Western Union</li>
+                            </ul>
+                        </div>
+
+                        <div id="klarna" class="font-arial">
+                            <h2 class="text-base sm:text-xl font-arial font-bold text-[#008080] mb-5 pt-5">02. Company
+                                Invoice</h2>
+                            <h3 class="text-lg sm:text-xl sm:leading-7 font-bold font-arial mb-5">We are also happy to
+                                Invoice companies on request.</h3>
+                            <p class="text-base leading-6 mb-5">The quickest an easiest way is to complete the <a
+                                    href="#"><strong>Company Purchase Order Form</strong></a> and email this to us.</p>
+                            <p class="text-base leading-6 mb-5">Alternatively,</p>
+                            <p class="text-base leading-6 mb-5">Please Call 0844 357 7777 or <a
+                                    href="#"><strong>email</strong></a> us with your requirements and we can normally
+                                email you an invoice within an hour.</p>
+                            <p class="text-base leading-6 mb-5">We will need full details of the student upon enrolment.
+                            </p>
+                            <p class="text-base leading-6 mb-5">Please note: Course materials are not released until
+                                payment has cleared our account.</p>
+                        </div>
+                        <div id="amazon-career" class="font-arial border-b border-[#CAE6E6] pb-5">
+                            <h2 class="text-base sm:text-xl font-arial font-bold text-[#008080] mb-5 pt-5">03. Bank
+                                Transfer</h2>
+                            <div class="py-6 text-[#008080] text-base leading-6 font-normal">
+                                <p class=" font-bold mb-4">Bank Transfer to Open Learning College</p>
+                                <p class="mb-4">If you have online banking why not transfer your fees straight into our
+                                    account. Our details are below:</p>
+                                <ul class="list-disc mb-4 pl-1.5">
+                                    <li>Account no: <strong>58716997</strong> </li>
+                                    <li>Sort Code: <strong>60-83-71</strong></li>
+                                    <li>Account Name: <strong>Open Learning College</strong></li>
+                                    <li>Bank: <strong>Starling Bank</strong></li>
+                                    <li>IBAN: <strong>GB61SRLG60837158716997</strong> (International Students only)</li>
+                                    <li>SWIFT: <strong>SRLGGB2L</strong> (International Students only)</li>
+                                </ul>
+                                <p class="mb-4">Please be aware when using this method, payments can take approx 2-5 working days to
+                                    show in our bank.</p>
+                                <p>Courses are dispatched when payment reaches our account. If you want to make payment instantly please use a credit/debit card.</p>
+                            </div>
+                        </div>
+                        <div id="employer-funding" class="font-arial border-b border-[#CAE6E6] pb-5">
+                            <h2 class="text-base sm:text-xl font-arial font-bold text-[#008080] mb-5 pt-5">04. Western Union or Cash Payments</h2>
+
+                            <p class="text-base leading-6 mb-5 font-bold">Cash</p>
+                            <p class="text-base leading-6 mb-5">For some student we understand that cash is the only option for you, in these cases, please call us or email to discuss the best option to send this to us. Cash is only accepted when paying fees in full.</p>
+                            <p class="text-base leading-6 mb-5 ">We can accept deposits paid in cash into our bank account. Be advised the college will not be held responsible for any cash payments not reaching us.</p>
+                            <p class="text-base leading-6 mb-5 font-bold">Western Union</p>
+                            <p class="text-base leading-6">We are happy for students to pay via Western Union.</p>
+                            <p class="text-base leading-6 mb-5 ">Beneficiary Name: <strong>Carly Starrs</strong> (Marketing Director- Open Learning College).</p>
+                            <p class="text-base leading-6 mb-5 ">Please call us after you have wired the amount and let us know the MTCN Reference Number.</p>
+
+                        </div>
+                        <div id="goverment-grants" class="font-arial border-b border-[#CAE6E6] pb-5">
+                            <h2 class="text-base sm:text-xl font-arial font-bold text-[#008080] mb-5 pt-5">05. Price Match Guarantee</h2>
+
+                            <p class="text-base leading-6 mb-5">When you enrol with <strong>Open Learning College</strong> we want you to know you’re getting the best course with the most comprehensive support structure at the best price.</p>
+                            <p class="text-base leading-6 mb-5">Our Price Match Refund is your guarantee that you’re never paying too much for any of our courses.</p>
+                            <p class="text-base leading-6 mb-5">It’s simple. We’re so confident that we’re offering you a fantastic deal; we’ll refund twice the difference if you find the exact same course on any other UK website within 7 days of your purchase.</p>
+                            <p class="text-base leading-6 mb-5 ">Full details of price match can be found at our <strong>Price Match</strong> page.</p>
+                            
+                        </div>
+                        <div id="enhanced-learning" class="font-arial border-b border-[#CAE6E6] pb-5">
+                            <h2 class="text-base sm:text-xl font-arial font-bold text-[#008080] mb-5 pt-5">06. Easy Payment Plan & Funding</h2>
+                            <p class="text-base leading-6 mb-5">Take advantage of our <strong>Easy Payment Plans</strong> which help you spread the cost of your course over a number of months – Interest Free! Simply pay a deposit now and then make four monthly payments by direct debit or debit/credit card.</p>
+                            <p class="text-base leading-6 mb-5">Clicking on your chosen course provides an example of what your monthly payment might be, depending on the price of your chosen course. This could be as little as £1 per day invested in you and your future prospects!</p>
+                            <p class="text-base leading-6"><strong>Alternatively, if you prefer you can:</strong></p>
+                            <ul class="list-disc text-base leading-6 font-normal mb-5 ml-2 md:ml-0">
+                                <li>Pay in full online and take advantage of a special 20% online discount</li>
+                                <li>If you prefer to enrol over the phone, you can benefit from a 10% discount if you pay for your course in full.</li>
+                                <li>We aim to make learning as accessible to as many people as possible, therefore by prior arrangement we can spread your monthly payments to 6 or even 9 months, our standard payment terms are a deposit plus 4 monthly payments. Please call a course advisor or submit your proposal on our easy payment plan page. </li>
+                            </ul>
+                            <p class="text-base leading-6">Monthly payments are normally collected on or around a month after you pay your deposit and then the same time thereafter each month.</p>
+                        </div>
+                        <div id="advanced-learner" class="font-arial border-b border-[#CAE6E6] pb-5">
+                            <h2 class="text-base sm:text-xl font-arial font-bold text-[#008080] mb-5 pt-5">07. UK & International Delivery</h2>
+                            <h3 class="text-base leading-6 font-bold">Study Pack </h3>
+                            <p class="text-base leading-6 mb-5">If you have chosen to receive a study pack (learning materials by post), this will be despatched within 7 days of your payment being received.</p>
+                            <h3 class="text-base leading-6 font-bold">Open Learning College Branded Items</h3>
+                            <p class="text-base leading-6 mb-5">28 days Post enrolment we will send you the current promotional branded item at that time for <strong>Open Learning College</strong>, along with your enrolment pack and welcome letter.</p>
+                            <p class="text-base leading-6 mb-5">All UK deliveries are sent by Royal Mail and do not include insurance. UK orders are despatched within 7 days of the order being made (usually within 48 hours). Free Postage & Packing for UK orders when you pay online.  All Orders will be sent by Royal Mail.</p>
+                            <p class="text-base leading-6 mb-5">All International Orders (Paper Based Courses) will incur an additional charge toward Postage & Packaging. This will depend on the course you choose. Please see the Course of your choice for more details.</p>
+                            <p class="text-base leading-6">Please note: Payment Plans are not available to our International Students</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FIND YOUR COURSE SECTION START -->
+    <section>
+        <a class="flex flex-col flex-wrap gap-y-[15px] justify-center items-center text-center w-full text-white bg-[#60048A] py-[30px] lg:py-[50px] px-[30px] lg:px-[50px]"
+            href="#">
+            <h2 class="text-2xl lg:text-[35px] font-bold font-roboto">Over 1000 Industry Recognised Accredited Courses
+            </h2>
+            <p class="text-sm lg:text-base font-normal font-roboto">We work with the most well-known and respected
+                awarding bodies.</p>
+            <p
+                class="mt-[5px] border-2 border-white rounded py-3 px-8 text-sm font-medium font-roboto hover:text-[#004D3D] hover:bg-white transition-all duration-500">
+                Find your Course</p>
+        </a>
+    </section>
+    <!-- FIND YOUR COURSE SECTION END -->
+</body>
+
+</html>

@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Open Learning College Frontend</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/globals.css">
+</head>
+
+<body>
+    <!-- BANNER SECTION START -->
+    <section
+        class="bg-[#243C45] bg-no-repeat bg-cover bg-top-center bg-[url('./assets/images/common-banner/common-banner-bg.png')] py-10 md:py-[72px]">
+        <div class="container text-center">
+            <h2 class="text-2xl md:text-[40px] font-bold font-arial text-white mb-5"><span class="text-[#008080]">Terms</span> &
+                Conditions
+            </h2>
+            <p class="text-sm md:text-base text-white font-arial md:max-w-[56%] mx-auto">Explore our comprehensive Terms and
+                Conditions page for a clear understanding of our guidelines and agreements governing your experience
+                with <strong>Open Learning College</strong></p>
+        </div>
+    </section>
+    <!-- BANNER SECTION END -->
+
+    <!-- BREADCRUMB SECTION START -->
+    <section class="pt-5">
+        <div class="container">
+            <div class="p-2.5">
+                <ul class="flex flex-wrap items-center pb-5 gap-2 border-b border-dotted border-[#008080] mb-3">
+                    <li><a href="#"
+                            class="text-base font-arial font-bold text-[#008080] transition-all hover:text-[#3BB366]">Home</a>
+                    </li>
+                    <li><span><svg xmlns="http://www.w3.org/2000/svg" width="6" height="12" viewBox="0 0 6 12"
+                                fill="none">
+                                <g id="Arrow - Down 2">
+                                    <path id="Arrow - Down 2_2"
+                                        d="M0.163933 11.1728C-0.0347736 10.978 -0.0528379 10.6732 0.10974 10.4584L0.163933 10.3968L4.64894 6.00016L0.163932 1.60351C-0.0347741 1.40872 -0.0528383 1.10388 0.10974 0.88908L0.163932 0.827539C0.362639 0.63274 0.673582 0.615031 0.892695 0.774413L0.95547 0.827539L5.83607 5.61218C6.03477 5.80698 6.05284 6.1118 5.89026 6.32661L5.83607 6.38815L0.95547 11.1728C0.736893 11.3871 0.38251 11.3871 0.163933 11.1728Z"
+                                        fill="#7C8A8F"></path>
+                                </g>
+                            </svg></span></li>
+                    <li><a href="#"
+                            class="text-base font-arial font-bold text-[#008080] transition-all hover:text-[#3BB366]">Support
+                            Centre</a></li>
+                    <li><span><svg xmlns="http://www.w3.org/2000/svg" width="6" height="12" viewBox="0 0 6 12"
+                                fill="none">
+                                <g id="Arrow - Down 2">
+                                    <path id="Arrow - Down 2_2"
+                                        d="M0.163933 11.1728C-0.0347736 10.978 -0.0528379 10.6732 0.10974 10.4584L0.163933 10.3968L4.64894 6.00016L0.163932 1.60351C-0.0347741 1.40872 -0.0528383 1.10388 0.10974 0.88908L0.163932 0.827539C0.362639 0.63274 0.673582 0.615031 0.892695 0.774413L0.95547 0.827539L5.83607 5.61218C6.03477 5.80698 6.05284 6.1118 5.89026 6.32661L5.83607 6.38815L0.95547 11.1728C0.736893 11.3871 0.38251 11.3871 0.163933 11.1728Z"
+                                        fill="#7C8A8F"></path>
+                                </g>
+                            </svg></span></li>
+                    <li><a href="#" class="text-[#008080] text-base font-arial">Terms & Conditions</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- BREADCRUMB SECTION END -->
+
+    <section class="bg-[#F7FBFB] py-5">
+        <div class="container">
+            <div class="flex flex-col md:flex-row">
+                <div class="w-full md:max-w-[40%] lg:max-w-[30%] space-y-5 lg:px-5">
+                    <div class="border-b border-dotted border-[#008080] pb-8">
+                        <div class="w-full max-w-[300px] mx-auto">
+                            <img src="./assets/images/logo/open-learning-logo.png" alt="logo">
+                        </div>
+                    </div>
+                    <div class="group w-full h-[280px]">
+                        <div class="flex flex-col items-center justify-center w-full h-full bg-[#1abc9c] p-[35px]
+                                    transition-transform duration-700 group-hover:rotate-x-[180deg] backface-hidden">
+                            <div class="border-3 border-white rounded-full p-[26px] mb-5">
+                                <img src="./assets/images/how-it-works/text-message.svg" alt="message">
+                            </div>
+                            <h3 class="text-lg sm:text-[21px] font-roboto font-semibold text-white">
+                                Visit our Support Centre
+                            </h3>
+                        </div>
+                        <div
+                            class="flex flex-col items-center justify-center w-full h-full bg-[#4054b2] p-[35px] space-y-5
+                                    -mt-[280px] transition-transform duration-700 rotate-x-[-180deg] group-hover:rotate-x-0 backface-hidden">
+                            <h3 class="text-lg sm:text-[21px] font-roboto font-semibold text-white">
+                                Student Support Centre
+                            </h3>
+                            <p class="text-sm font-normal font-roboto text-white text-center">
+                                All the information and help you will need.
+                            </p>
+                            <a href="#"
+                                class="text-[15px] text-white text-center transition-all border-2 border-white rounded-[3px] font-roboto font-medium px-6 py-3">
+                                Click Here
+                            </a>
+                        </div>
+                    </div>
+                    <div class="border-t border-dotted border-[#008080] pt-5">
+                        <p class="text-[13px] font-roboto font-bold leading-6 text-[#008080] mb-5">Our Student Advisors
+                            are keen to
+                            help you, call us now on <a href="tel:0844 357 7777">0844 357 7777</a>. Alternatively, fill out the form below and we’ll get
+                            back to you.</p>
+                        <span class="text-base leading-6 font-roboto text-[#008080] mb-[5px] block">Contact Us</span>
+                        <form action="#" class="space-y-[5px] mb-5">
+                            <div>
+                                <input id="text" name="text" type="text" placeholder="Name*" required
+                                    class="border border-[#CAE6E6] w-full bg-white shadow-[inset_0_0_0_1px_rgba(0,0,0,0.1)] px-[15px] min-h-[33px] md:h-[50px] text-[13px] leading-7 text-[#008080] font-roboto placeholder:text-[#008080] placeholder:opacity-50 focus:outline-none">
+                            </div>
+                            <div>
+                                <input id="telephone" name="telephone" type="tel" placeholder="Telephone Number*"
+                                    required
+                                    class="border border-[#CAE6E6] w-full bg-white shadow-[inset_0_0_0_1px_rgba(0,0,0,0.1)] px-[15px] min-h-[33px] md:h-[50px] text-[13px] leading-7 text-[#008080] font-roboto placeholder:text-[#008080] placeholder:opacity-50 focus:outline-none">
+                            </div>
+                            <div>
+                                <input id="email" name="email" type="email" placeholder="email*" required
+                                    class="border border-[#CAE6E6] w-full bg-white shadow-[inset_0_0_0_1px_rgba(0,0,0,0.1)] px-[15px] min-h-[33px] md:h-[50px] text-[13px] leading-7 text-[#008080] font-roboto placeholder:text-[#008080] placeholder:opacity-50 focus:outline-none">
+                            </div>
+                            <div class="min-h-10 md:h-[75px]">
+                                <textarea name="text-area" id="text-area" placeholder="message"
+                                    class="border border-[#CAE6E6] w-full bg-white h-full shadow-[inset_0_0_0_1px_rgba(0,0,0,0.1)] px-[15px] text-[13px] leading-7 text-[#008080] font-roboto placeholder:text-[#008080] placeholder:opacity-50 focus:outline-none"></textarea>
+                            </div>
+                            <div class="flex gap-2">
+                                <div class="relative inline-block w-full max-w-1/2">
+                                    <input type="date" id="myDateAll"
+                                        class="datepicker appearance-none border border-[#CAE6E6] w-full bg-white shadow-[inset_0_0_0_1px_rgba(0,0,0,0.1)] px-3 py-1 min-h-[33px] md:h-10 text-[13px] leading-7 text-[#008080] font-roboto placeholder:text-[#008080] placeholder:opacity-50 focus:outline-none">
+                                    <span
+                                        class="absolute right-2.5 top-[45%] -translate-y-1/2 w-3 h-3 bg-[url('./assets/images/how-it-works/calendar.png')] bg-no-repeat bg-center bg-contain z-[999] cursor-pointer"
+                                        onclick="document.getElementById('myDateAll').showPicker()"></span>
+                                </div>
+                                <div class="relative inline-block w-full max-w-1/2">
+                                    <input type="time" id="myTime"
+                                        class="timepicker appearance-none border border-[#CAE6E6] w-full bg-white shadow-[inset_0_0_0_1px_rgba(0,0,0,0.1)] px-3 py-1 min-h-[33px] md:h-10 text-[13px] leading-7 text-[#008080] font-roboto placeholder:text-[#008080] placeholder:opacity-50 focus:outline-none"
+                                        placeholder="Select Time">
+
+                                    <span
+                                        class="absolute right-2.5 top-[45%] -translate-y-1/2 w-3 h-3 bg-[url('./assets/images/how-it-works/clock.png')] bg-no-repeat bg-center bg-contain z-[999] cursor-pointer"
+                                        onclick="document.getElementById('myTime').showPicker()"></span>
+                                </div>
+                            </div>
+                            <div>
+                                <button
+                                    class="bg-[#008080] border border-[#008080] text-white px-5 py-2.5 text-[13px] leading-[1] w-full cursor-pointer rounded-xs transition-all hover:bg-white hover:text-[#008080] cursor-pointer font-medium"
+                                    type="submit">Submit</button>
+                            </div>
+                        </form>
+                        <p class="text-[11px] font-roboto font-bold leading-4 text-[#008080]">By completing this form
+                            you are expressing an interest in Open Learning College. We will send you information about
+                            our courses and any special offers we think will be useful to you. You will be able to
+                            unsubscribe at anytime. See our <a href="privacy-policy.html" class="underline">Privacy Policy</a>.</p>
+                    </div>
+                    <div class="border-t border-dotted border-[#008080] pt-8 sticky top-0">
+                        <h3 class="text-xl md:text-2xl font-semibold font-roboto md:leading-6 text-[#008080] mb-5">Quick
+                            Links</h3>
+                        <ul>
+                            <li class=" mt-2 pb-2 first:mt-0">
+                                <a href="#definitions"
+                                    class="text-base text-[#008080] font-arial font-normal transition-all hover:font-bold">01.
+                                    Definitions</a>
+                            </li>
+                            <li class=" mt-2 pb-2 first:mt-0">
+                                <a href="#payments"
+                                    class="text-base text-[#008080] font-arial font-normal transition-all hover:font-bold">02.
+                                    Payments</a>
+                            </li>
+                            <li class=" mt-2 pb-2 first:mt-0">
+                                <a href="#care-materials"
+                                    class="text-base text-[#008080] font-arial font-normal transition-all hover:font-bold">03.
+                                    Care Of Materials</a>
+                            </li>
+                            <li class=" mt-2 pb-2 first:mt-0">
+                                <a href="#services"
+                                    class="text-base text-[#008080] font-arial font-normal transition-all hover:font-bold">04.
+                                    Services</a>
+                            </li>
+                            <li class=" mt-2 pb-2 first:mt-0">
+                                <a href="#open-learning-college-course"
+                                    class="text-base text-[#008080] font-arial font-normal transition-all hover:font-bold">05.
+                                    Open Learning College Course Transfer Facility</a>
+                            </li>
+                            <li class=" mt-2 pb-2 first:mt-0">
+                                <a href="#warranties-limitation-liability"
+                                    class="text-base text-[#008080] font-arial font-normal transition-all hover:font-bold">06.
+                                    Warranties And Limitation of Liability</a>
+                            </li>
+                            <li class=" mt-2 pb-2 first:mt-0">
+                                <a href="#other-terms"
+                                    class="text-base text-[#008080] font-arial font-normal transition-all hover:font-bold">07.
+                                    Other Terms</a>
+                            </li>
+                            <li class=" mt-2 pb-2 first:mt-0">
+                                <a href="#cancellation"
+                                    class="text-base text-[#008080] font-arial font-normal transition-all hover:font-bold">08.
+                                    Cancellation</a>
+                            </li>
+                            <li class=" mt-2 pb-2 first:mt-0">
+                                <a href="#instalment-payments"
+                                    class="text-base text-[#008080] font-arial font-normal transition-all hover:font-bold">09.
+                                    Instalment Payments</a>
+                            </li>
+                            <li class=" mt-2 pb-2 first:mt-0">
+                                <a href="#discretionary-waiver"
+                                    class="text-base text-[#008080] font-arial font-normal transition-all hover:font-bold">10.
+                                    Discretionary Waiver</a>
+                            </li>
+                            <li class=" mt-2 pb-2 first:mt-0">
+                                <a href="#termination"
+                                    class="text-base text-[#008080] font-arial font-normal transition-all hover:font-bold">11.
+                                    Termination</a>
+                            </li>
+                            <li class=" mt-2 pb-2 first:mt-0">
+                                <a href="#warranty"
+                                    class="text-base text-[#008080] font-arial font-normal transition-all hover:font-bold">12.
+                                    Warranty</a>
+                            </li>
+                            <li class=" mt-2 pb-2 first:mt-0">
+                                <a href="#use-of-your-information"
+                                    class="text-base text-[#008080] font-arial font-normal transition-all hover:font-bold">13.
+                                    Use Of Your Information</a>
+                            </li>
+                            <li class=" mt-2 pb-2 first:mt-0">
+                                <a href="#access-to-your-personal-information"
+                                    class="text-base text-[#008080] font-arial font-normal transition-all hover:font-bold">14.
+                                    Access to your Personal Information</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="w-full md:max-w-[60%] lg:max-w-[70%] md:ml-[30px] mt-5 md:mt-0">
+                    <h2 class="text-2xl md:text-[28px] font-bold font-arial text-[#243C45] md:mb-5 text-center sm:text-start ">General <span
+                            class="text-[#008080]">Terms & Conditions</span></h2>
+                    <div class="font-arial text-[#008080] divide-y divide-[#7C8A8F]">
+                        <div id="definitions" class="py-4 lg:py-5 text-[#008080] text-base leading-6 font-normal">
+                            <h2 class="text-xl font-arial font-bold mb-4 text-center sm:text-start">01. Definitions</h2>
+                            <p class="text-base leading-6 font-bold">In this Agreement unless otherwise stated:</p>
+                            <p class="text-base leading-6">(i) “Distance Learning Package” shall mean the course(s)
+                                identified and all related Materials, support, and tuition where applicable.</p>
+                            <p class="text-base leading-6">(ii) “Materials” shall mean the learning materials for the
+                                Distance Learning Package or any part of them (and shall include any replacement
+                                training materials and books if you transfer Distance Learning Package in accordance
+                                with Clause 5).</p>
+                            <p class="text-base leading-6">(iii) Your “Support Period” depends on which course you
+                                choose to study and will be between one to two years unless otherwise stated in your
+                                course materials.</p>
+                            <p class="text-base leading-6">(iv) singular words shall include the plural and vice versa;
+                                and</p>
+                            <p class="text-base leading-6">(v) headings are included for convenience only and shall not
+                                affect the construction or interpretation of this Agreement</p>
+                        </div>
+
+                        <div id="payments" class="font-arial pb-5">
+                            <h2 class="text-xl font-arial font-bold text-[#008080] mb-5 pt-5 text-center sm:text-start">02. Payments
+                            </h2>
+                            <p class="text-base leading-6">(i) We agree to sell, and you agree to buy the Distance
+                                Learning Package for the Total Cost/Cash Price and on the terms set out on this page and
+                                in the agreement, we send you.</p>
+                            <p class="text-base leading-6">(ii) Under no circumstances shall we be deemed to have
+                                received payment until payment has been received by us in full and cleared.</p>
+                            <p class="text-base leading-6">(iii) All course material remains the property of Open
+                                Learning College until the final payment has been received by us and cleared.</p>
+                        </div>
+                        <div id="care-materials" class="font-arial pb-5">
+                            <h2 class="text-xl font-arial font-bold text-[#008080] mb-5 pt-5 text-center sm:text-start">03. Care Of
+                                Materials</h2>
+                            <p class="text-base leading-6">(i) We will release the materials to you in full once you
+                                have enrolled on your chosen course.</p>
+                            <p class="text-base leading-6">(ii) You will inspect the materials promptly following
+                                delivery. You will tell us about any omission as soon as it is reasonably possible.</p>
+                        </div>
+                        <div id="services" class="font-arial pb-5">
+                            <h2 class="text-xl font-arial font-bold text-[#008080] mb-5 pt-5 text-center sm:text-start">04. Services
+                            </h2>
+                            <p class="text-base leading-6">(i) During the Support Period, we will provide you with
+                                support and tuition as set out in [the promotional Materials & website].</p>
+                            <p class="text-base leading-6">(ii) If requested, we may at our sole discretion, extend the
+                                Support Period for an agreed fee.</p>
+                            <p class="text-base leading-6">(iii) If you are sitting an external examination at the end
+                                of your Distance Learning Package, we will provide you with such information as we have
+                                in our possession to assist you in making such examination arrangements. In all other
+                                respects, you will be solely responsible for planning to enable you to sit the
+                                examination and for all fees in relation thereto.</p>
+                            <p class="text-base leading-6">(iv) If we, at our sole discretion, assist you in making your
+                                examination arrangements by providing you with information about the time and location
+                                of local examinations or reserving an examination place for you, you acknowledge that we
+                                shall not be responsible for any losses incurred by you as a result of inaccurate
+                                information provided in connection with any such arrangement except such losses,
+                                excluding business losses, caused by failure to act with reasonable care and skill.</p>
+                        </div>
+                        <div id="open-learning-college-course" class="font-arial pb-5">
+                            <h2 class="text-xl font-arial font-bold text-[#008080] mb-5 pt-5 text-center sm:text-start">05. Open
+                                Learning College Course Transfer Facility</h2>
+                            <p class="text-base leading-6">(i) If you wish to transfer to a different course, we may at
+                                our sole discretion agree to such transfer.</p>
+                            <p class="text-base leading-6">(ii) Unless you are paying under a Credit Agreement, if we
+                                agree that you may transfer to a different course, we will transfer the fees paid for
+                                the Distance Learning Package you wish to discontinue towards the amount payable for the
+                                new course PROVIDED THAT we receive payment from you for the balance of fees due in
+                                respect of the new course (if more expensive than the discontinued Distance Learning
+                                Package) and an agreed transfer fee will be payable to cover our tuition and/or
+                                administrative costs.</p>
+
+                        </div>
+                        <div id="warranties-limitation-liability" class="font-arial pb-5">
+                            <h2 class="text-xl font-arial font-bold text-[#008080] mb-5 pt-5 text-center sm:text-start">06.
+                                Warranties And Limitation of Liability</h2>
+                            <p class="text-base leading-6">(i) We warrant that the materials will be of satisfactory
+                                quality but do not warrant that the materials will be error free.</p>
+                            <p class="text-base leading-6">(ii) We warrant that we will perform any services provided
+                                hereunder with reasonable skill and care.</p>
+                            <p class="text-base leading-6">(iii) We intend to rely on the written terms set out here in
+                                this document. If you require any changes, please ensure you ask for these to be put in
+                                writing. In that way, we can avoid any problems surrounding what we, and you, are
+                                expected to do.</p>
+                            <p class="text-base leading-6">(iv) Other than in respect of liability for death or personal
+                                injury arising from our negligence, we shall not be liable for:
+                                <span class="block">– (a) losses that were not foreseeable to both parties when this
+                                    Agreement was made.</span>
+                                <span class="block">– (b) losses that were not caused by any breach on our part.</span>
+                                <span class="block">– (c) business losses and/or losses to non-consumers.</span>
+                            </p>
+                            <p class="text-base leading-6">(v) Our liability for direct losses arising out of our
+                                negligence (other than in respect of liability for death or personal injury), breach of
+                                contract or any other cause of action arising out of or in connection with this
+                                Agreement shall be limited to the total price paid for the Distance Learning Package as
+                                quoted.</p>
+                            <p class="text-base leading-6">(vi) Other than in respect of liability for death or personal
+                                injury arising from our negligence, we shall not be liable for any indirect or
+                                consequential loss or damage whatsoever (including without limitation any loss of
+                                profits, loss of revenue, loss of opportunity or your liabilities to third parties)
+                                which you may suffer arising out of or in connection with this Agreement.</p>
+
+                        </div>
+                        <div id="other-terms" class="font-arial pb-5">
+                            <h2 class="text-xl font-arial font-bold text-[#008080] mb-5 pt-5 text-center sm:text-start">07. Other
+                                Terms</h2>
+                            <p class="text-base leading-6">(i) No relaxation or indulgence which we may extend to you
+                                shall affect our rights under this agreement.</p>
+                            <p class="text-base leading-6">(ii) If any part of this agreement is held to be
+                                unenforceable the remaining terms and conditions shall continue in force.</p>
+                            <p class="text-base leading-6">(iii) All liabilities or obligations arising under this
+                                agreement shall be enforceable against you after termination of this agreement.</p>
+                            <p class="text-base leading-6">(iv) You will notify us immediately in writing of any change
+                                in your address and other contact details. Any notices required to be served under this
+                                agreement, or in accordance with the Act will be deemed properly served if sent by way
+                                of prepaid first- class post to your last known address or by email to your registered
+                                email.</p>
+                            <p class="text-base leading-6">(v) This Agreement shall be governed and construed in
+                                accordance with the laws of [England] and you hereby agree to submit to the
+                                non-exclusive jurisdiction of the [English Courts].</p>
+
+                        </div>
+                        <div id="cancellation" class="font-arial pb-5">
+                            <h2 class="text-xl font-arial font-bold text-[#008080] mb-5 pt-5 text-center sm:text-start">08.
+                                Cancellation</h2>
+                            <p class="text-base leading-6 mb-4">Your statutory right under the consumer protection
+                                (Distance Selling) Regulations 2000, allows you fourteen working days from the day after
+                                receipt of materials in which to make a written request for cancellation.</p>
+                            <p class="text-base leading-6 mb-4"><strong>(i)</strong> The rights set out in this Clause
+                                will only apply where you are a consumer.</p>
+                            <p class="text-base leading-6 mb-4"><strong>(ii)</strong> If you are a consumer, you may
+                                have the right to end the contract where:
+                                <span class="block">(a) if you end the contract because of something we have done or
+                                    have told you we are going to do;</span>
+                                <span class="block">(b) if you are a consumer and have just changed your mind about the
+                                    course;</span>
+                                <span class="block">(c) if what you have bought is faulty or misdescribed; or</span>
+                                <span class="block">(d) in all other cases (if we are not at fault and you are not a
+                                    consumer exercising your right to change your mind).</span>
+                            </p>
+                            <p class="text-base leading-6 mb-4"><strong>(iii)</strong> If you are ending the contract
+                                because of something we have done or are going to do we will refund you in full for any
+                                products which have not been provided and you may also be entitled to.</p>
+                            <p class="text-base leading-6 mb-4"><strong>(iv)</strong> Compensation, this Clause will
+                                apply where;
+                                <span class="block">(a) we have told you about an upcoming change to the course or these
+                                    terms which you do not agree to;</span>
+                                <span class="block">(b) we have told you about an error in the price or description of
+                                    the course you have ordered and you do not wish to proceed;</span>
+                                <span class="block">(c) there is a risk that supply of the course may be significantly
+                                    delayed because of events outside our control;</span>
+                                <span class="block">(d) we have suspended supply of the course for technical reasons, or
+                                    notify you we are going to suspend them for technical reasons, in each case for a
+                                    period of more than 90 days; or</span>
+                                <span class="block">(e) you have a legal right to end the contract because of something
+                                    we have done wrong.</span>
+                            </p>
+                            <p class="text-base leading-6 mb-4"><strong>(v)</strong> Once you have placed an order for
+                                one of our courses, you may cancel the contract at any time within fourteen days (the
+                                “Cooling Off Period”). Where you have purchased a service, the Cooling Off Period shall
+                                run from the date on which we emailed you in order to confirm our acceptance of your
+                                order. Where you have purchased goods, the Cooling Off Period shall run from the day
+                                after you received the goods. In this case, you will receive a full refund of the fee
+                                paid in accordance with our refunds policy below.</p>
+                            <p class="text-base leading-6 mb-4"><strong>(vi)</strong> The Cooling Off Period will not
+                                apply, and you will not receive a refund in relation to any of the courses provided by
+                                the College (including those which are provided in conjunction with any other
+                                organisation such as EDPLX.COM) where: (a) once the Services have been completed; (b)
+                                where you have logged into or accessed the course; (c) where you have broken a security
+                                seal on any item sealed for health and protection purposes; (d) where you have broken a
+                                security seal on any item including sealed or audio video recordings or sealed computer
+                                software; or (e) any products which become mixed inseparably with other items after
+                                their delivery.</p>
+                            <p class="text-base leading-6 mb-4"><strong>(vii)</strong> To cancel a contract, you must
+                                inform us in writing by sending a cancellation letter by Royal Mail recorded delivery to
+                                our registered office address, or by email to hello@site.digitalwindit.com. You must
+                                also return any course and course materials sent to you immediately, in the same
+                                condition in which you received them, and at your own cost and risk. A cancellation is
+                                not final until course materials are returned. You have a legal obligation to take
+                                reasonable care of the course materials whilst they are in your possession. If you fail
+                                to comply with this obligation, we may have a right of action against you for
+                                compensation.</p>
+                            <p class="text-base leading-6 mb-4"><strong>(viii)</strong> If, in our sole opinion, any
+                                course (including any Course materials) are not returned to us in the same condition you
+                                received them, you may be charged a replacement charge.</p>
+                            <p class="text-base leading-6 mb-4"><strong>(ix)</strong> After the Cooling Off Period has
+                                elapsed, we cannot accept courses or course materials being returned unless you have a
+                                statutory right to do so as set out above.</p>
+                        </div>
+                        <div id="instalment-payments" class="font-arial pb-5">
+                            <h2 class="text-xl font-arial font-bold text-[#008080] mb-5 pt-5 text-center sm:text-start">09.
+                                Instalment Payments</h2>
+                            <p class="text-base leading-6">(i) You will pay the Deposit shown online when you enrol and
+                                the outstanding balance of the total cash price by the instalments and on the dates
+                                specified in our welcome letter.</p>
+                            <p class="text-base leading-6">(ii) It is a fundamental term of the agreement that all
+                                payments should be made promptly and on time, you will be deemed to be in default if
+                                your payments are more than 30 days overdue.</p>
+                            <p class="text-base leading-6">(iii) If you fail to comply with any terms of this agreement,
+                                we shall be entitled to recover from you the reasonable costs and losses incurred by us
+                                as a result of locating you, communicating with you and collecting any unpaid sums. Such
+                                sums are payable on demand. In the event of legal action for breach of payment, you will
+                                be responsible for all costs allowable by the court if an award is made in our favour.
+                            </p>
+                            <p class="text-base leading-6">(iv) Failure to return your instalment agreement within 30
+                                days will invalidate this agreement and you will forfeit your initial deposit payment.
+                            </p>
+                        </div>
+                        <div id="discretionary-waiver" class="font-arial pb-5">
+                            <h2 class="text-xl font-arial font-bold text-[#008080] mb-5 pt-5 text-center sm:text-start">10.
+                                Discretionary Waiver</h2>
+                            <p class="text-base leading-6">(i) If, at any time during the course of the agreement, you
+                                notify us that you no longer wish to pursue the Distance Learning Package we may, in our
+                                absolute discretion, agree to waive our rights to the sums payable under Clause 12 upon
+                                payment by you of all sums due under Clause 12 and apply an administration fee of
+                                £75.00, upon condition that you waive all rights to delivery of any and all materials.
+                            </p>
+                            <p class="text-base leading-6">(ii) If you wish to be considered for a discretionary waiver,
+                                you should contact us by letter or telephone.</p>
+
+                        </div>
+                        <div id="termination" class="font-arial pb-5">
+                            <h2 class="text-xl font-arial font-bold text-[#008080] mb-5 pt-5 text-center sm:text-start">11.
+                                Termination</h2>
+                            <p class="text-base leading-6">(i) If: (a) you fail to pay any amount due under this
+                                agreement; (b) you breach any of the other terms and conditions, express or implied, of
+                                the agreement; or (c) any information provided by you in the making of this agreement
+                                proves to be incomplete or inaccurate, we shall be entitled, after the expiry of a
+                                Default Notice served on you, to terminate this agreement.</p>
+                            <p class="text-base leading-6">(ii) If this agreement is terminated you will pay us the
+                                unpaid balance of the balance payable, less any applicable rebate, plus all expenses,
+                                charges, and costs in accordance with Clause 10.</p>
+                        </div>
+                        <div id="warranty" class="font-arial pb-5">
+                            <h2 class="text-xl font-arial font-bold text-[#008080] mb-5 pt-5 text-center sm:text-start">12. Warranty
+                            </h2>
+                            <p class="text-base leading-6">(i) Open Learning College shall not be obliged to replace
+                                free of charge any materials pursuant to Clause 6</p>
+                            <p class="text-base leading-6">(ii) if any monthly instalments or other sums are due and
+                                unpaid under this Agreement as at the date of the claim.</p>
+                        </div>
+                        <div id="use-of-your-information" class="font-arial pb-5">
+                            <h2 class="text-xl font-arial font-bold text-[#008080] mb-5 pt-5 text-center sm:text-start">13. Use Of
+                                Your Information</h2>
+                            <p class="text-base leading-6 mb-4">This privacy statement applies to any personal data you
+                                may give to Open Learning College. We collect any personal data you may give us when you
+                                begin your course. We will also collect contact details from prospective students.</p>
+                            <p class="text-base leading-6">We maintain data on your transactions with us as well as your
+                                use of our services. We would like to use your personal data to provide you with further
+                                information about our products and services, please indicate if you do not want to be
+                                contacted by mail, email, or telephone.</p>
+                        </div>
+                        <div id="access-to-your-personal-information" class="font-arial pb-5">
+                            <h2 class="text-xl font-arial font-bold text-[#008080] mb-5 pt-5 text-center sm:text-start">14. Access to
+                                your Personal Information</h2>
+                            <p class="text-base leading-6 mb-4">The Data Protection Act 1998 gives you the right to
+                                access the information that we hold about you. Please note that any demand for access
+                                may be subject to payment of a fee of £10 which covers our costs in providing you with
+                                the information requested. Should you wish to receive details that we hold about you
+                                please contact us using the contact details on this agreement.</p>
+                            <p class="text-base leading-6 mb-4">We will not pass on your details to any third party. To
+                                receive a copy of the full privacy statement or to access or modify your information or
+                                change your preferences, please contact us.</p>
+                            <p><strong>PLEASE ALWAYS REFER TO OUR WEBSITE FOR THE LATEST COURSE INFORMATION, PRICING AND
+                                    TERMS AND CONDITIONS.</strong></p>
+                        </div>
+                        <div class="font-arial pb-5">
+                            <h2 class="text-xl font-arial font-bold text-[#008080] mb-5 pt-5 text-center sm:text-start">END OF
+                                AGREEMENT</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FIND YOUR COURSE SECTION START -->
+    <section>
+        <a class="flex flex-col flex-wrap gap-y-[15px] justify-center items-center text-center w-full text-white bg-[#60048A] py-[30px] lg:py-[50px] px-[30px] lg:px-[50px]"
+            href="#">
+            <h2 class="text-2xl lg:text-[35px] font-bold font-roboto">Over 1000 Industry Recognised Accredited Courses
+            </h2>
+            <p class="text-sm lg:text-base font-normal font-roboto">We work with the most well-known and respected
+                awarding bodies.</p>
+            <p
+                class="mt-[5px] border-2 border-white rounded py-3 px-8 text-sm font-medium font-roboto hover:text-[#004D3D] hover:bg-white transition-all duration-500">
+                Find your Course</p>
+        </a>
+    </section>
+    <!-- FIND YOUR COURSE SECTION END -->
+
+</body>
+
+</html>
