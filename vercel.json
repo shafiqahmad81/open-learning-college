@@ -33,6 +33,7 @@
     { "src": "/solutions", "dest": "/solutions.html" },
     { "src": "/packages", "dest": "/packages.html" },
     { "src": "/academic-partnerships", "dest": "/academic-partnerships.html" },
-    { "src": "/certificates", "dest": "/certificates.html" }
+    { "src": "/certificates", "dest": "/certificates.html" },
+    { "src": "/health-social-care-faculty", "dest": "/health-social-care-faculty.html" }
   ]
 }

@@ -187,37 +187,11 @@ function toggleAccordion(index) {
     });
   });
 
-const studentFaq = document.getElementById("student-faq");
 
-if (studentFaq) {
-  const faqBtn = studentFaq.querySelectorAll(".faq-btn");
 
-  faqBtn.forEach((btn) => {
-    const content = btn.nextElementSibling;
-    const icon = btn.querySelector(".icon");
 
-    // default closed
-    content.style.maxHeight = "0px";
-    icon.textContent = "+";
 
-    btn.addEventListener("click", () => {
-      const isOpen = content.style.maxHeight && content.style.maxHeight !== "px";
 
-      // close all
-      studentFaq.querySelectorAll(".faq-content").forEach((c) => {
-        c.style.maxHeight = "px";
-        const b = c.previousElementSibling;
-        b.querySelector(".icon").textContent = "-";
-      });
-
-      // open clicked
-      if (!isOpen) {
-        content.style.maxHeight = content.scrollHeight + "px";
-        icon.textContent = "−";
-      }
-    });
-  });
-}
 
 
 
@@ -225,7 +199,9 @@ if (studentFaq) {
   
 // Tab
 
+
 const tabButtons = document.querySelectorAll("#tabs button");
+const tabItems = document.querySelectorAll("#tabs .tab-item");
 const desktopContents = document.querySelectorAll("#desktop-contents .tab-content");
 const mobileContents = document.querySelectorAll(".mobile-content");
 
@@ -244,34 +220,46 @@ function activateTab(tabId) {
   desktopContents.forEach(c => c.classList.add("hidden"));
   mobileContents.forEach(c => c.classList.add("hidden"));
 
-  tabButtons.forEach((b, index) => {
-    b.classList.remove("text-[#008080]", "-mb-0.5");
-    b.classList.add("text-[#6EC1E4]");
-
-    b.classList.remove(
-      "border",
+  tabItems.forEach(item => {
+    item.classList.remove(
       "border-t",
-      "border-b",
       "border-l",
       "border-r",
-      "border-[#008080]"
+      "border-b",
+      "border-[#008080]",
+      "border-b-white",
+      "bg-[#F7FBFB]",
+      "-mb-px"
     );
+  });
 
-    if (isMobile()) {
-      b.classList.add("border-l", "border-r", "border-b", "border-[#008080]");
-
-      if (index === 0) {
-        b.classList.add("border-t");
-      }
-    }
+  tabButtons.forEach(btn => {
+    btn.classList.remove("text-[#008080]");
+    btn.classList.add("text-[#6EC1E4]");
   });
 
   const activeBtn = document.querySelector(`[data-tab="${tabId}"]`);
+  const activeItem = activeBtn.parentElement;
+
   activeBtn.classList.add("text-[#008080]");
   activeBtn.classList.remove("text-[#6EC1E4]");
 
-  if (!isMobile()) {
-    activeBtn.classList.add("border", "border-[#008080]", "-mb-0.5");
+  if (isMobile()) {
+    activeItem.classList.add(
+      "border-b-white",
+      "border-[#008080]",
+      "bg-[#F7FBFB]"
+    );
+  } else {
+    activeItem.classList.add(
+      "border-t",
+      "border-l",
+      "border-r",
+      "border-[#008080]",
+      "border-b-white",
+      "bg-[#F7FBFB]",
+      "-mb-px"
+    );
   }
 
   if (isMobile()) {
@@ -280,6 +268,9 @@ function activateTab(tabId) {
     document.getElementById(tabId).classList.remove("hidden");
   }
 }
+
+
+
 
 
 
